@@ -109,7 +109,7 @@ body {
   border: none;
   cursor: pointer;
   font-size: 1.25rem;
-  color: #1a1a1a;
+  color: #fff;
   margin-right: 1rem;
 }
 .nav-links {
@@ -120,7 +120,7 @@ body {
 }
 .nav-links a {
   text-decoration: none;
-  color: #1a1a1a;
+  color: #fff;
   transition: color 0.3s;
 }
 .nav-links a:hover {
@@ -142,6 +142,13 @@ body {
 .nav-right {
   justify-content: flex-end;
   gap: 1.5rem;
+}
+/* =============================================
+   ATURAN BARU: Ganti warna ikon saat di-scroll
+   ============================================= */
+.navbar.scrolled .menu-toggle,
+.navbar.scrolled .nav-links a {
+  color: #1a1a1a; /* Kembali ke hitam saat di-scroll */
 }
 
 /* --- Menu Overlay (Dari file lama) --- */
@@ -208,11 +215,9 @@ body {
 }
 
 /* ==========================================================
-   KODE BARU (Mulai dari 0)
+   HERO
    ========================================================== */
 
-/* --- Hero Section (BARU) --- */
-/* --- Hero Section (BARU DENGAN VIDEO) --- */
 .hero-static {
   position: relative;
   display: flex;
@@ -412,7 +417,10 @@ body {
     flex-grow: 0;
   }
   .nav-left a {
-    color: #1a1a1a;
+    color: #fff;
+  }
+  .navbar.scrolled .nav-left a {
+    color: #1a1a1a; /* Kembali ke hitam (untuk ikon search mobile) */
   }
   .menu-toggle {
     margin-right: 1rem;
