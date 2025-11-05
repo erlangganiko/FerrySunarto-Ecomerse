@@ -7,10 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 2. Cek apakah kita di Halaman Homepage
   if (document.querySelector(".hero-static")) {
-    // === [INI KODE BARU ANDA] ===
-    // Memanggil fungsi untuk memuat produk unggulan di index.html
     loadFeaturedProducts();
-    // =============================
   }
 
   // 3. Cek apakah kita di Halaman Katalog
@@ -18,15 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initializeAppProductPages();
   }
 
-  // 4. Cek apakah kita di Halaman Detail Produk
-  if (document.querySelector(".product-detail-grid")) {
-    initializeAppProductPages(); // Fungsi ini juga menangani detail
-  }
-
-  // 5. Cek apakah kita di Halaman Artikel
-  if (document.querySelector(".article-section")) {
-    initializeAppArticlePages();
-  }
+  // (Logika untuk Halaman Detail & Artikel sudah dihapus)
 });
 
 // ==========================================================
@@ -70,9 +59,8 @@ function initializeCommonFeatures() {
       // Tentukan apakah navbar harus 'scrolled' (background putih)
       // Di halaman katalog, navbar SELALU 'scrolled'
       if (
-        document.querySelector(".catalog-section") ||
-        document.querySelector(".product-detail-grid") ||
-        document.querySelector(".article-section")
+        document.querySelector(".catalog-section")
+        // (Pengecekan untuk detail & artikel sudah dihapus)
       ) {
         navbar.classList.add("scrolled");
       } else {
@@ -116,6 +104,7 @@ function initializeCommonFeatures() {
   }
 
   // --- LOGIKA FOOTER ACCORDION ---
+  // (Ini hanya dipakai oleh i-catalog.html)
   const footerToggles = document.querySelectorAll(".footer-toggle");
   footerToggles.forEach((toggle) => {
     toggle.addEventListener("click", (event) => {
@@ -127,6 +116,7 @@ function initializeCommonFeatures() {
   });
 
   // --- LOGIKA SEARCH OVERLAY ---
+  // (Ini hanya dipakai oleh i-catalog.html)
   const searchIcons = document.querySelectorAll(
     ".search-icon-mobile, .search-icon-desktop"
   );
@@ -152,18 +142,17 @@ function initializeCommonFeatures() {
 }
 
 // ==========================================================
-// FUNGSI KHUSUS HALAMAN PRODUK (KATALOG & DETAIL)
+// FUNGSI KHUSUS HALAMAN PRODUK (HANYA KATALOG)
 // ==========================================================
 
 /**
- * Memulai logika untuk halaman Katalog & Detail (Fetch, Populate, Render).
+ * Memulai logika untuk halaman Katalog (Fetch, Populate, Render).
  */
 async function initializeAppProductPages() {
   const catalogGrid = document.querySelector(".product-grid-catalog");
-  const productDetailGrid = document.querySelector(".product-detail-grid");
 
-  // Jika tidak ada grid katalog ATAU grid detail, keluar
-  if (!catalogGrid && !productDetailGrid) {
+  // Jika tidak ada grid katalog, keluar
+  if (!catalogGrid) {
     return;
   }
 
@@ -172,22 +161,13 @@ async function initializeAppProductPages() {
     if (!response.ok) throw new Error("Gagal memuat data produk");
     const allProductsData = await response.json();
 
-    // Jika kita di halaman KATALOG, jalankan logika katalog
-    if (catalogGrid) {
-      populateFilters(allProductsData);
-      renderProductCatalog(catalogGrid, allProductsData);
-    }
-
-    // Jika kita di halaman DETAIL, jalankan logika detail
-    if (productDetailGrid) {
-      // (Fungsi ini kosong, Anda bisa isi nanti saat membuat halaman detail)
-      // renderProductDetail(productDetailGrid, allProductsData);
-    }
+    // Jalankan logika katalog
+    populateFilters(allProductsData);
+    renderProductCatalog(catalogGrid, allProductsData);
   } catch (error) {
     console.error("Error memuat data produk:", error);
-    const container = catalogGrid || productDetailGrid;
-    if (container) {
-      container.innerHTML = "<p>Gagal memuat produk. Coba lagi nanti.</p>";
+    if (catalogGrid) {
+      catalogGrid.innerHTML = "<p>Gagal memuat produk. Coba lagi nanti.</p>";
     }
   }
 }
@@ -249,23 +229,19 @@ function renderProductCatalog(catalogGrid, allProductsData) {
   const paginationControls = document.getElementById("pagination-controls");
 
   let currentPage = 1;
-  const productsPerPage = 8; // Anda punya banyak produk, 8 adalah angka yg baik
+  const productsPerPage = 8;
 
-  // === [INI PERBAIKAN URL FILTER] ===
+  // Perbaikan URL Filter
   const params = new URLSearchParams(window.location.search);
 
-  // 1. Baca parameter ?tipe= (cth: ?tipe=pria)
   const tipeFromURL = params.get("tipe");
   if (tipeFromURL && tipeFilter) {
-    tipeFilter.value = tipeFromURL; // Set nilai dropdown Tipe
+    tipeFilter.value = tipeFromURL;
   }
-
-  // 2. Baca parameter ?kategori= (cth: ?kategori=Kebaya)
   const kategoriFromURL = params.get("kategori");
   if (kategoriFromURL && categoryFilter) {
-    categoryFilter.value = kategoriFromURL; // Set nilai dropdown Kategori
+    categoryFilter.value = kategoriFromURL;
   }
-  // ===================================
 
   function renderProducts() {
     const availabilityValue = availabilityFilter.value;
@@ -434,19 +410,9 @@ function renderProductCatalog(catalogGrid, allProductsData) {
   renderProducts();
 }
 
-/**
- * Fungsi Halaman Detail Produk
- */
-function renderProductDetail(productDetailGrid, allProductsData) {
-  // Anda bisa mengisi ini nanti saat membuat detail-barang.html
-}
+// (Fungsi renderProductDetail() SUDAH DIHAPUS)
 
-// ==========================================================
-// FUNGSI KHUSUS HALAMAN ARTIKEL
-// ==========================================================
-async function initializeAppArticlePages() {
-  // Anda bisa mengisi ini nanti saat membuat list-artikel.html
-}
+// (Fungsi initializeAppArticlePages() SUDAH DIHAPUS)
 
 // ==========================================================
 // FUNGSI BARU UNTUK HOMEPAGE (INDEX.HTML)
@@ -457,7 +423,6 @@ async function initializeAppArticlePages() {
  */
 async function loadFeaturedProducts() {
   // --- Ganti ID ini dengan 4 produk favorit Anda ---
-  // Saya ambil 4 produk dari JSON Anda sebagai contoh
   const featuredProductIDs = [
     "product-1", // -> Kebaya Pria Klasik Merah Maroon
     "product-13", // -> Kebaya Wanita
