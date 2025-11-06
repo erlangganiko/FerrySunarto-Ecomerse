@@ -4,6 +4,11 @@
 :root {
   --font-sans: "Inter", sans-serif;
   --font-serif: "Playfair+Display", serif;
+  --h1 :"Bodoni Moda", serif; 
+  --h2: "Bodoni Moda", serif;
+  --p:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --nav:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --cta:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 * {
   margin: 0;
