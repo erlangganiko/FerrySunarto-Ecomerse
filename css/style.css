@@ -349,6 +349,594 @@ html.session-visited #preloader {
   color: #1a1a1a;
 }
 
+/* --- Judul Produk --- */
+        .product-title {
+            text-align: left;
+            /* Kita tambahkan margin-top agar tidak menabrak header (90px) */
+            margin-top: 130px; /* 90px (header) + 40px (spasi) */
+            margin-bottom: 40px;
+        }
+
+        .product-title h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .product-title p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* --- Konten Utama Produk (Layout 2 Kolom) --- */
+        .product-main {
+            display: flex;
+            flex-wrap: wrap;
+            /* Agar responsif di layar kecil */
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        /* --- Kolom Kiri: Galeri Gambar --- */
+        .product-gallery {
+            flex: 1;
+            min-width: 300px;
+            /* Lebar minimum untuk responsif */
+        }
+
+        .main-image-wrapper {
+            position: relative;
+            background-color: #f9f9f9;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            height: 500px;
+            /* Sesuaikan tinggi sesuai kebutuhan */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: italic;
+            color: #aaa;
+            overflow: hidden;
+            /* Menjaga panah tetap di dalam */
+        }
+
+        /* Placeholder untuk gambar utama */
+        .main-image-placeholder {
+            width: 100%;
+            height: 100%;
+            background-color: #f0f0f0;
+        }
+
+            /* === MODAL GALERI GAMBAR === */
+        .modal {
+            display: none; /* Sembunyikan secara default */
+            position: fixed; /* Tetap di viewport */
+            z-index: 1000; /* Di atas semua elemen lain */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; /* Aktifkan scroll jika konten terlalu besar */
+            background-color: rgba(0, 0, 0, 0.9); /* Latar belakang gelap transparan */
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px); /* Efek blur pada background */
+        }
+
+        .modal.active {
+            display: flex; /* Tampilkan modal saat aktif */
+        }
+
+        .modal-content-wrapper {
+            position: relative;
+            max-width: 90vw; /* Batasi lebar modal */
+            max-height: 80vh; /* Batasi tinggi modal */
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fefefe; /* Latar belakang putih untuk area gambar */
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden; /* Penting untuk zoom/pan */
+        }
+
+        .modal-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Default: gambar fit di dalam modal */
+            transition: transform 0.3s ease-out; /* Transisi untuk zoom */
+            cursor: zoom-in;
+            user-select: none; /* Mencegah seleksi teks saat drag */
+        }
+
+        /* Kursor saat di-zoom */
+        .modal-image.zoomed {
+            cursor: grab;
+            object-fit: cover; /* Saat di-zoom, cover agar bisa di-pan */
+        }
+
+        .modal-image.zoomed.grabbing {
+            cursor: grabbing;
+        }
+
+
+        .close-button {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+            z-index: 1001; /* Pastikan di atas semua */
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Panah navigasi di dalam modal */
+        .modal-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 24px;
+            user-select: none;
+            transition: background-color 0.3s ease;
+            border-radius: 50%; /* Bentuk bulat */
+            width: 40px; /* Ukuran tombol */
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-arrow:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-arrow-left {
+            left: 10px;
+        }
+
+        .modal-arrow-right {
+            right: 10px;
+        }
+
+        /* Sembunyikan panah saat gambar di-zoom */
+        .modal-content-wrapper.is-zoomed .modal-arrow {
+            pointer-events: none;
+            opacity: 0.3;
+        }
+
+
+        /* Thumbnail di bawah modal */
+        /* Thumbnail di bawah modal */
+        .modal-thumbnails {
+            display: none; /* <-- TAMBAHKAN BARIS INI */
+            
+            /* Baris di bawah ini adalah style asli, 
+              sekarang tidak aktif karena 'display: none' */
+            /*
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+            max-width: 90vw;
+            */
+        }
+
+        .modal-thumbnails .thumbnail-item {
+            width: 80px;
+            height: 80px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: border-color 0.2s ease;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-thumbnails .thumbnail-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .modal-thumbnails .thumbnail-item.active {
+            border-color: #007bff; /* Warna border untuk thumbnail aktif */
+        }
+
+        /* Media Queries untuk responsivitas modal */
+        @media (max-width: 768px) {
+            .modal-content-wrapper {
+                max-width: 95vw;
+                max-height: 70vh;
+            }
+            .modal-arrow {
+                padding: 8px 12px;
+                font-size: 20px;
+                width: 35px;
+                height: 35px;
+            }
+            .modal-arrow-left {
+                left: 5px;
+            }
+            .modal-arrow-right {
+                right: 5px;
+            }
+            .close-button {
+                font-size: 30px;
+                top: 10px;
+                right: 15px;
+            }
+            .modal-thumbnails {
+                gap: 5px;
+                margin-top: 10px;
+            }
+            .modal-thumbnails .thumbnail-item {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .modal-thumbnails .thumbnail-item {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent; /* Ubah menjadi transparan penuh */
+            border: none;
+            width: 60px; /* PERBESAR: Dari 40px menjadi 60px */
+            height: 60px; /* PERBESAR: Dari 40px menjadi 60px */
+            font-size: 36px; /* PERBESAR: Dari 20px menjadi 36px */
+            color: #333; /* Warna panah agar terlihat */
+            cursor: pointer;
+            display: flex; /* Untuk memposisikan ikon di tengah tombol */
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.2s ease; /* Transisi halus saat hover */
+        }
+
+        /*.nav-arrow:hover {
+            background-color: rgba(0, 0, 0, 0.1); 
+            border-radius: 50%; 
+        }
+        */
+        .arrow-left {
+            left: 10px;
+        }
+
+        .arrow-right {
+            right: 10px;
+        }
+
+        .thumbnail-gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            gap: 15px;
+        }
+
+        .thumbnail {
+            width: 100%;
+            height: 150px; /* <--- UBAH MENJADI LEBIH BESAR (misal: 120px) */
+            background-color: #00bcd4;
+            /* Placeholder thumbnail */
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* --- Kolom Kanan: Info Produk --- */
+        
+        .product-info {
+            flex: 1;
+            min-width: 300px;
+            /* Lebar minimum untuk responsif */
+            padding-left: 150px; /* <--- UBAH JADI LEBIH BESAR (misal: 60px) */
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 25px;
+            max-width: 350px; /* <--- TAMBAHKAN BARIS INI */
+        }
+
+       .btn {
+            /* Padding disesuaikan agar tombol terlihat lebih tinggi dan mengikuti gambar */
+            padding: 18px 25px; /* Disesuaikan untuk tinggi dan lebar */
+            border: none;
+            border-radius: 30px; /* Masih sama untuk bentuk rounded */
+            font-size: 1rem; /* Sedikit diperbesar dari 0.9rem */
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            text-transform: uppercase;
+            /* Tambahkan efek bayangan halus untuk memperkuat tampilan 3D */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transisi saat hover/klik */
+        }
+
+        .btn:active {
+            transform: translateY(1px); /* Efek tombol tertekan */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .btn-favorite { /* Ini akan menjadi "SAVE TO LOOKBAG" */
+            background-color: #d1b459; /* Warna kuning kecoklatan seperti gambar */
+            color: #fff; /* Warna teks putih */
+            font-family: 'Times New Roman', serif; /* Font yang lebih klasik */
+            letter-spacing: 1px; /* Sedikit spasi antar huruf */
+            font-size: 0.95rem; /* Sesuaikan ukuran font jika perlu */
+        }
+
+        .btn-whatsapp { /* Ini akan menjadi "CHAT VIA WHATSAPP" */
+            background-color: #d1b459; /* Warna kuning kecoklatan yang sama */
+            color: #fff; /* Warna teks putih */
+            font-family: 'Times New Roman', serif; /* Font yang lebih klasik */
+            letter-spacing: 1px;
+            font-size: 0.95rem;
+        }
+
+        .btn-appointment { /* Ini akan menjadi "APPOINTMENT" */
+            background-color: #3e4a3e; /* Warna hijau gelap seperti gambar */
+            color: #fff; /* Warna teks putih */
+            font-family: 'Times New Roman', serif; /* Font yang lebih klasik */
+            letter-spacing: 1px;
+            font-size: 0.95rem;
+        }
+        .product-description p,
+        .product-sizes p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .product-sizes {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* --- Gaya Tab Deskripsi & Spesifikasi --- */
+        .product-details-tabs {
+            margin-top: 40px; /* Jarak dari tombol */
+            width: 100%;
+        }
+        .tab-header {
+            display: flex;
+            gap: 24px; /* Jarak antar 'Deskripsi' & 'Spesifikasi' */
+            border-bottom: 1px solid #e0e0e0; /* Garis abu-abu tipis di bawah */
+        }
+        
+        .tab-link {
+            background: none;
+            border: none;
+            font-size: 1.1rem; /* Ukuran font tab */
+            font-weight: 500;
+            font-family: var(--font-sans);
+            color: #888; /* Warna tab tidak aktif */
+            padding: 0 0 10px 0; /* Padding bawah untuk ruang underline */
+            cursor: pointer;
+            border-bottom: 2px solid transparent; /* Placeholder untuk border */
+            position: relative;
+            top: 1px; /* Trik agar border aktif sejajar */
+            transition: color 0.2s;
+        }
+
+        .tab-link:hover {
+            color: #1a1a1a;
+        }
+
+        .tab-link.active {
+            color: #1a1a1a; /* Warna tab aktif */
+            font-weight: 700;
+            border-bottom: 2px solid #1a1a1a; /* Garis underline hitam */
+        }
+
+        .tab-content-container {
+            padding-top: 20px; /* Jarak dari header tab ke konten */
+        }
+
+        .tab-content {
+            display: none; /* Sembunyikan semua konten by default */
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .tab-content.active {
+            display: block; /* Tampilkan hanya yang aktif */
+        }
+
+        /* Merapikan margin bawaan dari .product-sizes */
+        .tab-content .product-sizes {
+            margin-top: 0;
+        }
+
+        /* --- Appointment Modal Styles --- */
+        .appointment-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            
+            /* Sembunyikan by default */
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        /* Kelas 'show' ini akan ditambahkan oleh JavaScript */
+        .appointment-modal-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .appointment-modal-content {
+            background-color: #fff;
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            position: relative;
+            width: 90%;
+            max-width: 500px;
+            
+            /* Efek transisi pop-up */
+            transform: translateY(-20px);
+            transition: transform 0.3s ease;
+        }
+
+        .appointment-modal-overlay.show .appointment-modal-content {
+            transform: translateY(0);
+        }
+
+        .appointment-modal-content h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-family: var(--font-serif);
+            text-align: center;
+        }
+
+        .appointment-modal-content p {
+            margin-bottom: 20px;
+            color: #666;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .modal-close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: #aaa;
+            cursor: pointer;
+            line-height: 1;
+        }
+        .modal-close-btn:hover {
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            box-sizing: border-box; /* Pastikan padding tidak merusak layout */
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .btn-appointment-submit {
+            /* Menggunakan style yang sama dengan tombol appointment */
+            background-color: #3e4a3e;
+            color: #fff;
+            font-family: 'Times New Roman', serif;
+            letter-spacing: 1px;
+            font-size: 0.95rem;
+
+            /* Penyesuaian untuk tombol submit form */
+            padding: 14px 20px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .btn-appointment-submit:hover {
+            background-color: #2a332a; /* Warna hijau lebih gelap saat hover */
+        }
+
+        /* --- Wishlist Counter (Ikon Hati di Header) --- */
+        .wishlist-icon-header {
+            position: relative;
+        }
+
+        .wishlist-count {
+            position: absolute;
+            top: -8px;
+            right: -10px;
+            background-color: #ff0000; /* Warna merah */
+            color: white;
+            font-size: 0.7rem;
+            font-weight: bold;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 1;
+            padding: 1px;
+            
+            /* Sembunyikan jika angkanya 0 */
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0.5);
+            transition: all 0.2s ease;
+        }
+
+        .wishlist-count.show {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+
+        /* --- Style Tombol Favorite Saat Aktif --- */
+        .btn-favorite.active {
+            background-color: #3e4a3e; /* Warna hijau seperti 'Appointment' */
+            color: #fff; /* Teks putih */
+            border: 1px solid #3e4a3e;
+        }
+ 
+/* penutup detail product */
+        
+
 /* ==========================================================
    FOOTER
    ========================================================== */
