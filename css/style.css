@@ -520,9 +520,8 @@ html.session-visited #preloader {
             opacity: 0.3;
         }
 
-
         /* Thumbnail di bawah modal */
-        /* Thumbnail di bawah modal */
+  
         .modal-thumbnails {
             display: none; /* <-- TAMBAHKAN BARIS INI */
             
@@ -638,7 +637,7 @@ html.session-visited #preloader {
 
         .thumbnail {
             width: 100%;
-            height: 150px; /* <--- UBAH MENJADI LEBIH BESAR (misal: 120px) */
+            height: 90px; /* <--- UBAH MENJADI LEBIH BESAR (misal: 120px) */
             background-color: #00bcd4;
             /* Placeholder thumbnail */
             border-radius: 5px;
@@ -651,7 +650,7 @@ html.session-visited #preloader {
             flex: 1;
             min-width: 300px;
             /* Lebar minimum untuk responsif */
-            padding-left: 150px; /* <--- UBAH JADI LEBIH BESAR (misal: 60px) */
+            padding-left: 20px; /* <--- UBAH JADI LEBIH BESAR (misal: 60px) */
         }
 
         .action-buttons {
@@ -1382,6 +1381,14 @@ html.session-visited #preloader {
   /* --- Homepage Collection --- */
   .product-grid {
     grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+  }
+  /* --- Detail Product --- */
+  /* Memberi jarak di halaman detail, khusus desktop */
+  .product-info {
+    padding-left: 150px; /* Atur jarak sesuai keinginan (misal: 60px) */
+  }
+  .thumbnail {
+    height: 150px; /* Membuat thumbnail lebih besar di desktop */
   }
 
   /* --- Footer --- */
