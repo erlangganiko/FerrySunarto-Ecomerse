@@ -186,6 +186,29 @@ function capitalizeFirstLetter(string) {
 }
 
 /**
+ * [BARU] Helper: Mengubah format string 'dd-mm-YYYY HH-MM-SS+7' menjadi objek Date
+ */
+function parseCustomDate(dateString) {
+  // dateString = "11-11-2025 20-25-56+7"
+  const datePart = dateString.split(" ")[0]; // "11-11-2025"
+  const timePart = dateString.split(" ")[1].split("+")[0]; // "20-25-56"
+
+  const dateParts = datePart.split("-"); // [dd, mm, YYYY]
+  const timeParts = timePart.split("-"); // [HH, MM, ss]
+
+  // Format: new Date(YYYY, MM-1, DD, HH, MM, SS)
+  // Perhatian: Bulan di JavaScript dimulai dari 0 (Jan=0, Des=11)
+  return new Date(
+    dateParts[2],
+    dateParts[1] - 1,
+    dateParts[0],
+    timeParts[0],
+    timeParts[1],
+    timeParts[2]
+  );
+}
+
+/**
  * Mengisi dropdown filter (Tipe, Kategori, Collection)
  */
 function populateFilters(products) {
@@ -220,7 +243,11 @@ function populateFilters(products) {
 }
 
 /**
+ * [DIMODIFIKASI]
  * Fungsi Utama Halaman Katalog (Filter, Paginasi, Render Grid)
+ * LOGIKA FILTER DIUBAH:
+ * - "Coming Soon" sekarang memaksa filter `available: false`
+ * - "Newest" & "Oldest" mematuhi filter "Availability"
  */
 function renderProductCatalog(catalogGrid, allProductsData) {
   const availabilityFilter = document.getElementById("filter-availability");
@@ -257,9 +284,24 @@ function renderProductCatalog(catalogGrid, allProductsData) {
     const sortValue = sortBy.value;
 
     let filteredProducts = allProductsData.filter((product) => {
+      // --- [LOGIKA BARU SESUAI PERMINTAAN] ---
+      // Logika filter availability (ketersediaan) kini bergantung pada 'Sort By'
+      if (sortValue === "coming-soon") {
+        // JIKA "Coming Soon" dipilih:
+        // Abaikan filter 'Availability' dan paksa untuk hanya menampilkan
+        // produk yang TIDAK TERSEDIA (available: false).
+        if (product.available === true) return false;
+      } else {
+        // JIKA "Newest" atau "Oldest" dipilih:
+        // Patuhi filter 'Availability' seperti biasa.
+        if (availabilityValue === "in-stock" && !product.available)
+          return false;
+      }
+      // --- [AKHIR LOGIKA BARU] ---
+
+      // Filter lainnya berjalan seperti biasa
       if (searchValue && !product.name.toLowerCase().includes(searchValue))
         return false;
-      if (availabilityValue === "in-stock" && !product.available) return false;
       if (tipeValue !== "all" && product.tipe !== tipeValue) return false;
       if (categoryValue !== "all" && product.category !== categoryValue)
         return false;
@@ -268,16 +310,26 @@ function renderProductCatalog(catalogGrid, allProductsData) {
       return true;
     });
 
+    // Logika sort (sudah benar menggunakan parseCustomDate)
+    // Modifikasi kecil pada 'coming-soon'
     filteredProducts.sort((a, b) => {
+      const dateA = parseCustomDate(a.date);
+      const dateB = parseCustomDate(b.date);
+
       switch (sortValue) {
-        case "date-asc":
-          return a.date - b.date;
+        case "date-asc": // Oldest
+          return dateA - dateB;
+
         case "coming-soon":
-          if (a.available !== b.available) return a.available - b.available;
-          return b.date - a.date;
-        case "date-desc":
+          // [MODIFIKASI]
+          // Karena kita sudah memfilter HANYA `available: false`,
+          // kita tidak perlu cek `a.available !== b.available` lagi.
+          // Cukup urutkan sisanya berdasarkan tanggal terbaru.
+          return dateB - dateA;
+
+        case "date-desc": // Newest
         default:
-          return b.date - a.date;
+          return dateB - dateA;
       }
     });
 
@@ -305,6 +357,7 @@ function renderProductCatalog(catalogGrid, allProductsData) {
       });
     }
 
+    // Ini akan menampilkan jumlah produk YANG DITEMUKAN (bukan yang di layar)
     productCount.textContent = `${totalProducts} products`;
 
     renderPagination(totalPages, currentPage, (page) => {
@@ -949,7 +1002,7 @@ function setupModalGallery(imagesArray, initialIndex) {
   // Berhenti Geser
   const stopDragging = (e) => {
     const moved = e.clientX !== startX || e.clientY !== startY;
-    
+
     if (!isDragging) return;
 
     if (!moved && isZoomed) {
@@ -959,8 +1012,8 @@ function setupModalGallery(imagesArray, initialIndex) {
         isDragging = false;
       }, 0);
     }
-    
-    isDragging = false; 
+
+    isDragging = false;
     modalImage.classList.remove("grabbing");
     if (isZoomed) {
       modalImage.style.cursor = "grab";
@@ -980,7 +1033,7 @@ function setupModalGallery(imagesArray, initialIndex) {
     resetModalZoomAndPan(); // Reset zoom setiap ganti gambar di modal
 
     // [DIHAPUS] Logika update thumbnail aktif
-    
+
     // Sembunyikan panah jika hanya ada 1 gambar di modal
     if (imagesArray.length <= 1) {
       modalArrowLeft.style.display = "none";
@@ -997,7 +1050,7 @@ function setupModalGallery(imagesArray, initialIndex) {
     document.body.style.overflow = "auto"; // Kembalikan scroll body
     resetModalZoomAndPan();
     // modalThumbnailsContainer.innerHTML = ""; // <-- [DIHAPUS]
-    
+
     // Hapus event listener global agar tidak menumpuk
     document.removeEventListener("keydown", handleKeydown);
   };
@@ -1041,9 +1094,8 @@ function setupModalGallery(imagesArray, initialIndex) {
   };
   document.addEventListener("keydown", handleKeydown);
 
-
   // [DIHAPUS] Logika pembuatan thumbnail
-  
+
   // Tampilkan modal dan gambar awal
   modal.classList.add("active");
   document.body.style.overflow = "hidden"; // Hentikan scroll body

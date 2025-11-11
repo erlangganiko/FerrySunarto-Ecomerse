@@ -4,11 +4,13 @@
 :root {
   --font-sans: "Inter", sans-serif;
   --font-serif: "Playfair+Display", serif;
-  --h1 :"Bodoni Moda", serif; 
+  --h1: "Bodoni Moda", serif;
   --h2: "Bodoni Moda", serif;
-  --p:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --nav:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --cta:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --p: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --nav: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    sans-serif;
+  --cta: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    sans-serif;
 }
 * {
   margin: 0;
@@ -41,7 +43,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ==========================================================
-   PRELOADER
+   PRELOADER (DIUBAH KE GRID)
    ========================================================== */
 #preloader {
   position: fixed;
@@ -51,9 +53,9 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
   background-color: #fff;
   z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  place-items: center; /* <-- Ini cara Grid untuk justify+align center */
   opacity: 1;
   visibility: visible;
   transition: opacity 0.75s ease, visibility 0.75s ease;
@@ -86,7 +88,7 @@ html.session-visited #preloader {
 }
 
 /* ==========================================================
-   NAVBAR (Style BARU, transparan-first)
+   NAVBAR (DIUBAH KE GRID)
    ========================================================== */
 .navbar {
   position: fixed;
@@ -107,17 +109,23 @@ html.session-visited #preloader {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .navbar .container {
-  display: flex;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  /* Kita buat 2 kolom: kiri dan kanan */
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; <-- Dihapus */
   padding: 1rem;
   position: relative;
   height: 90px;
   box-sizing: border-box;
 }
 .nav-left {
-  display: flex;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  grid-auto-flow: column; /* Jajarkan itemnya (ikon) ke samping */
   align-items: center;
+  justify-self: start; /* Posisikan grup ini di kiri */
 }
 .menu-toggle {
   background: none;
@@ -131,7 +139,9 @@ html.session-visited #preloader {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  grid-auto-flow: column; /* Jajarkan itemnya ke samping */
 }
 .nav-links a {
   text-decoration: none;
@@ -160,12 +170,16 @@ html.session-visited #preloader {
   color: #666;
 }
 .nav-right {
-  justify-content: flex-end;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  grid-auto-flow: column; /* Jajarkan itemnya ke samping */
+  align-items: center;
   gap: 1.5rem;
+  justify-self: end; /* Posisikan grup ini di kanan */
 }
 
 /* ==========================================================
-   MENU OVERLAY
+   MENU OVERLAY (DIUBAH KE GRID)
    ========================================================== */
 .menu-overlay {
   position: fixed;
@@ -183,7 +197,8 @@ html.session-visited #preloader {
   transform: translateX(0);
 }
 .menu-overlay .menu-header {
-  display: flex;
+  /* (Flex) diganti display: grid */
+  display: grid;
   align-items: center;
   padding-bottom: 1rem;
   border-bottom: 1px solid #e0e0e0;
@@ -196,6 +211,7 @@ html.session-visited #preloader {
   cursor: pointer;
   font-size: 1.25rem;
   color: #1a1a1a;
+  justify-self: start; /* Pastikan tombol di kiri */
 }
 .menu-logo img {
   height: 50px;
@@ -219,8 +235,9 @@ html.session-visited #preloader {
   border-bottom: 1px solid #e0e0e0;
 }
 .menu-overlay .main-menu a {
-  display: flex;
-  justify-content: space-between;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  grid-template-columns: 1fr auto; /* Teks di kiri, ikon di kanan */
   align-items: center;
   padding: 1rem 0;
   text-decoration: none;
@@ -229,13 +246,13 @@ html.session-visited #preloader {
 }
 
 /* ==========================================================
-   HERO & COLLECTION (Style BARU untuk index.html)
+   HERO & COLLECTION (DIUBAH KE GRID)
    ========================================================== */
 .hero-static {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  place-items: center; /* <-- Cara Grid untuk justify+align center */
   text-align: center;
   height: 100vh;
   min-height: 600px;
@@ -339,9 +356,9 @@ html.session-visited #preloader {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  place-items: center; /* <-- Cara Grid untuk justify+align center */
 }
 .product-item .wishlist-icon:hover {
   color: #ff0000;
@@ -355,597 +372,522 @@ html.session-visited #preloader {
 }
 
 /* --- Judul Produk --- */
-        .product-title {
-            text-align: left;
-            /* Kita tambahkan margin-top agar tidak menabrak header (90px) */
-            margin-top: 130px; /* 90px (header) + 40px (spasi) */
-            margin-bottom: 40px;
-        }
+.product-title {
+  text-align: left;
+  /* Kita tambahkan margin-top agar tidak menabrak header (90px) */
+  margin-top: 130px; /* 90px (header) + 40px (spasi) */
+  margin-bottom: 40px;
+}
 
-        .product-title h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
+.product-title h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
 
-        .product-title p {
-            font-size: 1.1rem;
-            color: #666;
-            margin-top: 10px;
-        }
+.product-title p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 10px;
+}
 
-        /* --- Konten Utama Produk (Layout 2 Kolom) --- */
-        .product-main {
-            display: flex;
-            flex-wrap: wrap;
-            /* Agar responsif di layar kecil */
-            gap: 40px;
-            margin-bottom: 50px;
-        }
+/* --- Konten Utama Produk (DIUBAH KE GRID) --- */
+.product-main {
+  /* (Flex) diganti display: grid */
+  display: grid;
+  /* Ini adalah cara Grid untuk membuat layout responsif
+       yang sama persis dengan flex-wrap + min-width */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-bottom: 50px;
+}
 
-        /* --- Kolom Kiri: Galeri Gambar --- */
-        .product-gallery {
-            flex: 1;
-            min-width: 300px;
-            /* Lebar minimum untuk responsif */
-        }
+/* --- Kolom Kiri: Galeri Gambar (DIUBAH KE GRID) --- */
+.product-gallery {
+  /* Properti flex: 1 dan min-width: 300px tidak diperlukan lagi */
+  display: grid; /* <-- [BARU] Kita jadikan grid... */
+  grid-template-rows: auto 1fr; /* <-- [BARU] ...agar thumbnail bisa diatur */
+}
 
-        .main-image-wrapper {
-            position: relative;
-            background-color: #f9f9f9;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-            border-radius: 8px;
-            height: 500px;
-            /* Sesuaikan tinggi sesuai kebutuhan */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-style: italic;
-            color: #aaa;
-            overflow: hidden;
-            /* Menjaga panah tetap di dalam */
-        }
+.main-image-wrapper {
+  position: relative;
+  background-color: #f9f9f9;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  height: 500px;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  place-items: center; /* <-- Cara Grid untuk justify+align center */
+  font-style: italic;
+  color: #aaa;
+  overflow: hidden;
+}
 
-        /* Placeholder untuk gambar utama */
-        .main-image-placeholder {
-            width: 100%;
-            height: 100%;
-            background-color: #f0f0f0;
-        }
+/* Placeholder untuk gambar utama */
+.main-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+}
 
-            /* === MODAL GALERI GAMBAR === */
-        .modal {
-            display: none; /* Sembunyikan secara default */
-            position: fixed; /* Tetap di viewport */
-            z-index: 1000; /* Di atas semua elemen lain */
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto; /* Aktifkan scroll jika konten terlalu besar */
-            background-color: rgba(0, 0, 0, 0.9); /* Latar belakang gelap transparan */
-            justify-content: center;
-            align-items: center;
-            backdrop-filter: blur(5px); /* Efek blur pada background */
-        }
+/* === MODAL GALERI GAMBAR (DIUBAH KE GRID) === */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* (Flex) diganti display: grid */
+  /* display: grid; <-- Sebenarnya tidak perlu, tapi kita ganti saja */
+  /* place-items: center; <-- Ini tidak akan berfungsi jika display: none */
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
 
-        .modal.active {
-            display: flex; /* Tampilkan modal saat aktif */
-        }
+.modal.active {
+  /* (Flex) diganti display: grid */
+  display: grid;
+  place-items: center; /* <-- Cara Grid untuk justify+align center */
+}
 
-        .modal-content-wrapper {
-            position: relative;
-            max-width: 90vw; /* Batasi lebar modal */
-            max-height: 80vh; /* Batasi tinggi modal */
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #fefefe; /* Latar belakang putih untuk area gambar */
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            overflow: hidden; /* Penting untuk zoom/pan */
-        }
+.modal-content-wrapper {
+  position: relative;
+  max-width: 90vw;
+  max-height: 80vh;
+  margin: auto;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  place-items: center; /* <-- Cara Grid untuk justify+align center */
+  background-color: #fefefe;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
 
-        .modal-image {
-            width: 100%;
-            height: 100%;
-            object-fit: contain; /* Default: gambar fit di dalam modal */
-            transition: transform 0.3s ease-out; /* Transisi untuk zoom */
-            cursor: zoom-in;
-            user-select: none; /* Mencegah seleksi teks saat drag */
-        }
+.modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease-out;
+  cursor: zoom-in;
+  user-select: none;
+}
+.modal-image.zoomed {
+  cursor: grab;
+  object-fit: cover;
+}
+.modal-image.zoomed.grabbing {
+  cursor: grabbing;
+}
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 1001;
+}
+.close-button:hover,
+.close-button:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 24px;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  place-items: center; /* <-- Cara Grid untuk justify+align center */
+}
 
-        /* Kursor saat di-zoom */
-        .modal-image.zoomed {
-            cursor: grab;
-            object-fit: cover; /* Saat di-zoom, cover agar bisa di-pan */
-        }
+.modal-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-arrow-left {
+  left: 10px;
+}
+.modal-arrow-right {
+  right: 10px;
+}
+.modal-content-wrapper.is-zoomed .modal-arrow {
+  pointer-events: none;
+  opacity: 0.3;
+}
+.modal-thumbnails {
+  display: none; /* <-- Tetap none sesuai modifikasi Anda */
+}
+.modal-thumbnails .thumbnail-item {
+  width: 80px;
+  height: 80px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  overflow: hidden;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  place-items: center;
+}
+.modal-thumbnails .thumbnail-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal-thumbnails .thumbnail-item.active {
+  border-color: #007bff;
+}
 
-        .modal-image.zoomed.grabbing {
-            cursor: grabbing;
-        }
+@media (max-width: 768px) {
+  .modal-content-wrapper {
+    max-width: 95vw;
+    max-height: 70vh;
+  }
+  .modal-arrow {
+    padding: 8px 12px;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+  }
+  .modal-arrow-left {
+    left: 5px;
+  }
+  .modal-arrow-right {
+    right: 5px;
+  }
+  .close-button {
+    font-size: 30px;
+    top: 10px;
+    right: 15px;
+  }
+  .modal-thumbnails {
+    gap: 5px;
+    margin-top: 10px;
+  }
+  .modal-thumbnails .thumbnail-item {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .modal-thumbnails .thumbnail-item {
+    width: 50px;
+    height: 50px;
+  }
+}
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  width: 60px;
+  height: 60px;
+  font-size: 36px;
+  color: #333;
+  cursor: pointer;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  place-items: center; /* <-- Cara Grid untuk justify+align center */
+  transition: background-color 0.2s ease;
+}
 
+.arrow-left {
+  left: 10px;
+}
+.arrow-right {
+  right: 10px;
+}
+.thumbnail-gallery {
+  /* (Flex) diganti display: grid */
+  display: grid;
+  /* Kita definisikan 3 kolom untuk 3 thumbnail */
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 15px;
+  gap: 15px;
+}
+.thumbnail {
+  width: 100%;
+  height: 90px;
+  background-color: #00bcd4;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-        .close-button {
-            position: absolute;
-            top: 15px;
-            right: 35px;
-            color: #fff;
-            font-size: 40px;
-            font-weight: bold;
-            transition: 0.3s;
-            cursor: pointer;
-            z-index: 1001; /* Pastikan di atas semua */
-        }
+/* --- Kolom Kanan: Info Produk (DIUBAH KE GRID) --- */
 
-        .close-button:hover,
-        .close-button:focus {
-            color: #bbb;
-            text-decoration: none;
-            cursor: pointer;
-        }
+.product-info {
+  /* Properti flex: 1 dan min-width: 300px tidak diperlukan lagi */
+  padding-left: 20px;
+}
 
-        /* Panah navigasi di dalam modal */
-        .modal-arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            font-size: 24px;
-            user-select: none;
-            transition: background-color 0.3s ease;
-            border-radius: 50%; /* Bentuk bulat */
-            width: 40px; /* Ukuran tombol */
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.action-buttons {
+  /* (Flex) diganti display: grid */
+  display: grid;
+  /* Kita 'paksa' grid jadi 1 kolom (tumpukan) */
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 25px;
+  max-width: 350px;
+}
 
-        .modal-arrow:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
+.btn {
+  padding: 18px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.btn-favorite {
+  background-color: #d1b459;
+  color: #fff;
+  font-family: "Times New Roman", serif;
+  letter-spacing: 1px;
+  font-size: 0.95rem;
+}
+.btn-whatsapp {
+  background-color: #d1b459;
+  color: #fff;
+  font-family: "Times New Roman", serif;
+  letter-spacing: 1px;
+  font-size: 0.95rem;
+}
+.btn-appointment {
+  background-color: #3e4a3e;
+  color: #fff;
+  font-family: "Times New Roman", serif;
+  letter-spacing: 1px;
+  font-size: 0.95rem;
+}
+.product-description p,
+.product-sizes p {
+  color: #555;
+  line-height: 1.6;
+}
+.product-sizes {
+  margin-top: 20px;
+  font-weight: bold;
+}
 
-        .modal-arrow-left {
-            left: 10px;
-        }
+/* --- Gaya Tab Deskripsi & Spesifikasi (DIUBAH KE GRID) --- */
+.product-details-tabs {
+  margin-top: 40px;
+  width: 100%;
+}
+.tab-header {
+  /* (Flex) diganti display: grid */
+  display: grid;
+  grid-auto-flow: column; /* Jajarkan itemnya (tab) ke samping */
+  justify-content: start; /* Pastikan tab mulai dari kiri */
+  gap: 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.tab-link {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: var(--font-sans);
+  color: #888;
+  padding: 0 0 10px 0;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  position: relative;
+  top: 1px;
+  transition: color 0.2s;
+}
+.tab-link:hover {
+  color: #1a1a1a;
+}
+.tab-link.active {
+  color: #1a1a1a;
+  font-weight: 700;
+  border-bottom: 2px solid #1a1a1a;
+}
+.tab-content-container {
+  padding-top: 20px;
+}
+.tab-content {
+  display: none;
+  line-height: 1.6;
+  color: #555;
+}
+.tab-content.active {
+  display: block;
+}
+.tab-content .product-sizes {
+  margin-top: 0;
+}
 
-        .modal-arrow-right {
-            right: 10px;
-        }
+/* --- Appointment Modal (DIUBAH KE GRID) --- */
+.appointment-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* (Flex) diganti display: grid */
+  display: grid;
+  place-items: center; /* <-- Cara Grid untuk justify+align center */
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.appointment-modal-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+.appointment-modal-content {
+  background-color: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+}
+.appointment-modal-overlay.show .appointment-modal-content {
+  transform: translateY(0);
+}
+.appointment-modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: var(--font-serif);
+  text-align: center;
+}
+.appointment-modal-content p {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #aaa;
+  cursor: pointer;
+  line-height: 1;
+}
+.modal-close-btn:hover {
+  color: #333;
+}
+.form-group {
+  margin-bottom: 1.2rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+.btn-appointment-submit {
+  background-color: #3e4a3e;
+  color: #fff;
+  font-family: "Times New Roman", serif;
+  letter-spacing: 1px;
+  font-size: 0.95rem;
+  padding: 14px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.btn-appointment-submit:hover {
+  background-color: #2a332a;
+}
 
-        /* Sembunyikan panah saat gambar di-zoom */
-        .modal-content-wrapper.is-zoomed .modal-arrow {
-            pointer-events: none;
-            opacity: 0.3;
-        }
-
-        /* Thumbnail di bawah modal */
-  
-        .modal-thumbnails {
-            display: none; /* <-- TAMBAHKAN BARIS INI */
-            
-            /* Baris di bawah ini adalah style asli, 
-              sekarang tidak aktif karena 'display: none' */
-            /*
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 15px;
-            flex-wrap: wrap;
-            max-width: 90vw;
-            */
-        }
-
-        .modal-thumbnails .thumbnail-item {
-            width: 80px;
-            height: 80px;
-            border: 2px solid transparent;
-            cursor: pointer;
-            transition: border-color 0.2s ease;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .modal-thumbnails .thumbnail-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .modal-thumbnails .thumbnail-item.active {
-            border-color: #007bff; /* Warna border untuk thumbnail aktif */
-        }
-
-        /* Media Queries untuk responsivitas modal */
-        @media (max-width: 768px) {
-            .modal-content-wrapper {
-                max-width: 95vw;
-                max-height: 70vh;
-            }
-            .modal-arrow {
-                padding: 8px 12px;
-                font-size: 20px;
-                width: 35px;
-                height: 35px;
-            }
-            .modal-arrow-left {
-                left: 5px;
-            }
-            .modal-arrow-right {
-                right: 5px;
-            }
-            .close-button {
-                font-size: 30px;
-                top: 10px;
-                right: 15px;
-            }
-            .modal-thumbnails {
-                gap: 5px;
-                margin-top: 10px;
-            }
-            .modal-thumbnails .thumbnail-item {
-                width: 60px;
-                height: 60px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .modal-thumbnails .thumbnail-item {
-                width: 50px;
-                height: 50px;
-            }
-        }
-        .nav-arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: transparent; /* Ubah menjadi transparan penuh */
-            border: none;
-            width: 60px; /* PERBESAR: Dari 40px menjadi 60px */
-            height: 60px; /* PERBESAR: Dari 40px menjadi 60px */
-            font-size: 36px; /* PERBESAR: Dari 20px menjadi 36px */
-            color: #333; /* Warna panah agar terlihat */
-            cursor: pointer;
-            display: flex; /* Untuk memposisikan ikon di tengah tombol */
-            justify-content: center;
-            align-items: center;
-            transition: background-color 0.2s ease; /* Transisi halus saat hover */
-        }
-
-        /*.nav-arrow:hover {
-            background-color: rgba(0, 0, 0, 0.1); 
-            border-radius: 50%; 
-        }
-        */
-        .arrow-left {
-            left: 10px;
-        }
-
-        .arrow-right {
-            right: 10px;
-        }
-
-        .thumbnail-gallery {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 15px;
-            gap: 15px;
-        }
-
-        .thumbnail {
-            width: 100%;
-            height: 90px; /* <--- UBAH MENJADI LEBIH BESAR (misal: 120px) */
-            background-color: #00bcd4;
-            /* Placeholder thumbnail */
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        /* --- Kolom Kanan: Info Produk --- */
-        
-        .product-info {
-            flex: 1;
-            min-width: 300px;
-            /* Lebar minimum untuk responsif */
-            padding-left: 20px; /* <--- UBAH JADI LEBIH BESAR (misal: 60px) */
-        }
-
-        .action-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 25px;
-            max-width: 350px; /* <--- TAMBAHKAN BARIS INI */
-        }
-
-       .btn {
-            /* Padding disesuaikan agar tombol terlihat lebih tinggi dan mengikuti gambar */
-            padding: 18px 25px; /* Disesuaikan untuk tinggi dan lebar */
-            border: none;
-            border-radius: 30px; /* Masih sama untuk bentuk rounded */
-            font-size: 1rem; /* Sedikit diperbesar dari 0.9rem */
-            font-weight: bold;
-            cursor: pointer;
-            text-align: center;
-            text-transform: uppercase;
-            /* Tambahkan efek bayangan halus untuk memperkuat tampilan 3D */
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-            transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transisi saat hover/klik */
-        }
-
-        .btn:active {
-            transform: translateY(1px); /* Efek tombol tertekan */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .btn-favorite { /* Ini akan menjadi "SAVE TO LOOKBAG" */
-            background-color: #d1b459; /* Warna kuning kecoklatan seperti gambar */
-            color: #fff; /* Warna teks putih */
-            font-family: 'Times New Roman', serif; /* Font yang lebih klasik */
-            letter-spacing: 1px; /* Sedikit spasi antar huruf */
-            font-size: 0.95rem; /* Sesuaikan ukuran font jika perlu */
-        }
-
-        .btn-whatsapp { /* Ini akan menjadi "CHAT VIA WHATSAPP" */
-            background-color: #d1b459; /* Warna kuning kecoklatan yang sama */
-            color: #fff; /* Warna teks putih */
-            font-family: 'Times New Roman', serif; /* Font yang lebih klasik */
-            letter-spacing: 1px;
-            font-size: 0.95rem;
-        }
-
-        .btn-appointment { /* Ini akan menjadi "APPOINTMENT" */
-            background-color: #3e4a3e; /* Warna hijau gelap seperti gambar */
-            color: #fff; /* Warna teks putih */
-            font-family: 'Times New Roman', serif; /* Font yang lebih klasik */
-            letter-spacing: 1px;
-            font-size: 0.95rem;
-        }
-        .product-description p,
-        .product-sizes p {
-            color: #555;
-            line-height: 1.6;
-        }
-
-        .product-sizes {
-            margin-top: 20px;
-            font-weight: bold;
-        }
-
-        /* --- Gaya Tab Deskripsi & Spesifikasi --- */
-        .product-details-tabs {
-            margin-top: 40px; /* Jarak dari tombol */
-            width: 100%;
-        }
-        .tab-header {
-            display: flex;
-            gap: 24px; /* Jarak antar 'Deskripsi' & 'Spesifikasi' */
-            border-bottom: 1px solid #e0e0e0; /* Garis abu-abu tipis di bawah */
-        }
-        
-        .tab-link {
-            background: none;
-            border: none;
-            font-size: 1.1rem; /* Ukuran font tab */
-            font-weight: 500;
-            font-family: var(--font-sans);
-            color: #888; /* Warna tab tidak aktif */
-            padding: 0 0 10px 0; /* Padding bawah untuk ruang underline */
-            cursor: pointer;
-            border-bottom: 2px solid transparent; /* Placeholder untuk border */
-            position: relative;
-            top: 1px; /* Trik agar border aktif sejajar */
-            transition: color 0.2s;
-        }
-
-        .tab-link:hover {
-            color: #1a1a1a;
-        }
-
-        .tab-link.active {
-            color: #1a1a1a; /* Warna tab aktif */
-            font-weight: 700;
-            border-bottom: 2px solid #1a1a1a; /* Garis underline hitam */
-        }
-
-        .tab-content-container {
-            padding-top: 20px; /* Jarak dari header tab ke konten */
-        }
-
-        .tab-content {
-            display: none; /* Sembunyikan semua konten by default */
-            line-height: 1.6;
-            color: #555;
-        }
-
-        .tab-content.active {
-            display: block; /* Tampilkan hanya yang aktif */
-        }
-
-        /* Merapikan margin bawaan dari .product-sizes */
-        .tab-content .product-sizes {
-            margin-top: 0;
-        }
-
-        /* --- Appointment Modal Styles --- */
-        .appointment-modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            
-            /* Sembunyikan by default */
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-
-        /* Kelas 'show' ini akan ditambahkan oleh JavaScript */
-        .appointment-modal-overlay.show {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .appointment-modal-content {
-            background-color: #fff;
-            padding: 2.5rem 2rem;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            position: relative;
-            width: 90%;
-            max-width: 500px;
-            
-            /* Efek transisi pop-up */
-            transform: translateY(-20px);
-            transition: transform 0.3s ease;
-        }
-
-        .appointment-modal-overlay.show .appointment-modal-content {
-            transform: translateY(0);
-        }
-
-        .appointment-modal-content h2 {
-            margin-top: 0;
-            margin-bottom: 10px;
-            font-family: var(--font-serif);
-            text-align: center;
-        }
-
-        .appointment-modal-content p {
-            margin-bottom: 20px;
-            color: #666;
-            font-size: 0.9rem;
-            text-align: center;
-        }
-
-        .modal-close-btn {
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            background: none;
-            border: none;
-            font-size: 2rem;
-            color: #aaa;
-            cursor: pointer;
-            line-height: 1;
-        }
-        .modal-close-btn:hover {
-            color: #333;
-        }
-
-        .form-group {
-            margin-bottom: 1.2rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 6px;
-            font-weight: 500;
-            font-size: 0.9rem;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px 12px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-family: var(--font-sans);
-            font-size: 1rem;
-            box-sizing: border-box; /* Pastikan padding tidak merusak layout */
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 80px;
-        }
-
-        .btn-appointment-submit {
-            /* Menggunakan style yang sama dengan tombol appointment */
-            background-color: #3e4a3e;
-            color: #fff;
-            font-family: 'Times New Roman', serif;
-            letter-spacing: 1px;
-            font-size: 0.95rem;
-
-            /* Penyesuaian untuk tombol submit form */
-            padding: 14px 20px;
-            width: 100%;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-
-        .btn-appointment-submit:hover {
-            background-color: #2a332a; /* Warna hijau lebih gelap saat hover */
-        }
-
-        /* --- Wishlist Counter (Ikon Hati di Header) --- */
-        .wishlist-icon-header {
-            position: relative;
-        }
-
-        .wishlist-count {
-            position: absolute;
-            top: -8px;
-            right: -10px;
-            background-color: #ff0000; /* Warna merah */
-            color: white;
-            font-size: 0.7rem;
-            font-weight: bold;
-            border-radius: 50%;
-            width: 18px;
-            height: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            line-height: 1;
-            padding: 1px;
-            
-            /* Sembunyikan jika angkanya 0 */
-            opacity: 0;
-            visibility: hidden;
-            transform: scale(0.5);
-            transition: all 0.2s ease;
-        }
-
-        .wishlist-count.show {
-            opacity: 1;
-            visibility: visible;
-            transform: scale(1);
-        }
-
-        /* --- Style Tombol Favorite Saat Aktif --- */
-        .btn-favorite.active {
-            background-color: #3e4a3e; /* Warna hijau seperti 'Appointment' */
-            color: #fff; /* Teks putih */
-            border: 1px solid #3e4a3e;
-        }
- 
+/* --- Wishlist Counter (DIUBAH KE GRID) --- */
+.wishlist-icon-header {
+  position: relative;
+}
+.wishlist-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #ff0000;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  place-items: center; /* <-- Cara Grid untuk justify+align center */
+  line-height: 1;
+  padding: 1px;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.5);
+  transition: all 0.2s ease;
+}
+.wishlist-count.show {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.btn-favorite.active {
+  background-color: #3e4a3e;
+  color: #fff;
+  border: 1px solid #3e4a3e;
+}
 /* penutup detail product */
-        
 
 /* ==========================================================
-   FOOTER
+   FOOTER (DIUBAH KE GRID)
    ========================================================== */
-
-/* --- Footer Sederhana (untuk index.html) --- */
 .footer-simple {
   text-align: center;
   padding: 2rem 1rem;
@@ -955,8 +897,6 @@ html.session-visited #preloader {
   font-size: 0.9rem;
   color: #666;
 }
-
-/* --- Footer Lengkap (untuk i-catalog.html) --- */
 .main-footer {
   background-color: #fff;
   color: #1a1a1a;
@@ -968,7 +908,7 @@ html.session-visited #preloader {
   max-width: 1400px;
 }
 .footer-grid {
-  display: grid;
+  display: grid; /* <-- Ini sudah pakai Grid, tidak diubah */
   grid-template-columns: 1fr;
   gap: 2.5rem;
   margin-bottom: 3rem;
@@ -1000,7 +940,6 @@ html.session-visited #preloader {
   margin-left: 0.3rem;
   opacity: 0.7;
 }
-/* Newsletter Form */
 .newsletter-form .input-wrapper {
   position: relative;
   margin-bottom: 1rem;
@@ -1046,10 +985,10 @@ html.session-visited #preloader {
   background-color: #555;
   border-color: #555;
 }
-/* Footer Accordion Styles */
 .footer-column .has-submenu > a {
-  display: flex;
-  justify-content: space-between;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  grid-template-columns: 1fr auto; /* Teks di kiri, ikon di kanan */
   align-items: center;
   width: 100%;
 }
@@ -1078,13 +1017,14 @@ html.session-visited #preloader {
 .footer-submenu li a:hover {
   color: #1a1a1a;
 }
-/* Footer Bottom */
+
+/* Footer Bottom (DIUBAH KE GRID) */
 .footer-bottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  justify-items: center; /* <-- Ini cara Grid untuk align-items: center */
   text-align: center;
+  gap: 1rem; /* <-- Menggantikan margin-bottom pada .footer-logo */
   padding-top: 2rem;
   font-size: 0.8rem;
   color: #1a1a1a;
@@ -1093,7 +1033,7 @@ html.session-visited #preloader {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 0.1em;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; <-- Dihapus, diganti 'gap' di parent */
 }
 .footer-region a {
   text-decoration: none;
@@ -1106,8 +1046,6 @@ html.session-visited #preloader {
 /* ==========================================================
    HALAMAN KATALOG (i-catalog.html)
    ========================================================== */
-
-/* Catalog Page Specific Styles */
 .catalog-section {
   padding-top: 8rem;
   max-width: 1200px;
@@ -1123,12 +1061,14 @@ html.session-visited #preloader {
   letter-spacing: 0.05em;
   margin-bottom: 1.5rem;
 }
-/* CSS BARU (Filter berkumpul di kiri) */
+
+/* !!! PENTING: BAGIAN INI TETAP MENGGUNAKAN FLEX !!! */
+/* Mengganti ini ke Grid akan merusak layout 'wrapping' */
 .catalog-header {
   display: flex;
-  flex-wrap: wrap; /* Izinkan filter-grup turun baris */
-  align-items: center; /* Jaga alignment vertikal */
-  gap: 1rem; /* Jarak 1rem antar semua item */
+  flex-wrap: wrap; /* <-- 'flex-wrap' adalah alasan kita tetap pakai flex */
+  align-items: center;
+  gap: 1rem;
   padding: 1rem 0;
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 2rem;
@@ -1138,7 +1078,8 @@ html.session-visited #preloader {
   text-decoration: none;
   color: #1a1a1a;
 }
-/* Search Overlay Styles */
+
+/* Search Overlay (DIUBAH KE GRID) */
 .search-overlay {
   position: fixed;
   top: 0;
@@ -1156,12 +1097,14 @@ html.session-visited #preloader {
   transform: translateY(0);
 }
 .search-overlay .container {
-  display: flex;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  grid-template-columns: 1fr auto; /* Input 1fr, Tombol auto */
   align-items: center;
   gap: 1rem;
 }
 #catalog-search-input {
-  flex-grow: 1;
+  flex-grow: 1; /* <-- Dihapus */
   border: none;
   border-bottom: 2px solid #ccc;
   padding: 0.75rem 0.25rem;
@@ -1183,32 +1126,32 @@ html.session-visited #preloader {
 .search-close-btn:hover {
   color: #1a1a1a;
 }
-/* CSS BARU (Hanya sebagai wrapper) */
+
+/* !!! PENTING: BAGIAN INI TETAP MENGGUNAKAN FLEX !!! */
 .filters {
   display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Izinkan filter-item di dalamnya turun baris */
-  gap: 1rem; /* Jarak 1rem antar filter-item */
+  flex-wrap: wrap; /* <-- 'flex-wrap' adalah alasan kita tetap pakai flex */
+  gap: 1rem;
 }
-/* CSS BARU (Gabung dengan filter lain) */
 .sorting {
   display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Jaga-jaga jika sort dan count perlu turun baris */
-  gap: 1rem; /* Jarak 1rem (sesuai permintaan) */
+  flex-wrap: wrap; /* <-- 'flex-wrap' adalah alasan kita tetap pakai flex */
+  gap: 1rem;
 }
 .filter-item,
 .sort-item {
-  display: flex;
+  display: flex; /* <-- Biarkan flex untuk menata label + select */
   align-items: center;
   gap: 0.5rem;
 }
 .product-count {
   color: #666;
-  white-space: nowrap; /* Mencegah "0 products" terpotong */
+  white-space: nowrap;
 }
 .product-grid-catalog {
-  display: grid;
+  display: grid; /* <-- Ini sudah pakai Grid, tidak diubah */
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
@@ -1217,10 +1160,9 @@ html.session-visited #preloader {
   text-decoration: none;
   color: #1a1a1a;
 }
-/* KODE BARU DENGAN 9:16 (Portrait) */
 .product-item-catalog img {
   width: 100%;
-  height: auto; /* Biarkan height otomatis */
+  height: auto;
   aspect-ratio: 9 / 16;
   object-fit: cover;
   display: block;
@@ -1230,9 +1172,8 @@ html.session-visited #preloader {
   margin: 0.5rem 0;
   font-size: 0.9rem;
   line-height: 1.4;
-  text-align: center; /* Teks nama produk di tengah */
+  text-align: center;
 }
-/* Wishlist Icon Styles */
 .wishlist-icon {
   position: absolute;
   top: 12px;
@@ -1245,9 +1186,9 @@ html.session-visited #preloader {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  place-items: center; /* <-- Cara Grid untuk justify+align center */
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 .wishlist-icon:hover {
@@ -1267,15 +1208,17 @@ html.session-visited #preloader {
 .wishlist-icon.active .fas.fa-heart {
   display: inline-block;
 }
-/* Pagination Styles */
+/* Pagination (DIUBAH KE GRID) */
 .pagination-controls {
-  display: flex;
+  /* (Flex) diganti display: grid */
+  display: grid;
+  grid-auto-flow: column; /* Jajarkan itemnya ke samping */
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   margin-top: 2.5rem;
   padding-bottom: 2rem;
-  flex-wrap: wrap; /* Izinkan tombol turun baris */
+  flex-wrap: wrap; /* <-- Dihapus */
 }
 .pagination-controls button {
   background-color: #fff;
@@ -1286,7 +1229,7 @@ html.session-visited #preloader {
   font-size: 0.9rem;
   border-radius: 4px;
   transition: background-color 0.2s, color 0.2s;
-  height: 40px; /* Samakan tinggi tombol */
+  height: 40px;
 }
 .pagination-controls button:hover:not(:disabled) {
   background-color: #f0f0f0;
@@ -1301,7 +1244,6 @@ html.session-visited #preloader {
   color: #ccc;
   cursor: not-allowed;
 }
-/* Pagination Skip */
 .pagination-skip-input {
   height: 40px;
   width: 80px;
@@ -1335,31 +1277,24 @@ html.session-visited #preloader {
 
 /* ==========================================================
    ==========================================================
-   AREA MEDIA QUERY (SUDAH DIKUMPULKAN & DIBERSIHKAN)
+   AREA MEDIA QUERY (DIUBAH UNTUK GRID)
    ==========================================================
    ========================================================== */
-
-/* ----------------------------------------------------------
-   DEKSTOP BESAR (min-width: 1024px)
-   ---------------------------------------------------------- */
 @media (min-width: 1024px) {
   .footer-grid {
     gap: 3rem;
   }
 }
 
-/* ----------------------------------------------------------
-   TABLET & DESKTOP (min-width: 768px)
-   ---------------------------------------------------------- */
 @media (min-width: 768px) {
   /* --- Navbar --- */
   .nav-left {
-    flex-grow: 1;
-    justify-content: flex-start;
+    flex-grow: 1; /* <-- Dihapus */
+    justify-content: flex-start; /* <-- Dihapus */
   }
   .nav-links.nav-right {
-    flex-grow: 1;
-    justify-content: flex-end;
+    flex-grow: 1; /* <-- Dihapus */
+    justify-content: flex-end; /* <-- Dihapus */
   }
   .search-icon-desktop {
     display: block;
@@ -1368,7 +1303,7 @@ html.session-visited #preloader {
     display: none;
   }
   .nav-logo {
-    flex-grow: 0;
+    flex-grow: 0; /* <-- Dihapus */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -1385,15 +1320,14 @@ html.session-visited #preloader {
 
   /* --- Homepage Collection --- */
   .product-grid {
-    grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+    grid-template-columns: repeat(4, 1fr);
   }
   /* --- Detail Product --- */
-  /* Memberi jarak di halaman detail, khusus desktop */
   .product-info {
-    padding-left: 150px; /* Atur jarak sesuai keinginan (misal: 60px) */
+    padding-left: 150px;
   }
   .thumbnail {
-    height: 150px; /* Membuat thumbnail lebih besar di desktop */
+    height: 150px;
   }
 
   /* --- Footer --- */
@@ -1402,17 +1336,26 @@ html.session-visited #preloader {
     gap: 2rem;
   }
   .footer-bottom {
-    flex-direction: row;
-    justify-content: space-between;
+    /* (Flex) diganti display: grid */
+    display: grid;
+    /* Kita buat 3 kolom: kiri (sosmed), tengah (logo), kanan (region) */
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    gap: 0; /* Reset gap dari mobile */
+  }
+  .footer-socials {
+    justify-self: start; /* Posisikan di kiri */
   }
   .footer-logo {
     margin: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static; /* <-- Hapus 'absolute' dari style lama */
+    transform: none; /* <-- Hapus 'transform' dari style lama */
+    justify-self: center; /* Posisikan di tengah */
   }
   .footer-region {
-    margin-left: auto;
+    margin-left: auto; /* <-- Dihapus */
+    justify-self: end; /* Posisikan di kanan */
   }
 
   /* --- Katalog --- */
@@ -1421,13 +1364,10 @@ html.session-visited #preloader {
   }
 }
 
-/* ----------------------------------------------------------
-   MOBILE (max-width: 767px)
-   ---------------------------------------------------------- */
 @media (max-width: 767px) {
   /* --- Navbar --- */
   .nav-links.nav-right {
-    flex-grow: 0;
+    flex-grow: 0; /* <-- Dihapus */
   }
   .search-icon-mobile {
     display: block;
@@ -1441,13 +1381,13 @@ html.session-visited #preloader {
     transform: translateX(-50%);
   }
   .nav-left {
-    flex-grow: 0;
+    flex-grow: 0; /* <-- Dihapus */
   }
   .nav-left a {
-    color: #fff; /* Default PUTIH (untuk navbar baru) */
+    color: #fff;
   }
   .navbar.scrolled .nav-left a {
-    color: #1a1a1a; /* Kembali hitam saat scroll */
+    color: #1a1a1a;
   }
   .menu-toggle {
     margin-right: 1rem;
@@ -1467,7 +1407,7 @@ html.session-visited #preloader {
 
   /* --- Katalog --- */
   .catalog-header {
-    flex-direction: column;
+    flex-direction: column; /* <-- Ini style Flex, tapi kita biarkan */
     align-items: flex-start;
     gap: 1rem;
   }
@@ -1480,24 +1420,33 @@ html.session-visited #preloader {
     width: 100%;
     justify-content: space-between;
   }
+
+  /* --- Paginasi (Perbaikan untuk Grid) --- */
+  .pagination-controls {
+    /* Ubah dari 'column' menjadi 'row' dan biarkan wrapping */
+    grid-auto-flow: row;
+    justify-content: center;
+    /* Kita harus definisikan kolom agar bisa wrap */
+    grid-template-columns: repeat(auto-fit, minmax(40px, auto));
+  }
 }
 
-/* ----------------------------------------------------------
-   MOBILE KECIL (max-width: 480px)
-   ---------------------------------------------------------- */
 @media (max-width: 480px) {
-  /* --- Paginasi Katalog --- */
+  /* --- Paginasi Katalog (Perbaikan untuk Grid) --- */
   .pagination-controls {
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(40px, auto));
   }
   .pagination-skip-input {
-    flex-basis: 100%;
+    flex-basis: 100%; /* <-- Dihapus */
+    width: 100%;
     margin-left: 0;
-    order: 10;
+    order: 10; /* <-- Dihapus */
+    grid-column: 1 / -1; /* <-- [BARU] Buat jadi 1 baris penuh */
   }
   .pagination-skip-button {
-    flex-basis: 100%;
+    flex-basis: 100%; /* <-- Dihapus */
     margin-left: 0;
-    order: 11;
+    order: 11; /* <-- Dihapus */
+    grid-column: 1 / -1; /* <-- [BARU] Buat jadi 1 baris penuh */
   }
 }
