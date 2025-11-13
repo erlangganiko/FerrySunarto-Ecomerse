@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ferry Sunarto E-Catalogue</title>
+    <title>Collections | Ferry Sunarto</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -136,53 +136,13 @@
     </div>
 
     <main>
-      <section class="catalog-section container">
+      <section class="catalog-section container transition-page-wrapper">
         <div class="breadcrumbs"></div>
-        <h1 class="catalog-title">Ready-to-Wear</h1>
-        <div class="catalog-header">
-          <div class="filters">
-            <div class="filter-item">
-              <label for="filter-availability">Availability:</label>
-              <select id="filter-availability">
-                <option value="all">All</option>
-                <option value="in-stock">In Stock</option>
-              </select>
-            </div>
-            <div class="filter-item">
-              <label for="filter-tipe">Tipe:</label>
-              <select id="filter-tipe">
-                <option value="all">All</option>
-              </select>
-            </div>
-            <div class="filter-item">
-              <label for="filter-category">Kategori:</label>
-              <select id="filter-category">
-                <option value="all">All</option>
-              </select>
-            </div>
-            <div class="filter-item">
-              <label for="filter-collection">Collection:</label>
-              <select id="filter-collection">
-                <option value="all">All</option>
-              </select>
-            </div>
-          </div>
-          <div class="sorting">
-            <div class="sort-item">
-              <label for="sort-by">Sort by:</label>
-              <select id="sort-by">
-                <option value="date-desc">Newest</option>
-                <option value="date-asc">Oldest</option>
-                <option value="coming-soon">Coming Soon</option>
-              </select>
-            </div>
-            <span class="product-count">0 products</span>
-          </div>
+        <h1 class="transition-title"></h1>
+
+        <div class="transition-grid" id="transition-grid">
+          <p style="grid-column: 1 / -1; text-align: center">Loading...</p>
         </div>
-
-        <div class="product-grid-catalog"></div>
-
-        <div class="pagination-controls" id="pagination-controls"></div>
       </section>
     </main>
 

@@ -10,13 +10,20 @@ document.addEventListener("DOMContentLoaded", () => {
     loadFeaturedProducts();
   }
 
-  // 3. Cek apakah kita di Halaman Katalog
-  if (document.querySelector(".catalog-section")) {
+  // [BARU] 3. Cek apakah kita di Halaman Transisi
+  if (document.querySelector(".transition-grid")) {
+    initializeTransitionPage();
+  }
+
+  // 4. Cek apakah kita di Halaman Katalog (Pastikan bukan halaman transisi)
+  if (
+    document.querySelector(".catalog-section") &&
+    !document.querySelector(".transition-grid")
+  ) {
     initializeAppProductPages();
   }
 
-  // 4. Cek apakah kita di Halaman Detail
-  //    (Kita gunakan '.product-main' karena itu unik untuk detail-barang.html)
+  // 5. Cek apakah kita di Halaman Detail
   if (document.querySelector(".product-main")) {
     initializeProductDetail();
   }
@@ -44,8 +51,106 @@ window.onload = function () {
 };
 
 // ==========================================================
-// FUNGSI UMUM (Gabungan)
+// FUNGSI UMUM (Gabungan & Helpers)
 // ==========================================================
+
+/**
+ * Helper: Kapitalisasi huruf pertama (Modifikasi: memastikan sisa string lowercased)
+ */
+function capitalizeFirstLetter(string) {
+  if (!string) return "";
+  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+
+/**
+ * Mengambil koleksi unik dari data produk dan mengelompokkannya berdasarkan tipe (dari products.json).
+ * Digunakan untuk mengisi menu utama.
+ */
+function getUniqueCollectionsByTipe(products) {
+  const collections = {
+    pria: new Set(),
+    wanita: new Set(),
+  };
+
+  products.forEach((product) => {
+    const tipe = product.tipe;
+    const collection = product.collection;
+    if (tipe && collection) {
+      if (tipe === "pria") collections.pria.add(collection);
+      if (tipe === "wanita") collections.wanita.add(collection);
+    }
+  });
+
+  return collections;
+}
+
+/**
+ * [MODIFIED] Menambahkan logika untuk membangun menu dinamis berdasarkan koleksi.
+ */
+async function initializeMenuCollections() {
+  const womenMenuItem = document.querySelector(
+    '.main-menu li[data-tipe="wanita"]'
+  );
+  const menMenuItem = document.querySelector('.main-menu li[data-tipe="pria"]');
+
+  if (!womenMenuItem || !menMenuItem) return;
+
+  try {
+    const response = await fetch("products.json");
+    if (!response.ok) throw new Error("Gagal memuat data produk untuk menu.");
+    const allProductsData = await response.json();
+
+    const collections = getUniqueCollectionsByTipe(allProductsData);
+
+    // Fungsi helper untuk membuat submenu
+    function createSubmenu(tipe, collectionsSet, menuItem) {
+      const ul = document.createElement("ul");
+      ul.className = "footer-submenu submenu-dynamic";
+
+      // [MODIFIKASI PENTING]: Link 'All Collections' diarahkan ke halaman transisi
+      ul.insertAdjacentHTML(
+        "beforeend",
+        `<li><a href="transition.html?tipe=${tipe}">All Collections</a></li>`
+      );
+
+      // Tambahkan koleksi unik (ini tetap mengarah ke catalog dengan filter collection)
+      [...collectionsSet].sort().forEach((collection) => {
+        const capitalizedCollection = capitalizeFirstLetter(collection);
+        ul.insertAdjacentHTML(
+          "beforeend",
+          `<li><a href="i-catalog.html?tipe=${tipe}&collection=${collection}">${capitalizedCollection} Collection</a></li>`
+        );
+      });
+      menuItem.appendChild(ul);
+
+      // Ubah perilaku klik pada menu utama (agar tidak langsung ke catalog)
+      const mainLink = menuItem.querySelector("a");
+      mainLink.removeAttribute("href"); // Hapus href lama
+
+      // Ganti ikon chevron-right menjadi panah bawah untuk menunjukkan itu adalah toggle
+      const icon = mainLink.querySelector(".fa-chevron-right");
+      if (icon) {
+        icon.classList.remove("fa-chevron-right");
+        icon.classList.add("fa-chevron-down");
+      }
+
+      mainLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        // Toggle submenu visibility
+        ul.classList.toggle("open");
+        mainLink.classList.toggle("active");
+        menuItem.classList.toggle("open"); // Tambahkan kelas open ke LI
+        // Toggle panah rotasi
+        if (icon) icon.classList.toggle("fa-rotate-180");
+      });
+    }
+
+    createSubmenu("wanita", collections.wanita, womenMenuItem);
+    createSubmenu("pria", collections.pria, menMenuItem);
+  } catch (error) {
+    console.error("Error membangun menu koleksi:", error);
+  }
+}
 
 /**
  * Menjalankan skrip umum seperti navbar, menu, footer, dan search.
@@ -61,10 +166,11 @@ function initializeCommonFeatures() {
       const currentScrollY = window.scrollY;
 
       // Tentukan apakah navbar harus 'scrolled' (background putih)
-      // Di halaman katalog atau detail, navbar SELALU 'scrolled'
+      // Di halaman katalog, detail, atau transisi, navbar SELALU 'scrolled'
       if (
         document.querySelector(".catalog-section") ||
-        document.querySelector(".product-main") // Tambahkan cek halaman detail
+        document.querySelector(".product-main") ||
+        document.querySelector(".transition-grid")
       ) {
         navbar.classList.add("scrolled");
       } else {
@@ -144,6 +250,119 @@ function initializeCommonFeatures() {
 
   // --- Update Wishlist Counter di Header ---
   updateWishlistCounter();
+
+  // [MODIFIED] Panggil fungsi inisialisasi menu di sini
+  initializeMenuCollections();
+}
+
+// ==========================================================
+// FUNGSI KHUSUS HALAMAN TRANSISI (transition.html)
+// ==========================================================
+
+async function initializeTransitionPage() {
+  const transitionGrid = document.getElementById("transition-grid");
+  const transitionTitle = document.querySelector(".transition-title");
+
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const tipe = params.get("tipe"); // tipe: pria atau wanita
+
+    if (!tipe) {
+      transitionGrid.innerHTML =
+        "<p style='grid-column: 1 / -1; text-align: center; color: red;'>Error: Tipe produk tidak ditemukan di URL.</p>";
+      return;
+    }
+
+    // 1. Ambil data dari transition.json
+    const response = await fetch("transition.json");
+    if (!response.ok) throw new Error("Gagal memuat data transisi.");
+    const transitionData = await response.json();
+
+    const relevantData = transitionData.find((d) => d.tipe === tipe);
+
+    if (!relevantData) {
+      transitionGrid.innerHTML = `<p style='grid-column: 1 / -1; text-align: center; color: red;'>Data untuk tipe "${tipe}" tidak ditemukan di transition.json.</p>`;
+      return;
+    }
+
+    // 2. Update Judul & Breadcrumbs
+    const typeLabel = tipe === "wanita" ? "WOMEN" : "MEN";
+    transitionTitle.textContent = typeLabel;
+    updateBreadcrumbs(tipe, "all", "transition");
+
+    // 3. Gabungkan Collections dan Categories, lalu render sebagai Tiles
+    const tilesToRender = [];
+
+    // Prioritaskan collections
+    if (relevantData.collection) {
+      relevantData.collection.forEach((item) => {
+        // Link diarahkan ke catalog dengan filter collection
+        const link = `i-catalog.html?tipe=${tipe}&collection=${item.name
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")}`;
+        tilesToRender.push({
+          name: item.name,
+          subtitle: "EXPLORE COLLECTION",
+          image: item.image,
+          link: link,
+          type: "collection",
+        });
+      });
+    }
+
+    // Tambahkan categories
+    if (relevantData.category) {
+      relevantData.category.forEach((item) => {
+        // Link diarahkan ke catalog dengan filter kategori
+        const link = `i-catalog.html?tipe=${tipe}&kategori=${item.name
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")}`;
+        tilesToRender.push({
+          name: item.name,
+          subtitle: "SHOP CATEGORY",
+          image: item.image,
+          link: link,
+          type: "category",
+        });
+      });
+    }
+
+    renderImageTiles(transitionGrid, tilesToRender);
+  } catch (error) {
+    console.error("Error memuat halaman transisi:", error);
+    transitionGrid.innerHTML = `<p style='grid-column: 1 / -1; text-align: center; color: red;'>Gagal memuat data: ${error.message}</p>`;
+  }
+}
+
+/**
+ * [BARU] Helper untuk merender tile gambar di halaman transisi.
+ */
+function renderImageTiles(container, tilesArray) {
+  container.innerHTML = ""; // Bersihkan
+
+  if (tilesArray.length === 0) {
+    container.innerHTML =
+      "<p style='grid-column: 1 / -1; text-align: center; color: #666;'>No collections or categories found.</p>";
+    return;
+  }
+
+  tilesArray.forEach((item, index) => {
+    // Gunakan wrapper untuk mengontrol Grid Area
+    const wrapper = document.createElement("div");
+    wrapper.className = "transition-tile-wrapper";
+
+    const tileHTML = `
+      <a href="${item.link}" class="transition-tile" data-index="${index}">
+        <img src="${item.image.url}" alt="${item.image.alt}" loading="lazy"/>
+        <div class="transition-tile-content">
+          <h2>${item.name}</h2>
+          <p>${item.subtitle}</p>
+        </div>
+      </a>
+    `;
+    wrapper.innerHTML = tileHTML;
+    container.appendChild(wrapper);
+  });
 }
 
 // ==========================================================
@@ -175,14 +394,6 @@ async function initializeAppProductPages() {
       catalogGrid.innerHTML = "<p>Gagal memuat produk. Coba lagi nanti.</p>";
     }
   }
-}
-
-/**
- * Helper: Kapitalisasi huruf pertama
- */
-function capitalizeFirstLetter(string) {
-  if (!string) return "";
-  return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 /**
@@ -243,11 +454,69 @@ function populateFilters(products) {
 }
 
 /**
- * [DIMODIFIKASI]
+ * [MODIFIED] Helper untuk mengatur judul Katalog
+ */
+function updateCatalogTitle(collectionValue) {
+  const catalogTitle = document.querySelector(".catalog-title");
+  if (catalogTitle) {
+    if (collectionValue === "all") {
+      // Jika Collection 'All', tampilkan judul default
+      catalogTitle.textContent = "Ready-to-Wear";
+    } else {
+      // Jika ada Collection yang dipilih, gunakan nama Collection
+      catalogTitle.textContent = `${capitalizeFirstLetter(
+        collectionValue
+      )} Collection`;
+    }
+  }
+}
+
+/**
+ * [MODIFIED] Helper untuk mengatur breadcrumbs
+ */
+function updateBreadcrumbs(tipeValue, filterValue, currentPage = "catalog") {
+  const breadcrumbs = document.querySelector(".breadcrumbs");
+  if (!breadcrumbs) return;
+
+  const tipeText =
+    tipeValue === "wanita"
+      ? "Women's Collection"
+      : tipeValue === "pria"
+      ? "Men's Collection"
+      : null;
+
+  let html = `<a href="index.html">Home</a>`;
+
+  if (tipeText) {
+    const tipeLink = `transition.html?tipe=${tipeValue}`;
+
+    if (currentPage === "transition") {
+      // Home / WOMEN (aktif)
+      html += ` / <span>${tipeText.replace("'s Collection", "")}</span>`;
+    } else {
+      // Home / Women's Collection / Summer Collection (aktif)
+
+      // 1. Link ke halaman transisi
+      html += ` / <a href="${tipeLink}">${tipeText}</a>`;
+
+      if (filterValue !== "all") {
+        // 2. Element aktif: Collection/Category
+        const filterText = `${capitalizeFirstLetter(filterValue)} Collection`;
+        html += ` / <span>${filterText}</span>`;
+      }
+    }
+  } else {
+    // Jika tidak ada tipe, asumsikan "All Products"
+    html += ` / <span>All Products</span>`;
+  }
+
+  breadcrumbs.innerHTML = html;
+}
+
+/**
+ * [MODIFIED]
  * Fungsi Utama Halaman Katalog (Filter, Paginasi, Render Grid)
- * LOGIKA FILTER DIUBAH:
- * - "Coming Soon" sekarang memaksa filter `available: false`
- * - "Newest" & "Oldest" mematuhi filter "Availability"
+ * Logika judul halaman dan breadcrumbs kini dinamis berdasarkan filter Collection/Kategori.
  */
 function renderProductCatalog(catalogGrid, allProductsData) {
   const availabilityFilter = document.getElementById("filter-availability");
@@ -263,16 +532,21 @@ function renderProductCatalog(catalogGrid, allProductsData) {
   let currentPage = 1;
   const productsPerPage = 8;
 
-  // Perbaikan URL Filter
+  // Ambil parameter dari URL untuk inisialisasi filter
   const params = new URLSearchParams(window.location.search);
 
   const tipeFromURL = params.get("tipe");
   if (tipeFromURL && tipeFilter) {
     tipeFilter.value = tipeFromURL;
   }
-  const kategoriFromURL = params.get("kategori");
-  if (kategoriFromURL && categoryFilter) {
-    categoryFilter.value = kategoriFromURL;
+  const categoryFromURL = params.get("kategori");
+  if (categoryFromURL && categoryFilter) {
+    categoryFilter.value = categoryFromURL;
+  }
+
+  const collectionFromURL = params.get("collection");
+  if (collectionFromURL && collectionFilter) {
+    collectionFilter.value = collectionFromURL;
   }
 
   function renderProducts() {
@@ -283,35 +557,41 @@ function renderProductCatalog(catalogGrid, allProductsData) {
     const searchValue = searchInput.value.toLowerCase().trim();
     const sortValue = sortBy.value;
 
+    // Tentukan filter aktif untuk Breadcrumbs & Judul
+    const activeFilter =
+      collectionValue !== "all" ? collectionValue : categoryValue;
+
+    // Panggil update judul dan breadcrumbs
+    updateCatalogTitle(collectionValue); // Judul hanya pakai Collection
+    updateBreadcrumbs(tipeValue, activeFilter, "catalog");
+
     let filteredProducts = allProductsData.filter((product) => {
-      // --- [LOGIKA BARU SESUAI PERMINTAAN] ---
-      // Logika filter availability (ketersediaan) kini bergantung pada 'Sort By'
+      // --- [LOGIKA SORT DAN AVAILABILITY] ---
       if (sortValue === "coming-soon") {
-        // JIKA "Coming Soon" dipilih:
-        // Abaikan filter 'Availability' dan paksa untuk hanya menampilkan
-        // produk yang TIDAK TERSEDIA (available: false).
         if (product.available === true) return false;
       } else {
-        // JIKA "Newest" atau "Oldest" dipilih:
-        // Patuhi filter 'Availability' seperti biasa.
         if (availabilityValue === "in-stock" && !product.available)
           return false;
       }
-      // --- [AKHIR LOGIKA BARU] ---
+      // --- [AKHIR LOGIKA SORT DAN AVAILABILITY] ---
 
       // Filter lainnya berjalan seperti biasa
       if (searchValue && !product.name.toLowerCase().includes(searchValue))
         return false;
       if (tipeValue !== "all" && product.tipe !== tipeValue) return false;
-      if (categoryValue !== "all" && product.category !== categoryValue)
-        return false;
+
+      // Filter Kategori/Collection yang aktif
+      // Jika salah satu filter diisi dari URL (dari halaman Transisi),
+      // filter yang tidak diisi akan tetap 'all' secara default.
       if (collectionValue !== "all" && product.collection !== collectionValue)
         return false;
+      if (categoryValue !== "all" && product.category !== categoryValue)
+        return false;
+
       return true;
     });
 
     // Logika sort (sudah benar menggunakan parseCustomDate)
-    // Modifikasi kecil pada 'coming-soon'
     filteredProducts.sort((a, b) => {
       const dateA = parseCustomDate(a.date);
       const dateB = parseCustomDate(b.date);
@@ -321,10 +601,6 @@ function renderProductCatalog(catalogGrid, allProductsData) {
           return dateA - dateB;
 
         case "coming-soon":
-          // [MODIFIKASI]
-          // Karena kita sudah memfilter HANYA `available: false`,
-          // kita tidak perlu cek `a.available !== b.available` lagi.
-          // Cukup urutkan sisanya berdasarkan tanggal terbaru.
           return dateB - dateA;
 
         case "date-desc": // Newest
@@ -465,6 +741,7 @@ function renderProductCatalog(catalogGrid, allProductsData) {
     });
   }
 
+  // Panggil renderProducts untuk inisialisasi awal
   renderProducts();
 }
 
@@ -717,7 +994,7 @@ Bisakah saya mendapatkan informasi lebih lanjut? Terima kasih.`;
 /**
  * [DIMODIFIKASI]
  * Mengisi halaman detail-barang.html dengan data.
- * Logika galeri utama sekarang hanya untuk membuka modal.
+ * Logika galeri utama kini untuk membuka modal.
  */
 function renderProductDetail(product) {
   // 1. Update Judul Halaman dan Nama Produk (DARI ORIGINAL)

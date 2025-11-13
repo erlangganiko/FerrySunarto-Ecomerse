@@ -1,0 +1,144 @@
+[
+  {
+    "tipe": "pria",
+    "category": [
+      {
+        "name": "Kemeja batik premium lengan panjang",
+        "url": "https://ferrycollection.id/pria/kemeja-batik-premium-lengan-panjang",
+        "image": {
+          "url": "https://ferrycollection.id/assets/pria/kemeja-batik-premium-lengan-panjang.jpg",
+          "alt": "Kemeja batik premium lengan panjang - Ferry Collection"
+        }
+      },
+      {
+        "name": "Setelan jas modern fit",
+        "url": "https://ferrycollection.id/pria/setelan-jas-modern-fit",
+        "image": {
+          "url": "https://ferrycollection.id/assets/pria/setelan-jas-modern-fit.jpg",
+          "alt": "Setelan jas modern fit - Ferry Collection"
+        }
+      },
+      {
+        "name": "Kaos polos streetwear edition",
+        "url": "https://ferrycollection.id/pria/kaos-polos-streetwear-edition",
+        "image": {
+          "url": "https://ferrycollection.id/assets/pria/kaos-polos-streetwear-edition.jpg",
+          "alt": "Kaos polos streetwear edition - Ferry Collection"
+        }
+      },
+      {
+        "name": "Celana chino warna netral",
+        "url": "https://ferrycollection.id/pria/celana-chino-warna-netral",
+        "image": {
+          "url": "https://ferrycollection.id/assets/pria/celana-chino-warna-netral.jpg",
+          "alt": "Celana chino warna netral - Ferry Collection"
+        }
+      }
+    ],
+    "collection": [
+      {
+        "name": "Ferry Signature Classic",
+        "url": "https://ferrycollection.id/pria/collection/ferry-signature-classic",
+        "image": {
+          "url": "https://ferrycollection.id/assets/pria/collections/ferry-signature-classic.jpg",
+          "alt": "Ferry Signature Classic collection - Ferry Collection"
+        }
+      },
+      {
+        "name": "Modern Formal 2025",
+        "url": "https://ferrycollection.id/pria/collection/modern-formal-2025",
+        "image": {
+          "url": "https://ferrycollection.id/assets/pria/collections/modern-formal-2025.jpg",
+          "alt": "Modern Formal 2025 collection - Ferry Collection"
+        }
+      },
+      {
+        "name": "Urban Casual Line",
+        "url": "https://ferrycollection.id/pria/collection/urban-casual-line",
+        "image": {
+          "url": "https://ferrycollection.id/assets/pria/collections/urban-casual-line.jpg",
+          "alt": "Urban Casual Line collection - Ferry Collection"
+        }
+      },
+      {
+        "name": "Resort Linen Series",
+        "url": "https://ferrycollection.id/pria/collection/resort-linen-series",
+        "image": {
+          "url": "https://ferrycollection.id/assets/pria/collections/resort-linen-series.jpg",
+          "alt": "Resort Linen Series collection - Ferry Collection"
+        }
+      }
+    ]
+  },
+  {
+    "tipe": "wanita",
+    "category": [
+      {
+        "name": "Dress satin elegan",
+        "url": "https://ferrycollection.id/wanita/dress-satin-elegan",
+        "image": {
+          "url": "https://ferrycollection.id/assets/wanita/dress-satin-elegan.jpg",
+          "alt": "Dress satin elegan - Ferry Collection"
+        }
+      },
+      {
+        "name": "Blazer cropped modern",
+        "url": "https://ferrycollection.id/wanita/blazer-cropped-modern",
+        "image": {
+          "url": "https://ferrycollection.id/assets/wanita/blazer-cropped-modern.jpg",
+          "alt": "Blazer cropped modern - Ferry Collection"
+        }
+      },
+      {
+        "name": "Atasan basic premium",
+        "url": "https://ferrycollection.id/wanita/atasan-basic-premium",
+        "image": {
+          "url": "https://ferrycollection.id/assets/wanita/atasan-basic-premium.jpg",
+          "alt": "Atasan basic premium - Ferry Collection"
+        }
+      },
+      {
+        "name": "Celana wide-leg formal",
+        "url": "https://ferrycollection.id/wanita/celana-wide-leg-formal",
+        "image": {
+          "url": "https://ferrycollection.id/assets/wanita/celana-wide-leg-formal.jpg",
+          "alt": "Celana wide-leg formal - Ferry Collection"
+        }
+      }
+    ],
+    "collection": [
+      {
+        "name": "Ferry Luxe Collection",
+        "url": "https://ferrycollection.id/wanita/collection/ferry-luxe-collection",
+        "image": {
+          "url": "https://ferrycollection.id/assets/wanita/collections/ferry-luxe-collection.jpg",
+          "alt": "Ferry Luxe Collection - Ferry Collection"
+        }
+      },
+      {
+        "name": "Essential Woman Series",
+        "url": "https://ferrycollection.id/wanita/collection/essential-woman-series",
+        "image": {
+          "url": "https://ferrycollection.id/assets/wanita/collections/essential-woman-series.jpg",
+          "alt": "Essential Woman Series - Ferry Collection"
+        }
+      },
+      {
+        "name": "Evening Glam Line",
+        "url": "https://ferrycollection.id/wanita/collection/evening-glam-line",
+        "image": {
+          "url": "https://ferrycollection.id/assets/wanita/collections/evening-glam-line.jpg",
+          "alt": "Evening Glam Line - Ferry Collection"
+        }
+      },
+      {
+        "name": "Pastel Spring 2025",
+        "url": "https://ferrycollection.id/wanita/collection/pastel-spring-2025",
+        "image": {
+          "url": "https://ferrycollection.id/assets/wanita/collections/pastel-spring-2025.jpg",
+          "alt": "Pastel Spring 2025 - Ferry Collection"
+        }
+      }
+    ]
+  }
+]
