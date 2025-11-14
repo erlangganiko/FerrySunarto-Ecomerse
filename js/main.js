@@ -1202,7 +1202,7 @@ function setupModalGallery(imagesArray, initialIndex) {
       );
 
       modalImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${zoomScale})`;
-      modalImage.style.objectFit = "contain"; // Gunakan 'contain' saat zoom
+      modalImage.style.objectFit = "contain"; // <-- [DIPASTIKAN ADA KEMBALI]
       modalContentWrapper.classList.add("is-zoomed"); // Tambahkan class ke wrapper
     } else {
       // Reset jika tidak di-zoom
@@ -1244,50 +1244,72 @@ function setupModalGallery(imagesArray, initialIndex) {
     applyModalTransform();
   });
 
-  // Mulai Geser (Drag)
-  modalImage.addEventListener("mousedown", (e) => {
-    if (!isZoomed) return; // Hanya bisa geser saat di-zoom
+  // ==============================================================
+  // === BLOK BARU UNTUK FUNGSI GESER (PAN) MOBILE & DESKTOP ===
+  // ==============================================================
 
-    e.preventDefault(); // Mencegah drag gambar default browser
-    isDragging = true; // Set 'isDragging' saat mousedown
+  function dragStart(e) {
+    if (!isZoomed) return;
+    
+    // Mencegah 'ghost' klik di mobile setelah drag
+    // dan mencegah scrolling halaman
+    if (e.type === 'touchstart') e.preventDefault(); 
+    
+    isDragging = true;
     modalImage.classList.add("grabbing");
     modalImage.style.cursor = "grabbing";
 
-    // Posisi awal mouse
-    startX = e.clientX;
-    startY = e.clientY;
+    // Cek apakah ini touch event or mouse event
+    const clientX = e.clientX || e.touches[0].clientX;
+    const clientY = e.clientY || e.touches[0].clientY;
 
-    // Simpan posisi translate terakhir
+    startX = clientX;
+    startY = clientY;
+    
     lastTranslateX = translateX;
     lastTranslateY = translateY;
-  });
+  }
 
-  // Menggeser
-  modalContentWrapper.addEventListener("mousemove", (e) => {
+  function dragMove(e) {
     if (!isDragging) return;
 
-    const dx = e.clientX - startX;
-    const dy = e.clientY - startY;
+    // Mencegah scrolling halaman di mobile saat menggeser gambar
+    if (e.type === 'touchmove') e.preventDefault(); 
 
-    // Hitung translate baru
+    const clientX = e.clientX || e.touches[0].clientX;
+    const clientY = e.clientY || e.touches[0].clientY;
+
+    const dx = clientX - startX;
+    const dy = clientY - startY;
+
     translateX = lastTranslateX + dx;
     translateY = lastTranslateY + dy;
 
-    applyModalTransform(); // Terapkan pergeseran
-  });
+    applyModalTransform(); 
+  }
 
-  // Berhenti Geser
-  const stopDragging = (e) => {
-    const moved = e.clientX !== startX || e.clientY !== startY;
+  function dragEnd(e) {
+    let clientX, clientY;
+    
+    if (e.type === 'touchend') {
+      clientX = e.changedTouches[0].clientX;
+      clientY = e.changedTouches[0].clientY;
+    } else {
+      clientX = e.clientX;
+      clientY = e.clientY;
+    }
+    
+    const moved = clientX !== startX || clientY !== startY;
 
     if (!isDragging) return;
 
+    // Atasi bug 'ghost click'
     if (!moved && isZoomed) {
-      isDragging = false;
+       isDragging = false;
     } else {
-      setTimeout(() => {
-        isDragging = false;
-      }, 0);
+       setTimeout(() => {
+          isDragging = false;
+       }, 0);
     }
 
     isDragging = false;
@@ -1297,11 +1319,24 @@ function setupModalGallery(imagesArray, initialIndex) {
     } else {
       modalImage.style.cursor = "zoom-in";
     }
-  };
+  }
 
-  modalContentWrapper.addEventListener("mouseup", stopDragging);
-  modalContentWrapper.addEventListener("mouseleave", stopDragging);
+  // --- Tambahkan SEMUA Event Listener (Mouse & Touch) ---
+  modalImage.addEventListener("mousedown", dragStart);
+  modalImage.addEventListener("touchstart", dragStart, { passive: false });
+
+  modalContentWrapper.addEventListener("mousemove", dragMove);
+  modalContentWrapper.addEventListener("touchmove", dragMove, { passive: false });
+
+  modalContentWrapper.addEventListener("mouseup", dragEnd);
+  modalContentWrapper.addEventListener("touchend", dragEnd);
+  modalContentWrapper.addEventListener("mouseleave", dragEnd); 
+
   // --- AKHIR LOGIKA ZOOM & PAN ---
+  // ==============================================================
+  // === AKHIR BLOK BARU UNTUK FUNGSI GESER (PAN) ===
+  // ==============================================================
+
 
   // Fungsi untuk menampilkan gambar di modal
   const showModalImage = (index) => {
