@@ -468,7 +468,7 @@ html.session-visited #preloader {
   background-color: #f9f9f9;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
-  height: 500px;
+  height: 690px;
   /* (Flex) diganti display: grid */
   display: grid;
   place-items: center; /* <-- Cara Grid untuk justify+align center */
@@ -511,8 +511,8 @@ html.session-visited #preloader {
 
 .modal-content-wrapper {
   position: relative;
-  max-width: 90vw;
-  max-height: 80vh;
+  max-width: 700px; 
+  max-height: 90vh;
   margin: auto;
   /* (Flex) diganti display: grid */
   display: grid;
@@ -525,8 +525,8 @@ html.session-visited #preloader {
 }
 
 .modal-image {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;  
+  max-height: 100%; 
   object-fit: contain;
   transition: transform 0.3s ease-out;
   cursor: zoom-in;
@@ -612,43 +612,7 @@ html.session-visited #preloader {
   border-color: #007bff;
 }
 
-@media (max-width: 768px) {
-  .modal-content-wrapper {
-    max-width: 95vw;
-    max-height: 70vh;
-  }
-  .modal-arrow {
-    padding: 8px 12px;
-    font-size: 20px;
-    width: 35px;
-    height: 35px;
-  }
-  .modal-arrow-left {
-    left: 5px;
-  }
-  .modal-arrow-right {
-    right: 5px;
-  }
-  .close-button {
-    font-size: 30px;
-    top: 10px;
-    right: 15px;
-  }
-  .modal-thumbnails {
-    gap: 5px;
-    margin-top: 10px;
-  }
-  .modal-thumbnails .thumbnail-item {
-    width: 60px;
-    height: 60px;
-  }
-}
-@media (max-width: 480px) {
-  .modal-thumbnails .thumbnail-item {
-    width: 50px;
-    height: 50px;
-  }
-}
+
 .nav-arrow {
   position: absolute;
   top: 50%;
@@ -677,7 +641,7 @@ html.session-visited #preloader {
   display: grid;
   /* Kita definisikan 3 kolom untuk 3 thumbnail */
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 15px;
+  margin-top: 25px;
   gap: 15px;
 }
 .thumbnail {
@@ -938,6 +902,162 @@ html.session-visited #preloader {
   color: #fff;
   border: 1px solid #3e4a3e;
 }
+
+/* ==========================================================
+   --- 2. STYLE BARU UNTUK APPOINTMENT FORM (Versi Light Theme) ---
+   ========================================================== */
+
+/* 1. Atur ulang modal agar lebih lebar, tapi tetap terang */
+.appointment-modal-content {
+  max-width: 800px; /* Lebarkan modal */
+  /* Kita hapus background-color: #1a202c dll,
+     sehingga kembali ke warna putih asli */
+}
+
+/* 2. Kembalikan style judul (H2) ke tengah (default) */
+.appointment-modal-content h2 {
+  text-align: center;
+  /* Kita hapus color: #8899a6 dll,
+     sehingga kembali ke warna hitam asli */
+}
+
+/* 3. Tampilkan kembali paragraf deskripsi */
+.appointment-modal-content p {
+  display: block;
+}
+
+/* 4. Biarkan tombol close (X) memakai style default */
+/* (Tidak perlu CSS baru, cukup hapus CSS dark theme) */
+
+#appointment-form {
+  width: 100%;
+}
+
+/* 5. Buat layout grid 2 kolom (INI TETAP DIPAKAI) */
+.appointment-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 kolom sama lebar */
+  gap: 2.5rem; /* Jarak antar kolom */
+  margin-top: 1rem;
+}
+
+/* 6. Style form elements (Light Theme) */
+.form-group {
+  margin-bottom: 1.2rem;
+}
+.form-group label {
+  /* Style label standar (bukan floating) */
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #333; /* Warna teks gelap standar */
+}
+
+/* Kita hapus semua override input & textarea dark theme.
+   Style asli (border abu-abu, background putih) 
+   dari .form-group input di atas akan otomatis dipakai lagi.
+*/
+
+/* 7. Style untuk <select> "I want to" (Light Theme) */
+.form-col-left .form-group:first-child label {
+  display: block; /* Tampilkan lagi labelnya */
+}
+.form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  /* Panah dropdown warna abu-abu */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23888'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 1.2em;
+  padding-right: 2.5em;
+  cursor: pointer;
+  color: #333; /* Warna teks hitam */
+}
+.form-group select option {
+  background-color: #fff; /* Background putih */
+  color: #333; /* Teks hitam */
+}
+
+/* 8. Style untuk Grup Tombol Radio (Light Theme) */
+.radio-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+.radio-group legend {
+  font-weight: 500;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  padding: 0;
+  color: #333; /* Warna teks gelap */
+}
+.radio-button-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.radio-button-options input[type="radio"] {
+  display: none; /* Ini tetap, untuk style tombol */
+}
+.radio-button-options label {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #ccc; /* Border abu-abu muda */
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #555; /* Warna teks abu-abu */
+  background-color: #f9f9f9; /* Background putih-abu */
+  transition: all 0.2s ease;
+}
+.radio-button-options label:hover {
+  background-color: #eee;
+  border-color: #aaa;
+}
+.radio-button-options input[type="radio"]:checked + label {
+  background-color: #3e4a3e; /* Warna HIJAU original */
+  color: #fff; /* Teks putih */
+  border-color: #3e4a3e;
+  font-weight: 500;
+}
+
+/* 9. Placeholder untuk reCAPTCHA (DIHAPUS) */
+
+/* 10. Style Tombol SUBMIT (Kembalikan ke HIJAU) */
+.btn-appointment-submit {
+  display: block;
+  width: 100%;
+  max-width: 304px; /* Samakan dgn reCAPTCHA */
+  margin: 0;
+  margin-top: 1.5rem;
+  padding: 14px 20px;
+  background-color: #3e4a3e; /* Warna HIJAU original */
+  color: #fff; /* Teks putih */
+  font-family: "Times New Roman", serif; /* Font original */
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Style original */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.btn-appointment-submit:hover {
+  background-color: #2a332a; /* Hover HIJAU original */
+}
+
 /* penutup detail product */
 
 /* ==========================================================
@@ -1587,6 +1707,37 @@ html.session-visited #preloader {
   .transition-tile-wrapper:nth-child(n + 4) .transition-tile {
     grid-column: 1 / -1;
   }
+
+/* --- Modal Gambar --- */
+  .modal-content-wrapper {
+    max-width: 95vw;
+    max-height: 70vh;
+  }
+  .modal-arrow {
+    padding: 8px 12px;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+  }
+  .modal-arrow-left {
+    left: 5px;
+  }
+  .modal-arrow-right {
+    right: 5px;
+  }
+  .close-button {
+    font-size: 30px;
+    top: 10px;
+    right: 15px;
+  }
+  .modal-thumbnails {
+    gap: 5px;
+    margin-top: 10px;
+  }
+  .modal-thumbnails .thumbnail-item {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1682,6 +1833,96 @@ html.session-visited #preloader {
     /* Kita harus definisikan kolom agar bisa wrap */
     grid-template-columns: repeat(auto-fit, minmax(40px, auto));
   }
+
+  /* --- detail-produk --- */
+  .main-image-wrapper {
+    height: 400px; 
+    /* Anda bisa ubah 400px ke 350px atau 450px 
+       sesuai selera */
+  }
+  .nav-arrow {
+    width: 35px;    /* Perkecil lebar (dari 60px) */
+    height: 35px;   /* Perkecil tinggi (dari 60px) */
+    font-size: 20px;  /* Perkecil ikon panah (dari 36px) */
+  }
+
+  .arrow-left {
+    left: 5px;      /* Geser lebih ke kiri (dari 10px) */
+  }
+  
+  .arrow-right {
+    right: 5px;     /* Geser lebih ke kanan (dari 10px) */
+  }
+
+  /* === AKHIR BLOK BARU === */
+  .product-info {
+    /* 1. Jadikan container-nya 'flex' agar bisa diatur urutannya */
+    display: flex;
+    flex-direction: column;
+
+    /* 2. Hapus padding kiri agar rapi di mobile */
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .product-info .product-details-tabs {
+    /* 3. Paksa Tab (Deskripsi/Spek) untuk tampil di URUTAN PERTAMA */
+    order: 1;
+  }
+
+  .product-info .action-buttons {
+    /* 4. Paksa Tombol-tombol untuk tampil di URUTAN KEDUA */
+    order: 2;
+
+    /* 5. Beri jarak dari tab di atasnya */
+    margin-top: 5rem;
+
+    /* 6. Pastikan lebarnya penuh */
+    max-width: 100%;
+  }
+  /* Ini menimpa .appointment-modal-content di media query atas */
+  .appointment-modal-content {
+    max-width: 90%;
+    padding: 2rem 1.5rem;
+    max-height: 85vh; /* 1. Batasi tinggi modal agar tidak keluar layar */
+    overflow-y: auto; /* 2. Tambahkan scrollbar jika kontennya penuh */
+  }
+  
+  .appointment-form-grid {
+    /* Perintah kuncinya ada di sini: */
+    grid-template-columns: 1fr; /* Ubah grid dari 2 kolom menjadi 1 kolom */
+    gap: 0; /* Hapus jarak antar kolom */
+    margin-top: 1.5rem;
+  }
+  
+  .form-col-right {
+    /* Beri jarak atas saat kolom kanan pindah ke bawah */
+    margin-top: 1.2rem; 
+  }
+  
+  .radio-button-options {
+    gap: 8px;
+  }
+  
+  .radio-button-options label {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+  
+  .btn-appointment-submit {
+    max-width: 100%; /* Buat tombol SUBMIT jadi full-width */
+    font-family: var(--font-sans); /* Ganti font di mobile agar lebih rapi */
+    letter-spacing: 0.1em;
+  }
+  .thumbnail-gallery {
+    grid-template-columns: 1fr 1fr; /* <-- Ubah jadi 2 kolom */
+    gap: 10px; /* <-- Perkecil jarak antar thumbnail */
+  }
+
+  /* 2. Tambah tinggi thumbnail-nya */
+  .thumbnail {
+    height: 170px; /* <-- Ubah dari 90px (atau 120px) jadi 150px */
+  }
 }
 
 @media (max-width: 480px) {
@@ -1702,4 +1943,11 @@ html.session-visited #preloader {
     order: 11; /* <-- Dihapus */
     grid-column: 1 / -1; /* <-- [BARU] Buat jadi 1 baris penuh */
   }
+
+   .modal-thumbnails .thumbnail-item {
+    width: 50px;
+    height: 50px;
+  }
 }
+
+
