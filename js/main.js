@@ -1250,11 +1250,11 @@ function setupModalGallery(imagesArray, initialIndex) {
 
   function dragStart(e) {
     if (!isZoomed) return;
-    
+
     // Mencegah 'ghost' klik di mobile setelah drag
     // dan mencegah scrolling halaman
-    if (e.type === 'touchstart') e.preventDefault(); 
-    
+    if (e.type === "touchstart") e.preventDefault();
+
     isDragging = true;
     modalImage.classList.add("grabbing");
     modalImage.style.cursor = "grabbing";
@@ -1265,7 +1265,7 @@ function setupModalGallery(imagesArray, initialIndex) {
 
     startX = clientX;
     startY = clientY;
-    
+
     lastTranslateX = translateX;
     lastTranslateY = translateY;
   }
@@ -1274,7 +1274,7 @@ function setupModalGallery(imagesArray, initialIndex) {
     if (!isDragging) return;
 
     // Mencegah scrolling halaman di mobile saat menggeser gambar
-    if (e.type === 'touchmove') e.preventDefault(); 
+    if (e.type === "touchmove") e.preventDefault();
 
     const clientX = e.clientX || e.touches[0].clientX;
     const clientY = e.clientY || e.touches[0].clientY;
@@ -1285,31 +1285,31 @@ function setupModalGallery(imagesArray, initialIndex) {
     translateX = lastTranslateX + dx;
     translateY = lastTranslateY + dy;
 
-    applyModalTransform(); 
+    applyModalTransform();
   }
 
   function dragEnd(e) {
     let clientX, clientY;
-    
-    if (e.type === 'touchend') {
+
+    if (e.type === "touchend") {
       clientX = e.changedTouches[0].clientX;
       clientY = e.changedTouches[0].clientY;
     } else {
       clientX = e.clientX;
       clientY = e.clientY;
     }
-    
+
     const moved = clientX !== startX || clientY !== startY;
 
     if (!isDragging) return;
 
     // Atasi bug 'ghost click'
     if (!moved && isZoomed) {
-       isDragging = false;
+      isDragging = false;
     } else {
-       setTimeout(() => {
-          isDragging = false;
-       }, 0);
+      setTimeout(() => {
+        isDragging = false;
+      }, 0);
     }
 
     isDragging = false;
@@ -1326,17 +1326,18 @@ function setupModalGallery(imagesArray, initialIndex) {
   modalImage.addEventListener("touchstart", dragStart, { passive: false });
 
   modalContentWrapper.addEventListener("mousemove", dragMove);
-  modalContentWrapper.addEventListener("touchmove", dragMove, { passive: false });
+  modalContentWrapper.addEventListener("touchmove", dragMove, {
+    passive: false,
+  });
 
   modalContentWrapper.addEventListener("mouseup", dragEnd);
   modalContentWrapper.addEventListener("touchend", dragEnd);
-  modalContentWrapper.addEventListener("mouseleave", dragEnd); 
+  modalContentWrapper.addEventListener("mouseleave", dragEnd);
 
   // --- AKHIR LOGIKA ZOOM & PAN ---
   // ==============================================================
   // === AKHIR BLOK BARU UNTUK FUNGSI GESER (PAN) ===
   // ==============================================================
-
 
   // Fungsi untuk menampilkan gambar di modal
   const showModalImage = (index) => {
@@ -1483,3 +1484,46 @@ function updateWishlistCounter() {
     }
   }
 }
+// js/main.js (Tambahkan atau Modifikasi Fungsi Scroll Navbar)
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.getElementById("navbar");
+  const logoImage = navbar.querySelector(".nav-logo img");
+
+  // Pastikan elemen logo dan data attribute ada
+  if (
+    !navbar ||
+    !logoImage ||
+    !logoImage.dataset.logoDefault ||
+    !logoImage.dataset.logoScrolled
+  ) {
+    console.error("Elemen Navbar atau data attribute logo tidak ditemukan.");
+    return;
+  }
+
+  const defaultLogo = logoImage.dataset.logoDefault;
+  const scrolledLogo = logoImage.dataset.logoScrolled;
+
+  function checkScroll() {
+    const isScrolled = window.scrollY > 50; // Angka 50 bisa disesuaikan
+
+    // Tambahkan/Hapus class 'scrolled' di navbar
+    if (isScrolled) {
+      navbar.classList.add("scrolled");
+      // Ganti logo ke versi scrolled
+      if (logoImage.src !== scrolledLogo) {
+        logoImage.src = scrolledLogo;
+      }
+    } else {
+      navbar.classList.remove("scrolled");
+      // Ganti logo kembali ke versi default
+      if (logoImage.src !== defaultLogo) {
+        logoImage.src = defaultLogo;
+      }
+    }
+  }
+
+  // Panggil saat halaman dimuat dan setiap kali di-scroll
+  checkScroll();
+  window.addEventListener("scroll", checkScroll);
+});
