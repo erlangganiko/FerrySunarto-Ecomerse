@@ -230,7 +230,7 @@ html.session-visited #preloader {
   justify-self: start;
 }
 .menu-logo img {
-  height: 50px;
+  height: 25px;
   width: auto;
   max-width: 100%;
   display: block;
@@ -1307,7 +1307,7 @@ html.session-visited #preloader {
 
 /* [BARU] Gaya untuk Halaman Transisi */
 .transition-page-wrapper {
-  padding-top: 5rem;
+  padding-top: 8rem;
 }
 .transition-title {
   font-size: 3rem;
@@ -1597,7 +1597,20 @@ html.session-visited #preloader {
     margin-bottom: 1rem;
     flex-wrap: wrap;
     gap: 1rem;
+    width: 100%; /* <-- Perubahan 1 */
   }
+
+  /* <-- Perubahan 2: Blok Baru untuk Item Filter */
+  .filter-item {
+    width: 100%;
+    justify-content: space-between;
+  }
+  /* <-- Perubahan 3: Blok Baru untuk Elemen Select */
+  .filter-item select {
+    width: 60%;
+    max-width: 150px;
+  }
+
   .sorting {
     width: 100%;
     justify-content: space-between;
@@ -1815,6 +1828,9 @@ html.session-visited #preloader {
    --- 3. MEDIA QUERY KHUSUS UNTUK FORM BARU (Light Theme) ---
    ========================================================== */
 @media (max-width: 767px) {
+  .nav-logo img {
+    height: 23px;
+  }
   .catalog-title {
     font-size: 1.5rem;
   }

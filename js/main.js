@@ -1005,7 +1005,9 @@ function renderProductDetail(product) {
   // SESUAI PERMINTAAN:
   if (titleElement) {
     // JUDUL (H1) diisi oleh Collection
-    titleElement.textContent = capitalizeFirstLetter(product.collection);
+    // *** MODIFIKASI BARU: Tambahkan " Collection" di akhir ***
+    titleElement.textContent =
+      capitalizeFirstLetter(product.collection) + " Collection";
   }
   if (subtitleElement) {
     // SUBJUDUL (P) diisi oleh Nama Produk
