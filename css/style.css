@@ -1052,10 +1052,7 @@ html.session-visited #preloader {
   font-weight: bold;
   letter-spacing: 0.1em;
 }
-.footer-logo img {
-  width: 100%;
-  height: 80px;
-}
+
 .footer-region a {
   text-decoration: none;
   color: #1a1a1a;
