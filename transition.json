@@ -1,144 +1,2578 @@
 [
   {
+    "id":"product-1",
+    "name": "Kebaya Pria Klasik Merah Maroon",
+    "price": 0,
+    "date": "11-11-2025 20-25-56+7",
+    "available": true,
     "tipe": "pria",
-    "category": [
-      {
-        "name": "Kemeja batik premium lengan panjang",
-        "url": "https://ferrycollection.id/pria/kemeja-batik-premium-lengan-panjang",
-        "image": {
-          "url": "asset/catalog/coming soon/samplestory2.webp",
-          "alt": "Kemeja batik premium lengan panjang - Ferry Collection"
-        }
-      },
-      {
-        "name": "Setelan jas modern fit",
-        "url": "https://ferrycollection.id/pria/setelan-jas-modern-fit",
-        "image": {
-          "url": "asset/catalog/coming soon/samplestory2.webp",
-          "alt": "Setelan jas modern fit - Ferry Collection"
-        }
-      },
-      {
-        "name": "Kaos polos streetwear edition",
-        "url": "https://ferrycollection.id/pria/kaos-polos-streetwear-edition",
-        "image": {
-          "url": "asset/catalog/coming soon/samplestory2.webp",
-          "alt": "Kaos polos streetwear edition - Ferry Collection"
-        }
-      },
-      {
-        "name": "Celana chino warna netral",
-        "url": "https://ferrycollection.id/pria/celana-chino-warna-netral",
-        "image": {
-          "url": "asset/catalog/coming soon/samplestory2.webp",
-          "alt": "Celana chino warna netral - Ferry Collection"
-        }
-      }
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
     ],
-    "collection": [
-      {
-        "name": "Ferry Signature Classic",
-        "url": "https://ferrycollection.id/pria/collection/ferry-signature-classic",
-        "image": {
-          "url": "asset/catalog/coming soon/samplestory2.webp",
-          "alt": "Ferry Signature Classic collection - Ferry Collection"
-        }
-      },
-      {
-        "name": "Modern Formal 2025",
-        "url": "https://ferrycollection.id/pria/collection/modern-formal-2025",
-        "image": {
-          "url": "asset/catalog/coming soon/samplestory2.webp",
-          "alt": "Modern Formal 2025 collection - Ferry Collection"
-        }
-      },
-      {
-        "name": "Urban Casual Line",
-        "url": "https://ferrycollection.id/pria/collection/urban-casual-line",
-        "image": {
-          "url": "asset/catalog/coming soon/samplestory2.webp",
-          "alt": "Urban Casual Line collection - Ferry Collection"
-        }
-      },
-      {
-        "name": "Resort Linen Series",
-        "url": "https://ferrycollection.id/pria/collection/resort-linen-series",
-        "image": {
-          "url": "asset/catalog/coming soon/samplestory2.webp",
-          "alt": "Resort Linen Series collection - Ferry Collection"
-        }
-      }
+    "images": [
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
     ]
   },
   {
-    "tipe": "wanita",
-    "category": [
-      {
-        "name": "Dress satin elegan",
-        "url": "https://ferrycollection.id/wanita/dress-satin-elegan",
-        "image": {
-          "url": "asset/catalog/coming soon/samplestory3.webp",
-          "alt": "Dress satin elegan - Ferry Collection"
-        }
-      },
-      {
-        "name": "Blazer cropped modern",
-        "url": "https://ferrycollection.id/wanita/blazer-cropped-modern",
-        "image": {
-          "url": "asset/catalog/coming soon/samplestory3.webp",
-          "alt": "Blazer cropped modern - Ferry Collection"
-        }
-      },
-      {
-        "name": "Atasan basic premium",
-        "url": "https://ferrycollection.id/wanita/atasan-basic-premium",
-        "image": {
-          "url": "asset/catalog/coming soon/samplestory3.webp",
-          "alt": "Atasan basic premium - Ferry Collection"
-        }
-      },
-      {
-        "name": "Celana wide-leg formal",
-        "url": "https://ferrycollection.id/wanita/celana-wide-leg-formal",
-        "image": {
-          "url": "asset/catalog/coming soon/samplestory3.webp",
-          "alt": "Celana wide-leg formal - Ferry Collection"
-        }
-      }
+    "id": "product-2",
+    "name": "Beskap Pria Modern Putih Gading",
+    "price": 13999000,
+    "date": "10-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
     ],
-    "collection": [
-      {
-        "name": "Ferry Luxe Collection",
-        "url": "https://ferrycollection.id/wanita/collection/ferry-luxe-collection",
-        "image": {
-          "url": "asset/catalog/coming soon/samplestory3.webp",
-          "alt": "Ferry Luxe Collection - Ferry Collection"
-        }
-      },
-      {
-        "name": "Essential Woman Series",
-        "url": "https://ferrycollection.id/wanita/collection/essential-woman-series",
-        "image": {
-          "url": "asset/catalog/coming soon/samplestory3.webp",
-          "alt": "Essential Woman Series - Ferry Collection"
-        }
-      },
-      {
-        "name": "Evening Glam Line",
-        "url": "https://ferrycollection.id/wanita/collection/evening-glam-line",
-        "image": {
-          "url": "asset/catalog/coming soon/samplestory3.webp",
-          "alt": "Evening Glam Line - Ferry Collection"
-        }
-      },
-      {
-        "name": "Pastel Spring 2025",
-        "url": "https://ferrycollection.id/wanita/collection/pastel-spring-2025",
-        "image": {
-          "url":"asset/catalog/coming soon/samplestory3.webp",
-          "alt": "Pastel Spring 2025 - Ferry Collection"
-        }
-      }
+    "images": [
+      "asset/catalog/kebaya-pria/k02/depan.webp",
+      "asset/catalog/kebaya-pria/k02/back.webp",
+      "asset/catalog/kebaya-pria/k02/kiri.webp",
+      "asset/catalog/kebaya-pria/k02/kanan.webp"
+    ]
+  },
+  {
+    "id": "product-3",
+    "name": "Beskap Pria Modern Abu Silver",
+    "price": 13899000,
+    "date": "09-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "Asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/back.webp",
+      "asset/catalog/kebaya-pria/k03/kiri.webp",
+      "asset/catalog/kebaya-pria/k03/kanan.webp"
+    ]
+  },
+  {
+    "id": "product-4",
+    "name": "Beskap Pria Elegan Hitam Polos",
+    "price": 24998800,
+    "date": "08-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
+    ]
+  },
+  {
+    "id": "product-5",
+    "name": "Beskap Pria Hitam Aksen Emas",
+    "price": 21020300,
+    "date": "07-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k05/depan.png",
+      "asset/catalog/kebaya-pria/k05/back.png",
+      "asset/catalog/kebaya-pria/k05/kiri.png",
+      "asset/catalog/kebaya-pria/k05/kanan.png"
+    ]
+  },
+  {
+    "id": "product-8",
+    "name": "Beskap Pria Klasik Biru Navy",
+    "price": 11998800,
+    "date": "06-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k06/depan.png",
+      "asset/catalog/kebaya-pria/k06/back.png",
+      "asset/catalog/kebaya-pria/k06/kiri.png",
+      "asset/catalog/kebaya-pria/k06/kanan.png"
+    ]
+  },
+  {
+    "id": "product-9",
+    "name": "Beskap Pria Modern Biru Langit",
+    "price": 11998000,
+    "date": "05-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k07/depan.png",
+      "asset/catalog/kebaya-pria/k07/back.png",
+      "asset/catalog/kebaya-pria/k07/kiri.png",
+      "asset/catalog/kebaya-pria/k07/kanan.png"
+    ]
+  },
+  {
+    "id": "product-8-dup1",
+    "name": "Beskap Pria Putih Aksen Melati",
+    "price": 11699000,
+    "date": "04-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k08/depan.png",
+      "asset/catalog/kebaya-pria/k08/back.png",
+      "asset/catalog/kebaya-pria/k08/kiri.png",
+      "asset/catalog/kebaya-pria/k08/kanan.png"
+    ]
+  },
+  {
+    "id": "product-9-dup1",
+    "name": "Beskap Pria Hitam Bordir Emas",
+    "price": 12000000,
+    "date": "03-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k09/depan.png",
+      "asset/catalog/kebaya-pria/k09/back.png",
+      "asset/catalog/kebaya-pria/k09/kiri.png",
+      "asset/catalog/kebaya-pria/k09/kanan.png"
+    ]
+  },
+  {
+    "id": "product-10",
+    "name": "Beskap Pria Hitam Motif Emas",
+    "price": 15100000,
+    "date": "02-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k10/depan.png",
+      "asset/catalog/kebaya-pria/k10/back.png",
+      "asset/catalog/kebaya-pria/k10/kiri.png",
+      "asset/catalog/kebaya-pria/k10/kanan.png"
+    ]
+  },
+  {
+    "id": "product-11",
+    "name": "Beskap Pria Coklat Mocca",
+    "price": 13500000,
+    "date": "01-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k11/depan.png",
+      "asset/catalog/kebaya-pria/k11/back.png",
+      "asset/catalog/kebaya-pria/k11/kiri.png",
+      "asset/catalog/kebaya-pria/k11/kanan.png"
+    ]
+  },
+  {
+    "id": "product-12",
+    "name": "Beskap Pria Hijau Sage",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k12/depan.png",
+      "asset/catalog/kebaya-pria/k12/back.png",
+      "asset/catalog/kebaya-pria/k12/kiri.png",
+      "asset/catalog/kebaya-pria/k12/kanan.png"
+    ]
+  },
+  {
+    "id": "product-13",
+    "name": "Kebaya Wanita",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-wanita/kw01/depan.png",
+      "asset/catalog/kebaya-wanita/kw01/back.png",
+      "asset/catalog/kebaya-wanita/kw01/kiri.png",
+      "asset/catalog/kebaya-wanita/kw01/kanan.png"
+    ]
+  },
+  {
+    "id": "product-14",
+    "name": "Kebaya Wanita",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-wanita/kw02/depan.png",
+      "asset/catalog/kebaya-wanita/kw02/back.png",
+      "asset/catalog/kebaya-wanita/kw02/kiri.png",
+      "asset/catalog/kebaya-wanita/kw02/kanan.png"
+    ]
+  },
+  {
+    "id": "product-15",
+    "name": "Kebaya Wanita",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-wanita/kw03/depan.png",
+      "asset/catalog/kebaya-wanita/kw03/back.png",
+      "asset/catalog/kebaya-wanita/kw03/kiri.png",
+      "asset/catalog/kebaya-wanita/kw03/kanan.png"
+    ]
+  },
+  {
+    "id": "product-16",
+    "name": "Kebaya Wanita",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-wanita/kw04/depan.png",
+      "asset/catalog/kebaya-wanita/kw04/back.png",
+      "asset/catalog/kebaya-wanita/kw04/kiri.png",
+      "asset/catalog/kebaya-wanita/kw04/kanan.png"
+    ]
+  },
+  {
+    "id": "product-17",
+    "name": "Kebaya Wanita",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-wanita/kw05/depan.png",
+      "asset/catalog/kebaya-wanita/kw05/back.png",
+      "asset/catalog/kebaya-wanita/kw05/kiri.png",
+      "asset/catalog/kebaya-wanita/kw05/kanan.png"
+    ]
+  },
+  {
+    "id": "product-18",
+    "name": "Kebaya Wanita",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-wanita/kw06/depan.png",
+      "asset/catalog/kebaya-wanita/kw06/back.png",
+      "asset/catalog/kebaya-wanita/kw06/kiri.png",
+      "asset/catalog/kebaya-wanita/kw06/kanan.png"
+    ]
+  },
+  {
+    "id": "product-19",
+    "name": "Kebaya Wanita",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-wanita/kw07/depan.png",
+      "asset/catalog/kebaya-wanita/kw07/back.png",
+      "asset/catalog/kebaya-wanita/kw07/kiri.png",
+      "asset/catalog/kebaya-wanita/kw07/kanan.png"
+    ]
+  },
+  {
+    "id": "product-20",
+    "name": "Kebaya Wanita",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-wanita/kw08/depan.png",
+      "asset/catalog/kebaya-wanita/kw08/back.png",
+      "asset/catalog/kebaya-wanita/kw08/kiri.png",
+      "asset/catalog/kebaya-wanita/kw08/kanan.png"
+    ]
+  },
+  {
+    "id": "product-21",
+    "name": "Kebaya Wanita",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-wanita/kw09/depan.png",
+      "asset/catalog/kebaya-wanita/kw09/back.png",
+      "asset/catalog/kebaya-wanita/kw09/kiri.png",
+      "asset/catalog/kebaya-wanita/kw09/kanan.png"
+    ]
+  },
+  {
+    "id": "product-22",
+    "name": "Kebaya Wanita",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-wanita/kw10/depan.png",
+      "asset/catalog/kebaya-wanita/kw10/back.png",
+      "asset/catalog/kebaya-wanita/kw10/kiri.png",
+      "asset/catalog/kebaya-wanita/kw10/kanan.png"
+    ]
+  },
+  {
+    "id": "product-23",
+    "name": "Kebaya Wanita",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-wanita/kw11/depan.png",
+      "asset/catalog/kebaya-wanita/kw11/back.png",
+      "asset/catalog/kebaya-wanita/kw11/kiri.png",
+      "asset/catalog/kebaya-wanita/kw11/kanan.png"
+    ]
+  },
+  {
+    "id": "product-24",
+    "name": "Kebaya Wanita",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-wanita/kw12/depan.png",
+      "asset/catalog/kebaya-wanita/kw12/back.png",
+      "asset/catalog/kebaya-wanita/kw12/kiri.png",
+      "asset/catalog/kebaya-wanita/kw12/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-1",
+    "name": "Kebaya Pria Klasik Merah Maroon (Generated 1)",
+    "price": 0,
+    "date": "11-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
+    ]
+  },
+  {
+    "id": "product-generated-pria-2",
+    "name": "Beskap Pria Modern Putih Gading (Generated 2)",
+    "price": 13999000,
+    "date": "10-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k02/depan.png",
+      "asset/catalog/kebaya-pria/k02/back.png",
+      "asset/catalog/kebaya-pria/k02/kiri.png",
+      "asset/catalog/kebaya-pria/k02/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-3",
+    "name": "Beskap Pria Modern Abu Silver (Generated 3)",
+    "price": 13899000,
+    "date": "09-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/belakang.png",
+      "asset/catalog/kebaya-pria/k03/kiri.png",
+      "asset/catalog/kebaya-pria/k03/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-4",
+    "name": "Beskap Pria Elegan Hitam Polos (Generated 4)",
+    "price": 24998800,
+    "date": "08-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-5",
+    "name": "Beskap Pria Hitam Aksen Emas (Generated 5)",
+    "price": 21020300,
+    "date": "07-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k05/depan.png",
+      "asset/catalog/kebaya-pria/k05/back.png",
+      "asset/catalog/kebaya-pria/k05/kiri.png",
+      "asset/catalog/kebaya-pria/k05/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-6",
+    "name": "Beskap Pria Klasik Biru Navy (Generated 6)",
+    "price": 11998800,
+    "date": "06-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k06/depan.png",
+      "asset/catalog/kebaya-pria/k06/back.png",
+      "asset/catalog/kebaya-pria/k06/kiri.png",
+      "asset/catalog/kebaya-pria/k06/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-7",
+    "name": "Beskap Pria Modern Biru Langit (Generated 7)",
+    "price": 11998000,
+    "date": "05-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k07/depan.png",
+      "asset/catalog/kebaya-pria/k07/back.png",
+      "asset/catalog/kebaya-pria/k07/kiri.png",
+      "asset/catalog/kebaya-pria/k07/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-8",
+    "name": "Beskap Pria Putih Aksen Melati (Generated 8)",
+    "price": 11699000,
+    "date": "04-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k08/depan.png",
+      "asset/catalog/kebaya-pria/k08/back.png",
+      "asset/catalog/kebaya-pria/k08/kiri.png",
+      "asset/catalog/kebaya-pria/k08/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-9",
+    "name": "Beskap Pria Hitam Bordir Emas (Generated 9)",
+    "price": 12000000,
+    "date": "03-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k09/depan.png",
+      "asset/catalog/kebaya-pria/k09/back.png",
+      "asset/catalog/kebaya-pria/k09/kiri.png",
+      "asset/catalog/kebaya-pria/k09/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-10",
+    "name": "Beskap Pria Hitam Motif Emas (Generated 10)",
+    "price": 15100000,
+    "date": "02-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k10/depan.png",
+      "asset/catalog/kebaya-pria/k10/back.png",
+      "asset/catalog/kebaya-pria/k10/kiri.png",
+      "asset/catalog/kebaya-pria/k10/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-11",
+    "name": "Beskap Pria Coklat Mocca (Generated 11)",
+    "price": 13500000,
+    "date": "01-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k11/depan.png",
+      "asset/catalog/kebaya-pria/k11/back.png",
+      "asset/catalog/kebaya-pria/k11/kiri.png",
+      "asset/catalog/kebaya-pria/k11/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-12",
+    "name": "Beskap Pria Hijau Sage (Generated 12)",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k12/depan.png",
+      "asset/catalog/kebaya-pria/k12/back.png",
+      "asset/catalog/kebaya-pria/k12/kiri.png",
+      "asset/catalog/kebaya-pria/k12/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-13",
+    "name": "Kebaya Pria Klasik Merah Maroon (Generated 13)",
+    "price": 0,
+    "date": "11-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
+    ]
+  },
+  {
+    "id": "product-generated-pria-14",
+    "name": "Beskap Pria Modern Putih Gading (Generated 14)",
+    "price": 13999000,
+    "date": "10-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k02/depan.png",
+      "asset/catalog/kebaya-pria/k02/back.png",
+      "asset/catalog/kebaya-pria/k02/kiri.png",
+      "asset/catalog/kebaya-pria/k02/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-15",
+    "name": "Beskap Pria Modern Abu Silver (Generated 15)",
+    "price": 13899000,
+    "date": "09-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/belakang.png",
+      "asset/catalog/kebaya-pria/k03/kiri.png",
+      "asset/catalog/kebaya-pria/k03/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-16",
+    "name": "Beskap Pria Elegan Hitam Polos (Generated 16)",
+    "price": 24998800,
+    "date": "08-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-17",
+    "name": "Beskap Pria Hitam Aksen Emas (Generated 17)",
+    "price": 21020300,
+    "date": "07-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k05/depan.png",
+      "asset/catalog/kebaya-pria/k05/back.png",
+      "asset/catalog/kebaya-pria/k05/kiri.png",
+      "asset/catalog/kebaya-pria/k05/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-18",
+    "name": "Beskap Pria Klasik Biru Navy (Generated 18)",
+    "price": 11998800,
+    "date": "06-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k06/depan.png",
+      "asset/catalog/kebaya-pria/k06/back.png",
+      "asset/catalog/kebaya-pria/k06/kiri.png",
+      "asset/catalog/kebaya-pria/k06/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-19",
+    "name": "Beskap Pria Modern Biru Langit (Generated 19)",
+    "price": 11998000,
+    "date": "05-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k07/depan.png",
+      "asset/catalog/kebaya-pria/k07/back.png",
+      "asset/catalog/kebaya-pria/k07/kiri.png",
+      "asset/catalog/kebaya-pria/k07/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-20",
+    "name": "Beskap Pria Putih Aksen Melati (Generated 20)",
+    "price": 11699000,
+    "date": "04-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k08/depan.png",
+      "asset/catalog/kebaya-pria/k08/back.png",
+      "asset/catalog/kebaya-pria/k08/kiri.png",
+      "asset/catalog/kebaya-pria/k08/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-21",
+    "name": "Beskap Pria Hitam Bordir Emas (Generated 21)",
+    "price": 12000000,
+    "date": "03-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k09/depan.png",
+      "asset/catalog/kebaya-pria/k09/back.png",
+      "asset/catalog/kebaya-pria/k09/kiri.png",
+      "asset/catalog/kebaya-pria/k09/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-22",
+    "name": "Beskap Pria Hitam Motif Emas (Generated 22)",
+    "price": 15100000,
+    "date": "02-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k10/depan.png",
+      "asset/catalog/kebaya-pria/k10/back.png",
+      "asset/catalog/kebaya-pria/k10/kiri.png",
+      "asset/catalog/kebaya-pria/k10/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-23",
+    "name": "Beskap Pria Coklat Mocca (Generated 23)",
+    "price": 13500000,
+    "date": "01-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k11/depan.png",
+      "asset/catalog/kebaya-pria/k11/back.png",
+      "asset/catalog/kebaya-pria/k11/kiri.png",
+      "asset/catalog/kebaya-pria/k11/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-24",
+    "name": "Beskap Pria Hijau Sage (Generated 24)",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k12/depan.png",
+      "asset/catalog/kebaya-pria/k12/back.png",
+      "asset/catalog/kebaya-pria/k12/kiri.png",
+      "asset/catalog/kebaya-pria/k12/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-25",
+    "name": "Kebaya Pria Klasik Merah Maroon (Generated 25)",
+    "price": 0,
+    "date": "11-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
+    ]
+  },
+  {
+    "id": "product-generated-pria-26",
+    "name": "Beskap Pria Modern Putih Gading (Generated 26)",
+    "price": 13999000,
+    "date": "10-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k02/depan.png",
+      "asset/catalog/kebaya-pria/k02/back.png",
+      "asset/catalog/kebaya-pria/k02/kiri.png",
+      "asset/catalog/kebaya-pria/k02/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-27",
+    "name": "Beskap Pria Modern Abu Silver (Generated 27)",
+    "price": 13899000,
+    "date": "09-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/belakang.png",
+      "asset/catalog/kebaya-pria/k03/kiri.png",
+      "asset/catalog/kebaya-pria/k03/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-28",
+    "name": "Beskap Pria Elegan Hitam Polos (Generated 28)",
+    "price": 24998800,
+    "date": "08-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-29",
+    "name": "Beskap Pria Hitam Aksen Emas (Generated 29)",
+    "price": 21020300,
+    "date": "07-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k05/depan.png",
+      "asset/catalog/kebaya-pria/k05/back.png",
+      "asset/catalog/kebaya-pria/k05/kiri.png",
+      "asset/catalog/kebaya-pria/k05/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-30",
+    "name": "Beskap Pria Klasik Biru Navy (Generated 30)",
+    "price": 11998800,
+    "date": "06-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k06/depan.png",
+      "asset/catalog/kebaya-pria/k06/back.png",
+      "asset/catalog/kebaya-pria/k06/kiri.png",
+      "asset/catalog/kebaya-pria/k06/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-31",
+    "name": "Beskap Pria Modern Biru Langit (Generated 31)",
+    "price": 11998000,
+    "date": "05-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k07/depan.png",
+      "asset/catalog/kebaya-pria/k07/back.png",
+      "asset/catalog/kebaya-pria/k07/kiri.png",
+      "asset/catalog/kebaya-pria/k07/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-32",
+    "name": "Beskap Pria Putih Aksen Melati (Generated 32)",
+    "price": 11699000,
+    "date": "04-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k08/depan.png",
+      "asset/catalog/kebaya-pria/k08/back.png",
+      "asset/catalog/kebaya-pria/k08/kiri.png",
+      "asset/catalog/kebaya-pria/k08/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-33",
+    "name": "Beskap Pria Hitam Bordir Emas (Generated 33)",
+    "price": 12000000,
+    "date": "03-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k09/depan.png",
+      "asset/catalog/kebaya-pria/k09/back.png",
+      "asset/catalog/kebaya-pria/k09/kiri.png",
+      "asset/catalog/kebaya-pria/k09/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-34",
+    "name": "Beskap Pria Hitam Motif Emas (Generated 34)",
+    "price": 15100000,
+    "date": "02-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k10/depan.png",
+      "asset/catalog/kebaya-pria/k10/back.png",
+      "asset/catalog/kebaya-pria/k10/kiri.png",
+      "asset/catalog/kebaya-pria/k10/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-35",
+    "name": "Beskap Pria Coklat Mocca (Generated 35)",
+    "price": 13500000,
+    "date": "01-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k11/depan.png",
+      "asset/catalog/kebaya-pria/k11/back.png",
+      "asset/catalog/kebaya-pria/k11/kiri.png",
+      "asset/catalog/kebaya-pria/k11/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-36",
+    "name": "Beskap Pria Hijau Sage (Generated 36)",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k12/depan.png",
+      "asset/catalog/kebaya-pria/k12/back.png",
+      "asset/catalog/kebaya-pria/k12/kiri.png",
+      "asset/catalog/kebaya-pria/k12/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-37",
+    "name": "Kebaya Pria Klasik Merah Maroon (Generated 37)",
+    "price": 0,
+    "date": "11-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
+    ]
+  },
+  {
+    "id": "product-generated-pria-38",
+    "name": "Beskap Pria Modern Putih Gading (Generated 38)",
+    "price": 13999000,
+    "date": "10-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k02/depan.png",
+      "asset/catalog/kebaya-pria/k02/back.png",
+      "asset/catalog/kebaya-pria/k02/kiri.png",
+      "asset/catalog/kebaya-pria/k02/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-39",
+    "name": "Beskap Pria Modern Abu Silver (Generated 39)",
+    "price": 13899000,
+    "date": "09-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/belakang.png",
+      "asset/catalog/kebaya-pria/k03/kiri.png",
+      "asset/catalog/kebaya-pria/k03/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-40",
+    "name": "Beskap Pria Elegan Hitam Polos (Generated 40)",
+    "price": 24998800,
+    "date": "08-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-41",
+    "name": "Beskap Pria Hitam Aksen Emas (Generated 41)",
+    "price": 21020300,
+    "date": "07-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k05/depan.png",
+      "asset/catalog/kebaya-pria/k05/back.png",
+      "asset/catalog/kebaya-pria/k05/kiri.png",
+      "asset/catalog/kebaya-pria/k05/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-42",
+    "name": "Beskap Pria Klasik Biru Navy (Generated 42)",
+    "price": 11998800,
+    "date": "06-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k06/depan.png",
+      "asset/catalog/kebaya-pria/k06/back.png",
+      "asset/catalog/kebaya-pria/k06/kiri.png",
+      "asset/catalog/kebaya-pria/k06/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-43",
+    "name": "Beskap Pria Modern Biru Langit (Generated 43)",
+    "price": 11998000,
+    "date": "05-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k07/depan.png",
+      "asset/catalog/kebaya-pria/k07/back.png",
+      "asset/catalog/kebaya-pria/k07/kiri.png",
+      "asset/catalog/kebaya-pria/k07/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-44",
+    "name": "Beskap Pria Putih Aksen Melati (Generated 44)",
+    "price": 11699000,
+    "date": "04-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k08/depan.png",
+      "asset/catalog/kebaya-pria/k08/back.png",
+      "asset/catalog/kebaya-pria/k08/kiri.png",
+      "asset/catalog/kebaya-pria/k08/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-45",
+    "name": "Beskap Pria Hitam Bordir Emas (Generated 45)",
+    "price": 12000000,
+    "date": "03-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k09/depan.png",
+      "asset/catalog/kebaya-pria/k09/back.png",
+      "asset/catalog/kebaya-pria/k09/kiri.png",
+      "asset/catalog/kebaya-pria/k09/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-46",
+    "name": "Beskap Pria Hitam Motif Emas (Generated 46)",
+    "price": 15100000,
+    "date": "02-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k10/depan.png",
+      "asset/catalog/kebaya-pria/k10/back.png",
+      "asset/catalog/kebaya-pria/k10/kiri.png",
+      "asset/catalog/kebaya-pria/k10/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-47",
+    "name": "Beskap Pria Coklat Mocca (Generated 47)",
+    "price": 13500000,
+    "date": "01-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k11/depan.png",
+      "asset/catalog/kebaya-pria/k11/back.png",
+      "asset/catalog/kebaya-pria/k11/kiri.png",
+      "asset/catalog/kebaya-pria/k11/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-48",
+    "name": "Beskap Pria Hijau Sage (Generated 48)",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k12/depan.png",
+      "asset/catalog/kebaya-pria/k12/back.png",
+      "asset/catalog/kebaya-pria/k12/kiri.png",
+      "asset/catalog/kebaya-pria/k12/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-49",
+    "name": "Kebaya Pria Klasik Merah Maroon (Generated 49)",
+    "price": 0,
+    "date": "11-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
+    ]
+  },
+  {
+    "id": "product-generated-pria-50",
+    "name": "Beskap Pria Modern Putih Gading (Generated 50)",
+    "price": 13999000,
+    "date": "10-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k02/depan.png",
+      "asset/catalog/kebaya-pria/k02/back.png",
+      "asset/catalog/kebaya-pria/k02/kiri.png",
+      "asset/catalog/kebaya-pria/k02/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-51",
+    "name": "Beskap Pria Modern Abu Silver (Generated 51)",
+    "price": 13899000,
+    "date": "09-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/belakang.png",
+      "asset/catalog/kebaya-pria/k03/kiri.png",
+      "asset/catalog/kebaya-pria/k03/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-52",
+    "name": "Beskap Pria Elegan Hitam Polos (Generated 52)",
+    "price": 24998800,
+    "date": "08-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-53",
+    "name": "Beskap Pria Hitam Aksen Emas (Generated 53)",
+    "price": 21020300,
+    "date": "07-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k05/depan.png",
+      "asset/catalog/kebaya-pria/k05/back.png",
+      "asset/catalog/kebaya-pria/k05/kiri.png",
+      "asset/catalog/kebaya-pria/k05/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-54",
+    "name": "Beskap Pria Klasik Biru Navy (Generated 54)",
+    "price": 11998800,
+    "date": "06-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k06/depan.png",
+      "asset/catalog/kebaya-pria/k06/back.png",
+      "asset/catalog/kebaya-pria/k06/kiri.png",
+      "asset/catalog/kebaya-pria/k06/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-55",
+    "name": "Beskap Pria Modern Biru Langit (Generated 55)",
+    "price": 11998000,
+    "date": "05-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k07/depan.png",
+      "asset/catalog/kebaya-pria/k07/back.png",
+      "asset/catalog/kebaya-pria/k07/kiri.png",
+      "asset/catalog/kebaya-pria/k07/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-56",
+    "name": "Beskap Pria Putih Aksen Melati (Generated 56)",
+    "price": 11699000,
+    "date": "04-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k08/depan.png",
+      "asset/catalog/kebaya-pria/k08/back.png",
+      "asset/catalog/kebaya-pria/k08/kiri.png",
+      "asset/catalog/kebaya-pria/k08/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-57",
+    "name": "Beskap Pria Hitam Bordir Emas (Generated 57)",
+    "price": 12000000,
+    "date": "03-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k09/depan.png",
+      "asset/catalog/kebaya-pria/k09/back.png",
+      "asset/catalog/kebaya-pria/k09/kiri.png",
+      "asset/catalog/kebaya-pria/k09/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-58",
+    "name": "Beskap Pria Hitam Motif Emas (Generated 58)",
+    "price": 15100000,
+    "date": "02-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k10/depan.png",
+      "asset/catalog/kebaya-pria/k10/back.png",
+      "asset/catalog/kebaya-pria/k10/kiri.png",
+      "asset/catalog/kebaya-pria/k10/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-59",
+    "name": "Beskap Pria Coklat Mocca (Generated 59)",
+    "price": 13500000,
+    "date": "01-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k11/depan.png",
+      "asset/catalog/kebaya-pria/k11/back.png",
+      "asset/catalog/kebaya-pria/k11/kiri.png",
+      "asset/catalog/kebaya-pria/k11/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-60",
+    "name": "Beskap Pria Hijau Sage (Generated 60)",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k12/depan.png",
+      "asset/catalog/kebaya-pria/k12/back.png",
+      "asset/catalog/kebaya-pria/k12/kiri.png",
+      "asset/catalog/kebaya-pria/k12/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-61",
+    "name": "Kebaya Pria Klasik Merah Maroon (Generated 61)",
+    "price": 0,
+    "date": "11-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
+    ]
+  },
+  {
+    "id": "product-generated-pria-62",
+    "name": "Beskap Pria Modern Putih Gading (Generated 62)",
+    "price": 13999000,
+    "date": "10-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k02/depan.png",
+      "asset/catalog/kebaya-pria/k02/back.png",
+      "asset/catalog/kebaya-pria/k02/kiri.png",
+      "asset/catalog/kebaya-pria/k02/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-63",
+    "name": "Beskap Pria Modern Abu Silver (Generated 63)",
+    "price": 13899000,
+    "date": "09-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/belakang.png",
+      "asset/catalog/kebaya-pria/k03/kiri.png",
+      "asset/catalog/kebaya-pria/k03/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-64",
+    "name": "Beskap Pria Elegan Hitam Polos (Generated 64)",
+    "price": 24998800,
+    "date": "08-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-65",
+    "name": "Beskap Pria Hitam Aksen Emas (Generated 65)",
+    "price": 21020300,
+    "date": "07-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k05/depan.png",
+      "asset/catalog/kebaya-pria/k05/back.png",
+      "asset/catalog/kebaya-pria/k05/kiri.png",
+      "asset/catalog/kebaya-pria/k05/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-66",
+    "name": "Beskap Pria Klasik Biru Navy (Generated 66)",
+    "price": 11998800,
+    "date": "06-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k06/depan.png",
+      "asset/catalog/kebaya-pria/k06/back.png",
+      "asset/catalog/kebaya-pria/k06/kiri.png",
+      "asset/catalog/kebaya-pria/k06/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-67",
+    "name": "Beskap Pria Modern Biru Langit (Generated 67)",
+    "price": 11998000,
+    "date": "05-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k07/depan.png",
+      "asset/catalog/kebaya-pria/k07/back.png",
+      "asset/catalog/kebaya-pria/k07/kiri.png",
+      "asset/catalog/kebaya-pria/k07/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-68",
+    "name": "Beskap Pria Putih Aksen Melati (Generated 68)",
+    "price": 11699000,
+    "date": "04-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k08/depan.png",
+      "asset/catalog/kebaya-pria/k08/back.png",
+      "asset/catalog/kebaya-pria/k08/kiri.png",
+      "asset/catalog/kebaya-pria/k08/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-69",
+    "name": "Beskap Pria Hitam Bordir Emas (Generated 69)",
+    "price": 12000000,
+    "date": "03-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k09/depan.png",
+      "asset/catalog/kebaya-pria/k09/back.png",
+      "asset/catalog/kebaya-pria/k09/kiri.png",
+      "asset/catalog/kebaya-pria/k09/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-70",
+    "name": "Beskap Pria Hitam Motif Emas (Generated 70)",
+    "price": 15100000,
+    "date": "02-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k10/depan.png",
+      "asset/catalog/kebaya-pria/k10/back.png",
+      "asset/catalog/kebaya-pria/k10/kiri.png",
+      "asset/catalog/kebaya-pria/k10/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-71",
+    "name": "Beskap Pria Coklat Mocca (Generated 71)",
+    "price": 13500000,
+    "date": "01-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k11/depan.png",
+      "asset/catalog/kebaya-pria/k11/back.png",
+      "asset/catalog/kebaya-pria/k11/kiri.png",
+      "asset/catalog/kebaya-pria/k11/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-72",
+    "name": "Beskap Pria Hijau Sage (Generated 72)",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k12/depan.png",
+      "asset/catalog/kebaya-pria/k12/back.png",
+      "asset/catalog/kebaya-pria/k12/kiri.png",
+      "asset/catalog/kebaya-pria/k12/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-73",
+    "name": "Kebaya Pria Klasik Merah Maroon (Generated 73)",
+    "price": 0,
+    "date": "11-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
+    ]
+  },
+  {
+    "id": "product-generated-pria-74",
+    "name": "Beskap Pria Modern Putih Gading (Generated 74)",
+    "price": 13999000,
+    "date": "10-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k02/depan.png",
+      "asset/catalog/kebaya-pria/k02/back.png",
+      "asset/catalog/kebaya-pria/k02/kiri.png",
+      "asset/catalog/kebaya-pria/k02/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-75",
+    "name": "Beskap Pria Modern Abu Silver (Generated 75)",
+    "price": 13899000,
+    "date": "09-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/belakang.png",
+      "asset/catalog/kebaya-pria/k03/kiri.png",
+      "asset/catalog/kebaya-pria/k03/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-76",
+    "name": "Beskap Pria Elegan Hitam Polos (Generated 76)",
+    "price": 24998800,
+    "date": "08-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-77",
+    "name": "Beskap Pria Hitam Aksen Emas (Generated 77)",
+    "price": 21020300,
+    "date": "07-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k05/depan.png",
+      "asset/catalog/kebaya-pria/k05/back.png",
+      "asset/catalog/kebaya-pria/k05/kiri.png",
+      "asset/catalog/kebaya-pria/k05/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-78",
+    "name": "Beskap Pria Klasik Biru Navy (Generated 78)",
+    "price": 11998800,
+    "date": "06-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k06/depan.png",
+      "asset/catalog/kebaya-pria/k06/back.png",
+      "asset/catalog/kebaya-pria/k06/kiri.png",
+      "asset/catalog/kebaya-pria/k06/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-79",
+    "name": "Beskap Pria Modern Biru Langit (Generated 79)",
+    "price": 11998000,
+    "date": "05-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k07/depan.png",
+      "asset/catalog/kebaya-pria/k07/back.png",
+      "asset/catalog/kebaya-pria/k07/kiri.png",
+      "asset/catalog/kebaya-pria/k07/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-80",
+    "name": "Beskap Pria Putih Aksen Melati (Generated 80)",
+    "price": 11699000,
+    "date": "04-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k08/depan.png",
+      "asset/catalog/kebaya-pria/k08/back.png",
+      "asset/catalog/kebaya-pria/k08/kiri.png",
+      "asset/catalog/kebaya-pria/k08/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-81",
+    "name": "Beskap Pria Hitam Bordir Emas (Generated 81)",
+    "price": 12000000,
+    "date": "03-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k09/depan.png",
+      "asset/catalog/kebaya-pria/k09/back.png",
+      "asset/catalog/kebaya-pria/k09/kiri.png",
+      "asset/catalog/kebaya-pria/k09/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-82",
+    "name": "Beskap Pria Hitam Motif Emas (Generated 82)",
+    "price": 15100000,
+    "date": "02-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k10/depan.png",
+      "asset/catalog/kebaya-pria/k10/back.png",
+      "asset/catalog/kebaya-pria/k10/kiri.png",
+      "asset/catalog/kebaya-pria/k10/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-83",
+    "name": "Beskap Pria Coklat Mocca (Generated 83)",
+    "price": 13500000,
+    "date": "01-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k11/depan.png",
+      "asset/catalog/kebaya-pria/k11/back.png",
+      "asset/catalog/kebaya-pria/k11/kiri.png",
+      "asset/catalog/kebaya-pria/k11/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-84",
+    "name": "Beskap Pria Hijau Sage (Generated 84)",
+    "price": 14800000,
+    "date": "31-10-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k12/depan.png",
+      "asset/catalog/kebaya-pria/k12/back.png",
+      "asset/catalog/kebaya-pria/k12/kiri.png",
+      "asset/catalog/kebaya-pria/k12/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-85",
+    "name": "Kebaya Pria Klasik Merah Maroon (Generated 85)",
+    "price": 0,
+    "date": "11-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
+    ]
+  },
+  {
+    "id": "product-generated-pria-86",
+    "name": "Beskap Pria Modern Putih Gading (Generated 86)",
+    "price": 13999000,
+    "date": "10-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Winter",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k02/depan.png",
+      "asset/catalog/kebaya-pria/k02/back.png",
+      "asset/catalog/kebaya-pria/k02/kiri.png",
+      "asset/catalog/kebaya-pria/k02/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-87",
+    "name": "Beskap Pria Modern Abu Silver (Generated 87)",
+    "price": 13899000,
+    "date": "09-11-2025 20-25-56+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Summer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/belakang.png",
+      "asset/catalog/kebaya-pria/k03/kiri.png",
+      "asset/catalog/kebaya-pria/k03/kanan.png"
+    ]
+  },
+  {
+    "id": "product-generated-pria-88",
+    "name": "Beskap Pria Elegan Hitam Polos (Generated 88)",
+    "price": 24998800,
+    "date": "08-11-2025 20-25-56+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Spring",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
     ]
   }
 ]
