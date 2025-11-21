@@ -1,424 +1,404 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Detail Produk Kebaya</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="Asset/favicon/favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link rel="icon" type="image/svg+xml" href="Asset/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="Asset/favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="Asset/favicon/apple-touch-icon.png"
-    />
-    <meta name="apple-mobile-web-app-title" content="Ferry Sunarto" />
-    <link rel="manifest" href="Asset/favicon/site.webmanifest" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Produk Kebaya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-  <body>
-    <div id="preloader">
-      <img
-        src="Asset/Img/ferry_sunarto_logo_transparent2.webp"
-        alt="Ferry Sunarto Logo - Loading"
-      />
-    </div>
+  <link rel="icon" type="image/png" href="asset/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="asset/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="asset/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="asset/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Ferry Sunarto" />
+  <link rel="manifest" href="asset/favicon/site.webmanifest" />
+</head>
 
-    <header id="navbar" class="navbar">
-      <nav class="container">
-        <div class="nav-left">
-          <button class="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-          <a href="#" aria-label="Search" class="search-icon-mobile">
+<body>
+  <div id="preloader">
+    <img src="asset/img/ferry_sunarto_logo_transparent2.webp" alt="Ferry Sunarto Logo - Loading" />
+  </div>
+
+  <header id="navbar" class="navbar">
+    <nav class="container">
+      <div class="nav-left">
+        <button class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="#" aria-label="Search" class="search-icon-mobile">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </div>
+
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="asset/img/fs-1.webp" alt="Ferry Sunarto Logo" />
+        </a>
+      </div>
+
+      <ul class="nav-links nav-right">
+        <li>
+          <a href="#" aria-label="Search" class="search-icon-desktop">
             <i class="fa-solid fa-magnifying-glass"></i>
           </a>
-        </div>
-
-        <div class="nav-logo">
-          <a href="index.html">
-            <img src="Asset/Img/FS (1).webp" alt="Ferry Sunarto Logo" />
+        </li>
+        <li class="wishlist-icon-header">
+          <a href="#" aria-label="Wishlist">
+            <i class="fa-regular fa-heart"></i>
+            <span class="wishlist-count">0</span>
           </a>
-        </div>
+        </li>
+        <li>
+          <a href="#" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-        <ul class="nav-links nav-right">
-          <li>
-            <a href="#" aria-label="Search" class="search-icon-desktop">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-          </li>
-          <li class="wishlist-icon-header">
-            <a href="#" aria-label="Wishlist">
-              <i class="fa-regular fa-heart"></i>
-              <span class="wishlist-count">0</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="Account"
-              ><i class="fa-regular fa-user"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <div id="menu-overlay" class="menu-overlay">
-      <div class="menu-header">
-        <button class="menu-close-btn">
-          <i class="fa-solid fa-times"></i>
-        </button>
-        <div class="menu-logo">
-          <a href="index.html">
-            <img src="Asset/Img/FS (1).webp" alt="Ferry Sunarto Logo" />
-          </a>
-        </div>
-      </div>
-      <div class="menu-content">
-        <ul class="main-menu">
-          <li class="has-submenu" data-tipe="wanita">
-            <a href="#">
-              Women's Collection <i class="fa-solid fa-chevron-right"></i>
-            </a>
-          </li>
-          <li class="has-submenu" data-tipe="pria">
-            <a href="#">
-              Men's Collection <i class="fa-solid fa-chevron-right"></i>
-            </a>
-          </li>
-          <li class="has-submenu">
-            <a href="list-artikel.html"
-              >Article <i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </li>
-        </ul>
+  <div id="menu-overlay" class="menu-overlay">
+    <div class="menu-header">
+      <button class="menu-close-btn">
+        <i class="fa-solid fa-times"></i>
+      </button>
+      <div class="menu-logo">
+        <a href="index.html">
+          <img src="asset/img/fs-1.webp" alt="Ferry Sunarto Logo" />
+        </a>
       </div>
     </div>
-
-    <div id="search-overlay" class="search-overlay">
-      <form id="catalog-search-form" class="container">
-        <input
-          type="search"
-          id="catalog-search-input"
-          placeholder="Cari berdasarkan nama produk..."
-        />
-        <button id="search-close-btn" class="search-close-btn" type="button">
-          <i class="fa-solid fa-times"></i>
-        </button>
-      </form>
+    <div class="menu-content">
+      <ul class="main-menu">
+        <li class="has-submenu" data-tipe="wanita">
+          <a href="#">
+            Women's Collection <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </li>
+        <li class="has-submenu" data-tipe="pria">
+          <a href="#">
+            Men's Collection <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </li>
+        <li class="has-submenu">
+          <a href="list-artikel.html">Article <i class="fa-solid fa-chevron-right"></i></a>
+        </li>
+      </ul>
     </div>
+  </div>
 
-    <div class="container">
-      <section class="product-title">
-        <h1></h1>
-        <p></p>
+  <div id="search-overlay" class="search-overlay">
+    <form id="catalog-search-form" class="container">
+      <input type="search" id="catalog-search-input" placeholder="Cari berdasarkan nama produk..." />
+      <button id="search-close-btn" class="search-close-btn" type="button">
+        <i class="fa-solid fa-times"></i>
+      </button>
+    </form>
+  </div>
+
+  <div class="container">
+    <section class="product-title">
+      <h1></h1>
+      <p></p>
+    </section>
+
+    <main class="product-main">
+      <section class="product-gallery">
+        <div class="main-image-wrapper">
+          <button class="nav-arrow arrow-left">&lt;</button>
+          <div class="main-image-placeholder">[Gambar Utama Produk]</div>
+          <button class="nav-arrow arrow-right">&gt;</button>
+        </div>
+        <div class="thumbnail-gallery">
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+        </div>
       </section>
 
-      <main class="product-main">
-        <section class="product-gallery">
-          <div class="main-image-wrapper">
-            <button class="nav-arrow arrow-left">&lt;</button>
-            <div class="main-image-placeholder">[Gambar Utama Produk]</div>
-            <button class="nav-arrow arrow-right">&gt;</button>
-          </div>
-          <div class="thumbnail-gallery">
-            <div class="thumbnail"></div>
-            <div class="thumbnail"></div>
-            <div class="thumbnail"></div>
-          </div>
-        </section>
+      <section class="product-info">
+        <div class="action-buttons">
+          <button class="btn btn-favorite">SAVE TO FAVORITE</button>
+          <button class="btn btn-whatsapp">CHAT VIA WHATSAPP</button>
+          <button class="btn btn-appointment">APPOINTMENT</button>
+        </div>
 
-        <section class="product-info">
-          <div class="action-buttons">
-            <button class="btn btn-favorite">SAVE TO FAVORITE</button>
-            <button class="btn btn-whatsapp">CHAT VIA WHATSAPP</button>
-            <button class="btn btn-appointment">APPOINTMENT</button>
+        <div class="product-details-tabs">
+          <div class="tab-header">
+            <button class="tab-link active" data-tab="tab-deskripsi">
+              Deskripsi
+            </button>
+            <button class="tab-link" data-tab="tab-spesifikasi">
+              Spesifikasi
+            </button>
           </div>
 
-          <div class="product-details-tabs">
-            <div class="tab-header">
-              <button class="tab-link active" data-tab="tab-deskripsi">
-                Deskripsi
-              </button>
-              <button class="tab-link" data-tab="tab-spesifikasi">
-                Spesifikasi
-              </button>
-            </div>
-
-            <div class="tab-content-container">
-              <div id="tab-deskripsi" class="tab-content active">
-                <div class="product-description">
-                  <p>Ukuran bahan cuttings style mode...</p>
-                </div>
-              </div>
-
-              <div id="tab-spesifikasi" class="tab-content">
-                <div class="product-sizes">
-                  <p>20x200x10 (M)</p>
-                  <p>40x250x45 (L)</p>
-                </div>
+          <div class="tab-content-container">
+            <div id="tab-deskripsi" class="tab-content active">
+              <div class="product-description">
+                <p>Ukuran bahan cuttings style mode...</p>
               </div>
             </div>
-          </div>
-        </section>
-      </main>
-    </div>
 
-    <footer class="main-footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-column">
-            <h3>Inspire me with all the latest Ferry Sunarto news</h3>
-            <form
-              action="emailtemplateferrysunarto.html"
-              method="get"
-              class="newsletter-form"
-            >
-              <div class="input-wrapper">
-                <input type="email" id="email" placeholder=" " required />
-                <label for="email">* E-mail</label>
+            <div id="tab-spesifikasi" class="tab-content">
+              <div class="product-sizes">
+                <p>20x200x10 (M)</p>
+                <p>40x250x45 (L)</p>
               </div>
-              <button type="submit">Confirm</button>
-            </form>
-          </div>
-          <div class="footer-column">
-            <h3>Ferry Sunarto Boutiques</h3>
-            <ul>
-              <li><a href="#">Ferry Sunarto Couture</a></li>
-              <li><a href="#">Ferry Sunarto Accessories</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Client Services</h3>
-            <ul>
-              <li class="has-submenu">
-                <a href="#" class="footer-toggle"
-                  >Contact <i class="fas fa-chevron-down"></i
-                ></a>
-                <ul class="footer-submenu">
-                  <li><a href="#">Ferry Sunarto Couture</a></li>
-                  <li><a href="#">Parfums Ferry Sunarto</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Delivery & Returns</a></li>
-              <li class="has-submenu">
-                <a href="#" class="footer-toggle"
-                  >FAQ <i class="fas fa-chevron-down"></i
-                ></a>
-                <ul class="footer-submenu">
-                  <li><a href="#">Most Common Pages</a></li>
-                  <li><a href="#">Women's Heels</a></li>
-                  <li><a href="#"></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Ferry Sunarto</h3>
-            <ul>
-              <li><a href="list-artikel.html">Article</a></li>
-              <li><a href="#">Ferry Sunarto Saddle</a></li>
-              <li><a href="#">Rose Céleste</a></li>
-              <li><a href="#">Ethics & Compliance</a></li>
-              <li><a href="#">Careers</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Legal Notices</h3>
-            <ul>
-              <li><a href="#">Accessibility</a></li>
-              <li class="has-submenu">
-                <a href="#" class="footer-toggle"
-                  >Legal Terms <i class="fas fa-chevron-down"></i
-                ></a>
-                <ul class="footer-submenu">
-                  <li><a href="#">Ferry Sunarto Couture</a></li>
-                  <li><a href="#">Ferry Sunarto Accessories</a></li>
-                </ul>
-              </li>
-              <li class="has-submenu">
-                <a href="#" class="footer-toggle"
-                  >Privacy Notice <i class="fas fa-chevron-down"></i
-                ></a>
-                <ul class="footer-submenu">
-                  <li><a href="#">Ferry Sunarto Couture</a></li>
-                  <li><a href="#">Ferry Sunarto Accessories</a></li>
-                </ul>
-              </li>
-              <li class="has-submenu">
-                <a href="#" class="footer-toggle"
-                  >Sitemap <i class="fas fa-chevron-down"></i
-                ></a>
-                <ul class="footer-submenu">
-                  <li><a href="#">Black Pumps</a></li>
-                  <li><a href="#">Travel Bags</a></li>
-                </ul>
-              </li>
-            </ul>
+            </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <div class="footer-socials">
-            <span>Follow Us:</span>
-            <a href="#">TikTok</a>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-          </div>
-          <div class="footer-logo">
-            <img src="Asset/Img/ferry_sunarto_logo_transparent2.webp" alt="" />
-          </div>
-          <div class="footer-region">
-            <a href="#"
-              >Country / Region: Indonesia<i class="fas fa-chevron-right"></i
-            ></a>
-          </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>Inspire me with all the latest Ferry Sunarto news</h3>
+          <form action="emailtemplateferrysunarto.html" method="get" class="newsletter-form">
+            <div class="input-wrapper">
+              <input type="email" id="email" placeholder=" " required />
+              <label for="email">* E-mail</label>
+            </div>
+            <button type="submit">Confirm</button>
+          </form>
+        </div>
+        <div class="footer-column">
+          <h3>Ferry Sunarto Boutiques</h3>
+          <ul>
+            <li><a href="#">Ferry Sunarto Couture</a></li>
+            <li><a href="#">Ferry Sunarto Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Client Services</h3>
+          <ul>
+            <li class="has-submenu">
+              <a href="#" class="footer-toggle">Contact <i class="fas fa-chevron-down"></i></a>
+              <ul class="footer-submenu">
+                <li><a href="#">Ferry Sunarto Couture</a></li>
+                <li><a href="#">Parfums Ferry Sunarto</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Delivery & Returns</a></li>
+            <li class="has-submenu">
+              <a href="#" class="footer-toggle">FAQ <i class="fas fa-chevron-down"></i></a>
+              <ul class="footer-submenu">
+                <li><a href="#">Most Common Pages</a></li>
+                <li><a href="#">Women's Heels</a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Ferry Sunarto</h3>
+          <ul>
+            <li><a href="list-artikel.html">Article</a></li>
+            <li><a href="#">Ferry Sunarto Saddle</a></li>
+            <li><a href="#">Rose Céleste</a></li>
+            <li><a href="#">Ethics & Compliance</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Legal Notices</h3>
+          <ul>
+            <li><a href="#">Accessibility</a></li>
+            <li class="has-submenu">
+              <a href="#" class="footer-toggle">Legal Terms <i class="fas fa-chevron-down"></i></a>
+              <ul class="footer-submenu">
+                <li><a href="#">Ferry Sunarto Couture</a></li>
+                <li><a href="#">Ferry Sunarto Accessories</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#" class="footer-toggle">Privacy Notice <i class="fas fa-chevron-down"></i></a>
+              <ul class="footer-submenu">
+                <li><a href="#">Ferry Sunarto Couture</a></li>
+                <li><a href="#">Ferry Sunarto Accessories</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#" class="footer-toggle">Sitemap <i class="fas fa-chevron-down"></i></a>
+              <ul class="footer-submenu">
+                <li><a href="#">Black Pumps</a></li>
+                <li><a href="#">Travel Bags</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
+      <div class="footer-bottom">
+        <div class="footer-socials">
+          <span>Follow Us:</span>
+          <a href="#">TikTok</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+        <div class="footer-logo">
+          <img src="asset/img/ferry_sunarto_logo_transparent2.webp" alt="" />
+        </div>
+        <div class="footer-region">
+          <a href="#">Country / Region: Indonesia<i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 
-    <div id="appointment-modal" class="appointment-modal-overlay">
-      <div class="appointment-modal-content">
-        <button id="appointment-close-btn" class="modal-close-btn">
-          &times;
-        </button>
+  <div id="appointment-modal" class="appointment-modal-overlay">
+    <div class="appointment-modal-content">
+      <button id="appointment-close-btn" class="modal-close-btn">
+        &times;
+      </button>
 
-        <h2>Make an Appointment</h2>
-        <p>Silakan isi formulir di bawah ini untuk membuat jadwal Pertemuan.</p>
+      <h2>Make an Appointment</h2>
+      <p>Silakan isi formulir di bawah ini untuk membuat jadwal Pertemuan.</p>
 
-        <form id="appointment-form">
-          <div class="appointment-form-grid">
-            <div class="form-col-left">
-              <div class="form-group">
-                <label for="appt-reason">I want to</label>
-                <select id="appt-reason" required>
-                  <option value="project" selected>Discuss a Event</option>
-                  <option value="question">Ask a question</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
+      <form id="appointment-form">
+        <div class="appointment-form-grid">
+          <div class="form-col-left">
 
-              <div class="form-group">
-                <label for="appt-name">Name</label>
-                <input type="text" id="appt-name" placeholder=" " required />
-              </div>
-
-              <div class="form-group">
-                <label for="appt-phone">Phone number</label>
-                <input type="tel" id="appt-phone" placeholder=" " required />
-              </div>
-
-              <div class="form-group">
-                <label for="appt-email">Email</label>
-                <input type="email" id="appt-email" placeholder=" " required />
-              </div>
+            <div class="form-group">
+              <label for="appt-reason">I want to</label>
+              <select id="appt-reason" required>
+                <option value="project" selected>Discuss a project</option>
+                <option value="question">Ask a question</option>
+                <option value="other">Other</option>
+              </select>
             </div>
-            <div class="form-col-right">
-              <div class="form-group">
-                <label for="appt-company">Event name</label>
-                <input type="text" id="appt-company" placeholder=" " />
-              </div>
 
-              <div class="form-group">
-                <label for="appt-message">Event description</label>
-                <textarea
-                  id="appt-message"
-                  rows="5"
-                  placeholder=" "
-                  required
-                ></textarea>
+            <fieldset class="form-group radio-group">
+              <legend>Service Type</legend>
+              <div class="radio-button-options">
+                <input type="radio" id="type-custom" name="type" value="custom" checked />
+                <label for="type-custom">Custom</label>
+                <input type="radio" id="type-rent" name="type" value="rent" />
+                <label for="type-rent">Rent</label>
+                <input type="radio" id="type-order" name="type" value="order" />
+                <label for="type-order">Order</label>
               </div>
-              <fieldset class="form-group radio-group">
-                <legend>Budget (IDR)</legend>
-                <div class="radio-button-options">
-                  <input
-                    type="radio"
-                    id="budget-1"
-                    name="budget"
-                    value="<200m"
-                    checked
-                  />
-                  <label for="budget-1">&lt; 200 mio</label>
-                  <input
-                    type="radio"
-                    id="budget-2"
-                    name="budget"
-                    value="200-500m"
-                  />
-                  <label for="budget-2">200 - 500 mio</label>
-                  <input
-                    type="radio"
-                    id="budget-3"
-                    name="budget"
-                    value="500m-1b"
-                  />
-                  <label for="budget-3">500 mio - 1 bio</label>
-                  <input type="radio" id="budget-4" name="budget" value=">1b" />
-                  <label for="budget-4">&gt; 1 bio</label>
-                </div>
-              </fieldset>
+            </fieldset>
 
-              <fieldset class="form-group radio-group">
-                <legend>Delivery date</legend>
-                <div class="radio-button-options">
-                  <input
-                    type="radio"
-                    id="delivery-1"
-                    name="delivery"
-                    value="<3m"
-                    checked
-                  />
-                  <label for="delivery-1">&lt; 3 months</label>
-                  <input
-                    type="radio"
-                    id="delivery-2"
-                    name="delivery"
-                    value="3-12m"
-                  />
-                  <label for="delivery-2">3 - 12 months</label>
-                  <input
-                    type="radio"
-                    id="delivery-3"
-                    name="delivery"
-                    value=">1y"
-                  />
-                  <label for="delivery-3">&gt; 1 year</label>
-                </div>
-              </fieldset>
-              <button type="submit" class="btn-appointment-submit">
-                SUBMIT
-              </button>
+            <div class="form-group">
+              <label for="appt-baju">Type of Clothing</label>
+              <select id="appt-baju" required>
+                <option value="" disabled selected>Select Clothing Type</option>
+                <option value="kebaya">Kebaya</option>
+                <option value="beskap">Beskap</option>
+                <option value="batik-pria">Batik Pria</option>
+                <option value="other">Other</option>
+              </select>
             </div>
+
+            <div class="form-group">
+              <label for="appt-size">Clothing Size</label>
+              <select id="appt-size" required>
+                <option value="" disabled selected>Select Size</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="custom">Custom Measurement</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="appt-name">Name</label>
+              <input type="text" id="appt-name" placeholder=" " required />
+            </div>
+
+            <div class="form-group">
+              <label for="appt-phone">Phone number</label>
+              <input type="tel" id="appt-phone" placeholder=" " required />
+            </div>
+
+            <div class="form-group">
+              <label for="appt-email">Email</label>
+              <input type="email" id="appt-email" placeholder=" " required />
+            </div>
+
+            <div class="form-group">
+              <label for="appt-age">Age </label>
+              <input type="number" id="appt-age" placeholder=" " />
+            </div>
+
+
           </div>
-        </form>
-      </div>
-    </div>
+          <div class="form-col-right">
 
-    <div id="imageModal" class="modal">
-      <span class="close-button">&times;</span>
-      <div class="modal-content-wrapper">
-        <img class="modal-image" src="" alt="Product Image" />
-        <button class="modal-arrow modal-arrow-left">&lt;</button>
-        <button class="modal-arrow modal-arrow-right">&gt;</button>
-      </div>
-      <div class="modal-thumbnails"></div>
+            <div class="form-group">
+              <label for="appt-social">Social Media (Optional)</label>
+              <input type="text" id="appt-social" placeholder=" " />
+            </div>
+
+            <div class="form-group">
+              <label for="appt-address">Full Address </label>
+              <textarea id="appt-address" rows="2" placeholder=""></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="appt-message">Event description (Event Type, Concept)</label>
+              <textarea id="appt-message" rows="3" placeholder=" " required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="appt-date">Event Date (We recommend booking 6 months in advance)</label>
+              <input type="date" id="appt-date" placeholder=" " required />
+            </div>
+
+            <fieldset class="form-group radio-group">
+              <legend id="budget-legend">Budget (IDR)</legend>
+              <div class="radio-button-options" id="budget-options-container">
+                <input type="radio" id="budget-1" name="budget" value="<200m" checked />
+                <label for="budget-1">&lt; 200 mio</label>
+                <input type="radio" id="budget-2" name="budget" value="200-500m" />
+                <label for="budget-2">200 - 500 mio</label>
+                <input type="radio" id="budget-3" name="budget" value="500m-1b" />
+                <label for="budget-3">500 mio - 1 bio</label>
+                <input type="radio" id="budget-4" name="budget" value=">1b" />
+                <label for="budget-4">&gt; 1 bio</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-group radio-group">
+              <legend>Delivery date</legend>
+              <div class="radio-button-options">
+                <input type="radio" id="delivery-1" name="delivery" value="<3m" checked />
+                <label for="delivery-1">&lt; 3 months</label>
+                <input type="radio" id="delivery-2" name="delivery" value="3-12m" />
+                <label for="delivery-2">3 - 12 months</label>
+                <input type="radio" id="delivery-3" name="delivery" value=">1y" />
+                <label for="delivery-3">&gt; 1 year</label>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn-appointment-submit">
+              SUBMIT
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
-  </body>
+  </div>
+
+  <div id="imageModal" class="modal">
+    <span class="close-button">&times;</span>
+    <div class="modal-content-wrapper">
+      <img class="modal-image" src="" alt="Product Image" />
+      <button class="modal-arrow modal-arrow-left">&lt;</button>
+      <button class="modal-arrow modal-arrow-right">&gt;</button>
+    </div>
+    <div class="modal-thumbnails"></div>
+  </div>
+</body>
+
 </html>
