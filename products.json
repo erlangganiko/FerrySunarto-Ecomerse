@@ -1,6 +1,6 @@
 [
   {
-    "id": "product-1",
+    "id":"product-1",
     "name": "Kebaya Pria Klasik Merah Maroon",
     "price": 0,
     "date": "11-11-2025 20-25-56+7",
@@ -16,10 +16,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K01/depan.webp",
-      "Asset/catalog/Kebaya Pria/K01/back.webp",
-      "Asset/catalog/Kebaya Pria/K01/kiri.webp",
-      "Asset/catalog/Kebaya Pria/K01/kanan.webp"
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
     ]
   },
   {
@@ -39,10 +39,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K02/depan.png",
-      "Asset/catalog/Kebaya Pria/K02/back.png",
-      "Asset/catalog/Kebaya Pria/K02/kiri.png",
-      "Asset/catalog/Kebaya Pria/K02/kanan.png"
+      "asset/catalog/kebaya-pria/k02/depan.webp",
+      "asset/catalog/kebaya-pria/k02/back.webp",
+      "asset/catalog/kebaya-pria/k02/kiri.webp",
+      "asset/catalog/kebaya-pria/k02/kanan.webp"
     ]
   },
   {
@@ -62,10 +62,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K03/depan.png",
-      "Asset/catalog/Kebaya Pria/K03/belakang.png",
-      "Asset/catalog/Kebaya Pria/K03/kiri.png",
-      "Asset/catalog/Kebaya Pria/K03/kanan.png"
+      "Asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/back.webp",
+      "asset/catalog/kebaya-pria/k03/kiri.webp",
+      "asset/catalog/kebaya-pria/k03/kanan.webp"
     ]
   },
   {
@@ -85,10 +85,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K04/depan.png",
-      "Asset/catalog/Kebaya Pria/K04/back.png",
-      "Asset/catalog/Kebaya Pria/K04/kiri.png",
-      "Asset/catalog/Kebaya Pria/K04/kanan.png"
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
     ]
   },
   {
@@ -108,10 +108,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K05/depan.png",
-      "Asset/catalog/Kebaya Pria/K05/back.png",
-      "Asset/catalog/Kebaya Pria/K05/kiri.png",
-      "Asset/catalog/Kebaya Pria/K05/kanan.png"
+      "asset/catalog/kebaya-pria/k05/depan.png",
+      "asset/catalog/kebaya-pria/k05/back.png",
+      "asset/catalog/kebaya-pria/k05/kiri.png",
+      "asset/catalog/kebaya-pria/k05/kanan.png"
     ]
   },
   {
@@ -131,10 +131,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K06/depan.png",
-      "Asset/catalog/Kebaya Pria/K06/back.png",
-      "Asset/catalog/Kebaya Pria/K06/kiri.png",
-      "Asset/catalog/Kebaya Pria/K06/kanan.png"
+      "asset/catalog/kebaya-pria/k06/depan.png",
+      "asset/catalog/kebaya-pria/k06/back.png",
+      "asset/catalog/kebaya-pria/k06/kiri.png",
+      "asset/catalog/kebaya-pria/k06/kanan.png"
     ]
   },
   {
@@ -154,10 +154,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K07/depan.png",
-      "Asset/catalog/Kebaya Pria/K07/back.png",
-      "Asset/catalog/Kebaya Pria/K07/kiri.png",
-      "Asset/catalog/Kebaya Pria/K07/kanan.png"
+      "asset/catalog/kebaya-pria/k07/depan.png",
+      "asset/catalog/kebaya-pria/k07/back.png",
+      "asset/catalog/kebaya-pria/k07/kiri.png",
+      "asset/catalog/kebaya-pria/k07/kanan.png"
     ]
   },
   {
@@ -177,10 +177,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K08/depan.png",
-      "Asset/catalog/Kebaya Pria/K08/back.png",
-      "Asset/catalog/Kebaya Pria/K08/kiri.png",
-      "Asset/catalog/Kebaya Pria/K08/kanan.png"
+      "asset/catalog/kebaya-pria/k08/depan.png",
+      "asset/catalog/kebaya-pria/k08/back.png",
+      "asset/catalog/kebaya-pria/k08/kiri.png",
+      "asset/catalog/kebaya-pria/k08/kanan.png"
     ]
   },
   {
@@ -200,10 +200,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K09/depan.png",
-      "Asset/catalog/Kebaya Pria/K09/back.png",
-      "Asset/catalog/Kebaya Pria/K09/kiri.png",
-      "Asset/catalog/Kebaya Pria/K09/kanan.png"
+      "asset/catalog/kebaya-pria/k09/depan.png",
+      "asset/catalog/kebaya-pria/k09/back.png",
+      "asset/catalog/kebaya-pria/k09/kiri.png",
+      "asset/catalog/kebaya-pria/k09/kanan.png"
     ]
   },
   {
@@ -223,10 +223,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K10/depan.png",
-      "Asset/catalog/Kebaya Pria/K10/back.png",
-      "Asset/catalog/Kebaya Pria/K10/kiri.png",
-      "Asset/catalog/Kebaya Pria/K10/kanan.png"
+      "asset/catalog/kebaya-pria/k10/depan.png",
+      "asset/catalog/kebaya-pria/k10/back.png",
+      "asset/catalog/kebaya-pria/k10/kiri.png",
+      "asset/catalog/kebaya-pria/k10/kanan.png"
     ]
   },
   {
@@ -246,10 +246,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K11/depan.png",
-      "Asset/catalog/Kebaya Pria/K11/back.png",
-      "Asset/catalog/Kebaya Pria/K11/kiri.png",
-      "Asset/catalog/Kebaya Pria/K11/kanan.png"
+      "asset/catalog/kebaya-pria/k11/depan.png",
+      "asset/catalog/kebaya-pria/k11/back.png",
+      "asset/catalog/kebaya-pria/k11/kiri.png",
+      "asset/catalog/kebaya-pria/k11/kanan.png"
     ]
   },
   {
@@ -269,10 +269,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K12/depan.png",
-      "Asset/catalog/Kebaya Pria/K12/back.png",
-      "Asset/catalog/Kebaya Pria/K12/kiri.png",
-      "Asset/catalog/Kebaya Pria/K12/kanan.png"
+      "asset/catalog/kebaya-pria/k12/depan.png",
+      "asset/catalog/kebaya-pria/k12/back.png",
+      "asset/catalog/kebaya-pria/k12/kiri.png",
+      "asset/catalog/kebaya-pria/k12/kanan.png"
     ]
   },
   {
@@ -292,10 +292,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya wanita/KW01/depan.png",
-      "Asset/catalog/Kebaya Wanita/KW01/back.png",
-      "Asset/catalog/Kebaya Wanita/KW01/kiri.png",
-      "Asset/catalog/Kebaya Wanita/KW01/kanan.png"
+      "asset/catalog/kebaya-wanita/kw01/depan.png",
+      "asset/catalog/kebaya-wanita/kw01/back.png",
+      "asset/catalog/kebaya-wanita/kw01/kiri.png",
+      "asset/catalog/kebaya-wanita/kw01/kanan.png"
     ]
   },
   {
@@ -315,10 +315,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya wanita/KW02/depan.png",
-      "Asset/catalog/Kebaya Wanita/KW02/back.png",
-      "Asset/catalog/Kebaya Wanita/KW02/kiri.png",
-      "Asset/catalog/Kebaya Wanita/KW02/kanan.png"
+      "asset/catalog/kebaya-wanita/kw02/depan.png",
+      "asset/catalog/kebaya-wanita/kw02/back.png",
+      "asset/catalog/kebaya-wanita/kw02/kiri.png",
+      "asset/catalog/kebaya-wanita/kw02/kanan.png"
     ]
   },
   {
@@ -338,10 +338,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya wanita/KW03/depan.png",
-      "Asset/catalog/Kebaya Wanita/KW03/back.png",
-      "Asset/catalog/Kebaya Wanita/KW03/kiri.png",
-      "Asset/catalog/Kebaya Wanita/KW03/kanan.png"
+      "asset/catalog/kebaya-wanita/kw03/depan.png",
+      "asset/catalog/kebaya-wanita/kw03/back.png",
+      "asset/catalog/kebaya-wanita/kw03/kiri.png",
+      "asset/catalog/kebaya-wanita/kw03/kanan.png"
     ]
   },
   {
@@ -361,10 +361,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya wanita/KW04/depan.png",
-      "Asset/catalog/Kebaya Wanita/KW04/back.png",
-      "Asset/catalog/Kebaya Wanita/KW04/kiri.png",
-      "Asset/catalog/Kebaya Wanita/KW04/kanan.png"
+      "asset/catalog/kebaya-wanita/kw04/depan.png",
+      "asset/catalog/kebaya-wanita/kw04/back.png",
+      "asset/catalog/kebaya-wanita/kw04/kiri.png",
+      "asset/catalog/kebaya-wanita/kw04/kanan.png"
     ]
   },
   {
@@ -384,10 +384,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya wanita/KW05/depan.png",
-      "Asset/catalog/Kebaya Wanita/KW05/back.png",
-      "Asset/catalog/Kebaya Wanita/KW05/kiri.png",
-      "Asset/catalog/Kebaya Wanita/KW05/kanan.png"
+      "asset/catalog/kebaya-wanita/kw05/depan.png",
+      "asset/catalog/kebaya-wanita/kw05/back.png",
+      "asset/catalog/kebaya-wanita/kw05/kiri.png",
+      "asset/catalog/kebaya-wanita/kw05/kanan.png"
     ]
   },
   {
@@ -407,10 +407,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya wanita/KW06/depan.png",
-      "Asset/catalog/Kebaya Wanita/KW06/back.png",
-      "Asset/catalog/Kebaya Wanita/KW06/kiri.png",
-      "Asset/catalog/Kebaya Wanita/KW06/kanan.png"
+      "asset/catalog/kebaya-wanita/kw06/depan.png",
+      "asset/catalog/kebaya-wanita/kw06/back.png",
+      "asset/catalog/kebaya-wanita/kw06/kiri.png",
+      "asset/catalog/kebaya-wanita/kw06/kanan.png"
     ]
   },
   {
@@ -430,10 +430,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya wanita/KW07/depan.png",
-      "Asset/catalog/Kebaya Wanita/KW07/back.png",
-      "Asset/catalog/Kebaya Wanita/KW07/kiri.png",
-      "Asset/catalog/Kebaya Wanita/KW07/kanan.png"
+      "asset/catalog/kebaya-wanita/kw07/depan.png",
+      "asset/catalog/kebaya-wanita/kw07/back.png",
+      "asset/catalog/kebaya-wanita/kw07/kiri.png",
+      "asset/catalog/kebaya-wanita/kw07/kanan.png"
     ]
   },
   {
@@ -453,10 +453,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya wanita/KW08/depan.png",
-      "Asset/catalog/Kebaya Wanita/KW08/back.png",
-      "Asset/catalog/Kebaya Wanita/KW08/kiri.png",
-      "Asset/catalog/Kebaya Wanita/KW08/kanan.png"
+      "asset/catalog/kebaya-wanita/kw08/depan.png",
+      "asset/catalog/kebaya-wanita/kw08/back.png",
+      "asset/catalog/kebaya-wanita/kw08/kiri.png",
+      "asset/catalog/kebaya-wanita/kw08/kanan.png"
     ]
   },
   {
@@ -476,10 +476,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya wanita/KW09/depan.png",
-      "Asset/catalog/Kebaya Wanita/KW09/back.png",
-      "Asset/catalog/Kebaya Wanita/KW09/kiri.png",
-      "Asset/catalog/Kebaya Wanita/KW09/kanan.png"
+      "asset/catalog/kebaya-wanita/kw09/depan.png",
+      "asset/catalog/kebaya-wanita/kw09/back.png",
+      "asset/catalog/kebaya-wanita/kw09/kiri.png",
+      "asset/catalog/kebaya-wanita/kw09/kanan.png"
     ]
   },
   {
@@ -499,10 +499,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya wanita/KW10/depan.png",
-      "Asset/catalog/Kebaya Wanita/KW10/back.png",
-      "Asset/catalog/Kebaya Wanita/KW10/kiri.png",
-      "Asset/catalog/Kebaya Wanita/KW10/kanan.png"
+      "asset/catalog/kebaya-wanita/kw10/depan.png",
+      "asset/catalog/kebaya-wanita/kw10/back.png",
+      "asset/catalog/kebaya-wanita/kw10/kiri.png",
+      "asset/catalog/kebaya-wanita/kw10/kanan.png"
     ]
   },
   {
@@ -522,10 +522,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya wanita/KW11/depan.png",
-      "Asset/catalog/Kebaya Wanita/KW11/back.png",
-      "Asset/catalog/Kebaya Wanita/KW11/kiri.png",
-      "Asset/catalog/Kebaya Wanita/KW11/kanan.png"
+      "asset/catalog/kebaya-wanita/kw11/depan.png",
+      "asset/catalog/kebaya-wanita/kw11/back.png",
+      "asset/catalog/kebaya-wanita/kw11/kiri.png",
+      "asset/catalog/kebaya-wanita/kw11/kanan.png"
     ]
   },
   {
@@ -545,10 +545,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya wanita/KW12/depan.png",
-      "Asset/catalog/Kebaya Wanita/KW12/back.png",
-      "Asset/catalog/Kebaya Wanita/KW12/kiri.png",
-      "Asset/catalog/Kebaya Wanita/KW12/kanan.png"
+      "asset/catalog/kebaya-wanita/kw12/depan.png",
+      "asset/catalog/kebaya-wanita/kw12/back.png",
+      "asset/catalog/kebaya-wanita/kw12/kiri.png",
+      "asset/catalog/kebaya-wanita/kw12/kanan.png"
     ]
   },
   {
@@ -568,10 +568,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K01/depan.webp",
-      "Asset/catalog/Kebaya Pria/K01/back.webp",
-      "Asset/catalog/Kebaya Pria/K01/kiri.webp",
-      "Asset/catalog/Kebaya Pria/K01/kanan.webp"
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
     ]
   },
   {
@@ -591,10 +591,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K02/depan.png",
-      "Asset/catalog/Kebaya Pria/K02/back.png",
-      "Asset/catalog/Kebaya Pria/K02/kiri.png",
-      "Asset/catalog/Kebaya Pria/K02/kanan.png"
+      "asset/catalog/kebaya-pria/k02/depan.png",
+      "asset/catalog/kebaya-pria/k02/back.png",
+      "asset/catalog/kebaya-pria/k02/kiri.png",
+      "asset/catalog/kebaya-pria/k02/kanan.png"
     ]
   },
   {
@@ -614,10 +614,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K03/depan.png",
-      "Asset/catalog/Kebaya Pria/K03/belakang.png",
-      "Asset/catalog/Kebaya Pria/K03/kiri.png",
-      "Asset/catalog/Kebaya Pria/K03/kanan.png"
+      "asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/belakang.png",
+      "asset/catalog/kebaya-pria/k03/kiri.png",
+      "asset/catalog/kebaya-pria/k03/kanan.png"
     ]
   },
   {
@@ -637,10 +637,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K04/depan.png",
-      "Asset/catalog/Kebaya Pria/K04/back.png",
-      "Asset/catalog/Kebaya Pria/K04/kiri.png",
-      "Asset/catalog/Kebaya Pria/K04/kanan.png"
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
     ]
   },
   {
@@ -660,10 +660,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K05/depan.png",
-      "Asset/catalog/Kebaya Pria/K05/back.png",
-      "Asset/catalog/Kebaya Pria/K05/kiri.png",
-      "Asset/catalog/Kebaya Pria/K05/kanan.png"
+      "asset/catalog/kebaya-pria/k05/depan.png",
+      "asset/catalog/kebaya-pria/k05/back.png",
+      "asset/catalog/kebaya-pria/k05/kiri.png",
+      "asset/catalog/kebaya-pria/k05/kanan.png"
     ]
   },
   {
@@ -683,10 +683,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K06/depan.png",
-      "Asset/catalog/Kebaya Pria/K06/back.png",
-      "Asset/catalog/Kebaya Pria/K06/kiri.png",
-      "Asset/catalog/Kebaya Pria/K06/kanan.png"
+      "asset/catalog/kebaya-pria/k06/depan.png",
+      "asset/catalog/kebaya-pria/k06/back.png",
+      "asset/catalog/kebaya-pria/k06/kiri.png",
+      "asset/catalog/kebaya-pria/k06/kanan.png"
     ]
   },
   {
@@ -706,10 +706,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K07/depan.png",
-      "Asset/catalog/Kebaya Pria/K07/back.png",
-      "Asset/catalog/Kebaya Pria/K07/kiri.png",
-      "Asset/catalog/Kebaya Pria/K07/kanan.png"
+      "asset/catalog/kebaya-pria/k07/depan.png",
+      "asset/catalog/kebaya-pria/k07/back.png",
+      "asset/catalog/kebaya-pria/k07/kiri.png",
+      "asset/catalog/kebaya-pria/k07/kanan.png"
     ]
   },
   {
@@ -729,10 +729,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K08/depan.png",
-      "Asset/catalog/Kebaya Pria/K08/back.png",
-      "Asset/catalog/Kebaya Pria/K08/kiri.png",
-      "Asset/catalog/Kebaya Pria/K08/kanan.png"
+      "asset/catalog/kebaya-pria/k08/depan.png",
+      "asset/catalog/kebaya-pria/k08/back.png",
+      "asset/catalog/kebaya-pria/k08/kiri.png",
+      "asset/catalog/kebaya-pria/k08/kanan.png"
     ]
   },
   {
@@ -752,10 +752,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K09/depan.png",
-      "Asset/catalog/Kebaya Pria/K09/back.png",
-      "Asset/catalog/Kebaya Pria/K09/kiri.png",
-      "Asset/catalog/Kebaya Pria/K09/kanan.png"
+      "asset/catalog/kebaya-pria/k09/depan.png",
+      "asset/catalog/kebaya-pria/k09/back.png",
+      "asset/catalog/kebaya-pria/k09/kiri.png",
+      "asset/catalog/kebaya-pria/k09/kanan.png"
     ]
   },
   {
@@ -775,10 +775,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K10/depan.png",
-      "Asset/catalog/Kebaya Pria/K10/back.png",
-      "Asset/catalog/Kebaya Pria/K10/kiri.png",
-      "Asset/catalog/Kebaya Pria/K10/kanan.png"
+      "asset/catalog/kebaya-pria/k10/depan.png",
+      "asset/catalog/kebaya-pria/k10/back.png",
+      "asset/catalog/kebaya-pria/k10/kiri.png",
+      "asset/catalog/kebaya-pria/k10/kanan.png"
     ]
   },
   {
@@ -798,10 +798,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K11/depan.png",
-      "Asset/catalog/Kebaya Pria/K11/back.png",
-      "Asset/catalog/Kebaya Pria/K11/kiri.png",
-      "Asset/catalog/Kebaya Pria/K11/kanan.png"
+      "asset/catalog/kebaya-pria/k11/depan.png",
+      "asset/catalog/kebaya-pria/k11/back.png",
+      "asset/catalog/kebaya-pria/k11/kiri.png",
+      "asset/catalog/kebaya-pria/k11/kanan.png"
     ]
   },
   {
@@ -821,10 +821,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K12/depan.png",
-      "Asset/catalog/Kebaya Pria/K12/back.png",
-      "Asset/catalog/Kebaya Pria/K12/kiri.png",
-      "Asset/catalog/Kebaya Pria/K12/kanan.png"
+      "asset/catalog/kebaya-pria/k12/depan.png",
+      "asset/catalog/kebaya-pria/k12/back.png",
+      "asset/catalog/kebaya-pria/k12/kiri.png",
+      "asset/catalog/kebaya-pria/k12/kanan.png"
     ]
   },
   {
@@ -844,10 +844,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K01/depan.webp",
-      "Asset/catalog/Kebaya Pria/K01/back.webp",
-      "Asset/catalog/Kebaya Pria/K01/kiri.webp",
-      "Asset/catalog/Kebaya Pria/K01/kanan.webp"
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
     ]
   },
   {
@@ -867,10 +867,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K02/depan.png",
-      "Asset/catalog/Kebaya Pria/K02/back.png",
-      "Asset/catalog/Kebaya Pria/K02/kiri.png",
-      "Asset/catalog/Kebaya Pria/K02/kanan.png"
+      "asset/catalog/kebaya-pria/k02/depan.png",
+      "asset/catalog/kebaya-pria/k02/back.png",
+      "asset/catalog/kebaya-pria/k02/kiri.png",
+      "asset/catalog/kebaya-pria/k02/kanan.png"
     ]
   },
   {
@@ -890,10 +890,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K03/depan.png",
-      "Asset/catalog/Kebaya Pria/K03/belakang.png",
-      "Asset/catalog/Kebaya Pria/K03/kiri.png",
-      "Asset/catalog/Kebaya Pria/K03/kanan.png"
+      "asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/belakang.png",
+      "asset/catalog/kebaya-pria/k03/kiri.png",
+      "asset/catalog/kebaya-pria/k03/kanan.png"
     ]
   },
   {
@@ -913,10 +913,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K04/depan.png",
-      "Asset/catalog/Kebaya Pria/K04/back.png",
-      "Asset/catalog/Kebaya Pria/K04/kiri.png",
-      "Asset/catalog/Kebaya Pria/K04/kanan.png"
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
     ]
   },
   {
@@ -936,10 +936,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K05/depan.png",
-      "Asset/catalog/Kebaya Pria/K05/back.png",
-      "Asset/catalog/Kebaya Pria/K05/kiri.png",
-      "Asset/catalog/Kebaya Pria/K05/kanan.png"
+      "asset/catalog/kebaya-pria/k05/depan.png",
+      "asset/catalog/kebaya-pria/k05/back.png",
+      "asset/catalog/kebaya-pria/k05/kiri.png",
+      "asset/catalog/kebaya-pria/k05/kanan.png"
     ]
   },
   {
@@ -959,10 +959,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K06/depan.png",
-      "Asset/catalog/Kebaya Pria/K06/back.png",
-      "Asset/catalog/Kebaya Pria/K06/kiri.png",
-      "Asset/catalog/Kebaya Pria/K06/kanan.png"
+      "asset/catalog/kebaya-pria/k06/depan.png",
+      "asset/catalog/kebaya-pria/k06/back.png",
+      "asset/catalog/kebaya-pria/k06/kiri.png",
+      "asset/catalog/kebaya-pria/k06/kanan.png"
     ]
   },
   {
@@ -982,10 +982,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K07/depan.png",
-      "Asset/catalog/Kebaya Pria/K07/back.png",
-      "Asset/catalog/Kebaya Pria/K07/kiri.png",
-      "Asset/catalog/Kebaya Pria/K07/kanan.png"
+      "asset/catalog/kebaya-pria/k07/depan.png",
+      "asset/catalog/kebaya-pria/k07/back.png",
+      "asset/catalog/kebaya-pria/k07/kiri.png",
+      "asset/catalog/kebaya-pria/k07/kanan.png"
     ]
   },
   {
@@ -1005,10 +1005,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K08/depan.png",
-      "Asset/catalog/Kebaya Pria/K08/back.png",
-      "Asset/catalog/Kebaya Pria/K08/kiri.png",
-      "Asset/catalog/Kebaya Pria/K08/kanan.png"
+      "asset/catalog/kebaya-pria/k08/depan.png",
+      "asset/catalog/kebaya-pria/k08/back.png",
+      "asset/catalog/kebaya-pria/k08/kiri.png",
+      "asset/catalog/kebaya-pria/k08/kanan.png"
     ]
   },
   {
@@ -1028,10 +1028,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K09/depan.png",
-      "Asset/catalog/Kebaya Pria/K09/back.png",
-      "Asset/catalog/Kebaya Pria/K09/kiri.png",
-      "Asset/catalog/Kebaya Pria/K09/kanan.png"
+      "asset/catalog/kebaya-pria/k09/depan.png",
+      "asset/catalog/kebaya-pria/k09/back.png",
+      "asset/catalog/kebaya-pria/k09/kiri.png",
+      "asset/catalog/kebaya-pria/k09/kanan.png"
     ]
   },
   {
@@ -1051,10 +1051,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K10/depan.png",
-      "Asset/catalog/Kebaya Pria/K10/back.png",
-      "Asset/catalog/Kebaya Pria/K10/kiri.png",
-      "Asset/catalog/Kebaya Pria/K10/kanan.png"
+      "asset/catalog/kebaya-pria/k10/depan.png",
+      "asset/catalog/kebaya-pria/k10/back.png",
+      "asset/catalog/kebaya-pria/k10/kiri.png",
+      "asset/catalog/kebaya-pria/k10/kanan.png"
     ]
   },
   {
@@ -1074,10 +1074,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K11/depan.png",
-      "Asset/catalog/Kebaya Pria/K11/back.png",
-      "Asset/catalog/Kebaya Pria/K11/kiri.png",
-      "Asset/catalog/Kebaya Pria/K11/kanan.png"
+      "asset/catalog/kebaya-pria/k11/depan.png",
+      "asset/catalog/kebaya-pria/k11/back.png",
+      "asset/catalog/kebaya-pria/k11/kiri.png",
+      "asset/catalog/kebaya-pria/k11/kanan.png"
     ]
   },
   {
@@ -1097,10 +1097,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K12/depan.png",
-      "Asset/catalog/Kebaya Pria/K12/back.png",
-      "Asset/catalog/Kebaya Pria/K12/kiri.png",
-      "Asset/catalog/Kebaya Pria/K12/kanan.png"
+      "asset/catalog/kebaya-pria/k12/depan.png",
+      "asset/catalog/kebaya-pria/k12/back.png",
+      "asset/catalog/kebaya-pria/k12/kiri.png",
+      "asset/catalog/kebaya-pria/k12/kanan.png"
     ]
   },
   {
@@ -1120,10 +1120,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K01/depan.webp",
-      "Asset/catalog/Kebaya Pria/K01/back.webp",
-      "Asset/catalog/Kebaya Pria/K01/kiri.webp",
-      "Asset/catalog/Kebaya Pria/K01/kanan.webp"
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
     ]
   },
   {
@@ -1143,10 +1143,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K02/depan.png",
-      "Asset/catalog/Kebaya Pria/K02/back.png",
-      "Asset/catalog/Kebaya Pria/K02/kiri.png",
-      "Asset/catalog/Kebaya Pria/K02/kanan.png"
+      "asset/catalog/kebaya-pria/k02/depan.png",
+      "asset/catalog/kebaya-pria/k02/back.png",
+      "asset/catalog/kebaya-pria/k02/kiri.png",
+      "asset/catalog/kebaya-pria/k02/kanan.png"
     ]
   },
   {
@@ -1166,10 +1166,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K03/depan.png",
-      "Asset/catalog/Kebaya Pria/K03/belakang.png",
-      "Asset/catalog/Kebaya Pria/K03/kiri.png",
-      "Asset/catalog/Kebaya Pria/K03/kanan.png"
+      "asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/belakang.png",
+      "asset/catalog/kebaya-pria/k03/kiri.png",
+      "asset/catalog/kebaya-pria/k03/kanan.png"
     ]
   },
   {
@@ -1189,10 +1189,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K04/depan.png",
-      "Asset/catalog/Kebaya Pria/K04/back.png",
-      "Asset/catalog/Kebaya Pria/K04/kiri.png",
-      "Asset/catalog/Kebaya Pria/K04/kanan.png"
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
     ]
   },
   {
@@ -1212,10 +1212,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K05/depan.png",
-      "Asset/catalog/Kebaya Pria/K05/back.png",
-      "Asset/catalog/Kebaya Pria/K05/kiri.png",
-      "Asset/catalog/Kebaya Pria/K05/kanan.png"
+      "asset/catalog/kebaya-pria/k05/depan.png",
+      "asset/catalog/kebaya-pria/k05/back.png",
+      "asset/catalog/kebaya-pria/k05/kiri.png",
+      "asset/catalog/kebaya-pria/k05/kanan.png"
     ]
   },
   {
@@ -1235,10 +1235,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K06/depan.png",
-      "Asset/catalog/Kebaya Pria/K06/back.png",
-      "Asset/catalog/Kebaya Pria/K06/kiri.png",
-      "Asset/catalog/Kebaya Pria/K06/kanan.png"
+      "asset/catalog/kebaya-pria/k06/depan.png",
+      "asset/catalog/kebaya-pria/k06/back.png",
+      "asset/catalog/kebaya-pria/k06/kiri.png",
+      "asset/catalog/kebaya-pria/k06/kanan.png"
     ]
   },
   {
@@ -1258,10 +1258,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K07/depan.png",
-      "Asset/catalog/Kebaya Pria/K07/back.png",
-      "Asset/catalog/Kebaya Pria/K07/kiri.png",
-      "Asset/catalog/Kebaya Pria/K07/kanan.png"
+      "asset/catalog/kebaya-pria/k07/depan.png",
+      "asset/catalog/kebaya-pria/k07/back.png",
+      "asset/catalog/kebaya-pria/k07/kiri.png",
+      "asset/catalog/kebaya-pria/k07/kanan.png"
     ]
   },
   {
@@ -1281,10 +1281,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K08/depan.png",
-      "Asset/catalog/Kebaya Pria/K08/back.png",
-      "Asset/catalog/Kebaya Pria/K08/kiri.png",
-      "Asset/catalog/Kebaya Pria/K08/kanan.png"
+      "asset/catalog/kebaya-pria/k08/depan.png",
+      "asset/catalog/kebaya-pria/k08/back.png",
+      "asset/catalog/kebaya-pria/k08/kiri.png",
+      "asset/catalog/kebaya-pria/k08/kanan.png"
     ]
   },
   {
@@ -1304,10 +1304,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K09/depan.png",
-      "Asset/catalog/Kebaya Pria/K09/back.png",
-      "Asset/catalog/Kebaya Pria/K09/kiri.png",
-      "Asset/catalog/Kebaya Pria/K09/kanan.png"
+      "asset/catalog/kebaya-pria/k09/depan.png",
+      "asset/catalog/kebaya-pria/k09/back.png",
+      "asset/catalog/kebaya-pria/k09/kiri.png",
+      "asset/catalog/kebaya-pria/k09/kanan.png"
     ]
   },
   {
@@ -1327,10 +1327,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K10/depan.png",
-      "Asset/catalog/Kebaya Pria/K10/back.png",
-      "Asset/catalog/Kebaya Pria/K10/kiri.png",
-      "Asset/catalog/Kebaya Pria/K10/kanan.png"
+      "asset/catalog/kebaya-pria/k10/depan.png",
+      "asset/catalog/kebaya-pria/k10/back.png",
+      "asset/catalog/kebaya-pria/k10/kiri.png",
+      "asset/catalog/kebaya-pria/k10/kanan.png"
     ]
   },
   {
@@ -1350,10 +1350,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K11/depan.png",
-      "Asset/catalog/Kebaya Pria/K11/back.png",
-      "Asset/catalog/Kebaya Pria/K11/kiri.png",
-      "Asset/catalog/Kebaya Pria/K11/kanan.png"
+      "asset/catalog/kebaya-pria/k11/depan.png",
+      "asset/catalog/kebaya-pria/k11/back.png",
+      "asset/catalog/kebaya-pria/k11/kiri.png",
+      "asset/catalog/kebaya-pria/k11/kanan.png"
     ]
   },
   {
@@ -1373,10 +1373,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K12/depan.png",
-      "Asset/catalog/Kebaya Pria/K12/back.png",
-      "Asset/catalog/Kebaya Pria/K12/kiri.png",
-      "Asset/catalog/Kebaya Pria/K12/kanan.png"
+      "asset/catalog/kebaya-pria/k12/depan.png",
+      "asset/catalog/kebaya-pria/k12/back.png",
+      "asset/catalog/kebaya-pria/k12/kiri.png",
+      "asset/catalog/kebaya-pria/k12/kanan.png"
     ]
   },
   {
@@ -1396,10 +1396,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K01/depan.webp",
-      "Asset/catalog/Kebaya Pria/K01/back.webp",
-      "Asset/catalog/Kebaya Pria/K01/kiri.webp",
-      "Asset/catalog/Kebaya Pria/K01/kanan.webp"
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
     ]
   },
   {
@@ -1419,10 +1419,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K02/depan.png",
-      "Asset/catalog/Kebaya Pria/K02/back.png",
-      "Asset/catalog/Kebaya Pria/K02/kiri.png",
-      "Asset/catalog/Kebaya Pria/K02/kanan.png"
+      "asset/catalog/kebaya-pria/k02/depan.png",
+      "asset/catalog/kebaya-pria/k02/back.png",
+      "asset/catalog/kebaya-pria/k02/kiri.png",
+      "asset/catalog/kebaya-pria/k02/kanan.png"
     ]
   },
   {
@@ -1442,10 +1442,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K03/depan.png",
-      "Asset/catalog/Kebaya Pria/K03/belakang.png",
-      "Asset/catalog/Kebaya Pria/K03/kiri.png",
-      "Asset/catalog/Kebaya Pria/K03/kanan.png"
+      "asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/belakang.png",
+      "asset/catalog/kebaya-pria/k03/kiri.png",
+      "asset/catalog/kebaya-pria/k03/kanan.png"
     ]
   },
   {
@@ -1465,10 +1465,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K04/depan.png",
-      "Asset/catalog/Kebaya Pria/K04/back.png",
-      "Asset/catalog/Kebaya Pria/K04/kiri.png",
-      "Asset/catalog/Kebaya Pria/K04/kanan.png"
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
     ]
   },
   {
@@ -1488,10 +1488,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K05/depan.png",
-      "Asset/catalog/Kebaya Pria/K05/back.png",
-      "Asset/catalog/Kebaya Pria/K05/kiri.png",
-      "Asset/catalog/Kebaya Pria/K05/kanan.png"
+      "asset/catalog/kebaya-pria/k05/depan.png",
+      "asset/catalog/kebaya-pria/k05/back.png",
+      "asset/catalog/kebaya-pria/k05/kiri.png",
+      "asset/catalog/kebaya-pria/k05/kanan.png"
     ]
   },
   {
@@ -1511,10 +1511,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K06/depan.png",
-      "Asset/catalog/Kebaya Pria/K06/back.png",
-      "Asset/catalog/Kebaya Pria/K06/kiri.png",
-      "Asset/catalog/Kebaya Pria/K06/kanan.png"
+      "asset/catalog/kebaya-pria/k06/depan.png",
+      "asset/catalog/kebaya-pria/k06/back.png",
+      "asset/catalog/kebaya-pria/k06/kiri.png",
+      "asset/catalog/kebaya-pria/k06/kanan.png"
     ]
   },
   {
@@ -1534,10 +1534,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K07/depan.png",
-      "Asset/catalog/Kebaya Pria/K07/back.png",
-      "Asset/catalog/Kebaya Pria/K07/kiri.png",
-      "Asset/catalog/Kebaya Pria/K07/kanan.png"
+      "asset/catalog/kebaya-pria/k07/depan.png",
+      "asset/catalog/kebaya-pria/k07/back.png",
+      "asset/catalog/kebaya-pria/k07/kiri.png",
+      "asset/catalog/kebaya-pria/k07/kanan.png"
     ]
   },
   {
@@ -1557,10 +1557,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K08/depan.png",
-      "Asset/catalog/Kebaya Pria/K08/back.png",
-      "Asset/catalog/Kebaya Pria/K08/kiri.png",
-      "Asset/catalog/Kebaya Pria/K08/kanan.png"
+      "asset/catalog/kebaya-pria/k08/depan.png",
+      "asset/catalog/kebaya-pria/k08/back.png",
+      "asset/catalog/kebaya-pria/k08/kiri.png",
+      "asset/catalog/kebaya-pria/k08/kanan.png"
     ]
   },
   {
@@ -1580,10 +1580,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K09/depan.png",
-      "Asset/catalog/Kebaya Pria/K09/back.png",
-      "Asset/catalog/Kebaya Pria/K09/kiri.png",
-      "Asset/catalog/Kebaya Pria/K09/kanan.png"
+      "asset/catalog/kebaya-pria/k09/depan.png",
+      "asset/catalog/kebaya-pria/k09/back.png",
+      "asset/catalog/kebaya-pria/k09/kiri.png",
+      "asset/catalog/kebaya-pria/k09/kanan.png"
     ]
   },
   {
@@ -1603,10 +1603,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K10/depan.png",
-      "Asset/catalog/Kebaya Pria/K10/back.png",
-      "Asset/catalog/Kebaya Pria/K10/kiri.png",
-      "Asset/catalog/Kebaya Pria/K10/kanan.png"
+      "asset/catalog/kebaya-pria/k10/depan.png",
+      "asset/catalog/kebaya-pria/k10/back.png",
+      "asset/catalog/kebaya-pria/k10/kiri.png",
+      "asset/catalog/kebaya-pria/k10/kanan.png"
     ]
   },
   {
@@ -1626,10 +1626,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K11/depan.png",
-      "Asset/catalog/Kebaya Pria/K11/back.png",
-      "Asset/catalog/Kebaya Pria/K11/kiri.png",
-      "Asset/catalog/Kebaya Pria/K11/kanan.png"
+      "asset/catalog/kebaya-pria/k11/depan.png",
+      "asset/catalog/kebaya-pria/k11/back.png",
+      "asset/catalog/kebaya-pria/k11/kiri.png",
+      "asset/catalog/kebaya-pria/k11/kanan.png"
     ]
   },
   {
@@ -1649,10 +1649,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K12/depan.png",
-      "Asset/catalog/Kebaya Pria/K12/back.png",
-      "Asset/catalog/Kebaya Pria/K12/kiri.png",
-      "Asset/catalog/Kebaya Pria/K12/kanan.png"
+      "asset/catalog/kebaya-pria/k12/depan.png",
+      "asset/catalog/kebaya-pria/k12/back.png",
+      "asset/catalog/kebaya-pria/k12/kiri.png",
+      "asset/catalog/kebaya-pria/k12/kanan.png"
     ]
   },
   {
@@ -1672,10 +1672,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K01/depan.webp",
-      "Asset/catalog/Kebaya Pria/K01/back.webp",
-      "Asset/catalog/Kebaya Pria/K01/kiri.webp",
-      "Asset/catalog/Kebaya Pria/K01/kanan.webp"
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
     ]
   },
   {
@@ -1695,10 +1695,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K02/depan.png",
-      "Asset/catalog/Kebaya Pria/K02/back.png",
-      "Asset/catalog/Kebaya Pria/K02/kiri.png",
-      "Asset/catalog/Kebaya Pria/K02/kanan.png"
+      "asset/catalog/kebaya-pria/k02/depan.png",
+      "asset/catalog/kebaya-pria/k02/back.png",
+      "asset/catalog/kebaya-pria/k02/kiri.png",
+      "asset/catalog/kebaya-pria/k02/kanan.png"
     ]
   },
   {
@@ -1718,10 +1718,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K03/depan.png",
-      "Asset/catalog/Kebaya Pria/K03/belakang.png",
-      "Asset/catalog/Kebaya Pria/K03/kiri.png",
-      "Asset/catalog/Kebaya Pria/K03/kanan.png"
+      "asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/belakang.png",
+      "asset/catalog/kebaya-pria/k03/kiri.png",
+      "asset/catalog/kebaya-pria/k03/kanan.png"
     ]
   },
   {
@@ -1741,10 +1741,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K04/depan.png",
-      "Asset/catalog/Kebaya Pria/K04/back.png",
-      "Asset/catalog/Kebaya Pria/K04/kiri.png",
-      "Asset/catalog/Kebaya Pria/K04/kanan.png"
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
     ]
   },
   {
@@ -1764,10 +1764,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K05/depan.png",
-      "Asset/catalog/Kebaya Pria/K05/back.png",
-      "Asset/catalog/Kebaya Pria/K05/kiri.png",
-      "Asset/catalog/Kebaya Pria/K05/kanan.png"
+      "asset/catalog/kebaya-pria/k05/depan.png",
+      "asset/catalog/kebaya-pria/k05/back.png",
+      "asset/catalog/kebaya-pria/k05/kiri.png",
+      "asset/catalog/kebaya-pria/k05/kanan.png"
     ]
   },
   {
@@ -1787,10 +1787,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K06/depan.png",
-      "Asset/catalog/Kebaya Pria/K06/back.png",
-      "Asset/catalog/Kebaya Pria/K06/kiri.png",
-      "Asset/catalog/Kebaya Pria/K06/kanan.png"
+      "asset/catalog/kebaya-pria/k06/depan.png",
+      "asset/catalog/kebaya-pria/k06/back.png",
+      "asset/catalog/kebaya-pria/k06/kiri.png",
+      "asset/catalog/kebaya-pria/k06/kanan.png"
     ]
   },
   {
@@ -1810,10 +1810,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K07/depan.png",
-      "Asset/catalog/Kebaya Pria/K07/back.png",
-      "Asset/catalog/Kebaya Pria/K07/kiri.png",
-      "Asset/catalog/Kebaya Pria/K07/kanan.png"
+      "asset/catalog/kebaya-pria/k07/depan.png",
+      "asset/catalog/kebaya-pria/k07/back.png",
+      "asset/catalog/kebaya-pria/k07/kiri.png",
+      "asset/catalog/kebaya-pria/k07/kanan.png"
     ]
   },
   {
@@ -1833,10 +1833,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K08/depan.png",
-      "Asset/catalog/Kebaya Pria/K08/back.png",
-      "Asset/catalog/Kebaya Pria/K08/kiri.png",
-      "Asset/catalog/Kebaya Pria/K08/kanan.png"
+      "asset/catalog/kebaya-pria/k08/depan.png",
+      "asset/catalog/kebaya-pria/k08/back.png",
+      "asset/catalog/kebaya-pria/k08/kiri.png",
+      "asset/catalog/kebaya-pria/k08/kanan.png"
     ]
   },
   {
@@ -1856,10 +1856,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K09/depan.png",
-      "Asset/catalog/Kebaya Pria/K09/back.png",
-      "Asset/catalog/Kebaya Pria/K09/kiri.png",
-      "Asset/catalog/Kebaya Pria/K09/kanan.png"
+      "asset/catalog/kebaya-pria/k09/depan.png",
+      "asset/catalog/kebaya-pria/k09/back.png",
+      "asset/catalog/kebaya-pria/k09/kiri.png",
+      "asset/catalog/kebaya-pria/k09/kanan.png"
     ]
   },
   {
@@ -1879,10 +1879,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K10/depan.png",
-      "Asset/catalog/Kebaya Pria/K10/back.png",
-      "Asset/catalog/Kebaya Pria/K10/kiri.png",
-      "Asset/catalog/Kebaya Pria/K10/kanan.png"
+      "asset/catalog/kebaya-pria/k10/depan.png",
+      "asset/catalog/kebaya-pria/k10/back.png",
+      "asset/catalog/kebaya-pria/k10/kiri.png",
+      "asset/catalog/kebaya-pria/k10/kanan.png"
     ]
   },
   {
@@ -1902,10 +1902,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K11/depan.png",
-      "Asset/catalog/Kebaya Pria/K11/back.png",
-      "Asset/catalog/Kebaya Pria/K11/kiri.png",
-      "Asset/catalog/Kebaya Pria/K11/kanan.png"
+      "asset/catalog/kebaya-pria/k11/depan.png",
+      "asset/catalog/kebaya-pria/k11/back.png",
+      "asset/catalog/kebaya-pria/k11/kiri.png",
+      "asset/catalog/kebaya-pria/k11/kanan.png"
     ]
   },
   {
@@ -1925,10 +1925,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K12/depan.png",
-      "Asset/catalog/Kebaya Pria/K12/back.png",
-      "Asset/catalog/Kebaya Pria/K12/kiri.png",
-      "Asset/catalog/Kebaya Pria/K12/kanan.png"
+      "asset/catalog/kebaya-pria/k12/depan.png",
+      "asset/catalog/kebaya-pria/k12/back.png",
+      "asset/catalog/kebaya-pria/k12/kiri.png",
+      "asset/catalog/kebaya-pria/k12/kanan.png"
     ]
   },
   {
@@ -1948,10 +1948,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K01/depan.webp",
-      "Asset/catalog/Kebaya Pria/K01/back.webp",
-      "Asset/catalog/Kebaya Pria/K01/kiri.webp",
-      "Asset/catalog/Kebaya Pria/K01/kanan.webp"
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
     ]
   },
   {
@@ -1971,10 +1971,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K02/depan.png",
-      "Asset/catalog/Kebaya Pria/K02/back.png",
-      "Asset/catalog/Kebaya Pria/K02/kiri.png",
-      "Asset/catalog/Kebaya Pria/K02/kanan.png"
+      "asset/catalog/kebaya-pria/k02/depan.png",
+      "asset/catalog/kebaya-pria/k02/back.png",
+      "asset/catalog/kebaya-pria/k02/kiri.png",
+      "asset/catalog/kebaya-pria/k02/kanan.png"
     ]
   },
   {
@@ -1994,10 +1994,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K03/depan.png",
-      "Asset/catalog/Kebaya Pria/K03/belakang.png",
-      "Asset/catalog/Kebaya Pria/K03/kiri.png",
-      "Asset/catalog/Kebaya Pria/K03/kanan.png"
+      "asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/belakang.png",
+      "asset/catalog/kebaya-pria/k03/kiri.png",
+      "asset/catalog/kebaya-pria/k03/kanan.png"
     ]
   },
   {
@@ -2017,10 +2017,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K04/depan.png",
-      "Asset/catalog/Kebaya Pria/K04/back.png",
-      "Asset/catalog/Kebaya Pria/K04/kiri.png",
-      "Asset/catalog/Kebaya Pria/K04/kanan.png"
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
     ]
   },
   {
@@ -2040,10 +2040,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K05/depan.png",
-      "Asset/catalog/Kebaya Pria/K05/back.png",
-      "Asset/catalog/Kebaya Pria/K05/kiri.png",
-      "Asset/catalog/Kebaya Pria/K05/kanan.png"
+      "asset/catalog/kebaya-pria/k05/depan.png",
+      "asset/catalog/kebaya-pria/k05/back.png",
+      "asset/catalog/kebaya-pria/k05/kiri.png",
+      "asset/catalog/kebaya-pria/k05/kanan.png"
     ]
   },
   {
@@ -2063,10 +2063,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K06/depan.png",
-      "Asset/catalog/Kebaya Pria/K06/back.png",
-      "Asset/catalog/Kebaya Pria/K06/kiri.png",
-      "Asset/catalog/Kebaya Pria/K06/kanan.png"
+      "asset/catalog/kebaya-pria/k06/depan.png",
+      "asset/catalog/kebaya-pria/k06/back.png",
+      "asset/catalog/kebaya-pria/k06/kiri.png",
+      "asset/catalog/kebaya-pria/k06/kanan.png"
     ]
   },
   {
@@ -2086,10 +2086,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K07/depan.png",
-      "Asset/catalog/Kebaya Pria/K07/back.png",
-      "Asset/catalog/Kebaya Pria/K07/kiri.png",
-      "Asset/catalog/Kebaya Pria/K07/kanan.png"
+      "asset/catalog/kebaya-pria/k07/depan.png",
+      "asset/catalog/kebaya-pria/k07/back.png",
+      "asset/catalog/kebaya-pria/k07/kiri.png",
+      "asset/catalog/kebaya-pria/k07/kanan.png"
     ]
   },
   {
@@ -2109,10 +2109,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K08/depan.png",
-      "Asset/catalog/Kebaya Pria/K08/back.png",
-      "Asset/catalog/Kebaya Pria/K08/kiri.png",
-      "Asset/catalog/Kebaya Pria/K08/kanan.png"
+      "asset/catalog/kebaya-pria/k08/depan.png",
+      "asset/catalog/kebaya-pria/k08/back.png",
+      "asset/catalog/kebaya-pria/k08/kiri.png",
+      "asset/catalog/kebaya-pria/k08/kanan.png"
     ]
   },
   {
@@ -2132,10 +2132,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K09/depan.png",
-      "Asset/catalog/Kebaya Pria/K09/back.png",
-      "Asset/catalog/Kebaya Pria/K09/kiri.png",
-      "Asset/catalog/Kebaya Pria/K09/kanan.png"
+      "asset/catalog/kebaya-pria/k09/depan.png",
+      "asset/catalog/kebaya-pria/k09/back.png",
+      "asset/catalog/kebaya-pria/k09/kiri.png",
+      "asset/catalog/kebaya-pria/k09/kanan.png"
     ]
   },
   {
@@ -2155,10 +2155,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K10/depan.png",
-      "Asset/catalog/Kebaya Pria/K10/back.png",
-      "Asset/catalog/Kebaya Pria/K10/kiri.png",
-      "Asset/catalog/Kebaya Pria/K10/kanan.png"
+      "asset/catalog/kebaya-pria/k10/depan.png",
+      "asset/catalog/kebaya-pria/k10/back.png",
+      "asset/catalog/kebaya-pria/k10/kiri.png",
+      "asset/catalog/kebaya-pria/k10/kanan.png"
     ]
   },
   {
@@ -2178,10 +2178,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K11/depan.png",
-      "Asset/catalog/Kebaya Pria/K11/back.png",
-      "Asset/catalog/Kebaya Pria/K11/kiri.png",
-      "Asset/catalog/Kebaya Pria/K11/kanan.png"
+      "asset/catalog/kebaya-pria/k11/depan.png",
+      "asset/catalog/kebaya-pria/k11/back.png",
+      "asset/catalog/kebaya-pria/k11/kiri.png",
+      "asset/catalog/kebaya-pria/k11/kanan.png"
     ]
   },
   {
@@ -2201,10 +2201,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K12/depan.png",
-      "Asset/catalog/Kebaya Pria/K12/back.png",
-      "Asset/catalog/Kebaya Pria/K12/kiri.png",
-      "Asset/catalog/Kebaya Pria/K12/kanan.png"
+      "asset/catalog/kebaya-pria/k12/depan.png",
+      "asset/catalog/kebaya-pria/k12/back.png",
+      "asset/catalog/kebaya-pria/k12/kiri.png",
+      "asset/catalog/kebaya-pria/k12/kanan.png"
     ]
   },
   {
@@ -2224,10 +2224,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K01/depan.webp",
-      "Asset/catalog/Kebaya Pria/K01/back.webp",
-      "Asset/catalog/Kebaya Pria/K01/kiri.webp",
-      "Asset/catalog/Kebaya Pria/K01/kanan.webp"
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
     ]
   },
   {
@@ -2247,10 +2247,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K02/depan.png",
-      "Asset/catalog/Kebaya Pria/K02/back.png",
-      "Asset/catalog/Kebaya Pria/K02/kiri.png",
-      "Asset/catalog/Kebaya Pria/K02/kanan.png"
+      "asset/catalog/kebaya-pria/k02/depan.png",
+      "asset/catalog/kebaya-pria/k02/back.png",
+      "asset/catalog/kebaya-pria/k02/kiri.png",
+      "asset/catalog/kebaya-pria/k02/kanan.png"
     ]
   },
   {
@@ -2270,10 +2270,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K03/depan.png",
-      "Asset/catalog/Kebaya Pria/K03/belakang.png",
-      "Asset/catalog/Kebaya Pria/K03/kiri.png",
-      "Asset/catalog/Kebaya Pria/K03/kanan.png"
+      "asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/belakang.png",
+      "asset/catalog/kebaya-pria/k03/kiri.png",
+      "asset/catalog/kebaya-pria/k03/kanan.png"
     ]
   },
   {
@@ -2293,10 +2293,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K04/depan.png",
-      "Asset/catalog/Kebaya Pria/K04/back.png",
-      "Asset/catalog/Kebaya Pria/K04/kiri.png",
-      "Asset/catalog/Kebaya Pria/K04/kanan.png"
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
     ]
   },
   {
@@ -2316,10 +2316,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K05/depan.png",
-      "Asset/catalog/Kebaya Pria/K05/back.png",
-      "Asset/catalog/Kebaya Pria/K05/kiri.png",
-      "Asset/catalog/Kebaya Pria/K05/kanan.png"
+      "asset/catalog/kebaya-pria/k05/depan.png",
+      "asset/catalog/kebaya-pria/k05/back.png",
+      "asset/catalog/kebaya-pria/k05/kiri.png",
+      "asset/catalog/kebaya-pria/k05/kanan.png"
     ]
   },
   {
@@ -2339,10 +2339,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K06/depan.png",
-      "Asset/catalog/Kebaya Pria/K06/back.png",
-      "Asset/catalog/Kebaya Pria/K06/kiri.png",
-      "Asset/catalog/Kebaya Pria/K06/kanan.png"
+      "asset/catalog/kebaya-pria/k06/depan.png",
+      "asset/catalog/kebaya-pria/k06/back.png",
+      "asset/catalog/kebaya-pria/k06/kiri.png",
+      "asset/catalog/kebaya-pria/k06/kanan.png"
     ]
   },
   {
@@ -2362,10 +2362,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K07/depan.png",
-      "Asset/catalog/Kebaya Pria/K07/back.png",
-      "Asset/catalog/Kebaya Pria/K07/kiri.png",
-      "Asset/catalog/Kebaya Pria/K07/kanan.png"
+      "asset/catalog/kebaya-pria/k07/depan.png",
+      "asset/catalog/kebaya-pria/k07/back.png",
+      "asset/catalog/kebaya-pria/k07/kiri.png",
+      "asset/catalog/kebaya-pria/k07/kanan.png"
     ]
   },
   {
@@ -2385,10 +2385,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K08/depan.png",
-      "Asset/catalog/Kebaya Pria/K08/back.png",
-      "Asset/catalog/Kebaya Pria/K08/kiri.png",
-      "Asset/catalog/Kebaya Pria/K08/kanan.png"
+      "asset/catalog/kebaya-pria/k08/depan.png",
+      "asset/catalog/kebaya-pria/k08/back.png",
+      "asset/catalog/kebaya-pria/k08/kiri.png",
+      "asset/catalog/kebaya-pria/k08/kanan.png"
     ]
   },
   {
@@ -2408,10 +2408,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K09/depan.png",
-      "Asset/catalog/Kebaya Pria/K09/back.png",
-      "Asset/catalog/Kebaya Pria/K09/kiri.png",
-      "Asset/catalog/Kebaya Pria/K09/kanan.png"
+      "asset/catalog/kebaya-pria/k09/depan.png",
+      "asset/catalog/kebaya-pria/k09/back.png",
+      "asset/catalog/kebaya-pria/k09/kiri.png",
+      "asset/catalog/kebaya-pria/k09/kanan.png"
     ]
   },
   {
@@ -2431,10 +2431,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K10/depan.png",
-      "Asset/catalog/Kebaya Pria/K10/back.png",
-      "Asset/catalog/Kebaya Pria/K10/kiri.png",
-      "Asset/catalog/Kebaya Pria/K10/kanan.png"
+      "asset/catalog/kebaya-pria/k10/depan.png",
+      "asset/catalog/kebaya-pria/k10/back.png",
+      "asset/catalog/kebaya-pria/k10/kiri.png",
+      "asset/catalog/kebaya-pria/k10/kanan.png"
     ]
   },
   {
@@ -2454,10 +2454,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K11/depan.png",
-      "Asset/catalog/Kebaya Pria/K11/back.png",
-      "Asset/catalog/Kebaya Pria/K11/kiri.png",
-      "Asset/catalog/Kebaya Pria/K11/kanan.png"
+      "asset/catalog/kebaya-pria/k11/depan.png",
+      "asset/catalog/kebaya-pria/k11/back.png",
+      "asset/catalog/kebaya-pria/k11/kiri.png",
+      "asset/catalog/kebaya-pria/k11/kanan.png"
     ]
   },
   {
@@ -2477,10 +2477,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K12/depan.png",
-      "Asset/catalog/Kebaya Pria/K12/back.png",
-      "Asset/catalog/Kebaya Pria/K12/kiri.png",
-      "Asset/catalog/Kebaya Pria/K12/kanan.png"
+      "asset/catalog/kebaya-pria/k12/depan.png",
+      "asset/catalog/kebaya-pria/k12/back.png",
+      "asset/catalog/kebaya-pria/k12/kiri.png",
+      "asset/catalog/kebaya-pria/k12/kanan.png"
     ]
   },
   {
@@ -2500,10 +2500,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K01/depan.webp",
-      "Asset/catalog/Kebaya Pria/K01/back.webp",
-      "Asset/catalog/Kebaya Pria/K01/kiri.webp",
-      "Asset/catalog/Kebaya Pria/K01/kanan.webp"
+      "asset/catalog/kebaya-pria/k01/depan.webp",
+      "asset/catalog/kebaya-pria/k01/back.webp",
+      "asset/catalog/kebaya-pria/k01/kiri.webp",
+      "asset/catalog/kebaya-pria/k01/kanan.webp"
     ]
   },
   {
@@ -2523,10 +2523,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K02/depan.png",
-      "Asset/catalog/Kebaya Pria/K02/back.png",
-      "Asset/catalog/Kebaya Pria/K02/kiri.png",
-      "Asset/catalog/Kebaya Pria/K02/kanan.png"
+      "asset/catalog/kebaya-pria/k02/depan.png",
+      "asset/catalog/kebaya-pria/k02/back.png",
+      "asset/catalog/kebaya-pria/k02/kiri.png",
+      "asset/catalog/kebaya-pria/k02/kanan.png"
     ]
   },
   {
@@ -2546,10 +2546,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K03/depan.png",
-      "Asset/catalog/Kebaya Pria/K03/belakang.png",
-      "Asset/catalog/Kebaya Pria/K03/kiri.png",
-      "Asset/catalog/Kebaya Pria/K03/kanan.png"
+      "asset/catalog/kebaya-pria/k03/depan.png",
+      "asset/catalog/kebaya-pria/k03/belakang.png",
+      "asset/catalog/kebaya-pria/k03/kiri.png",
+      "asset/catalog/kebaya-pria/k03/kanan.png"
     ]
   },
   {
@@ -2569,10 +2569,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/Kebaya Pria/K04/depan.png",
-      "Asset/catalog/Kebaya Pria/K04/back.png",
-      "Asset/catalog/Kebaya Pria/K04/kiri.png",
-      "Asset/catalog/Kebaya Pria/K04/kanan.png"
+      "asset/catalog/kebaya-pria/k04/depan.png",
+      "asset/catalog/kebaya-pria/k04/back.png",
+      "asset/catalog/kebaya-pria/k04/kiri.png",
+      "asset/catalog/kebaya-pria/k04/kanan.png"
     ]
   }
 ]
