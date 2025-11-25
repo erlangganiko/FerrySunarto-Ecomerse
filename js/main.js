@@ -6,8 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
   initializeCommonFeatures();
 
   // 2. Cek apakah kita di Halaman Homepage
+  // (Ada hero-static, dan kita muat produk unggulan + artikel unggulan)
   if (document.querySelector(".hero-static")) {
     loadFeaturedProducts();
+    if (document.querySelector(".news-grid")) {
+      loadFeaturedArticles(); // [BARU] Muat artikel di homepage
+    }
   }
 
   // [BARU] 3. Cek apakah kita di Halaman Transisi
@@ -23,9 +27,19 @@ document.addEventListener("DOMContentLoaded", () => {
     initializeAppProductPages();
   }
 
-  // 5. Cek apakah kita di Halaman Detail
+  // 5. Cek apakah kita di Halaman Detail Produk
   if (document.querySelector(".product-main")) {
     initializeProductDetail();
+  }
+
+  // [BARU] 6. Cek apakah kita di Halaman List Artikel
+  if (document.querySelector(".list-article-page")) {
+    loadAllArticles();
+  }
+
+  // [BARU] 7. Cek apakah kita di Halaman Detail Artikel
+  if (document.querySelector(".article-page")) {
+    loadArticleDetail();
   }
 });
 
@@ -158,27 +172,39 @@ async function initializeMenuCollections() {
 function initializeCommonFeatures() {
   // --- LOGIKA NAVBAR SCROLL ---
   const navbar = document.getElementById("navbar");
+  const logoImage = navbar ? navbar.querySelector(".nav-logo img") : null;
+
   if (navbar) {
+    // Persiapan Ganti Logo (jika atribut tersedia)
+    const defaultLogo = logoImage ? logoImage.dataset.logoDefault : null;
+    const scrolledLogo = logoImage ? logoImage.dataset.logoScrolled : null;
+
     let lastScrollY = window.scrollY;
 
     // Fungsi untuk cek status scroll
     const updateNavbar = () => {
       const currentScrollY = window.scrollY;
+      const isScrolled = currentScrollY > 50;
 
       // Tentukan apakah navbar harus 'scrolled' (background putih)
-      // Di halaman katalog, detail, atau transisi, navbar SELALU 'scrolled'
+      // Di halaman katalog, detail, list artikel, detail artikel, atau transisi, navbar SELALU 'scrolled'
       if (
         document.querySelector(".catalog-section") ||
         document.querySelector(".product-main") ||
-        document.querySelector(".transition-grid")
+        document.querySelector(".transition-grid") ||
+        document.querySelector(".list-article-page") ||
+        document.querySelector(".article-page")
       ) {
         navbar.classList.add("scrolled");
+        if (logoImage && scrolledLogo) logoImage.src = scrolledLogo;
       } else {
         // Hanya di homepage, cek posisi scroll
-        if (currentScrollY > 50) {
+        if (isScrolled) {
           navbar.classList.add("scrolled");
+          if (logoImage && scrolledLogo) logoImage.src = scrolledLogo;
         } else {
           navbar.classList.remove("scrolled");
+          if (logoImage && defaultLogo) logoImage.src = defaultLogo;
         }
       }
 
@@ -800,17 +826,137 @@ async function loadFeaturedProducts() {
 }
 
 // ==========================================================
-// FUNGSI BARU UNTUK HALAMAN DETAIL (detail-barang.html)
+// [BARU] FUNGSI ARTIKEL & BERITA (UPDATED)
 // ==========================================================
 
-// [BARU] Helper untuk menghasilkan opsi budget HTML
+/**
+ * Memuat 4 artikel terbaru untuk Homepage
+ */
+async function loadFeaturedArticles() {
+  const grid = document.querySelector(".news-grid");
+  if (!grid) return;
+
+  try {
+    const response = await fetch("articles.json");
+    const articles = await response.json();
+
+    const featured = articles.slice(0, 4);
+
+    grid.innerHTML = ""; 
+
+    featured.forEach((article) => {
+      const html = `
+        <div class="news-item">
+          <div class="news-image-wrapper">
+            <img src="${article.image}" alt="${article.title}" loading="lazy">
+          </div>
+          <h3 class="news-title">${article.title}</h3>
+          <p class="news-desc">${article.excerpt}</p>
+          <a href="detail-artikel.html?id=${article.id}" class="discover-link">Discover</a>
+        </div>
+      `;
+      grid.insertAdjacentHTML("beforeend", html);
+    });
+  } catch (error) {
+    console.error("Gagal memuat artikel homepage:", error);
+    grid.innerHTML = "<p>Gagal memuat berita.</p>";
+  }
+}
+
+/**
+ * Memuat SEMUA artikel untuk Halaman List Artikel
+ */
+async function loadAllArticles() {
+  const grid = document.querySelector(".news-grid");
+  if (!grid) return;
+
+  try {
+    const response = await fetch("articles.json");
+    const articles = await response.json();
+
+    grid.innerHTML = ""; 
+
+    articles.forEach((article) => {
+      const html = `
+        <div class="news-item">
+          <div class="news-image-wrapper">
+            <img src="${article.image}" alt="${article.title}" loading="lazy">
+          </div>
+          <h3 class="news-title">${article.title}</h3>
+          <p class="news-desc">${article.excerpt}</p>
+          <a href="detail-artikel.html?id=${article.id}" class="discover-link">Discover</a>
+        </div>
+      `;
+      grid.insertAdjacentHTML("beforeend", html);
+    });
+  } catch (error) {
+    console.error("Gagal memuat semua artikel:", error);
+    grid.innerHTML = "<p>Gagal memuat berita.</p>";
+  }
+}
+
+/**
+ * Memuat Detail Artikel berdasarkan ID di URL
+ */
+async function loadArticleDetail() {
+  const container = document.querySelector(".article-page .container");
+  if (!container) return;
+
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    if (!id) {
+      // Redirect jika tidak ada ID
+      window.location.href = "list-artikel.html";
+      return;
+    }
+
+    const response = await fetch("articles.json");
+    const articles = await response.json();
+    const article = articles.find((a) => a.id === id);
+
+    if (!article) {
+      container.innerHTML =
+        "<p style='text-align:center; padding:50px;'>Artikel tidak ditemukan.</p>";
+      return;
+    }
+
+    document.title = `${article.title} | Ferry Sunarto`;
+
+    // Update Konten Halaman
+    const titleEl = document.querySelector(".article-header h1");
+    const introEl = document.querySelector(".article-intro");
+    if (titleEl) titleEl.textContent = article.title;
+    if (introEl) introEl.textContent = article.excerpt;
+
+    const heroImg = document.querySelector(".hero-image");
+    if (heroImg) {
+      heroImg.src = article.image;
+      heroImg.alt = article.title;
+    }
+
+    const contentDiv = document.querySelector(".article-content");
+    if (contentDiv) {
+      contentDiv.innerHTML = article.content;
+    }
+  } catch (error) {
+    console.error("Gagal memuat detail artikel:", error);
+  }
+}
+
+// ==========================================================
+// FUNGSI BARU UNTUK HALAMAN DETAIL PRODUK (detail-barang.html)
+// ==========================================================
+
+// Helper untuk menghasilkan opsi budget HTML
 function generateBudgetOptions(type) {
-  let options = '';
+  let options = "";
   let data;
   let legendText;
 
   switch (type) {
-    case 'custom':
+    case "custom":
       legendText = "Budget Range for Custom (IDR)";
       data = [
         { id: "budget-1", value: "300m-700m", label: "300 - 700 mio" },
@@ -819,7 +965,7 @@ function generateBudgetOptions(type) {
         { id: "budget-4", value: ">3b", label: "> 3 bio" },
       ];
       break;
-    case 'rent':
+    case "rent":
       legendText = "Budget Range for Rent (IDR)";
       data = [
         { id: "budget-1", value: "<50m", label: "< 50 mio" },
@@ -828,7 +974,7 @@ function generateBudgetOptions(type) {
         { id: "budget-4", value: ">300m", label: "> 300 mio" },
       ];
       break;
-    case 'order':
+    case "order":
     default:
       legendText = "Budget Range for Purchase (IDR)";
       data = [
@@ -843,14 +989,15 @@ function generateBudgetOptions(type) {
   // Set 'checked' pada opsi pertama (Default)
   data.forEach((item, index) => {
     options += `
-      <input type="radio" id="${item.id}" name="budget" value="${item.value}" ${index === 0 ? 'checked' : ''} />
+      <input type="radio" id="${item.id}" name="budget" value="${item.value}" ${
+      index === 0 ? "checked" : ""
+    } />
       <label for="${item.id}">${item.label}</label>
     `;
   });
 
   return { html: options, legend: legendText };
 }
-
 
 /**
  * Memulai logika untuk halaman Detail Produk (mengambil ID dari URL).
@@ -945,29 +1092,31 @@ Bisakah saya mendapatkan informasi lebih lanjut? Terima kasih.`;
     const modalOverlay = document.getElementById("appointment-modal");
     const closeButton = document.getElementById("appointment-close-btn");
     const apptForm = document.getElementById("appointment-form");
-    
+
     // [MODIFIKASI] Ambil elemen budget legend dan container options
     const typeRadios = document.querySelectorAll('input[name="type"]');
     const budgetLegend = document.getElementById("budget-legend");
-    const budgetOptionsContainer = document.getElementById("budget-options-container");
+    const budgetOptionsContainer = document.getElementById(
+      "budget-options-container"
+    );
 
     // [MODIFIKASI] Fungsi untuk mengupdate HANYA budget legend dan opsi radio
     function updateBudgetDisplay() {
-        const selectedType = document.querySelector('input[name="type"]:checked');
-        const typeValue = selectedType ? selectedType.value : 'order'; // Default ke 'order'
-        
-        const newBudget = generateBudgetOptions(typeValue);
+      const selectedType = document.querySelector('input[name="type"]:checked');
+      const typeValue = selectedType ? selectedType.value : "order"; // Default ke 'order'
 
-        // 1. Update Legend Budget
-        budgetLegend.textContent = newBudget.legend;
-        
-        // 2. Update Opsi Radio Budget
-        budgetOptionsContainer.innerHTML = newBudget.html;
+      const newBudget = generateBudgetOptions(typeValue);
+
+      // 1. Update Legend Budget
+      budgetLegend.textContent = newBudget.legend;
+
+      // 2. Update Opsi Radio Budget
+      budgetOptionsContainer.innerHTML = newBudget.html;
     }
-    
+
     // [BARU] Pasang event listener ke radio buttons
-    typeRadios.forEach(radio => {
-        radio.addEventListener('change', updateBudgetDisplay);
+    typeRadios.forEach((radio) => {
+      radio.addEventListener("change", updateBudgetDisplay);
     });
 
     if (apptButton && modalOverlay && closeButton && apptForm) {
@@ -976,7 +1125,7 @@ Bisakah saya mendapatkan informasi lebih lanjut? Terima kasih.`;
         modalOverlay.classList.add("show");
         document.body.style.overflow = "hidden"; // Mencegah body scroll
         // Inisialisasi tampilan budget saat modal dibuka (diubah dari updatePriceDisplay)
-        updateBudgetDisplay(); 
+        updateBudgetDisplay();
       };
 
       const closeModal = () => {
@@ -1005,11 +1154,17 @@ Bisakah saya mendapatkan informasi lebih lanjut? Terima kasih.`;
         // Ambil data dari form
         const name = document.getElementById("appt-name").value;
         const email = document.getElementById("appt-email").value;
-        
+
         // [BARU] Ambil data tambahan
-        const selectedType = document.querySelector('input[name="type"]:checked').value;
-        const selectedBudget = document.querySelector('input[name="budget"]:checked').value;
-        const selectedDelivery = document.querySelector('input[name="delivery"]:checked').value;
+        const selectedType = document.querySelector(
+          'input[name="type"]:checked'
+        ).value;
+        const selectedBudget = document.querySelector(
+          'input[name="budget"]:checked'
+        ).value;
+        const selectedDelivery = document.querySelector(
+          'input[name="delivery"]:checked'
+        ).value;
         const selectedBaju = document.getElementById("appt-baju").value;
 
         // Tampilkan pesan sukses (Contoh)
@@ -1307,20 +1462,20 @@ function setupModalGallery(imagesArray, initialIndex) {
     modalImage.style.cursor = "zoom-in";
     applyModalTransform(); // Terapkan reset
   }
-  
+
   // [RESTORED] Event Listener untuk Klik (Zoom Toggle)
   modalImage.addEventListener("click", (e) => {
-      // Jika sedang dragging, jangan lakukan zoom toggle
-      if (modalImage.classList.contains("grabbing")) return;
+    // Jika sedang dragging, jangan lakukan zoom toggle
+    if (modalImage.classList.contains("grabbing")) return;
 
-      isZoomed = !isZoomed;
-      if (isZoomed) {
-          modalImage.classList.add("zoomed");
-          modalImage.style.cursor = "grab";
-      } else {
-          resetModalZoomAndPan();
-      }
-      applyModalTransform();
+    isZoomed = !isZoomed;
+    if (isZoomed) {
+      modalImage.classList.add("zoomed");
+      modalImage.style.cursor = "grab";
+    } else {
+      resetModalZoomAndPan();
+    }
+    applyModalTransform();
   });
 
   // ==============================================================
@@ -1347,7 +1502,7 @@ function setupModalGallery(imagesArray, initialIndex) {
 
     lastTranslateX = translateX;
     lastTranslateY = translateY;
-    
+
     // [PERBAIKAN UTAMA] Pasang event listeners ke window/document setelah drag dimulai
     window.addEventListener("mousemove", dragMove);
     window.addEventListener("mouseup", dragEnd);
@@ -1379,7 +1534,7 @@ function setupModalGallery(imagesArray, initialIndex) {
     window.removeEventListener("mouseup", dragEnd);
     window.removeEventListener("touchmove", dragMove);
     window.removeEventListener("touchend", dragEnd);
-    
+
     let clientX, clientY;
 
     if (e.type === "touchend") {
@@ -1564,46 +1719,3 @@ function updateWishlistCounter() {
     }
   }
 }
-// js/main.js (Tambahkan atau Modifikasi Fungsi Scroll Navbar)
-
-document.addEventListener("DOMContentLoaded", function () {
-  const navbar = document.getElementById("navbar");
-  const logoImage = navbar.querySelector(".nav-logo img");
-
-  // Pastikan elemen logo dan data attribute ada
-  if (
-    !navbar ||
-    !logoImage ||
-    !logoImage.dataset.logoDefault ||
-    !logoImage.dataset.logoScrolled
-  ) {
-    console.error("Elemen Navbar atau data attribute logo tidak ditemukan.");
-    return;
-  }
-
-  const defaultLogo = logoImage.dataset.logoDefault;
-  const scrolledLogo = logoImage.dataset.logoScrolled;
-
-  function checkScroll() {
-    const isScrolled = window.scrollY > 50; // Angka 50 bisa disesuaikan
-
-    // Tambahkan/Hapus class 'scrolled' di navbar
-    if (isScrolled) {
-      navbar.classList.add("scrolled");
-      // Ganti logo ke versi scrolled
-      if (logoImage.src !== scrolledLogo) {
-        logoImage.src = scrolledLogo;
-      }
-    } else {
-      navbar.classList.remove("scrolled");
-      // Ganti logo kembali ke versi default
-      if (logoImage.src !== defaultLogo) {
-        logoImage.src = defaultLogo;
-      }
-    }
-  }
-
-  // Panggil saat halaman dimuat dan setiap kali di-scroll
-  checkScroll();
-  window.addEventListener("scroll", checkScroll);
-});
