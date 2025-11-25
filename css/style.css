@@ -109,30 +109,30 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: center; /* Posisi vertikal di tengah */
   align-items: center; /* Posisi horizontal di tengah */
-  padding: 40px;
+  padding: 100px;
   background-color: #fff;
 }
 
 .opening1 .content-wrapper {
-  max-width: 500px; /* Membatasi lebar teks agar tidak terlalu panjang */
+  max-width: 700px; /* Membatasi lebar teks agar tidak terlalu panjang */
   text-align: center; /* Teks rata tengah seperti di gambar */
 }
 
-.opening1 h2 {
-  font-size: 3rem;
+.opening1 h1 {
+  font-size: 5rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
   color: #000;
   letter-spacing: 1px;
-  font-family: var(--h2);
+  font-family: var(--h1);
 }
 
 .opening1 p {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-family: var(--p);
   color: #555;
   margin-bottom: 2.5rem;
-  text-align: justify; /* Opsional: gunakan 'center' jika ingin persis gambar, 'justify' agar rapi */
+  text-align: center;
   text-align-last: center;
 }
 
@@ -233,6 +233,283 @@ body::-webkit-scrollbar-thumb {
 /* ==========================================================
    end template homepage
    ========================================================== */
+
+ /* ==========================================================
+   artikel page
+   ========================================================== */  
+
+
+.news-events-section {
+  padding: 80px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Header Section News */
+.news-header {
+  margin-bottom: 60px;
+}
+.news-header h2 {
+  font-family: var(--h2); /* Menggunakan font Serif (Bodoni Moda) */
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+.news-header .subtitle {
+  font-family: var(--p);
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.news-events-section .container {
+  /* Default container biasanya cuma 1200px, ini kita buat hampir full layar */
+  max-width: 95%; /* Ubah jadi 100% jika ingin benar-benar mentok pinggir */
+  padding: 0 20px; /* Memberi sedikit jarak aman di kiri kanan */
+  margin: 0 auto;
+}
+
+/* 2. Memperkecil Jarak Antar Gambar (Gap) */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* Kurangi gap agar gambar punya ruang lebih luas untuk membesar */
+  /* Gap baris (50px), Gap kolom (15px - sebelumnya 30px) */
+  gap: 50px 15px; 
+  align-items: start;
+}
+
+/* Style Item News */
+.news-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* Wrapper Gambar */
+/* Update bagian ini di style.css */
+
+.news-image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Sudah benar landscape lebar */
+  overflow: hidden;
+  margin-bottom: 25px;
+  background-color: #f8f8f8;
+}
+
+.news-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Tambahkan ini agar fokus gambar tetap di tengah/atas saat di-crop */
+  object-position: top center; 
+  transition: transform 0.6s ease;
+}
+/* Efek Zoom Halus saat Hover */
+.news-item:hover .news-image-wrapper img {
+  transform: scale(1.05);
+}
+
+/* Judul Artikel */
+.news-title {
+  font-family: var(--h2); /* Font Serif agar elegan */
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  line-height: 1.3;
+  padding: 0 10px;
+}
+
+/* Deskripsi Artikel */
+.news-desc {
+  font-family: var(--p); /* Font Sans-serif */
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  /* Membatasi teks maksimal 3 baris */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Link Discover */
+.discover-link {
+  font-family: var(--cta);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: 1px solid #1a1a1a; /* Garis bawah solid */
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: opacity 0.3s;
+}
+
+.discover-link:hover {
+  opacity: 0.6;
+}
+
+/* ==========================================================
+   RESPONSIVE (Tablet & Mobile)
+   ========================================================== */
+@media (max-width: 1024px) {
+  .news-grid {
+    /* Tablet: Otomatis jadi 2 kolom */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .news-grid {
+    /* HP: Otomatis jadi 1 kolom (turun ke bawah semua) */
+    grid-template-columns: 1fr; 
+    gap: 50px;
+  }
+  .news-header h2 {
+    font-size: 2rem;
+  }
+}
+
+/* ==========================================================
+   detail artikel page
+    ========================================================== */
+   /* ==========================================================
+   ARTICLE DETAIL PAGE STYLES
+   ========================================================== */
+
+/* Layout Dasar Halaman Artikel */
+.article-page {
+  padding-top: 130px; /* Memberi jarak dari Navbar yang Fixed */
+  padding-bottom: 80px;
+  background-color: #fff;
+}
+
+/* 1. Header Artikel (Judul & Intro) */
+.article-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 60px; /* Jarak ke gambar bawah */
+  padding: 0 20px;
+}
+
+.article-header h1 {
+  font-family: var(--h2); /* Menggunakan font Serif (Bodoni Moda) */
+  font-size: 3.5rem; /* Ukuran judul besar */
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.article-header .article-intro {
+  font-family: var(--p); /* Font Sans-serif (Inter) */
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* 2. Media Utama (Gambar Besar) */
+.article-media {
+  width: 100%;
+  max-width: 1400px; /* Batas lebar agar tidak terlalu full di layar ultra-wide */
+  margin: 0 auto 80px; /* Jarak ke teks konten */
+}
+
+/* Style Gambar Hero */
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* Opsional: Batasi tinggi jika gambar terlalu panjang ke bawah */
+  max-height: 85vh; 
+  object-fit: cover; 
+  object-position: top center; /* Fokus crop ke bagian atas */
+}
+
+/* 3. Konten Teks Artikel */
+.article-content {
+  max-width: 800px; /* Lebar teks lebih sempit agar nyaman dibaca */
+  margin: 0 auto 100px;
+  text-align: center; /* Teks rata tengah (Center Aligned) */
+  padding: 0 20px;
+}
+
+.article-content p {
+  font-family: var(--p);
+  font-size: 1rem;
+  color: #555;
+  line-height: 2; /* Spasi antar baris longgar untuk kesan elegan */
+  margin-bottom: 2.5rem;
+}
+
+.article-content .highlight-text {
+  font-style: italic;
+  color: #888;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
+
+/* 4. Footer CTA (Find the Perfect Present) */
+.article-footer-cta {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid transparent; 
+  margin-bottom: 40px;
+}
+
+.article-footer-cta h2 {
+  font-family: var(--h2);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+
+.article-footer-cta .cta-link {
+  font-family: var(--p);
+  color: #666;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc; /* Garis bawah tipis */
+  padding-bottom: 3px;
+  transition: all 0.3s;
+}
+
+.article-footer-cta .cta-link:hover {
+  color: #1a1a1a;
+  border-bottom-color: #1a1a1a;
+}
+
+/* --- RESPONSIVE (Mobile) --- */
+@media (max-width: 768px) {
+  .article-page {
+    padding-top: 100px;
+  }
+  .article-header h1 {
+    font-size: 2.2rem;
+  }
+  /* Di mobile, teks mungkin lebih rapi jika rata kiri-kanan (justify) atau tetap center */
+  .article-content p {
+    text-align: justify; 
+    text-align-last: center; /* Baris terakhir tetap di tengah */
+  }
+}
+
+
+/* ==========================================================
+   end artikel page
+    ========================================================== */
+
 /* ==========================================================
    PRELOADER (DIUBAH KE GRID)
    ========================================================== */
@@ -1583,6 +1860,7 @@ html.session-visited #preloader {
   .footer-grid {
     gap: 3rem;
   }
+
 }
 
 @media (min-width: 768px) {
@@ -1793,6 +2071,9 @@ html.session-visited #preloader {
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(40px, auto));
   }
+
+  /* artikel */
+ 
 }
 
 @media (max-width: 480px) {
@@ -2032,5 +2313,190 @@ html.session-visited #preloader {
   .btn-appointment-submit {
     max-width: 100%;
     /* font-family & letter-spacing dihapus (Change 11) */
+  }
+}
+
+/* Halaman About*/
+.navbar-about.scrolled {
+  /* Pastikan navbar tidak pernah transparan, terlepas dari JS/scrolling */
+  background-color: #fff !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbar-about .menu-toggle,
+.navbar-about .nav-links a {
+  color: #1a1a1a !important;
+}
+/* Header Halaman About */
+.about-page {
+  padding-top: 6rem; /* Memberi ruang di bawah fixed navbar */
+}
+@media (min-width: 768px) {
+  .about-page {
+    padding-top: 8rem;
+  }
+}
+
+/* Header Halaman About */
+.about-header-section {
+  padding: 0 0 40px;
+  text-align: center;
+}
+.about-header-section h1 {
+  font-family: var(--h1); /* <-- Mengikuti aturan font: h1 */
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+.about-header-section .subtitle {
+  font-family: var(--p); /* <-- Menggunakan font body/p */
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+@media (max-width: 767px) {
+  .about-header-section h1 {
+    font-size: 2.5rem;
+  }
+  .about-page {
+    padding-top: 5rem;
+  }
+}
+
+/* --- Detail Biografi (Mengikuti style opening1 / butik Dior) --- */
+#biography-detail.biography-detail {
+  display: flex; /* Membuat layout kiri-kanan */
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-light); /* Putih gading */
+}
+
+/* Kolom Kiri (Teks Biografi) */
+.biography-detail .text-container-biography {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+}
+
+.biography-detail .content-wrapper-biography {
+  max-width: 500px;
+  text-align: left; /* Teks rata kiri agar lebih informatif */
+}
+
+.biography-detail h2 {
+  font-family: var(--h2); /* <-- Mengikuti aturan font: h2 */
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.biography-detail p {
+  font-family: var(--p); /* <-- Mengikuti aturan font: p */
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Informasi Kontak/Layanan */
+.biography-detail .contact-info-block {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.biography-detail .contact-info-block h3 {
+  font-family: var(--p); /* Menggunakan font body/p */
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--primary-color);
+}
+
+.biography-detail .info-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.biography-detail .info-list li {
+  font-family: var(--p); /* Menggunakan font body/p */
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.biography-detail .info-list i {
+  color: var(--accent-color); /* Emas pudar */
+  margin-right: 10px;
+  width: 15px; /* Lebar tetap untuk ikon */
+  text-align: center;
+}
+
+.btn-appointment-about {
+  font-family: var(--cta); /* <-- Mengikuti aturan font: cta */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-appointment-about:hover {
+  background-color: #b3904e;
+}
+
+/* Kolom Kanan (Gambar Biografi) */
+.biography-detail .image-container-biography {
+  flex: 1;
+  background-color: #e0e0e0; /* Warna background gambar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.biography-detail .image-container-biography img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Gambar memenuhi container */
+  display: block;
+}
+
+/* RESPONSIVE (Mobile) Biografi Detail */
+@media (max-width: 767px) {
+  #biography-detail.biography-detail {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .biography-detail .text-container-biography {
+    order: 2; /* Teks di bawah gambar */
+    padding: 40px 20px;
+  }
+
+  .biography-detail .image-container-biography {
+    order: 1; /* Gambar di atas teks */
+    min-height: 400px;
+    height: 400px;
+  }
+
+  .biography-detail h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 }
