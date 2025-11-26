@@ -128,10 +128,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .opening1 p {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: var(--p);
   color: #555;
   margin-bottom: 2.5rem;
+  line-height: 1.5;
   text-align: center;
   text-align-last: center;
 }
@@ -251,7 +252,7 @@ body::-webkit-scrollbar-thumb {
 }
 .news-header h2 {
   font-family: var(--h2); /* Menggunakan font Serif (Bodoni Moda) */
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 400;
   color: #1a1a1a;
   margin-bottom: 1rem;
@@ -315,25 +316,33 @@ body::-webkit-scrollbar-thumb {
 /* Judul Artikel */
 .news-title {
   font-family: var(--h2); /* Font Serif agar elegan */
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: #1a1a1a;
   margin-bottom: 15px;
   line-height: 1.3;
   padding: 0 10px;
+  /* --- PROPERTI PEMBATAS 2 BARIS --- */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Maksimal 2 baris */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* Optional: Tambahkan min-height agar kartu tetap rata jika judul cuma 1 baris */
+  min-height: 2.6em;
 }
 
 /* Deskripsi Artikel */
 .news-desc {
   font-family: var(--p); /* Font Sans-serif */
   font-size: 0.9rem;
-  color: #666;
-  line-height: 1.6;
+  color: #7B8487;
+  line-height: 1.5;
   margin-bottom: 20px;
   padding: 0 15px;
   /* Membatasi teks maksimal 3 baris */
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -448,6 +457,7 @@ body::-webkit-scrollbar-thumb {
   font-family: var(--p);
   font-size: 1rem;
   color: #555;
+  text-align: justify;
   line-height: 2; /* Spasi antar baris longgar untuk kesan elegan */
   margin-bottom: 2.5rem;
 }
@@ -505,7 +515,35 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+/* ==========================================================
+   LIST ARTICLE PAGE SPECIFIC STYLES
+   ========================================================== */
 
+/* Memberi jarak atas karena navbar fixed */
+.list-article-page {
+  padding-top: 100px; /* Sesuaikan jika navbar Anda lebih tinggi */
+  background-color: #fff;
+}
+
+/* Di halaman list, kita mungkin ingin gap baris lebih besar */
+.list-article-page .news-grid {
+  row-gap: 60px; /* Jarak vertikal antar baris artikel lebih lega */
+}
+
+/* Optional: Tombol Load More */
+.btn-outline {
+  padding: 12px 30px;
+  background: transparent;
+  font-family: var(--cta);
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-outline:hover {
+  background-color: #1a1a1a;
+  color: #fff !important;
+}
 /* ==========================================================
    end artikel page
     ========================================================== */
@@ -825,7 +863,7 @@ html.session-visited #preloader {
 }
 .collection-title {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   font-weight: 500;
   margin-bottom: 2.5rem;
   letter-spacing: 0.1em;
@@ -867,7 +905,7 @@ html.session-visited #preloader {
 }
 .product-item .product-name {
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-top: 1rem;
   color: #1a1a1a;
@@ -1379,7 +1417,7 @@ html.session-visited #preloader {
 }
 .footer-column h3 {
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
   text-transform: none;
 }
@@ -1394,13 +1432,14 @@ html.session-visited #preloader {
 .footer-column a {
   text-decoration: none;
   color: #1a1a1a;
+  font-size: 1rem;
   transition: color 0.3s;
 }
 .footer-column a:hover {
   color: #666;
 }
 .footer-column a i {
-  font-size: 0.6rem;
+  font-size: 1rem;
   margin-left: 0.3rem;
   opacity: 0.7;
 }
