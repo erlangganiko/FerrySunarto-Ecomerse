@@ -1719,3 +1719,77 @@ function updateWishlistCounter() {
     }
   }
 }
+
+// ==========================================================
+  // [BARU] INISIALISASI ANIMASI BUTIK
+  // ==========================================================
+  if (document.querySelector(".section-butik-animation")) {
+    // Pastikan jQuery sudah dimuat karena script animasi butuh jQuery
+    if (typeof jQuery !== 'undefined') {
+      (function($) {
+        $(document).ready(function() {
+          const $app = $('.app');
+          const totalSlides = 3;
+          let animation = true;
+          let curSlide = 1;
+          let scrolledUp, nextSlide;
+
+          let pagination = function(slide, target) {
+            animation = true;
+            if (target === undefined) {
+              nextSlide = scrolledUp ? slide - 1 : slide + 1;
+            } else {
+              nextSlide = target;
+            }
+
+            // Update Dot
+            $('.pages__item').removeClass('page__item-active');
+            $('.pages__item--' + nextSlide).addClass('page__item-active');
+
+            // Reset Active Class
+            $app.removeClass('active active-3');
+
+            // Logic Active Class
+            if (nextSlide === 2) {
+              $app.addClass('active');
+            } else if (nextSlide === 3) {
+              $app.addClass('active-3');
+            }
+
+            setTimeout(function() {
+              animation = false;
+            }, 3000);
+          };
+
+          // Mulai animasi awal
+          setTimeout(function() {
+            $app.addClass('initial');
+          }, 500); // Dipercepat sedikit agar langsung muncul
+
+          setTimeout(function() {
+            animation = false;
+          }, 3500);
+
+          // EVENT: KLIK PAGINATION (NAVIGASI UTAMA)
+          $(document).on("click", ".pages__item:not(.page__item-active)", function() {
+            if (animation) return;
+            let target = +$(this).attr('data-target');
+            pagination(curSlide, target);
+            curSlide = target;
+          });
+
+          // OPTIONAL: Auto-play setiap 7 detik jika user tidak interaksi
+          // setInterval(function(){
+          //    if(!animation) {
+          //       let next = curSlide >= totalSlides ? 1 : curSlide + 1;
+          //       pagination(curSlide, next);
+          //       curSlide = next;
+          //    }
+          // }, 7000);
+
+        });
+      })(jQuery);
+    } else {
+      console.warn("jQuery belum dimuat! Animasi Butik tidak akan berjalan.");
+    }
+  }
