@@ -2524,7 +2524,7 @@ html.session-visited #preloader {
   min-height: 90vh;
   background-color: #fff;
   /* Border top tipis untuk memisahkan dari section biografi */
-  border-top: 1px solid #f0f0f0; 
+  border-top: 1px solid #f0f0f0;
 }
 
 /* Kolom Kiri (Gambar) */
@@ -2534,7 +2534,7 @@ html.session-visited #preloader {
   overflow: hidden;
   position: relative;
   /* Order 1 agar di desktop gambar ada di KIRI */
-  order: 1; 
+  order: 1;
 }
 
 .section-butik .butik-image-container img {
@@ -2639,9 +2639,9 @@ html.session-visited #preloader {
 
 /* Pastikan container parent relatif agar slideshow terkurung di dalamnya */
 .section-butik .butik-image-container {
-  position: relative; 
+  position: relative;
   /* Hapus overflow hidden jika perlu, tapi biasanya aman dibiarkan */
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 /* Reset list style */
@@ -2650,7 +2650,7 @@ html.session-visited #preloader {
   padding: 0;
   margin: 0;
   /* KUNCI UTAMA: Gunakan absolute agar menimpa area container, bukan fixed */
-  position: absolute; 
+  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
@@ -2681,7 +2681,7 @@ html.session-visited #preloader {
   opacity: 0;
   z-index: 0;
   /* Animasi dipanggil di sini */
-  animation: imageAnimation 30s linear infinite 0s; 
+  animation: imageAnimation 18s linear infinite 0s;
 }
 
 /* Mengatur Delay Animasi per Slide */
@@ -2692,23 +2692,34 @@ html.session-visited #preloader {
   animation-delay: 6s;
 }
 .butik-image-container .slideshow li:nth-child(3) span {
-  animation-delay: 8s;
+  animation-delay: 12s;
 }
 /*.butik-image-container .slideshow li:nth-child(4) span {
-  animation-delay: 18s;
+  animation-delay: 0s;
 }
-.butik-image-container .slideshow li:nth-child(5) span {
+ .butik-image-container .slideshow li:nth-child(5) span {
   animation-delay: 24s;
-}
-*/
+}*/
 
 /* Keyframes Animasi (Sesuai request) */
 @keyframes imageAnimation {
-  0% { opacity: 0; animation-timing-function: ease-in; }
-  8% { opacity: 1; animation-timing-function: ease-out; }
-  17% { opacity: 1; }
-  25% { opacity: 0; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* Menghapus efek hover zoom lama agar tidak konflik dengan slideshow */
@@ -2728,7 +2739,7 @@ html.session-visited #preloader {
     height: 400px;
     order: 1;
   }
-  
+
   .section-butik .butik-text-container {
     order: 2;
     padding: 60px 20px;
@@ -2759,7 +2770,7 @@ html.session-visited #preloader {
   align-items: center;
   height: 80vh; /* Tinggi section disesuaikan */
   min-height: 600px;
-  background-image: linear-gradient(to left bottom, #F2E3C6 0%, #A7A1A5 100%);
+  background-image: linear-gradient(to left bottom, #f2e3c6 0%, #a7a1a5 100%);
   overflow: hidden;
 }
 
@@ -2818,7 +2829,7 @@ html.session-visited #preloader {
   position: absolute;
   right: 165px;
   top: 150px;
-  font-family: 'Playfair Display', serif; /* Sesuaikan dengan font website Anda */
+  font-family: "Playfair Display", serif; /* Sesuaikan dengan font website Anda */
   text-transform: uppercase;
   z-index: 1;
   text-align: right;
@@ -2833,7 +2844,7 @@ html.session-visited #preloader {
 .app__text-line--4 {
   font-size: 50px;
   font-weight: 700;
-  color: #0A101D;
+  color: #0a101d;
 }
 
 .app__text-line--3 {
@@ -2855,7 +2866,10 @@ html.session-visited #preloader {
 
 /* --- TEXT POSITIONS & ANIMATIONS --- */
 /* Slide 1 Initial State */
-.app__text--1 .app__text-line { transform: translate3d(0, -125px, 0); opacity: 0; }
+.app__text--1 .app__text-line {
+  transform: translate3d(0, -125px, 0);
+  opacity: 0;
+}
 
 /* Slide 2 Positioning */
 .app__text--2 {
@@ -2866,7 +2880,10 @@ html.session-visited #preloader {
   transition: z-index 1500ms;
   text-align: left;
 }
-.app__text--2 .app__text-line { opacity: 0; transition: transform 1500ms 300ms, opacity 400ms 500ms; }
+.app__text--2 .app__text-line {
+  opacity: 0;
+  transition: transform 1500ms 300ms, opacity 400ms 500ms;
+}
 
 /* Slide 3 Positioning */
 .app__text--3 {
@@ -2877,7 +2894,10 @@ html.session-visited #preloader {
   transition: z-index 1500ms;
   text-align: left;
 }
-.app__text--3 .app__text-line { opacity: 0; transition: transform 1500ms 300ms, opacity 400ms 500ms; }
+.app__text--3 .app__text-line {
+  opacity: 0;
+  transition: transform 1500ms 300ms, opacity 400ms 500ms;
+}
 
 /* --- FOREGROUND IMAGE (City/Decor) --- */
 .app__img {
@@ -2889,44 +2909,134 @@ html.session-visited #preloader {
   will-change: transform;
   pointer-events: none; /* Agar tidak mengganggu klik */
 }
-.app__img img { min-width: 100%; }
+.app__img img {
+  min-width: 100%;
+}
 
 /* --- ANIMATION LOGIC CLASSES --- */
 
 /* INITIAL STATE */
-.section-butik-animation .initial .app__img { transform: translate3d(0, 0, 0); }
-.section-butik-animation .initial .app__text--1 .app__text-line--1 { transform: translate3d(0, 0, 0); transition: transform 1500ms 1400ms, opacity 400ms 1600ms; opacity: 1; }
-.section-butik-animation .initial .app__text--1 .app__text-line--2 { transform: translate3d(0, 0, 0); transition: transform 1500ms 1475ms, opacity 400ms 1675ms; opacity: 1; }
-.section-butik-animation .initial .app__text--1 .app__text-line--3 { transform: translate3d(0, 0, 0); transition: transform 1500ms 1550ms, opacity 400ms 1750ms; opacity: 1; }
-.section-butik-animation .initial .app__text--1 .app__text-line--4 { transform: translate3d(0, 0, 0); transition: transform 1500ms 1625ms, opacity 400ms 1825ms; opacity: 1; }
+.section-butik-animation .initial .app__img {
+  transform: translate3d(0, 0, 0);
+}
+.section-butik-animation .initial .app__text--1 .app__text-line--1 {
+  transform: translate3d(0, 0, 0);
+  transition: transform 1500ms 1400ms, opacity 400ms 1600ms;
+  opacity: 1;
+}
+.section-butik-animation .initial .app__text--1 .app__text-line--2 {
+  transform: translate3d(0, 0, 0);
+  transition: transform 1500ms 1475ms, opacity 400ms 1675ms;
+  opacity: 1;
+}
+.section-butik-animation .initial .app__text--1 .app__text-line--3 {
+  transform: translate3d(0, 0, 0);
+  transition: transform 1500ms 1550ms, opacity 400ms 1750ms;
+  opacity: 1;
+}
+.section-butik-animation .initial .app__text--1 .app__text-line--4 {
+  transform: translate3d(0, 0, 0);
+  transition: transform 1500ms 1625ms, opacity 400ms 1825ms;
+  opacity: 1;
+}
 
 /* ACTIVE STATE (Slide 2) */
-.section-butik-animation .active .app__bgimg { transform: translate3d(10px, 0, 0) scale(1.05); transition: transform 5s 850ms ease-in-out; }
-.section-butik-animation .active .app__bgimg .app__bgimg-image--2 { opacity: 1; transition: opacity 0ms 1500ms; }
-.section-butik-animation .active .app__img { transition: transform 3s cubic-bezier(0.6, 0.13, 0.31, 1.02); transform: translate3d(0, -1410px, 0); }
+.section-butik-animation .active .app__bgimg {
+  transform: translate3d(10px, 0, 0) scale(1.05);
+  transition: transform 5s 850ms ease-in-out;
+}
+.section-butik-animation .active .app__bgimg .app__bgimg-image--2 {
+  opacity: 1;
+  transition: opacity 0ms 1500ms;
+}
+.section-butik-animation .active .app__img {
+  transition: transform 3s cubic-bezier(0.6, 0.13, 0.31, 1.02);
+  transform: translate3d(0, -1410px, 0);
+}
 
-.section-butik-animation .active .app__text--1 { z-index: -1; transition: z-index 0ms 1500ms; }
-.section-butik-animation .active .app__text--1 .app__text-line { transform: translate3d(0, -125px, 0); opacity: 0; transition: transform 1500ms 300ms, opacity 400ms 500ms; }
+.section-butik-animation .active .app__text--1 {
+  z-index: -1;
+  transition: z-index 0ms 1500ms;
+}
+.section-butik-animation .active .app__text--1 .app__text-line {
+  transform: translate3d(0, -125px, 0);
+  opacity: 0;
+  transition: transform 1500ms 300ms, opacity 400ms 500ms;
+}
 
-.section-butik-animation .active .app__text--2 { z-index: 1; }
-.section-butik-animation .active .app__text--2 .app__text-line--1 { transform: translate3d(0, -125px, 0); transition: transform 2500ms 1100ms, opacity 1300ms 1300ms; opacity: 1; }
-.section-butik-animation .active .app__text--2 .app__text-line--2 { transform: translate3d(0, -125px, 0); transition: transform 2500ms 1175ms, opacity 1300ms 1575ms; opacity: 1; }
-.section-butik-animation .active .app__text--2 .app__text-line--3 { transform: translate3d(0, -125px, 0); transition: transform 2500ms 1250ms, opacity 1300ms 1850ms; opacity: 1; }
-.section-butik-animation .active .app__text--2 .app__text-line--4 { transform: translate3d(0, -125px, 0); transition: transform 2500ms 1325ms, opacity 1300ms 2125ms; opacity: 1; }
+.section-butik-animation .active .app__text--2 {
+  z-index: 1;
+}
+.section-butik-animation .active .app__text--2 .app__text-line--1 {
+  transform: translate3d(0, -125px, 0);
+  transition: transform 2500ms 1100ms, opacity 1300ms 1300ms;
+  opacity: 1;
+}
+.section-butik-animation .active .app__text--2 .app__text-line--2 {
+  transform: translate3d(0, -125px, 0);
+  transition: transform 2500ms 1175ms, opacity 1300ms 1575ms;
+  opacity: 1;
+}
+.section-butik-animation .active .app__text--2 .app__text-line--3 {
+  transform: translate3d(0, -125px, 0);
+  transition: transform 2500ms 1250ms, opacity 1300ms 1850ms;
+  opacity: 1;
+}
+.section-butik-animation .active .app__text--2 .app__text-line--4 {
+  transform: translate3d(0, -125px, 0);
+  transition: transform 2500ms 1325ms, opacity 1300ms 2125ms;
+  opacity: 1;
+}
 
 /* ACTIVE-3 STATE (Slide 3) */
-.section-butik-animation .active-3 .app__bgimg { transform: translate3d(20px, 0, 0) scale(1.1); transition: transform 5s 850ms ease-in-out; }
-.section-butik-animation .active-3 .app__bgimg .app__bgimg-image--3 { opacity: 1; transition: opacity 0ms 1500ms; }
-.section-butik-animation .active-3 .app__img { transition: transform 3s cubic-bezier(0.6, 0.13, 0.31, 1.02); transform: translate3d(0, -2200px, 0); }
+.section-butik-animation .active-3 .app__bgimg {
+  transform: translate3d(20px, 0, 0) scale(1.1);
+  transition: transform 5s 850ms ease-in-out;
+}
+.section-butik-animation .active-3 .app__bgimg .app__bgimg-image--3 {
+  opacity: 1;
+  transition: opacity 0ms 1500ms;
+}
+.section-butik-animation .active-3 .app__img {
+  transition: transform 3s cubic-bezier(0.6, 0.13, 0.31, 1.02);
+  transform: translate3d(0, -2200px, 0);
+}
 
-.section-butik-animation .active-3 .app__text--1, .section-butik-animation .active-3 .app__text--2 { z-index: -1; transition: z-index 0ms 1500ms; }
-.section-butik-animation .active-3 .app__text--1 .app__text-line, .section-butik-animation .active-3 .app__text--2 .app__text-line { transform: translate3d(0, -125px, 0); opacity: 0; transition: transform 1500ms 300ms, opacity 400ms 500ms; }
+.section-butik-animation .active-3 .app__text--1,
+.section-butik-animation .active-3 .app__text--2 {
+  z-index: -1;
+  transition: z-index 0ms 1500ms;
+}
+.section-butik-animation .active-3 .app__text--1 .app__text-line,
+.section-butik-animation .active-3 .app__text--2 .app__text-line {
+  transform: translate3d(0, -125px, 0);
+  opacity: 0;
+  transition: transform 1500ms 300ms, opacity 400ms 500ms;
+}
 
-.section-butik-animation .active-3 .app__text--3 { z-index: 1; }
-.section-butik-animation .active-3 .app__text--3 .app__text-line--1 { transform: translate3d(0, -125px, 0); transition: transform 2500ms 1100ms, opacity 1300ms 1300ms; opacity: 1; }
-.section-butik-animation .active-3 .app__text--3 .app__text-line--2 { transform: translate3d(0, -125px, 0); transition: transform 2500ms 1175ms, opacity 1300ms 1575ms; opacity: 1; }
-.section-butik-animation .active-3 .app__text--3 .app__text-line--3 { transform: translate3d(0, -125px, 0); transition: transform 2500ms 1250ms, opacity 1300ms 1850ms; opacity: 1; }
-.section-butik-animation .active-3 .app__text--3 .app__text-line--4 { transform: translate3d(0, -125px, 0); transition: transform 2500ms 1325ms, opacity 1300ms 2125ms; opacity: 1; }
+.section-butik-animation .active-3 .app__text--3 {
+  z-index: 1;
+}
+.section-butik-animation .active-3 .app__text--3 .app__text-line--1 {
+  transform: translate3d(0, -125px, 0);
+  transition: transform 2500ms 1100ms, opacity 1300ms 1300ms;
+  opacity: 1;
+}
+.section-butik-animation .active-3 .app__text--3 .app__text-line--2 {
+  transform: translate3d(0, -125px, 0);
+  transition: transform 2500ms 1175ms, opacity 1300ms 1575ms;
+  opacity: 1;
+}
+.section-butik-animation .active-3 .app__text--3 .app__text-line--3 {
+  transform: translate3d(0, -125px, 0);
+  transition: transform 2500ms 1250ms, opacity 1300ms 1850ms;
+  opacity: 1;
+}
+.section-butik-animation .active-3 .app__text--3 .app__text-line--4 {
+  transform: translate3d(0, -125px, 0);
+  transition: transform 2500ms 1325ms, opacity 1300ms 2125ms;
+  opacity: 1;
+}
 
 /* --- NAVIGATION DOTS --- */
 .section-butik-animation .pages {
@@ -2938,7 +3048,9 @@ html.session-visited #preloader {
   z-index: 10;
 }
 
-.section-butik-animation .pages__list { list-style-type: none; }
+.section-butik-animation .pages__list {
+  list-style-type: none;
+}
 .section-butik-animation .pages__item {
   position: relative;
   margin-bottom: 10px;
@@ -2949,7 +3061,7 @@ html.session-visited #preloader {
   cursor: pointer;
 }
 .section-butik-animation .pages__item:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2961,7 +3073,7 @@ html.session-visited #preloader {
   opacity: 0;
   transition: 500ms;
 }
-.section-butik-animation .pages__item:hover:after, 
+.section-butik-animation .pages__item:hover:after,
 .section-butik-animation .page__item-active:after {
   transform: translate(-50%, -50%) scale(1, 1);
   opacity: 1;
@@ -2972,23 +3084,23 @@ html.session-visited #preloader {
 
 /* 1. Memindahkan posisi container teks Slide 1 ke Kiri */
 .app__text--1 {
-  right: auto !important;       /* Matikan posisi kanan default */
-  left: 50%;                     /* Geser ke kiri (masuk area putih) */
-  text-align: left;             /* Ubah rata teks menjadi kiri */
-  top: 50%;                     /* Turunkan ke tengah vertikal */
-  transform: translateY(-50%);  /* Koreksi agar pas di tengah-tengah */
-  z-index: 20;                  /* Pastikan teks berada di atas gambar putih */
-  width: auto;                  /* Lebar menyesuaikan konten */
+  right: auto !important; /* Matikan posisi kanan default */
+  left: 50%; /* Geser ke kiri (masuk area putih) */
+  text-align: left; /* Ubah rata teks menjadi kiri */
+  top: 50%; /* Turunkan ke tengah vertikal */
+  transform: translateY(-50%); /* Koreksi agar pas di tengah-tengah */
+  z-index: 20; /* Pastikan teks berada di atas gambar putih */
+  width: auto; /* Lebar menyesuaikan konten */
 }
 
 /* 2. Ubah Warna Teks Slide 1 menjadi Gelap (Kontras dengan Putih) */
 .app__text--1 .app__text-line--4, /* Tulisan "JAKARTA" */
-.app__text--1 .app__text-line--3  /* Tulisan "BOUTIQUE" */
-{
+.app__text--1 .app__text-line--3  /* Tulisan "BOUTIQUE" */ {
   color: #1a1a1a; /* Ubah jadi Hitam/Gelap */
 }
 
-.app__text--1 .app__text-line--2 { /* Tulisan Alamat */
+.app__text--1 .app__text-line--2 {
+  /* Tulisan Alamat */
   color: #1a1a1a; /* Tetap Emas (atau ubah ke #666 jika ingin abu-abu) */
   font-weight: 700; /* Sedikit lebih tebal agar jelas */
 }
@@ -3055,12 +3167,11 @@ html.session-visited #preloader {
     font-size: 2.8rem;
     text-align: center;
   }
-  
+
   .biography-detail p {
     font-size: 1.1rem; /* Perkecil font body agar nyaman dibaca */
     text-align: justify;
   }
-  
 }
 
 /* Mobile (Android/iPhone) */
@@ -3097,11 +3208,11 @@ html.session-visited #preloader {
 
   .section-butik .butik-image-container {
     /* PENTING: Matikan flex agar tinggi manual (height) bekerja */
-    flex: none; 
-    
+    flex: none;
+
     /* Atur urutan: Gambar di atas (1), Teks di bawah (2) */
-    order: 1; 
-    
+    order: 1;
+
     /* Paksa ukuran container */
     width: 100%;
     height: 400px; /* Tinggi wajib diisi karena kontennya absolute */
@@ -3122,7 +3233,7 @@ html.session-visited #preloader {
   .section-butik h2 {
     font-size: 2.8rem;
   }
-  
+
   /* Grid Lokasi di Tablet tetap 2 kolom, tapi lebih rapat */
   .locations-grid {
     gap: 20px;
@@ -3133,7 +3244,7 @@ html.session-visited #preloader {
 /* Mobile (Android/iPhone) */
 @media (max-width: 576px) {
   .section-butik .butik-image-container {
-    height: 300px; 
+    height: 300px;
   }
   .section-butik h2 {
     font-size: 2.2rem;
@@ -3171,7 +3282,7 @@ html.session-visited #preloader {
   .section-butik-animation .app {
     height: 450px; /* Tinggi fix untuk mobile */
     width: 90%;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   }
 
   /* Atur ulang posisi teks agar centered di Mobile */
@@ -3184,15 +3295,28 @@ html.session-visited #preloader {
   }
 
   /* Posisi vertikal teks slide 1, 2, 3 */
-  .app__text--1 { top: 180px; } 
-  .app__text--2 { top: 180px; }
-  .app__text--3 { top: 180px; }
+  .app__text--1 {
+    top: 180px;
+  }
+  .app__text--2 {
+    top: 180px;
+  }
+  .app__text--3 {
+    top: 180px;
+  }
 
   /* Ukuran Font Animasi Mobile */
-  .app__text-line--4 { font-size: 32px; } /* Judul Besar */
-  .app__text-line--3 { font-size: 24px; } /* Subjudul */
-  .app__text-line--2 { font-size: 12px; margin-top: 5px;} /* Alamat */
-  
+  .app__text-line--4 {
+    font-size: 32px;
+  } /* Judul Besar */
+  .app__text-line--3 {
+    font-size: 24px;
+  } /* Subjudul */
+  .app__text-line--2 {
+    font-size: 12px;
+    margin-top: 5px;
+  } /* Alamat */
+
   /* Sembunyikan gambar dekorasi (Opus attachment) di mobile jika mengganggu */
   .app__text-line--1 img {
     width: 30px;
@@ -3205,7 +3329,7 @@ html.session-visited #preloader {
     left: 50%;
     margin-left: -300px; /* Center shape */
   }
-  
+
   /* Tombol Navigasi (Dots) */
   .section-butik-animation .pages {
     right: 10px; /* Rapatkan ke kanan */
@@ -3243,12 +3367,12 @@ html.session-visited #preloader {
     gap: 30px;
     text-align: center;
   }
-  
+
   .footer-bottom {
     grid-template-columns: 1fr; /* Stack vertikal */
     gap: 20px;
   }
-  
+
   .footer-socials {
     justify-self: center; /* Center sosmed */
   }
