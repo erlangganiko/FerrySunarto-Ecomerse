@@ -154,7 +154,7 @@ body::-webkit-scrollbar-thumb {
 /* Kolom Kanan (Gambar) */
 .opening1 .image-container {
   flex: 1; /* Mengambil 50% lebar sisa */
-  background-color: #f0f0f0; /* Warna abu-abu muda background gambar */
+  background-color: #fff; /* Warna abu-abu muda background gambar */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,9 +231,6 @@ body::-webkit-scrollbar-thumb {
     padding: 50px 0;
   }
 }
-/* ==========================================================
-   end template homepage
-   ========================================================== */
 
 /* ==========================================================
    artikel page
@@ -3672,5 +3669,76 @@ html.session-visited #preloader {
   }
   .contact-info-block .info-list li {
     font-size: 0.95rem;
+  }
+}
+/*OPENING 1*/
+/* --- RESPONSIVE TABLET & IPAD (Landscape & Portrait) --- */
+/* Mengcover ukuran dari 769px sampai 1024px */
+@media screen and (max-width: 1024px) {
+  /* 1. Perbaiki Layout Container */
+  #opening1.opening1 {
+    flex-direction: column; /* Ubah jadi atas-bawah */
+    min-height: auto; /* Hilangkan paksaan tinggi layar penuh */
+    padding-top: 120px; /* PENTING: Memberi jarak agar judul tidak tertutup Header Logo */
+    padding-bottom: 60px;
+  }
+
+  /* 2. Atur Ulang Area Teks */
+  .opening1 .text-container {
+    width: 100%; /* Lebar penuh */
+    padding: 0 40px 40px 40px; /* Padding kiri-kanan secukupnya */
+    order: 2; /* Teks di atas (sesuai screenshot Anda) */
+  }
+
+  /* 3. Kecilkan Font agar Elegan di iPad */
+  .opening1 h1 {
+    font-size: 3rem; /* Turunkan dari 4rem ke 3rem */
+    margin-top: 0;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .opening1 p {
+    font-size: 1.25rem; /* Turunkan dari 2rem ke 1.25rem (ukuran standar baca tablet) */
+    line-height: 1.6;
+    max-width: 100%; /* Pastikan teks tidak melebar aneh */
+    padding: 0 20px;
+  }
+
+  /* 4. Atur Gambar */
+  .opening1 .image-container {
+    width: 100%;
+    height: auto;
+    min-height: 400px; /* Tinggi minimal gambar */
+    padding: 20px;
+    order: 1; /* Gambar di atas teks */
+    background-color: transparent; /* Sesuaikan jika perlu */
+  }
+
+  .opening1 .image-container img {
+    width: 100%;
+    max-width: 500px; /* Batasi lebar gambar agar tidak raksasa di tablet */
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* --- RESPONSIVE MOBILE (HP Kecil) --- */
+/* Tetap pertahankan yang mobile di bawah 768px, tapi sesuaikan sedikit */
+@media screen and (max-width: 767px) {
+  #opening1.opening1 {
+    padding-top: 100px; /* Jarak header di HP */
+  }
+
+  .opening1 h1 {
+    font-size: 2.2rem; /* Lebih kecil lagi untuk HP */
+  }
+
+  .opening1 p {
+    font-size: 1rem;
+  }
+
+  .opening1 .text-container {
+    padding: 0 20px 30px 20px;
   }
 }
