@@ -128,7 +128,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .opening1 p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: var(--p);
   color: #555;
   margin-bottom: 2.5rem;
@@ -833,7 +833,7 @@ html.session-visited #preloader {
 }
 .hero-static-content h1 {
   /* font-family: var(--font-serif); <-- Dihapus, ditangani global */
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 400;
   line-height: 1.2;
   margin-bottom: 2rem;
@@ -859,12 +859,11 @@ html.session-visited #preloader {
 }
 .collection-title {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 2.5rem;
   letter-spacing: 0.1em;
   color: #1a1a1a;
-  /* font-family: var(--font-sans); <-- Dihapus, ditangani global */
 }
 .product-grid {
   display: grid;
@@ -1438,6 +1437,42 @@ html.session-visited #preloader {
   font-size: 1rem;
   margin-left: 0.3rem;
   opacity: 0.7;
+}
+.footer-bottom {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1.5rem;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-family: var(--p);
+  font-size: 0.75rem;
+  color: #999;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-copyright a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.footer-copyright a:hover {
+  color: #1a1a1a;
+}
+
+@media (max-width: 767px) {
+  .footer-bottom {
+    margin-bottom: 1rem;
+    border-bottom: none;
+  }
+
+  .footer-copyright {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 .newsletter-form .input-wrapper {
   position: relative;
@@ -2125,12 +2160,6 @@ html.session-visited #preloader {
   }
 }
 
-/* ==========================================================
-   ==========================================================
-   KODE BARU YANG DITAMBAHKAN (DARI PERCAKAPAN KITA)
-   ==========================================================
-   ========================================================== */
-
 /* --- 1. PERBAIKAN URUTAN MOBILE (DETAIL PRODUK) --- */
 @media (max-width: 767px) {
   /* Mengurangi jarak vertikal (Change 5 & 7) */
@@ -2585,6 +2614,7 @@ html.session-visited #preloader {
   color: #666;
   line-height: 1.8;
   margin-bottom: 3rem;
+  text-align: justify;
 }
 
 /* Grid Lokasi (Jakarta & Bandung) */
@@ -2635,6 +2665,10 @@ html.session-visited #preloader {
 
 .map-link:hover i {
   transform: translateX(5px);
+}
+
+.map-link .bandung {
+  margin-top: 20px;
 }
 /* ==========================================================
    CUSTOM SLIDESHOW BUTIK (INSIDE CONTAINER)
@@ -3740,5 +3774,112 @@ html.session-visited #preloader {
 
   .opening1 .text-container {
     padding: 0 20px 30px 20px;
+  }
+  .opening1 .discover-btn {
+    font-size: 1rem;
+  }
+}
+/* ==========================================================
+   CLIENT SERVICES SECTION BARU (DIPINDAH)
+   ========================================================== */
+#client-services-section {
+  width: 100%;
+  padding: 50px 0; /* Memberi ruang atas dan bawah */
+  background-color: var(--bg-light);
+}
+
+/* KARTU WRAPPER: Mengatur 2 kartu di tengah */
+#client-services-section .contact-info-block-wrapper {
+  display: flex;
+  justify-content: center; /* KUNCI: Memposisikan kartu di TENGAH WEB */
+  align-items: flex-start;
+  gap: 30px;
+  margin: 0 auto; /* Margin horizontal auto memastikan pemusatan */
+  max-width: 530px; /* Lebar total 2 kartu + gap agar tetap rapi */
+  padding: 2rem 0;
+  /* Menghilangkan border-top karena sudah menjadi section baru */
+}
+
+/* BLOK CARD INDIVIDUAL (Mendefinisikan tampilan kartu) */
+#client-services-section .contact-info-block {
+  /* Menghapus properti margin/padding lama yang bertabrakan */
+  margin: 0;
+  border-top: none;
+
+  /* Properti kartu */
+  width: 100%;
+  max-width: 250px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  background-color: #fff;
+}
+
+#client-services-section .contact-info-block h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-family: var(--p);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--primary-color);
+}
+
+#client-services-section .info-list {
+  margin-bottom: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+#client-services-section .info-list li {
+  font-family: var(--p);
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+#client-services-section .info-list i {
+  color: var(--accent-color);
+  margin-right: 10px;
+  width: 15px;
+  text-align: center;
+}
+
+#client-services-section .btn-appointment-about {
+  font-family: var(--cta);
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+/* --- RESPONSIVE MOBILE UNTUK CARD BARU (< 767px) --- */
+@media (max-width: 767px) {
+  #client-services-section {
+    padding: 30px 20px;
+  }
+  #client-services-section .contact-info-block-wrapper {
+    flex-direction: column; /* Tumpuk vertikal di HP */
+    align-items: center; /* Rata tengah */
+    gap: 20px;
+    padding: 0;
+  }
+
+  #client-services-section .contact-info-block {
+    width: 100%;
+    max-width: 300px;
   }
 }
