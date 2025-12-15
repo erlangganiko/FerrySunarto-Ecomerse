@@ -1,0 +1,20 @@
+{
+  "statusCode": 200,
+  "statusDescription": "SUCCESS",
+  "result": {
+    "errorCode": null,
+    "errorMessage": null,
+    "data": [
+      {
+        "id": 101,
+        "name": "Produk A",
+        "price": 100000
+      },
+      {
+        "id": 102,
+        "name": "Produk B",
+        "price": 200000
+      }
+    ]
+  }
+}

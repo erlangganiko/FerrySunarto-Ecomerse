@@ -1,13 +1,13 @@
 [
   {
-    "id":"product-1",
-    "name": "Kebaya Pria Klasik Merah Maroon",
-    "price": 0,
-    "date": "11-11-2025 20-25-56+7",
+    "id": "product-1",
+    "name": "Kemeja Batik Tulis Merah Maroon",
+    "price": 350000,
+    "date": "06-12-2025 09-00-00+7",
     "available": true,
     "tipe": "pria",
     "category": "Batik",
-    "collection": "Summer",
+    "collection": "Batik Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -16,21 +16,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k01/depan.webp",
-      "asset/catalog/kebaya-pria/k01/back.webp",
-      "asset/catalog/kebaya-pria/k01/kiri.webp",
-      "asset/catalog/kebaya-pria/k01/kanan.webp"
+      "../../asset/catalog/pria/batik/batik1/btk01250812_batik_depan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik1/btk01250812_batik_belakang_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik1/btk01250812_batik_kanan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik1/btk01250812_batik_kiri_2025-06-12.webp"
     ]
   },
   {
     "id": "product-2",
-    "name": "Beskap Pria Modern Putih Gading",
-    "price": 13999000,
-    "date": "10-11-2025 20-25-56+7",
-    "available": false,
+    "name": "Kemeja Batik Sogan Solo",
+    "price": 450000,
+    "date": "06-12-2025 09-15-00+7",
+    "available": true,
     "tipe": "pria",
     "category": "Batik",
-    "collection": "Summer",
+    "collection": "Batik Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -39,21 +39,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k02/depan.webp",
-      "asset/catalog/kebaya-pria/k02/back.webp",
-      "asset/catalog/kebaya-pria/k02/kiri.webp",
-      "asset/catalog/kebaya-pria/k02/kanan.webp"
+      "../../asset/catalog/pria/batik/batik2/btk02250812_batik_depan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik2/btk02250812_batik_belakang_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik2/btk02250812_batik_kanan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik2/btk02250812_batik_kiri_2025-06-12.webp"
     ]
   },
   {
     "id": "product-3",
-    "name": "Beskap Pria Modern Abu Silver",
-    "price": 13899000,
-    "date": "09-11-2025 20-25-56+7",
-    "available": false,
+    "name": "Hem Batik Pekalongan Biru",
+    "price": 250000,
+    "date": "06-12-2025 09-30-00+7",
+    "available": true,
     "tipe": "pria",
     "category": "Batik",
-    "collection": "Summer",
+    "collection": "Batik Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -62,21 +62,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "Asset/catalog/kebaya-pria/k03/depan.png",
-      "asset/catalog/kebaya-pria/k03/back.webp",
-      "asset/catalog/kebaya-pria/k03/kiri.webp",
-      "asset/catalog/kebaya-pria/k03/kanan.webp"
+      "../../asset/catalog/pria/batik/batik3/btk03250812_batik_depan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik3/btk03250812_batik_belakang_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik3/btk03250812_batik_kanan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik3/btk03250812_batik_kiri_2025-06-12.webp"
     ]
   },
   {
     "id": "product-4",
-    "name": "Beskap Pria Elegan Hitam Polos",
-    "price": 24998800,
-    "date": "08-11-2025 20-25-56+7",
+    "name": "Kemeja Batik Slimfit Hitam Emas",
+    "price": 500000,
+    "date": "06-12-2025 10-00-00+7",
     "available": true,
     "tipe": "pria",
     "category": "Batik",
-    "collection": "Summer",
+    "collection": "Batik Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -85,21 +85,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k04/depan.png",
-      "asset/catalog/kebaya-pria/k04/back.png",
-      "asset/catalog/kebaya-pria/k04/kiri.png",
-      "asset/catalog/kebaya-pria/k04/kanan.png"
+      "../../asset/catalog/pria/batik/batik4/btk04250812_batik_depan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik4/btk04250812_batik_belakang_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik4/btk04250812_batik_kanan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik4/btk04250812_batik_kiri_2025-06-12.webp"
     ]
   },
   {
     "id": "product-5",
-    "name": "Beskap Pria Hitam Aksen Emas",
-    "price": 21020300,
-    "date": "07-11-2025 20-25-56+7",
+    "name": "Kemeja Batik Cap Garutan",
+    "price": 300000,
+    "date": "06-12-2025 10-15-00+7",
     "available": true,
     "tipe": "pria",
     "category": "Batik",
-    "collection": "Summer",
+    "collection": "Batik Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -108,21 +108,67 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k05/depan.png",
-      "asset/catalog/kebaya-pria/k05/back.png",
-      "asset/catalog/kebaya-pria/k05/kiri.png",
-      "asset/catalog/kebaya-pria/k05/kanan.png"
+      "../../asset/catalog/pria/batik/batik5/btk05250812_batik_depan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik5/btk05250812_batik_belakang_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik5/btk05250812_batik_kanan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik5/btk05250812_batik_kiri_2025-06-12.webp"
+    ]
+  },
+  {
+    "id": "product-6",
+    "name": "Batik Lengan Panjang Mega Mendung",
+    "price": 420000,
+    "date": "06-12-2025 10-30-00+7",
+    "available": true,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Batik Collection",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "../../asset/catalog/pria/batik/batik6/btk06250812_batik_depan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik6/btk06250812_batik_belakang_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik6/btk06250812_batik_kanan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik6/btk06250812_batik_kiri_2025-06-12.webp"
+    ]
+  },
+  {
+    "id": "product-7",
+    "name": "Kemeja Batik Sutra Eksklusif",
+    "price": 1200000,
+    "date": "06-12-2025 11-00-00+7",
+    "available": false,
+    "tipe": "pria",
+    "category": "Batik",
+    "collection": "Batik Collection",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
+    "specifications": [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet."
+    ],
+    "images": [
+      "../../asset/catalog/pria/batik/batik7/btk07250812_batik_depan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik7/btk07250812_batik_belakang_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik7/btk07250812_batik_kanan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik7/btk07250812_batik_kiri_2025-06-12.webp"
     ]
   },
   {
     "id": "product-8",
-    "name": "Beskap Pria Klasik Biru Navy",
-    "price": 11998800,
-    "date": "06-11-2025 20-25-56+7",
+    "name": "Batik Tenun Ikat Jepara",
+    "price": 550000,
+    "date": "06-12-2025 11-30-00+7",
     "available": true,
     "tipe": "pria",
     "category": "Batik",
-    "collection": "Summer",
+    "collection": "Batik Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -131,21 +177,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k06/depan.png",
-      "asset/catalog/kebaya-pria/k06/back.png",
-      "asset/catalog/kebaya-pria/k06/kiri.png",
-      "asset/catalog/kebaya-pria/k06/kanan.png"
+      "../../asset/catalog/pria/batik/batik8/btk08250812_batik_depan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik8/btk08250812_batik_belakang_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik8/btk08250812_batik_kanan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik8/btk08250812_batik_kiri_2025-06-12.webp"
     ]
   },
   {
     "id": "product-9",
-    "name": "Beskap Pria Modern Biru Langit",
-    "price": 11998000,
-    "date": "05-11-2025 20-25-56+7",
+    "name": "Kemeja Batik Kawung Modern",
+    "price": 275000,
+    "date": "06-12-2025 12-00-00+7",
     "available": true,
     "tipe": "pria",
     "category": "Batik",
-    "collection": "Summer",
+    "collection": "Batik Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -154,67 +200,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k07/depan.png",
-      "asset/catalog/kebaya-pria/k07/back.png",
-      "asset/catalog/kebaya-pria/k07/kiri.png",
-      "asset/catalog/kebaya-pria/k07/kanan.png"
-    ]
-  },
-  {
-    "id": "product-8-dup1",
-    "name": "Beskap Pria Putih Aksen Melati",
-    "price": 11699000,
-    "date": "04-11-2025 20-25-56+7",
-    "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k08/depan.png",
-      "asset/catalog/kebaya-pria/k08/back.png",
-      "asset/catalog/kebaya-pria/k08/kiri.png",
-      "asset/catalog/kebaya-pria/k08/kanan.png"
-    ]
-  },
-  {
-    "id": "product-9-dup1",
-    "name": "Beskap Pria Hitam Bordir Emas",
-    "price": 12000000,
-    "date": "03-11-2025 20-25-56+7",
-    "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k09/depan.png",
-      "asset/catalog/kebaya-pria/k09/back.png",
-      "asset/catalog/kebaya-pria/k09/kiri.png",
-      "asset/catalog/kebaya-pria/k09/kanan.png"
+      "../../asset/catalog/pria/batik/batik9/btk09250812_batik_depan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik9/btk09250812_batik_belakang_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik9/btk09250812_batik_kanan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik9/btk09250812_batik_kiri_2025-06-12.webp"
     ]
   },
   {
     "id": "product-10",
-    "name": "Beskap Pria Hitam Motif Emas",
-    "price": 15100000,
-    "date": "02-11-2025 20-25-56+7",
+    "name": "Kemeja Batik Kombinasi Polos",
+    "price": 225000,
+    "date": "06-12-2025 12-30-00+7",
     "available": true,
     "tipe": "pria",
     "category": "Batik",
-    "collection": "Summer",
+    "collection": "Batik Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -223,21 +223,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k10/depan.png",
-      "asset/catalog/kebaya-pria/k10/back.png",
-      "asset/catalog/kebaya-pria/k10/kiri.png",
-      "asset/catalog/kebaya-pria/k10/kanan.png"
+      "../../asset/catalog/pria/batik/batik10/btk10250812_batik_depan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik10/btk10250812_batik_belakang_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik10/btk10250812_batik_kanan_2025-06-12.webp",
+      "../../asset/catalog/pria/batik/batik10/btk10250812_batik_kiri_2025-06-12.webp"
     ]
   },
   {
     "id": "product-11",
-    "name": "Beskap Pria Coklat Mocca",
-    "price": 13500000,
-    "date": "01-11-2025 20-25-56+7",
+    "name": "Classic Black Wedding Tuxedo",
+    "price": 2500000,
+    "date": "06-12-2025 13-00-00+7",
     "available": true,
     "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "category": "Wedding Suit",
+    "collection": "Wedding Suit Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -246,21 +246,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k11/depan.png",
-      "asset/catalog/kebaya-pria/k11/back.png",
-      "asset/catalog/kebaya-pria/k11/kiri.png",
-      "asset/catalog/kebaya-pria/k11/kanan.png"
+      "../../asset/catalog/pria/wedding_suit/ws1/ws01250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws1/ws01250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws1/ws01250812_wedding_dress_kiri_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws1/ws01250812_wedding_dress_kanan_2025-06-12.webp"
     ]
   },
   {
     "id": "product-12",
-    "name": "Beskap Pria Hijau Sage",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "name": "Navy Blue Groom Suit",
+    "price": 2300000,
+    "date": "06-12-2025 13-30-00+7",
     "available": true,
     "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "category": "Wedding Suit",
+    "collection": "Wedding Suit Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -269,21 +269,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k12/depan.png",
-      "asset/catalog/kebaya-pria/k12/back.png",
-      "asset/catalog/kebaya-pria/k12/kiri.png",
-      "asset/catalog/kebaya-pria/k12/kanan.png"
+      "../../asset/catalog/pria/wedding_suit/ws2/ws02250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws2/ws02250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws2/ws02250812_wedding_dress_kiri_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws2/ws02250812_wedding_dress_kanan_2025-06-12.webp"
     ]
   },
   {
     "id": "product-13",
-    "name": "Kebaya Wanita",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "name": "Grey Modern Wedding Suit",
+    "price": 2100000,
+    "date": "06-12-2025 14-00-00+7",
     "available": true,
-    "tipe": "wanita",
-    "category": "Kebaya",
-    "collection": "Summer",
+    "tipe": "pria",
+    "category": "Wedding Suit",
+    "collection": "Wedding Suit Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -292,21 +292,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-wanita/kw01/depan.png",
-      "asset/catalog/kebaya-wanita/kw01/back.png",
-      "asset/catalog/kebaya-wanita/kw01/kiri.png",
-      "asset/catalog/kebaya-wanita/kw01/kanan.png"
+      "../../asset/catalog/pria/wedding_suit/ws3/ws03250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws3/ws03250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws3/ws03250812_wedding_dress_kiri_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws3/ws03250812_wedding_dress_kanan_2025-06-12.webp"
     ]
   },
   {
     "id": "product-14",
-    "name": "Kebaya Wanita",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "name": "White Pearl Wedding Suit",
+    "price": 2750000,
+    "date": "06-12-2025 14-30-00+7",
     "available": true,
-    "tipe": "wanita",
-    "category": "Kebaya",
-    "collection": "Summer",
+    "tipe": "pria",
+    "category": "Wedding Suit",
+    "collection": "Wedding Suit Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -315,21 +315,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-wanita/kw02/depan.png",
-      "asset/catalog/kebaya-wanita/kw02/back.png",
-      "asset/catalog/kebaya-wanita/kw02/kiri.png",
-      "asset/catalog/kebaya-wanita/kw02/kanan.png"
+      "../../asset/catalog/pria/wedding_suit/ws4/ws04250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws4/ws04250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws4/ws04250812_wedding_dress_kiri_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws4/ws04250812_wedding_dress_kanan_2025-06-12.webp"
     ]
   },
   {
     "id": "product-15",
-    "name": "Kebaya Wanita",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "name": "Double Breasted Maroon Suit",
+    "price": 2600000,
+    "date": "06-12-2025 15-00-00+7",
     "available": true,
-    "tipe": "wanita",
-    "category": "Kebaya",
-    "collection": "Summer",
+    "tipe": "pria",
+    "category": "Wedding Suit",
+    "collection": "Wedding Suit Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -338,21 +338,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-wanita/kw03/depan.png",
-      "asset/catalog/kebaya-wanita/kw03/back.png",
-      "asset/catalog/kebaya-wanita/kw03/kiri.png",
-      "asset/catalog/kebaya-wanita/kw03/kanan.png"
+      "../../asset/catalog/pria/wedding_suit/ws5/ws05250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws5/ws05250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws5/ws05250812_wedding_dress_kiri_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws5/ws05250812_wedding_dress_kanan_2025-06-12.webp"
     ]
   },
   {
     "id": "product-16",
-    "name": "Kebaya Wanita",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "name": "Cream Beige Casual Suit",
+    "price": 1950000,
+    "date": "06-12-2025 15-30-00+7",
     "available": true,
-    "tipe": "wanita",
-    "category": "Kebaya",
-    "collection": "Summer",
+    "tipe": "pria",
+    "category": "Wedding Suit",
+    "collection": "Wedding Suit Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -361,21 +361,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-wanita/kw04/depan.png",
-      "asset/catalog/kebaya-wanita/kw04/back.png",
-      "asset/catalog/kebaya-wanita/kw04/kiri.png",
-      "asset/catalog/kebaya-wanita/kw04/kanan.png"
+      "../../asset/catalog/pria/wedding_suit/ws6/ws06250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws6/ws06250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws6/ws06250812_wedding_dress_kiri_2025-06-12.webp",
+      "../../asset/catalog/pria/wedding_suit/ws6/ws06250812_wedding_dress_kanan_2025-06-12.webp"
     ]
   },
   {
     "id": "product-17",
-    "name": "Kebaya Wanita",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "name": "Kebaya Encim Modern Merah",
+    "price": 350000,
+    "date": "06-12-2025 16-00-00+7",
     "available": true,
     "tipe": "wanita",
     "category": "Kebaya",
-    "collection": "Summer",
+    "collection": "Kebaya Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -384,21 +384,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-wanita/kw05/depan.png",
-      "asset/catalog/kebaya-wanita/kw05/back.png",
-      "asset/catalog/kebaya-wanita/kw05/kiri.png",
-      "asset/catalog/kebaya-wanita/kw05/kanan.png"
+      "../../asset/catalog/wanita/kebaya/kebaya1/kby01250812_kebaya_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya1/kby01250812_kebaya_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya1/kby01250812_kebaya_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya1/kby01250812_kebaya_kiri_2025-06-12.webp"
     ]
   },
   {
     "id": "product-18",
-    "name": "Kebaya Wanita",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "name": "Kebaya Kutu Baru Velvet Hitam",
+    "price": 425000,
+    "date": "06-12-2025 16-15-00+7",
     "available": true,
     "tipe": "wanita",
     "category": "Kebaya",
-    "collection": "Summer",
+    "collection": "Kebaya Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -407,21 +407,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-wanita/kw06/depan.png",
-      "asset/catalog/kebaya-wanita/kw06/back.png",
-      "asset/catalog/kebaya-wanita/kw06/kiri.png",
-      "asset/catalog/kebaya-wanita/kw06/kanan.png"
+      "../../asset/catalog/wanita/kebaya/kebaya2/kby02250812_kebaya_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya2/kby02250812_kebaya_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya2/kby02250812_kebaya_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya2/kby02250812_kebaya_kiri_2025-06-12.webp"
     ]
   },
   {
     "id": "product-19",
-    "name": "Kebaya Wanita",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "name": "Kebaya Brokat Payet Gold",
+    "price": 550000,
+    "date": "06-12-2025 16-30-00+7",
     "available": true,
     "tipe": "wanita",
     "category": "Kebaya",
-    "collection": "Summer",
+    "collection": "Kebaya Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -430,21 +430,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-wanita/kw07/depan.png",
-      "asset/catalog/kebaya-wanita/kw07/back.png",
-      "asset/catalog/kebaya-wanita/kw07/kiri.png",
-      "asset/catalog/kebaya-wanita/kw07/kanan.png"
+      "../../asset/catalog/wanita/kebaya/kebaya3/kby03250812_kebaya_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya3/kby03250812_kebaya_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya3/kby03250812_kebaya_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya3/kby03250812_kebaya_kiri_2025-06-12.webp"
     ]
   },
   {
     "id": "product-20",
-    "name": "Kebaya Wanita",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "name": "Kebaya Kartini Classic Putih",
+    "price": 300000,
+    "date": "06-12-2025 16-45-00+7",
     "available": true,
     "tipe": "wanita",
     "category": "Kebaya",
-    "collection": "Summer",
+    "collection": "Kebaya Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -453,21 +453,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-wanita/kw08/depan.png",
-      "asset/catalog/kebaya-wanita/kw08/back.png",
-      "asset/catalog/kebaya-wanita/kw08/kiri.png",
-      "asset/catalog/kebaya-wanita/kw08/kanan.png"
+      "../../asset/catalog/wanita/kebaya/kebaya4/kby04250812_kebaya_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya4/kby04250812_kebaya_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya4/kby04250812_kebaya_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya4/kby04250812_kebaya_kiri_2025-06-12.webp"
     ]
   },
   {
     "id": "product-21",
-    "name": "Kebaya Wanita",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "name": "Kebaya Wisuda Pastel Pink",
+    "price": 375000,
+    "date": "06-12-2025 17-00-00+7",
     "available": true,
     "tipe": "wanita",
     "category": "Kebaya",
-    "collection": "Summer",
+    "collection": "Kebaya Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -476,21 +476,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-wanita/kw09/depan.png",
-      "asset/catalog/kebaya-wanita/kw09/back.png",
-      "asset/catalog/kebaya-wanita/kw09/kiri.png",
-      "asset/catalog/kebaya-wanita/kw09/kanan.png"
+      "../../asset/catalog/wanita/kebaya/kebaya5/kby05250812_kebaya_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya5/kby05250812_kebaya_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya5/kby05250812_kebaya_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya5/kby05250812_kebaya_kiri_2025-06-12.webp"
     ]
   },
   {
     "id": "product-22",
-    "name": "Kebaya Wanita",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "name": "Kebaya Bali Obi Kuning",
+    "price": 280000,
+    "date": "06-12-2025 17-15-00+7",
     "available": true,
     "tipe": "wanita",
     "category": "Kebaya",
-    "collection": "Summer",
+    "collection": "Kebaya Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -499,21 +499,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-wanita/kw10/depan.png",
-      "asset/catalog/kebaya-wanita/kw10/back.png",
-      "asset/catalog/kebaya-wanita/kw10/kiri.png",
-      "asset/catalog/kebaya-wanita/kw10/kanan.png"
+      "../../asset/catalog/wanita/kebaya/kebaya6/kby06250812_kebaya_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya6/kby06250812_kebaya_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya6/kby06250812_kebaya_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya6/kby06250812_kebaya_kiri_2025-06-12.webp"
     ]
   },
   {
     "id": "product-23",
-    "name": "Kebaya Wanita",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "name": "Kebaya Tunik Modern Lilac",
+    "price": 400000,
+    "date": "06-12-2025 17-30-00+7",
     "available": true,
     "tipe": "wanita",
     "category": "Kebaya",
-    "collection": "Summer",
+    "collection": "Kebaya Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -522,21 +522,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-wanita/kw11/depan.png",
-      "asset/catalog/kebaya-wanita/kw11/back.png",
-      "asset/catalog/kebaya-wanita/kw11/kiri.png",
-      "asset/catalog/kebaya-wanita/kw11/kanan.png"
+      "../../asset/catalog/wanita/kebaya/kebaya7/kby07250812_kebaya_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya7/kby07250812_kebaya_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya7/kby07250812_kebaya_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya7/kby07250812_kebaya_kiri_2025-06-12.webp"
     ]
   },
   {
     "id": "product-24",
-    "name": "Kebaya Wanita",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "name": "Kebaya Pengantin Ekor Putih",
+    "price": 1800000,
+    "date": "06-12-2025 17-45-00+7",
     "available": true,
     "tipe": "wanita",
     "category": "Kebaya",
-    "collection": "Summer",
+    "collection": "Kebaya Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -545,21 +545,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-wanita/kw12/depan.png",
-      "asset/catalog/kebaya-wanita/kw12/back.png",
-      "asset/catalog/kebaya-wanita/kw12/kiri.png",
-      "asset/catalog/kebaya-wanita/kw12/kanan.png"
+      "../../asset/catalog/wanita/kebaya/kebaya8/kby08250812_kebaya_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya8/kby08250812_kebaya_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya8/kby08250812_kebaya_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya8/kby08250812_kebaya_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-1",
-    "name": "Kebaya Pria Klasik Merah Maroon (Generated 1)",
-    "price": 0,
-    "date": "11-11-2025 20-25-56+7",
+    "id": "product-25",
+    "name": "Kebaya Jawa Beludru Navy",
+    "price": 650000,
+    "date": "06-12-2025 18-00-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Kebaya Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -568,90 +568,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k01/depan.webp",
-      "asset/catalog/kebaya-pria/k01/back.webp",
-      "asset/catalog/kebaya-pria/k01/kiri.webp",
-      "asset/catalog/kebaya-pria/k01/kanan.webp"
+      "../../asset/catalog/wanita/kebaya/kebaya9/kby09250812_kebaya_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya9/kby09250812_kebaya_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya9/kby09250812_kebaya_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya9/kby09250812_kebaya_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-2",
-    "name": "Beskap Pria Modern Putih Gading (Generated 2)",
-    "price": 13999000,
-    "date": "10-11-2025 20-25-56+7",
-    "available": false,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k02/depan.png",
-      "asset/catalog/kebaya-pria/k02/back.png",
-      "asset/catalog/kebaya-pria/k02/kiri.png",
-      "asset/catalog/kebaya-pria/k02/kanan.png"
-    ]
-  },
-  {
-    "id": "product-generated-pria-3",
-    "name": "Beskap Pria Modern Abu Silver (Generated 3)",
-    "price": 13899000,
-    "date": "09-11-2025 20-25-56+7",
-    "available": false,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k03/depan.png",
-      "asset/catalog/kebaya-pria/k03/belakang.png",
-      "asset/catalog/kebaya-pria/k03/kiri.png",
-      "asset/catalog/kebaya-pria/k03/kanan.png"
-    ]
-  },
-  {
-    "id": "product-generated-pria-4",
-    "name": "Beskap Pria Elegan Hitam Polos (Generated 4)",
-    "price": 24998800,
-    "date": "08-11-2025 20-25-56+7",
-    "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k04/depan.png",
-      "asset/catalog/kebaya-pria/k04/back.png",
-      "asset/catalog/kebaya-pria/k04/kiri.png",
-      "asset/catalog/kebaya-pria/k04/kanan.png"
-    ]
-  },
-  {
-    "id": "product-generated-pria-5",
-    "name": "Beskap Pria Hitam Aksen Emas (Generated 5)",
-    "price": 21020300,
-    "date": "07-11-2025 20-25-56+7",
+    "id": "product-26",
+    "name": "Kebaya Peplum Modern Sage",
+    "price": 410000,
+    "date": "06-12-2025 18-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Kebaya Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -660,21 +591,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k05/depan.png",
-      "asset/catalog/kebaya-pria/k05/back.png",
-      "asset/catalog/kebaya-pria/k05/kiri.png",
-      "asset/catalog/kebaya-pria/k05/kanan.png"
+      "../../asset/catalog/wanita/kebaya/kebaya10/kby10250812_kebaya_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya10/kby10250812_kebaya_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya10/kby10250812_kebaya_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya10/kby10250812_kebaya_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-6",
-    "name": "Beskap Pria Klasik Biru Navy (Generated 6)",
-    "price": 11998800,
-    "date": "06-11-2025 20-25-56+7",
+    "id": "product-27",
+    "name": "Kebaya Kurung Melayu Maroon",
+    "price": 390000,
+    "date": "06-12-2025 18-30-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Kebaya Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -683,21 +614,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k06/depan.png",
-      "asset/catalog/kebaya-pria/k06/back.png",
-      "asset/catalog/kebaya-pria/k06/kiri.png",
-      "asset/catalog/kebaya-pria/k06/kanan.png"
+      "../../asset/catalog/wanita/kebaya/kebaya11/kby11250812_kebaya_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya11/kby11250812_kebaya_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya11/kby11250812_kebaya_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya11/kby11250812_kebaya_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-7",
-    "name": "Beskap Pria Modern Biru Langit (Generated 7)",
-    "price": 11998000,
-    "date": "05-11-2025 20-25-56+7",
+    "id": "product-28",
+    "name": "Kebaya Encim Bordir Orange",
+    "price": 340000,
+    "date": "06-12-2025 18-45-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Kebaya Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -706,21 +637,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k07/depan.png",
-      "asset/catalog/kebaya-pria/k07/back.png",
-      "asset/catalog/kebaya-pria/k07/kiri.png",
-      "asset/catalog/kebaya-pria/k07/kanan.png"
+      "../../asset/catalog/wanita/kebaya/kebaya12/kby12250812_kebaya_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya12/kby12250812_kebaya_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya12/kby12250812_kebaya_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya12/kby12250812_kebaya_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-8",
-    "name": "Beskap Pria Putih Aksen Melati (Generated 8)",
-    "price": 11699000,
-    "date": "04-11-2025 20-25-56+7",
+    "id": "product-29",
+    "name": "Kebaya Sabrina Lace Silver",
+    "price": 480000,
+    "date": "06-12-2025 19-00-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Kebaya Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -729,21 +660,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k08/depan.png",
-      "asset/catalog/kebaya-pria/k08/back.png",
-      "asset/catalog/kebaya-pria/k08/kiri.png",
-      "asset/catalog/kebaya-pria/k08/kanan.png"
+      "../../asset/catalog/wanita/kebaya/kebaya13/kby13250812_kebaya_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya13/kby13250812_kebaya_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya13/kby13250812_kebaya_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya13/kby13250812_kebaya_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-9",
-    "name": "Beskap Pria Hitam Bordir Emas (Generated 9)",
-    "price": 12000000,
-    "date": "03-11-2025 20-25-56+7",
+    "id": "product-30",
+    "name": "Kebaya Jumputan Purple",
+    "price": 320000,
+    "date": "06-12-2025 19-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Kebaya Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -752,21 +683,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k09/depan.png",
-      "asset/catalog/kebaya-pria/k09/back.png",
-      "asset/catalog/kebaya-pria/k09/kiri.png",
-      "asset/catalog/kebaya-pria/k09/kanan.png"
+      "../../asset/catalog/wanita/kebaya/kebaya14/kby14250812_kebaya_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya14/kby14250812_kebaya_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya14/kby14250812_kebaya_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya14/kby14250812_kebaya_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-10",
-    "name": "Beskap Pria Hitam Motif Emas (Generated 10)",
-    "price": 15100000,
-    "date": "02-11-2025 20-25-56+7",
+    "id": "product-31",
+    "name": "Kebaya Modern Sleeveless Biru",
+    "price": 450000,
+    "date": "06-12-2025 19-30-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Kebaya",
+    "collection": "Kebaya Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -775,21 +706,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k10/depan.png",
-      "asset/catalog/kebaya-pria/k10/back.png",
-      "asset/catalog/kebaya-pria/k10/kiri.png",
-      "asset/catalog/kebaya-pria/k10/kanan.png"
+      "../../asset/catalog/wanita/kebaya/kebaya15/kby15250812_kebaya_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya15/kby15250812_kebaya_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya15/kby15250812_kebaya_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/kebaya/kebaya15/kby15250812_kebaya_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-11",
-    "name": "Beskap Pria Coklat Mocca (Generated 11)",
-    "price": 13500000,
-    "date": "01-11-2025 20-25-56+7",
+    "id": "product-32",
+    "name": "Elegant Red Evening Gown",
+    "price": 750000,
+    "date": "06-12-2025 19-45-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -798,21 +729,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k11/depan.png",
-      "asset/catalog/kebaya-pria/k11/back.png",
-      "asset/catalog/kebaya-pria/k11/kiri.png",
-      "asset/catalog/kebaya-pria/k11/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb1/fb01250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb1/fb01250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb1/fb01250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb1/fb01250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-12",
-    "name": "Beskap Pria Hijau Sage (Generated 12)",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "id": "product-33",
+    "name": "Black Velvet Ball Gown",
+    "price": 850000,
+    "date": "06-12-2025 20-00-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -821,67 +752,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k12/depan.png",
-      "asset/catalog/kebaya-pria/k12/back.png",
-      "asset/catalog/kebaya-pria/k12/kiri.png",
-      "asset/catalog/kebaya-pria/k12/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb2/fb02250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb2/fb02250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb2/fb02250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb2/fb02250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-13",
-    "name": "Kebaya Pria Klasik Merah Maroon (Generated 13)",
-    "price": 0,
-    "date": "11-11-2025 20-25-56+7",
+    "id": "product-34",
+    "name": "White Silk Summer Dress",
+    "price": 450000,
+    "date": "06-12-2025 20-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k01/depan.webp",
-      "asset/catalog/kebaya-pria/k01/back.webp",
-      "asset/catalog/kebaya-pria/k01/kiri.webp",
-      "asset/catalog/kebaya-pria/k01/kanan.webp"
-    ]
-  },
-  {
-    "id": "product-generated-pria-14",
-    "name": "Beskap Pria Modern Putih Gading (Generated 14)",
-    "price": 13999000,
-    "date": "10-11-2025 20-25-56+7",
-    "available": false,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k02/depan.png",
-      "asset/catalog/kebaya-pria/k02/back.png",
-      "asset/catalog/kebaya-pria/k02/kiri.png",
-      "asset/catalog/kebaya-pria/k02/kanan.png"
-    ]
-  },
-  {
-    "id": "product-generated-pria-15",
-    "name": "Beskap Pria Modern Abu Silver (Generated 15)",
-    "price": 13899000,
-    "date": "09-11-2025 20-25-56+7",
-    "available": false,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -890,21 +775,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k03/depan.png",
-      "asset/catalog/kebaya-pria/k03/belakang.png",
-      "asset/catalog/kebaya-pria/k03/kiri.png",
-      "asset/catalog/kebaya-pria/k03/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb3/fb03250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb3/fb03250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb3/fb03250612_gaun_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb3/fb03250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-16",
-    "name": "Beskap Pria Elegan Hitam Polos (Generated 16)",
-    "price": 24998800,
-    "date": "08-11-2025 20-25-56+7",
+    "id": "product-35",
+    "name": "Blue Satin Mermaid Dress",
+    "price": 600000,
+    "date": "06-12-2025 20-30-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -913,21 +798,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k04/depan.png",
-      "asset/catalog/kebaya-pria/k04/back.png",
-      "asset/catalog/kebaya-pria/k04/kiri.png",
-      "asset/catalog/kebaya-pria/k04/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb4/fb04250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb4/fb04250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb4/fb04250612_gaun_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb4/fb04250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-17",
-    "name": "Beskap Pria Hitam Aksen Emas (Generated 17)",
-    "price": 21020300,
-    "date": "07-11-2025 20-25-56+7",
+    "id": "product-36",
+    "name": "Pink Pastel Party Dress",
+    "price": 500000,
+    "date": "06-12-2025 20-45-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -936,21 +821,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k05/depan.png",
-      "asset/catalog/kebaya-pria/k05/back.png",
-      "asset/catalog/kebaya-pria/k05/kiri.png",
-      "asset/catalog/kebaya-pria/k05/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb5/fb05250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb5/fb05250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb5/fb05250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb5/fb05250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-18",
-    "name": "Beskap Pria Klasik Biru Navy (Generated 18)",
-    "price": 11998800,
-    "date": "06-11-2025 20-25-56+7",
+    "id": "product-37",
+    "name": "Gold Sequin Luxury Gown",
+    "price": 1200000,
+    "date": "06-12-2025 21-00-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -959,21 +844,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k06/depan.png",
-      "asset/catalog/kebaya-pria/k06/back.png",
-      "asset/catalog/kebaya-pria/k06/kiri.png",
-      "asset/catalog/kebaya-pria/k06/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb6/fb06250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb6/fb06250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb6/fb06250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb6/fb06250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-19",
-    "name": "Beskap Pria Modern Biru Langit (Generated 19)",
-    "price": 11998000,
-    "date": "05-11-2025 20-25-56+7",
+    "id": "product-38",
+    "name": "Silver Metallic Prom Dress",
+    "price": 950000,
+    "date": "06-12-2025 21-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -982,21 +867,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k07/depan.png",
-      "asset/catalog/kebaya-pria/k07/back.png",
-      "asset/catalog/kebaya-pria/k07/kiri.png",
-      "asset/catalog/kebaya-pria/k07/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb7/fb07250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb7/fb07250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb7/fb07250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb7/fb07250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-20",
-    "name": "Beskap Pria Putih Aksen Melati (Generated 20)",
-    "price": 11699000,
-    "date": "04-11-2025 20-25-56+7",
+    "id": "product-39",
+    "name": "Floral Chiffon Maxi Dress",
+    "price": 400000,
+    "date": "06-12-2025 21-30-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1005,21 +890,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k08/depan.png",
-      "asset/catalog/kebaya-pria/k08/back.png",
-      "asset/catalog/kebaya-pria/k08/kiri.png",
-      "asset/catalog/kebaya-pria/k08/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb8/fb08250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb8/fb08250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb8/fb08250612_gaun_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb8/fb08250612_gaun_kanan_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-21",
-    "name": "Beskap Pria Hitam Bordir Emas (Generated 21)",
-    "price": 12000000,
-    "date": "03-11-2025 20-25-56+7",
+    "id": "product-40",
+    "name": "Emerald Green A-Line Gown",
+    "price": 650000,
+    "date": "06-12-2025 21-45-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1028,21 +913,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k09/depan.png",
-      "asset/catalog/kebaya-pria/k09/back.png",
-      "asset/catalog/kebaya-pria/k09/kiri.png",
-      "asset/catalog/kebaya-pria/k09/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb9/fb09250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb9/fb09250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb9/fb09250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb9/fb09250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-22",
-    "name": "Beskap Pria Hitam Motif Emas (Generated 22)",
-    "price": 15100000,
-    "date": "02-11-2025 20-25-56+7",
+    "id": "product-41",
+    "name": "Navy Blue Lace Dress",
+    "price": 550000,
+    "date": "06-12-2025 22-00-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1051,21 +936,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k10/depan.png",
-      "asset/catalog/kebaya-pria/k10/back.png",
-      "asset/catalog/kebaya-pria/k10/kiri.png",
-      "asset/catalog/kebaya-pria/k10/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb10/fb10250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb10/fb10250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb10/fb10250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb10/fb10250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-23",
-    "name": "Beskap Pria Coklat Mocca (Generated 23)",
-    "price": 13500000,
-    "date": "01-11-2025 20-25-56+7",
+    "id": "product-42",
+    "name": "Maroon Off-Shoulder Gown",
+    "price": 700000,
+    "date": "06-12-2025 22-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1074,21 +959,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k11/depan.png",
-      "asset/catalog/kebaya-pria/k11/back.png",
-      "asset/catalog/kebaya-pria/k11/kiri.png",
-      "asset/catalog/kebaya-pria/k11/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb11/fb11250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb11/fb11250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb11/fb11250612_gaun_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb11/fb11250612_gaun_kanan_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-24",
-    "name": "Beskap Pria Hijau Sage (Generated 24)",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "id": "product-43",
+    "name": "Cream Bohemian Dress",
+    "price": 420000,
+    "date": "06-12-2025 22-30-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1097,67 +982,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k12/depan.png",
-      "asset/catalog/kebaya-pria/k12/back.png",
-      "asset/catalog/kebaya-pria/k12/kiri.png",
-      "asset/catalog/kebaya-pria/k12/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb12/fb12250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb12/fb12250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb12/fb12250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb12/fb12250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-25",
-    "name": "Kebaya Pria Klasik Merah Maroon (Generated 25)",
-    "price": 0,
-    "date": "11-11-2025 20-25-56+7",
+    "id": "product-44",
+    "name": "Lilac Tulle Princess Gown",
+    "price": 800000,
+    "date": "06-12-2025 22-45-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k01/depan.webp",
-      "asset/catalog/kebaya-pria/k01/back.webp",
-      "asset/catalog/kebaya-pria/k01/kiri.webp",
-      "asset/catalog/kebaya-pria/k01/kanan.webp"
-    ]
-  },
-  {
-    "id": "product-generated-pria-26",
-    "name": "Beskap Pria Modern Putih Gading (Generated 26)",
-    "price": 13999000,
-    "date": "10-11-2025 20-25-56+7",
-    "available": false,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k02/depan.png",
-      "asset/catalog/kebaya-pria/k02/back.png",
-      "asset/catalog/kebaya-pria/k02/kiri.png",
-      "asset/catalog/kebaya-pria/k02/kanan.png"
-    ]
-  },
-  {
-    "id": "product-generated-pria-27",
-    "name": "Beskap Pria Modern Abu Silver (Generated 27)",
-    "price": 13899000,
-    "date": "09-11-2025 20-25-56+7",
-    "available": false,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1166,21 +1005,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k03/depan.png",
-      "asset/catalog/kebaya-pria/k03/belakang.png",
-      "asset/catalog/kebaya-pria/k03/kiri.png",
-      "asset/catalog/kebaya-pria/k03/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb13/fb13250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb13/fb13250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb13/fb13250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb13/fb13250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-28",
-    "name": "Beskap Pria Elegan Hitam Polos (Generated 28)",
-    "price": 24998800,
-    "date": "08-11-2025 20-25-56+7",
+    "id": "product-45",
+    "name": "Burgundy High Slit Dress",
+    "price": 580000,
+    "date": "06-12-2025 23-00-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1189,21 +1028,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k04/depan.png",
-      "asset/catalog/kebaya-pria/k04/back.png",
-      "asset/catalog/kebaya-pria/k04/kiri.png",
-      "asset/catalog/kebaya-pria/k04/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb14/fb14250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb14/fb14250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb14/fb14250612_gaun_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb14/fb14250612_gaun_kanan_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-29",
-    "name": "Beskap Pria Hitam Aksen Emas (Generated 29)",
-    "price": 21020300,
-    "date": "07-11-2025 20-25-56+7",
+    "id": "product-46",
+    "name": "Peach Ruffled Cocktail Dress",
+    "price": 480000,
+    "date": "06-12-2025 23-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1212,21 +1051,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k05/depan.png",
-      "asset/catalog/kebaya-pria/k05/back.png",
-      "asset/catalog/kebaya-pria/k05/kiri.png",
-      "asset/catalog/kebaya-pria/k05/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb15/fb15250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb15/fb15250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb15/fb15250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb15/fb15250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-30",
-    "name": "Beskap Pria Klasik Biru Navy (Generated 30)",
-    "price": 11998800,
-    "date": "06-11-2025 20-25-56+7",
+    "id": "product-47",
+    "name": "Grey Minimalist Satin Dress",
+    "price": 520000,
+    "date": "06-12-2025 23-30-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1235,21 +1074,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k06/depan.png",
-      "asset/catalog/kebaya-pria/k06/back.png",
-      "asset/catalog/kebaya-pria/k06/kiri.png",
-      "asset/catalog/kebaya-pria/k06/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb16/fb16250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb16/fb16250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb16/fb16250612_gaun_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb16/fb16250612_gaun_kanan_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-31",
-    "name": "Beskap Pria Modern Biru Langit (Generated 31)",
-    "price": 11998000,
-    "date": "05-11-2025 20-25-56+7",
+    "id": "product-48",
+    "name": "Yellow Sunshine Summer Gown",
+    "price": 380000,
+    "date": "06-12-2025 23-45-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1258,21 +1097,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k07/depan.png",
-      "asset/catalog/kebaya-pria/k07/back.png",
-      "asset/catalog/kebaya-pria/k07/kiri.png",
-      "asset/catalog/kebaya-pria/k07/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb17/fb17250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb17/fb17250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb17/fb17250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb17/fb17250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-32",
-    "name": "Beskap Pria Putih Aksen Melati (Generated 32)",
-    "price": 11699000,
-    "date": "04-11-2025 20-25-56+7",
+    "id": "product-49",
+    "name": "Turquoise Strapless Dress",
+    "price": 620000,
+    "date": "06-12-2025 23-50-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1281,21 +1120,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k08/depan.png",
-      "asset/catalog/kebaya-pria/k08/back.png",
-      "asset/catalog/kebaya-pria/k08/kiri.png",
-      "asset/catalog/kebaya-pria/k08/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb18/fb18250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb18/fb18250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb18/fb18250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb18/fb18250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-33",
-    "name": "Beskap Pria Hitam Bordir Emas (Generated 33)",
-    "price": 12000000,
-    "date": "03-11-2025 20-25-56+7",
+    "id": "product-50",
+    "name": "Brown Earth Tone Midi Dress",
+    "price": 360000,
+    "date": "06-12-2025 23-55-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1304,21 +1143,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k09/depan.png",
-      "asset/catalog/kebaya-pria/k09/back.png",
-      "asset/catalog/kebaya-pria/k09/kiri.png",
-      "asset/catalog/kebaya-pria/k09/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb19/fb19250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb19/fb19250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb19/fb19250612_gaun_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb19/fb19250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-34",
-    "name": "Beskap Pria Hitam Motif Emas (Generated 34)",
-    "price": 15100000,
-    "date": "02-11-2025 20-25-56+7",
+    "id": "product-51",
+    "name": "Violet Organza Puffy Dress",
+    "price": 780000,
+    "date": "06-12-2025 23-58-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1327,21 +1166,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k10/depan.png",
-      "asset/catalog/kebaya-pria/k10/back.png",
-      "asset/catalog/kebaya-pria/k10/kiri.png",
-      "asset/catalog/kebaya-pria/k10/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb20/fb20250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb20/fb20250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb20/fb20250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb20/fb20250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-35",
-    "name": "Beskap Pria Coklat Mocca (Generated 35)",
-    "price": 13500000,
-    "date": "01-11-2025 20-25-56+7",
+    "id": "product-52",
+    "name": "Orange Sunset Flowy Gown",
+    "price": 530000,
+    "date": "06-12-2025 23-59-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1350,21 +1189,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k11/depan.png",
-      "asset/catalog/kebaya-pria/k11/back.png",
-      "asset/catalog/kebaya-pria/k11/kiri.png",
-      "asset/catalog/kebaya-pria/k11/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb21/fb21250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb21/fb21250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb21/fb21250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb21/fb21250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-36",
-    "name": "Beskap Pria Hijau Sage (Generated 36)",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "id": "product-53",
+    "name": "Dark Teal Velvet Dress",
+    "price": 820000,
+    "date": "06-12-2025 23-59-30+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1373,67 +1212,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k12/depan.png",
-      "asset/catalog/kebaya-pria/k12/back.png",
-      "asset/catalog/kebaya-pria/k12/kiri.png",
-      "asset/catalog/kebaya-pria/k12/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb22/fb22250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb22/fb22250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb22/fb22250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb22/fb22250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-37",
-    "name": "Kebaya Pria Klasik Merah Maroon (Generated 37)",
-    "price": 0,
-    "date": "11-11-2025 20-25-56+7",
+    "id": "product-54",
+    "name": "Rose Gold Bodycon Dress",
+    "price": 680000,
+    "date": "06-12-2025 23-59-45+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k01/depan.webp",
-      "asset/catalog/kebaya-pria/k01/back.webp",
-      "asset/catalog/kebaya-pria/k01/kiri.webp",
-      "asset/catalog/kebaya-pria/k01/kanan.webp"
-    ]
-  },
-  {
-    "id": "product-generated-pria-38",
-    "name": "Beskap Pria Modern Putih Gading (Generated 38)",
-    "price": 13999000,
-    "date": "10-11-2025 20-25-56+7",
-    "available": false,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k02/depan.png",
-      "asset/catalog/kebaya-pria/k02/back.png",
-      "asset/catalog/kebaya-pria/k02/kiri.png",
-      "asset/catalog/kebaya-pria/k02/kanan.png"
-    ]
-  },
-  {
-    "id": "product-generated-pria-39",
-    "name": "Beskap Pria Modern Abu Silver (Generated 39)",
-    "price": 13899000,
-    "date": "09-11-2025 20-25-56+7",
-    "available": false,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1442,21 +1235,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k03/depan.png",
-      "asset/catalog/kebaya-pria/k03/belakang.png",
-      "asset/catalog/kebaya-pria/k03/kiri.png",
-      "asset/catalog/kebaya-pria/k03/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb23/fb23250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb23/fb23250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb23/fb23250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb23/fb23250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-40",
-    "name": "Beskap Pria Elegan Hitam Polos (Generated 40)",
-    "price": 24998800,
-    "date": "08-11-2025 20-25-56+7",
+    "id": "product-55",
+    "name": "Classic White Bridal Gown",
+    "price": 2500000,
+    "date": "06-12-2025 23-59-59+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Gaun",
+    "collection": "Gaun Collection",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1465,21 +1258,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k04/depan.png",
-      "asset/catalog/kebaya-pria/k04/back.png",
-      "asset/catalog/kebaya-pria/k04/kiri.png",
-      "asset/catalog/kebaya-pria/k04/kanan.png"
+      "../../asset/catalog/wanita/foto_baru/fb23/fb23250612_gaun_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb23/fb23250612_gaun_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb23/fb23250612_gaun_kiri_2025-06-12.webp",
+      "../../asset/catalog/wanita/foto_baru/fb23/fb23250612_gaun_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-41",
-    "name": "Beskap Pria Hitam Aksen Emas (Generated 41)",
-    "price": 21020300,
-    "date": "07-11-2025 20-25-56+7",
+    "id": "product-56",
+    "name": "Bandung Floral Summer Dress",
+    "price": 325000,
+    "date": "06-12-2025 09-00-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1488,21 +1281,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k05/depan.png",
-      "asset/catalog/kebaya-pria/k05/back.png",
-      "asset/catalog/kebaya-pria/k05/kiri.png",
-      "asset/catalog/kebaya-pria/k05/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd01/bd01250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd01/bd01250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd01/bd01250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd01/bd01250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-42",
-    "name": "Beskap Pria Klasik Biru Navy (Generated 42)",
-    "price": 11998800,
-    "date": "06-11-2025 20-25-56+7",
+    "id": "product-57",
+    "name": "Bandung Casual Cotton Dress",
+    "price": 280000,
+    "date": "06-12-2025 09-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1511,21 +1304,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k06/depan.png",
-      "asset/catalog/kebaya-pria/k06/back.png",
-      "asset/catalog/kebaya-pria/k06/kiri.png",
-      "asset/catalog/kebaya-pria/k06/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd02/bd02250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd02/bd02250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd02/bd02250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd02/bd02250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-43",
-    "name": "Beskap Pria Modern Biru Langit (Generated 43)",
-    "price": 11998000,
-    "date": "05-11-2025 20-25-56+7",
+    "id": "product-58",
+    "name": "Bandung Vintage Midi Dress",
+    "price": 450000,
+    "date": "06-12-2025 09-30-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1534,21 +1327,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k07/depan.png",
-      "asset/catalog/kebaya-pria/k07/back.png",
-      "asset/catalog/kebaya-pria/k07/kiri.png",
-      "asset/catalog/kebaya-pria/k07/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd03/bd03250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd03/bd03250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd03/bd03250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd03/bd03250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-44",
-    "name": "Beskap Pria Putih Aksen Melati (Generated 44)",
-    "price": 11699000,
-    "date": "04-11-2025 20-25-56+7",
+    "id": "product-59",
+    "name": "Bandung Modern Batik Dress",
+    "price": 500000,
+    "date": "06-12-2025 09-45-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1557,21 +1350,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k08/depan.png",
-      "asset/catalog/kebaya-pria/k08/back.png",
-      "asset/catalog/kebaya-pria/k08/kiri.png",
-      "asset/catalog/kebaya-pria/k08/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd04/bd04250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd04/bd04250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd04/bd04250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd04/bd04250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-45",
-    "name": "Beskap Pria Hitam Bordir Emas (Generated 45)",
-    "price": 12000000,
-    "date": "03-11-2025 20-25-56+7",
+    "id": "product-60",
+    "name": "Bandung Silk Party Dress",
+    "price": 750000,
+    "date": "06-12-2025 10-00-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1580,21 +1373,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k09/depan.png",
-      "asset/catalog/kebaya-pria/k09/back.png",
-      "asset/catalog/kebaya-pria/k09/kiri.png",
-      "asset/catalog/kebaya-pria/k09/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd05/bd05250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd05/bd05250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd05/bd05250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd05/bd05250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-46",
-    "name": "Beskap Pria Hitam Motif Emas (Generated 46)",
-    "price": 15100000,
-    "date": "02-11-2025 20-25-56+7",
+    "id": "product-61",
+    "name": "Bandung Knitwear Daily Dress",
+    "price": 220000,
+    "date": "06-12-2025 10-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1603,21 +1396,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k10/depan.png",
-      "asset/catalog/kebaya-pria/k10/back.png",
-      "asset/catalog/kebaya-pria/k10/kiri.png",
-      "asset/catalog/kebaya-pria/k10/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd06/bd06250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd06/bd06250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd06/bd06250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd06/bd06250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-47",
-    "name": "Beskap Pria Coklat Mocca (Generated 47)",
-    "price": 13500000,
-    "date": "01-11-2025 20-25-56+7",
+    "id": "product-62",
+    "name": "Bandung Denim Chic Dress",
+    "price": 380000,
+    "date": "06-12-2025 10-30-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1626,21 +1419,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k11/depan.png",
-      "asset/catalog/kebaya-pria/k11/back.png",
-      "asset/catalog/kebaya-pria/k11/kiri.png",
-      "asset/catalog/kebaya-pria/k11/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd07/bd07250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd07/bd07250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd07/bd07250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd07/bd07250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-48",
-    "name": "Beskap Pria Hijau Sage (Generated 48)",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "id": "product-63",
+    "name": "Bandung Pastel Ruffle Dress",
+    "price": 310000,
+    "date": "06-12-2025 10-45-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1649,67 +1442,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k12/depan.png",
-      "asset/catalog/kebaya-pria/k12/back.png",
-      "asset/catalog/kebaya-pria/k12/kiri.png",
-      "asset/catalog/kebaya-pria/k12/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd08/bd08250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd08/bd08250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd08/bd08250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd08/bd08250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-49",
-    "name": "Kebaya Pria Klasik Merah Maroon (Generated 49)",
-    "price": 0,
-    "date": "11-11-2025 20-25-56+7",
+    "id": "product-64",
+    "name": "Bandung Elegant Black Dress",
+    "price": 600000,
+    "date": "06-12-2025 11-00-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k01/depan.webp",
-      "asset/catalog/kebaya-pria/k01/back.webp",
-      "asset/catalog/kebaya-pria/k01/kiri.webp",
-      "asset/catalog/kebaya-pria/k01/kanan.webp"
-    ]
-  },
-  {
-    "id": "product-generated-pria-50",
-    "name": "Beskap Pria Modern Putih Gading (Generated 50)",
-    "price": 13999000,
-    "date": "10-11-2025 20-25-56+7",
-    "available": false,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k02/depan.png",
-      "asset/catalog/kebaya-pria/k02/back.png",
-      "asset/catalog/kebaya-pria/k02/kiri.png",
-      "asset/catalog/kebaya-pria/k02/kanan.png"
-    ]
-  },
-  {
-    "id": "product-generated-pria-51",
-    "name": "Beskap Pria Modern Abu Silver (Generated 51)",
-    "price": 13899000,
-    "date": "09-11-2025 20-25-56+7",
-    "available": false,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1718,21 +1465,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k03/depan.png",
-      "asset/catalog/kebaya-pria/k03/belakang.png",
-      "asset/catalog/kebaya-pria/k03/kiri.png",
-      "asset/catalog/kebaya-pria/k03/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd09/bd09250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd09/bd09250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd09/bd09250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd09/bd09250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-52",
-    "name": "Beskap Pria Elegan Hitam Polos (Generated 52)",
-    "price": 24998800,
-    "date": "08-11-2025 20-25-56+7",
+    "id": "product-65",
+    "name": "Bandung White Lace Dress",
+    "price": 480000,
+    "date": "06-12-2025 11-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1741,21 +1488,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k04/depan.png",
-      "asset/catalog/kebaya-pria/k04/back.png",
-      "asset/catalog/kebaya-pria/k04/kiri.png",
-      "asset/catalog/kebaya-pria/k04/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd10/bd10250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd10/bd10250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd10/bd10250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd10/bd10250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-53",
-    "name": "Beskap Pria Hitam Aksen Emas (Generated 53)",
-    "price": 21020300,
-    "date": "07-11-2025 20-25-56+7",
+    "id": "product-66",
+    "name": "Bandung Boho Style Dress",
+    "price": 360000,
+    "date": "06-12-2025 11-30-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1764,21 +1511,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k05/depan.png",
-      "asset/catalog/kebaya-pria/k05/back.png",
-      "asset/catalog/kebaya-pria/k05/kiri.png",
-      "asset/catalog/kebaya-pria/k05/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd11/bd11250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd11/bd11250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd11/bd11250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd11/bd11250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-54",
-    "name": "Beskap Pria Klasik Biru Navy (Generated 54)",
-    "price": 11998800,
-    "date": "06-11-2025 20-25-56+7",
+    "id": "product-67",
+    "name": "Bandung Velvet Evening Dress",
+    "price": 850000,
+    "date": "06-12-2025 11-45-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1787,21 +1534,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k06/depan.png",
-      "asset/catalog/kebaya-pria/k06/back.png",
-      "asset/catalog/kebaya-pria/k06/kiri.png",
-      "asset/catalog/kebaya-pria/k06/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd12/bd12250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd12/bd12250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd12/bd12250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd12/bd12250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-55",
-    "name": "Beskap Pria Modern Biru Langit (Generated 55)",
-    "price": 11998000,
-    "date": "05-11-2025 20-25-56+7",
+    "id": "product-68",
+    "name": "Bandung Chiffon Maxi Dress",
+    "price": 530000,
+    "date": "06-12-2025 12-00-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1810,21 +1557,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k07/depan.png",
-      "asset/catalog/kebaya-pria/k07/back.png",
-      "asset/catalog/kebaya-pria/k07/kiri.png",
-      "asset/catalog/kebaya-pria/k07/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd13/bd13250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd13/bd13250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd13/bd13250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd13/bd13250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-56",
-    "name": "Beskap Pria Putih Aksen Melati (Generated 56)",
-    "price": 11699000,
-    "date": "04-11-2025 20-25-56+7",
+    "id": "product-69",
+    "name": "Bandung Satin Slip Dress",
+    "price": 290000,
+    "date": "06-12-2025 12-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1833,21 +1580,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k08/depan.png",
-      "asset/catalog/kebaya-pria/k08/back.png",
-      "asset/catalog/kebaya-pria/k08/kiri.png",
-      "asset/catalog/kebaya-pria/k08/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd14/bd14250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd14/bd14250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd14/bd14250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd14/bd14250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-57",
-    "name": "Beskap Pria Hitam Bordir Emas (Generated 57)",
-    "price": 12000000,
-    "date": "03-11-2025 20-25-56+7",
+    "id": "product-70",
+    "name": "Bandung Linen A-Line Dress",
+    "price": 340000,
+    "date": "06-12-2025 12-30-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1856,21 +1603,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k09/depan.png",
-      "asset/catalog/kebaya-pria/k09/back.png",
-      "asset/catalog/kebaya-pria/k09/kiri.png",
-      "asset/catalog/kebaya-pria/k09/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd15/bd15250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd15/bd15250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd15/bd15250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd15/bd15250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-58",
-    "name": "Beskap Pria Hitam Motif Emas (Generated 58)",
-    "price": 15100000,
-    "date": "02-11-2025 20-25-56+7",
+    "id": "product-71",
+    "name": "Bandung Polkadot Retro Dress",
+    "price": 315000,
+    "date": "06-12-2025 12-45-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1879,21 +1626,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k10/depan.png",
-      "asset/catalog/kebaya-pria/k10/back.png",
-      "asset/catalog/kebaya-pria/k10/kiri.png",
-      "asset/catalog/kebaya-pria/k10/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd16/bd16250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd16/bd16250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd16/bd16250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd16/bd16250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-59",
-    "name": "Beskap Pria Coklat Mocca (Generated 59)",
-    "price": 13500000,
-    "date": "01-11-2025 20-25-56+7",
+    "id": "product-72",
+    "name": "Bandung Striped Shirt Dress",
+    "price": 275000,
+    "date": "06-12-2025 13-00-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1902,21 +1649,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k11/depan.png",
-      "asset/catalog/kebaya-pria/k11/back.png",
-      "asset/catalog/kebaya-pria/k11/kiri.png",
-      "asset/catalog/kebaya-pria/k11/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd17/bd17250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd17/bd17250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd17/bd17250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd17/bd17250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-60",
-    "name": "Beskap Pria Hijau Sage (Generated 60)",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "id": "product-73",
+    "name": "Bandung Off-Shoulder Dress",
+    "price": 420000,
+    "date": "06-12-2025 13-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1925,67 +1672,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k12/depan.png",
-      "asset/catalog/kebaya-pria/k12/back.png",
-      "asset/catalog/kebaya-pria/k12/kiri.png",
-      "asset/catalog/kebaya-pria/k12/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd18/bd18250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd18/bd18250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd18/bd18250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd18/bd18250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-61",
-    "name": "Kebaya Pria Klasik Merah Maroon (Generated 61)",
-    "price": 0,
-    "date": "11-11-2025 20-25-56+7",
+    "id": "product-74",
+    "name": "Bandung Asymmetric Dress",
+    "price": 460000,
+    "date": "06-12-2025 13-30-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k01/depan.webp",
-      "asset/catalog/kebaya-pria/k01/back.webp",
-      "asset/catalog/kebaya-pria/k01/kiri.webp",
-      "asset/catalog/kebaya-pria/k01/kanan.webp"
-    ]
-  },
-  {
-    "id": "product-generated-pria-62",
-    "name": "Beskap Pria Modern Putih Gading (Generated 62)",
-    "price": 13999000,
-    "date": "10-11-2025 20-25-56+7",
-    "available": false,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k02/depan.png",
-      "asset/catalog/kebaya-pria/k02/back.png",
-      "asset/catalog/kebaya-pria/k02/kiri.png",
-      "asset/catalog/kebaya-pria/k02/kanan.png"
-    ]
-  },
-  {
-    "id": "product-generated-pria-63",
-    "name": "Beskap Pria Modern Abu Silver (Generated 63)",
-    "price": 13899000,
-    "date": "09-11-2025 20-25-56+7",
-    "available": false,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -1994,21 +1695,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k03/depan.png",
-      "asset/catalog/kebaya-pria/k03/belakang.png",
-      "asset/catalog/kebaya-pria/k03/kiri.png",
-      "asset/catalog/kebaya-pria/k03/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd19/bd19250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd19/bd19250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd19/bd19250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd19/bd19250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-64",
-    "name": "Beskap Pria Elegan Hitam Polos (Generated 64)",
-    "price": 24998800,
-    "date": "08-11-2025 20-25-56+7",
+    "id": "product-75",
+    "name": "Bandung Pleated Skirt Dress",
+    "price": 395000,
+    "date": "06-12-2025 13-45-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2017,21 +1718,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k04/depan.png",
-      "asset/catalog/kebaya-pria/k04/back.png",
-      "asset/catalog/kebaya-pria/k04/kiri.png",
-      "asset/catalog/kebaya-pria/k04/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd20/bd20250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd20/bd20250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd20/bd20250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd20/bd20250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-65",
-    "name": "Beskap Pria Hitam Aksen Emas (Generated 65)",
-    "price": 21020300,
-    "date": "07-11-2025 20-25-56+7",
+    "id": "product-76",
+    "name": "Bandung Kimono Style Dress",
+    "price": 410000,
+    "date": "06-12-2025 14-00-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2040,21 +1741,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k05/depan.png",
-      "asset/catalog/kebaya-pria/k05/back.png",
-      "asset/catalog/kebaya-pria/k05/kiri.png",
-      "asset/catalog/kebaya-pria/k05/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd21/bd21250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd21/bd21250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd21/bd21250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd21/bd21250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-66",
-    "name": "Beskap Pria Klasik Biru Navy (Generated 66)",
-    "price": 11998800,
-    "date": "06-11-2025 20-25-56+7",
+    "id": "product-77",
+    "name": "Bandung Tiered Mini Dress",
+    "price": 330000,
+    "date": "06-12-2025 14-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2063,21 +1764,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k06/depan.png",
-      "asset/catalog/kebaya-pria/k06/back.png",
-      "asset/catalog/kebaya-pria/k06/kiri.png",
-      "asset/catalog/kebaya-pria/k06/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd22/bd22250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd22/bd22250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd22/bd22250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd22/bd22250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-67",
-    "name": "Beskap Pria Modern Biru Langit (Generated 67)",
-    "price": 11998000,
-    "date": "05-11-2025 20-25-56+7",
+    "id": "product-78",
+    "name": "Bandung Square Neck Dress",
+    "price": 295000,
+    "date": "06-12-2025 14-30-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2086,21 +1787,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k07/depan.png",
-      "asset/catalog/kebaya-pria/k07/back.png",
-      "asset/catalog/kebaya-pria/k07/kiri.png",
-      "asset/catalog/kebaya-pria/k07/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd23/bd23250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd23/bd23250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd23/bd23250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd23/bd23250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-68",
-    "name": "Beskap Pria Putih Aksen Melati (Generated 68)",
-    "price": 11699000,
-    "date": "04-11-2025 20-25-56+7",
+    "id": "product-79",
+    "name": "Bandung Embroidered Dress",
+    "price": 560000,
+    "date": "06-12-2025 14-45-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Dress",
+    "collection": "Bandung Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2109,21 +1810,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k08/depan.png",
-      "asset/catalog/kebaya-pria/k08/back.png",
-      "asset/catalog/kebaya-pria/k08/kiri.png",
-      "asset/catalog/kebaya-pria/k08/kanan.png"
+      "../../asset/catalog/wanita/bandung_dress/bd24/bd24250812_bandung_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd24/bd24250812_bandung_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd24/bd24250812_bandung_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/bandung_dress/bd24/bd24250812_bandung_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-69",
-    "name": "Beskap Pria Hitam Bordir Emas (Generated 69)",
-    "price": 12000000,
-    "date": "03-11-2025 20-25-56+7",
+    "id": "product-80",
+    "name": "Classic White A-Line Wedding Dress",
+    "price": 3500000,
+    "date": "06-12-2025 15-00-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Wedding Dress",
+    "collection": "Wedding Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2132,21 +1833,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k09/depan.png",
-      "asset/catalog/kebaya-pria/k09/back.png",
-      "asset/catalog/kebaya-pria/k09/kiri.png",
-      "asset/catalog/kebaya-pria/k09/kanan.png"
+      "../../asset/catalog/wanita/wedding_dress/wd1/wd01250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd1/wd01250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd1/wd01250812_wedding_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd1/wd01250812_wedding_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-70",
-    "name": "Beskap Pria Hitam Motif Emas (Generated 70)",
-    "price": 15100000,
-    "date": "02-11-2025 20-25-56+7",
+    "id": "product-81",
+    "name": "Lace Mermaid Wedding Gown",
+    "price": 4200000,
+    "date": "06-12-2025 15-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Wedding Dress",
+    "collection": "Wedding Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2155,21 +1856,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k10/depan.png",
-      "asset/catalog/kebaya-pria/k10/back.png",
-      "asset/catalog/kebaya-pria/k10/kiri.png",
-      "asset/catalog/kebaya-pria/k10/kanan.png"
+      "../../asset/catalog/wanita/wedding_dress/wd2/wd02250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd2/wd02250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd2/wd02250812_wedding_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd2/wd02250812_wedding_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-71",
-    "name": "Beskap Pria Coklat Mocca (Generated 71)",
-    "price": 13500000,
-    "date": "01-11-2025 20-25-56+7",
+    "id": "product-82",
+    "name": "Ball Gown Tulle Princess",
+    "price": 5500000,
+    "date": "06-12-2025 15-30-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Wedding Dress",
+    "collection": "Wedding Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2178,21 +1879,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k11/depan.png",
-      "asset/catalog/kebaya-pria/k11/back.png",
-      "asset/catalog/kebaya-pria/k11/kiri.png",
-      "asset/catalog/kebaya-pria/k11/kanan.png"
+      "../../asset/catalog/wanita/wedding_dress/wd3/wd03250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd3/wd03250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd3/wd03250812_wedding_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd3/wd03250812_wedding_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-72",
-    "name": "Beskap Pria Hijau Sage (Generated 72)",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "id": "product-83",
+    "name": "Boho Chiffon Wedding Dress",
+    "price": 3800000,
+    "date": "06-12-2025 15-45-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Wedding Dress",
+    "collection": "Wedding Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2201,67 +1902,22 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k12/depan.png",
-      "asset/catalog/kebaya-pria/k12/back.png",
-      "asset/catalog/kebaya-pria/k12/kiri.png",
-      "asset/catalog/kebaya-pria/k12/kanan.png"
+      "../../asset/catalog/wanita/wedding_dress/wd4/wd04250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd4/wd04250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd4/wd04250812_wedding_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd4/wd04250812_wedding_dress_kiri_2025-06-12.webp"
     ]
   },
+
   {
-    "id": "product-generated-pria-73",
-    "name": "Kebaya Pria Klasik Merah Maroon (Generated 73)",
-    "price": 0,
-    "date": "11-11-2025 20-25-56+7",
+    "id": "product-85",
+    "name": "Strapless Silk Wedding Dress",
+    "price": 3200000,
+    "date": "06-12-2025 16-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k01/depan.webp",
-      "asset/catalog/kebaya-pria/k01/back.webp",
-      "asset/catalog/kebaya-pria/k01/kiri.webp",
-      "asset/catalog/kebaya-pria/k01/kanan.webp"
-    ]
-  },
-  {
-    "id": "product-generated-pria-74",
-    "name": "Beskap Pria Modern Putih Gading (Generated 74)",
-    "price": 13999000,
-    "date": "10-11-2025 20-25-56+7",
-    "available": false,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k02/depan.png",
-      "asset/catalog/kebaya-pria/k02/back.png",
-      "asset/catalog/kebaya-pria/k02/kiri.png",
-      "asset/catalog/kebaya-pria/k02/kanan.png"
-    ]
-  },
-  {
-    "id": "product-generated-pria-75",
-    "name": "Beskap Pria Modern Abu Silver (Generated 75)",
-    "price": 13899000,
-    "date": "09-11-2025 20-25-56+7",
-    "available": false,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Wedding Dress",
+    "collection": "Wedding Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2270,21 +1926,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k03/depan.png",
-      "asset/catalog/kebaya-pria/k03/belakang.png",
-      "asset/catalog/kebaya-pria/k03/kiri.png",
-      "asset/catalog/kebaya-pria/k03/kanan.png"
+      "../../asset/catalog/wanita/wedding_dress/wd6/wd06250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd6/wd06250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd6/wd06250812_wedding_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd6/wd06250812_wedding_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-76",
-    "name": "Beskap Pria Elegan Hitam Polos (Generated 76)",
-    "price": 24998800,
-    "date": "08-11-2025 20-25-56+7",
+    "id": "product-86",
+    "name": "Off-Shoulder Ruffle Gown",
+    "price": 3900000,
+    "date": "06-12-2025 16-30-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Wedding Dress",
+    "collection": "Wedding Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2293,21 +1949,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k04/depan.png",
-      "asset/catalog/kebaya-pria/k04/back.png",
-      "asset/catalog/kebaya-pria/k04/kiri.png",
-      "asset/catalog/kebaya-pria/k04/kanan.png"
+      "../../asset/catalog/wanita/wedding_dress/wd7/wd07250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd7/wd07250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd7/wd07250812_wedding_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd7/wd07250812_wedding_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-77",
-    "name": "Beskap Pria Hitam Aksen Emas (Generated 77)",
-    "price": 21020300,
-    "date": "07-11-2025 20-25-56+7",
+    "id": "product-87",
+    "name": "V-Neck Minimalist Wedding Dress",
+    "price": 2900000,
+    "date": "06-12-2025 16-45-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Wedding Dress",
+    "collection": "Wedding Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2316,21 +1972,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k05/depan.png",
-      "asset/catalog/kebaya-pria/k05/back.png",
-      "asset/catalog/kebaya-pria/k05/kiri.png",
-      "asset/catalog/kebaya-pria/k05/kanan.png"
+      "../../asset/catalog/wanita/wedding_dress/wd8/wd08250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd8/wd08250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd8/wd08250812_wedding_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd8/wd08250812_wedding_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-78",
-    "name": "Beskap Pria Klasik Biru Navy (Generated 78)",
-    "price": 11998800,
-    "date": "06-11-2025 20-25-56+7",
+    "id": "product-88",
+    "name": "Backless Satin Wedding Gown",
+    "price": 4100000,
+    "date": "06-12-2025 17-00-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Wedding Dress",
+    "collection": "Wedding Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2339,21 +1995,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k06/depan.png",
-      "asset/catalog/kebaya-pria/k06/back.png",
-      "asset/catalog/kebaya-pria/k06/kiri.png",
-      "asset/catalog/kebaya-pria/k06/kanan.png"
+      "../../asset/catalog/wanita/wedding_dress/wd9/wd09250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd9/wd09250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd9/wd09250812_wedding_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd9/wd09250812_wedding_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-79",
-    "name": "Beskap Pria Modern Biru Langit (Generated 79)",
-    "price": 11998000,
-    "date": "05-11-2025 20-25-56+7",
+    "id": "product-89",
+    "name": "High Neck Vintage Wedding Dress",
+    "price": 3600000,
+    "date": "06-12-2025 17-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Wedding Dress",
+    "collection": "Wedding Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2362,21 +2018,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k07/depan.png",
-      "asset/catalog/kebaya-pria/k07/back.png",
-      "asset/catalog/kebaya-pria/k07/kiri.png",
-      "asset/catalog/kebaya-pria/k07/kanan.png"
+      "../../asset/catalog/wanita/wedding_dress/wd10/wd10250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd10/wd10250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd10/wd10250812_wedding_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd10/wd10250812_wedding_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-80",
-    "name": "Beskap Pria Putih Aksen Melati (Generated 80)",
-    "price": 11699000,
-    "date": "04-11-2025 20-25-56+7",
+    "id": "product-90",
+    "name": "Tea Length Retro Wedding Dress",
+    "price": 2700000,
+    "date": "06-12-2025 17-30-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Wedding Dress",
+    "collection": "Wedding Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2385,21 +2041,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k08/depan.png",
-      "asset/catalog/kebaya-pria/k08/back.png",
-      "asset/catalog/kebaya-pria/k08/kiri.png",
-      "asset/catalog/kebaya-pria/k08/kanan.png"
+      "../../asset/catalog/wanita/wedding_dress/wd11/wd11250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd11/wd11250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd11/wd11250812_wedding_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd11/wd11250812_wedding_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-81",
-    "name": "Beskap Pria Hitam Bordir Emas (Generated 81)",
-    "price": 12000000,
-    "date": "03-11-2025 20-25-56+7",
+    "id": "product-91",
+    "name": "Sequin Glamour Wedding Gown",
+    "price": 6000000,
+    "date": "06-12-2025 17-45-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Wedding Dress",
+    "collection": "Wedding Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2408,21 +2064,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k09/depan.png",
-      "asset/catalog/kebaya-pria/k09/back.png",
-      "asset/catalog/kebaya-pria/k09/kiri.png",
-      "asset/catalog/kebaya-pria/k09/kanan.png"
+      "../../asset/catalog/wanita/wedding_dress/wd12/wd12250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd12/wd12250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd12/wd12250812_wedding_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd12/wd12250812_wedding_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-82",
-    "name": "Beskap Pria Hitam Motif Emas (Generated 82)",
-    "price": 15100000,
-    "date": "02-11-2025 20-25-56+7",
+    "id": "product-92",
+    "name": "Halter Neck Beach Wedding Dress",
+    "price": 3100000,
+    "date": "06-12-2025 18-00-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Wedding Dress",
+    "collection": "Wedding Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2431,21 +2087,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k10/depan.png",
-      "asset/catalog/kebaya-pria/k10/back.png",
-      "asset/catalog/kebaya-pria/k10/kiri.png",
-      "asset/catalog/kebaya-pria/k10/kanan.png"
+      "../../asset/catalog/wanita/wedding_dress/wd13/wd13250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd13/wd13250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd13/wd13250812_wedding_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd13/wd13250812_wedding_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-83",
-    "name": "Beskap Pria Coklat Mocca (Generated 83)",
-    "price": 13500000,
-    "date": "01-11-2025 20-25-56+7",
+    "id": "product-93",
+    "name": "Cape Sleeve Modern Wedding Dress",
+    "price": 4400000,
+    "date": "06-12-2025 18-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Wedding Dress",
+    "collection": "Wedding Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2454,21 +2110,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k11/depan.png",
-      "asset/catalog/kebaya-pria/k11/back.png",
-      "asset/catalog/kebaya-pria/k11/kiri.png",
-      "asset/catalog/kebaya-pria/k11/kanan.png"
+      "../../asset/catalog/wanita/wedding_dress/wd14/wd14250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd14/wd14250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd14/wd14250812_wedding_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd14/wd14250812_wedding_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-84",
-    "name": "Beskap Pria Hijau Sage (Generated 84)",
-    "price": 14800000,
-    "date": "31-10-2025 20-25-56+7",
+    "id": "product-94",
+    "name": "Blush Pink Tulle Wedding Gown",
+    "price": 5000000,
+    "date": "06-12-2025 18-30-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Wedding Dress",
+    "collection": "Wedding Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2477,67 +2133,22 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k12/depan.png",
-      "asset/catalog/kebaya-pria/k12/back.png",
-      "asset/catalog/kebaya-pria/k12/kiri.png",
-      "asset/catalog/kebaya-pria/k12/kanan.png"
+      "../../asset/catalog/wanita/wedding_dress/wd15/wd15250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd15/wd15250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd15/wd15250812_wedding_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd15/wd15250812_wedding_dress_kiri_2025-06-12.webp"
     ]
   },
+
   {
-    "id": "product-generated-pria-85",
-    "name": "Kebaya Pria Klasik Merah Maroon (Generated 85)",
-    "price": 0,
-    "date": "11-11-2025 20-25-56+7",
+    "id": "product-96",
+    "name": "Detachable Skirt Wedding Dress",
+    "price": 5800000,
+    "date": "06-12-2025 19-00-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k01/depan.webp",
-      "asset/catalog/kebaya-pria/k01/back.webp",
-      "asset/catalog/kebaya-pria/k01/kiri.webp",
-      "asset/catalog/kebaya-pria/k01/kanan.webp"
-    ]
-  },
-  {
-    "id": "product-generated-pria-86",
-    "name": "Beskap Pria Modern Putih Gading (Generated 86)",
-    "price": 13999000,
-    "date": "10-11-2025 20-25-56+7",
-    "available": false,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Winter",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
-    "specifications": [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet."
-    ],
-    "images": [
-      "asset/catalog/kebaya-pria/k02/depan.png",
-      "asset/catalog/kebaya-pria/k02/back.png",
-      "asset/catalog/kebaya-pria/k02/kiri.png",
-      "asset/catalog/kebaya-pria/k02/kanan.png"
-    ]
-  },
-  {
-    "id": "product-generated-pria-87",
-    "name": "Beskap Pria Modern Abu Silver (Generated 87)",
-    "price": 13899000,
-    "date": "09-11-2025 20-25-56+7",
-    "available": false,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Summer",
+    "tipe": "wanita",
+    "category": "Wedding Dress",
+    "collection": "Wedding Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2546,21 +2157,21 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k03/depan.png",
-      "asset/catalog/kebaya-pria/k03/belakang.png",
-      "asset/catalog/kebaya-pria/k03/kiri.png",
-      "asset/catalog/kebaya-pria/k03/kanan.png"
+      "../../asset/catalog/wanita/wedding_dress/wd17/wd17250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd17/wd17250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd17/wd17250812_wedding_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd17/wd17250812_wedding_dress_kiri_2025-06-12.webp"
     ]
   },
   {
-    "id": "product-generated-pria-88",
-    "name": "Beskap Pria Elegan Hitam Polos (Generated 88)",
-    "price": 24998800,
-    "date": "08-11-2025 20-25-56+7",
+    "id": "product-97",
+    "name": "Luxury Crystal Ball Gown",
+    "price": 8000000,
+    "date": "06-12-2025 19-15-00+7",
     "available": true,
-    "tipe": "pria",
-    "category": "Batik",
-    "collection": "Spring",
+    "tipe": "wanita",
+    "category": "Wedding Dress",
+    "collection": "Wedding Dress",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, eos!",
     "specifications": [
       "Lorem ipsum dolor sit amet.",
@@ -2569,10 +2180,10 @@
       "Lorem ipsum dolor sit amet."
     ],
     "images": [
-      "asset/catalog/kebaya-pria/k04/depan.png",
-      "asset/catalog/kebaya-pria/k04/back.png",
-      "asset/catalog/kebaya-pria/k04/kiri.png",
-      "asset/catalog/kebaya-pria/k04/kanan.png"
+      "../../asset/catalog/wanita/wedding_dress/wd18/wd18250812_wedding_dress_depan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd18/wd18250812_wedding_dress_belakang_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd18/wd18250812_wedding_dress_kanan_2025-06-12.webp",
+      "../../asset/catalog/wanita/wedding_dress/wd18/wd18250812_wedding_dress_kiri_2025-06-12.webp"
     ]
   }
 ]

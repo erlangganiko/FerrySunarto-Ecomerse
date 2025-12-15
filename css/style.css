@@ -537,8 +537,8 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.3s;
 }
 .btn-outline:hover {
-  background-color: #1a1a1a;
-  color: #fff !important;
+  background-color: #fff;
+  color: black !important;
 }
 /* ==========================================================
    end artikel page
@@ -672,7 +672,65 @@ html.session-visited #preloader {
   gap: 1.5rem;
   justify-self: end;
 }
+/* ==========================================================
+   MODIFIKASI HORIZONTAL SCROLL (HOME PAGE COLLECTION)
+   ========================================================== */
 
+/* Ubah Container menjadi Flexbox Horizontal */
+#featured-products-grid {
+  display: flex; /* Mengubah dari Grid ke Flex */
+  flex-wrap: nowrap; /* Mencegah item turun ke baris baru */
+  overflow-x: auto; /* Mengaktifkan scroll horizontal */
+  gap: 30px; /* Jarak antar kartu */
+  padding-bottom: 25px; /* Memberi ruang untuk scrollbar di bawah */
+  scroll-behavior: smooth; /* Efek geser halus */
+  -webkit-overflow-scrolling: touch; /* Scroll smooth untuk iOS */
+  cursor: grab; /* Mengubah kursor jadi tangan (indikator geser) */
+}
+
+/* Mengatur Ukuran Kartu Produk */
+#featured-products-grid .product-item {
+  /* RUMUS: (100% Lebar Layar - Total Gap) / 4 Item 
+     Total Gap = 30px * 3 celah = 90px
+  */
+  min-width: calc((100% - 90px) / 4);
+  width: calc((100% - 90px) / 4);
+  flex: 0 0 auto; /* Mencegah item mengecil (shrink) */
+}
+
+/* Custom Scrollbar (Warna Emas/Tema) */
+#featured-products-grid::-webkit-scrollbar {
+  height: 3px; /* Tinggi scrollbar horizontal */
+}
+
+#featured-products-grid::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+#featured-products-grid::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color); /* Warna Emas (#c5a059) */
+  border-radius: 4px;
+}
+
+#featured-products-grid::-webkit-scrollbar-thumb:hover {
+  background-color: #b3904e;
+}
+
+/* --- Responsive Mobile & Tablet --- */
+@media (max-width: 1024px) {
+  #featured-products-grid .product-item {
+    /* Di Tablet/Laptop Kecil: Tampilkan 3 item */
+    min-width: calc((100% - 60px) / 3);
+  }
+}
+
+@media (max-width: 768px) {
+  #featured-products-grid .product-item {
+    /* Di HP: Tampilkan 1.5 item agar user tahu bisa discroll */
+    min-width: 260px;
+  }
+}
 /* ==========================================================
    MENU OVERLAY (DIUBAH KE GRID)
    ========================================================== */
@@ -1129,18 +1187,69 @@ html.session-visited #preloader {
 .arrow-right {
   right: 10px;
 }
+/* --- Wrapper Galeri Thumbnail --- */
 .thumbnail-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex; /* Ubah dari Grid ke Flex agar horizontal */
+  flex-wrap: nowrap; /* Pastikan tidak turun ke baris baru */
+  overflow-x: auto; /* Aktifkan scroll horizontal */
+  gap: 15px; /* Jarak antar gambar */
   margin-top: 15px;
-  gap: 15px;
+  padding-bottom: 10px; /* Ruang untuk scrollbar */
+  scroll-behavior: smooth; /* Scroll halus */
+  -webkit-overflow-scrolling: touch; /* Scroll smooth di iOS */
 }
+
+/* --- Item Thumbnail Individual --- */
 .thumbnail {
-  width: 100%;
-  height: 90px;
-  background-color: #00bcd4;
+  /* RUMUS: (100% lebar container - (Jarak Gap * 2)) / 3 Item */
+  /* Ini memastikan tepat 3 item yang tampil di layar */
+  flex: 0 0 calc((100% - 30px) / 3);
+  width: calc((100% - 30px) / 3);
+
+  /* Aspek rasio agar gambar tetap proporsional (Portrait) */
+  aspect-ratio: 3 / 4;
+  height: auto; /* Biarkan tinggi menyesuaikan rasio */
+
+  background-color: #f0f0f0;
   border-radius: 5px;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.thumbnail-gallery {
+  /* Pastikan cursor berubah agar user tahu bisa digeser */
+  cursor: grab;
+  user-select: none; /* Mencegah blok teks/gambar saat drag */
+}
+
+.thumbnail-gallery.active {
+  cursor: grabbing; /* Cursor menggenggam saat sedang digeser */
+  cursor: -webkit-grabbing;
+}
+/* --- Styling Scrollbar (Opsional: Agar terlihat rapi) --- */
+.thumbnail-gallery::-webkit-scrollbar {
+  height: 3px; /* Tinggi scrollbar horizontal */
+}
+
+.thumbnail-gallery::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.thumbnail-gallery::-webkit-scrollbar-thumb {
+  background: #c1a265; /* Warna Emas sesuai tema */
+  border-radius: 3px;
+}
+
+.thumbnail-gallery::-webkit-scrollbar-thumb:hover {
+  background: #a38750;
 }
 
 /* --- Kolom Kanan: Info Produk (DIUBAH KE GRID) --- */
@@ -1328,6 +1437,84 @@ html.session-visited #preloader {
 .form-group textarea {
   resize: vertical;
   min-height: 80px;
+}
+
+/* ==========================================================
+   CUSTOM RANGE SLIDER (VOLUME/BUDGET)
+   ========================================================== */
+.range-container {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.range-label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.range-label-title {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.range-value-display {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  color: #c5a059; /* Warna Emas */
+  font-size: 1rem;
+}
+
+/* Styling Input Range */
+input[type="range"].custom-range {
+  -webkit-appearance: none; /* Hapus gaya default browser */
+  width: 100%;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+/* Styling Thumb (Tombol Geser) - Webkit (Chrome, Safari, Edge) */
+input[type="range"].custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #3e4a3e; /* Warna Hijau Gelap butik */
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+input[type="range"].custom-range::-webkit-slider-thumb:hover {
+  background: #c5a059; /* Berubah Emas saat hover */
+  transform: scale(1.1);
+}
+
+/* Styling Thumb - Firefox */
+input[type="range"].custom-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #3e4a3e;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Label Min/Max di bawah slider */
+.range-min-max {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: -5px;
 }
 .btn-appointment-submit {
   background-color: #3e4a3e;
@@ -1567,8 +1754,11 @@ html.session-visited #preloader {
   letter-spacing: 0.1em;
 }
 .footer-logo img {
-  width: 100%;
-  height: 80px;
+  width: auto; /* Biarkan lebar menyesuaikan */
+  height: auto; /* Biarkan tinggi menyesuaikan */
+  max-height: 80px; /* Batasi tinggi maksimum */
+  display: block;
+  margin: 0 auto;
 }
 .footer-region a {
   text-decoration: none;

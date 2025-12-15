@@ -3,69 +3,37 @@
     "tipe": "pria",
     "category": [
       {
-        "name": "Kemeja batik premium lengan panjang",
-        "url": "https://ferrycollection.id/pria/kemeja-batik-premium-lengan-panjang",
+        "name": "Batik",
+        "url": "https://ferrycollection.id/pria/batik",
         "image": {
-          "url": "asset/catalog/coming-soon/samplestory2.webp",
-          "alt": "Kemeja batik premium lengan panjang - Ferry Collection"
+          "url": "../asset/catalog/pria/batik/batik1/btk01250812_batik_depan_2025-06-12.webp",
+          "alt": "Kemeja Batik Pria - Ferry Collection"
         }
       },
       {
-        "name": "Setelan jas modern fit",
-        "url": "https://ferrycollection.id/pria/setelan-jas-modern-fit",
+        "name": "Wedding Suit",
+        "url": "https://ferrycollection.id/pria/wedding-suit",
         "image": {
-          "url": "asset/catalog/coming-soon/samplestory2.webp",
-          "alt": "Setelan jas modern fit - Ferry Collection"
-        }
-      },
-      {
-        "name": "Kaos polos streetwear edition",
-        "url": "https://ferrycollection.id/pria/kaos-polos-streetwear-edition",
-        "image": {
-          "url": "asset/catalog/coming-soon/samplestory2.webp",
-          "alt": "Kaos polos streetwear edition - Ferry Collection"
-        }
-      },
-      {
-        "name": "Celana chino warna netral",
-        "url": "https://ferrycollection.id/pria/celana-chino-warna-netral",
-        "image": {
-          "url": "asset/catalog/coming-soon/samplestory2.webp",
-          "alt": "Celana chino warna netral - Ferry Collection"
+          "url": "../asset/catalog/pria/wedding_suit/ws1/ws01250812_wedding_suit_depan_2025-06-12.webp",
+          "alt": "Wedding Suit Pria - Ferry Collection"
         }
       }
     ],
     "collection": [
       {
-        "name": "Ferry Signature Classic",
-        "url": "https://ferrycollection.id/pria/collection/ferry-signature-classic",
+        "name": "Batik Collection",
+        "url": "https://ferrycollection.id/pria/collection/batik-collection",
         "image": {
-          "url": "asset/catalog/coming-soon/samplestory2.webp",
-          "alt": "Ferry Signature Classic collection - Ferry Collection"
+          "url": "../asset/catalog/pria/batik/batik1/btk01250812_batik_depan_2025-06-12.webp",
+          "alt": "Batik Collection - Ferry Collection"
         }
       },
       {
-        "name": "Modern Formal 2025",
-        "url": "https://ferrycollection.id/pria/collection/modern-formal-2025",
+        "name": "Wedding Suit Collection",
+        "url": "https://ferrycollection.id/pria/collection/wedding-suit-collection",
         "image": {
-          "url": "asset/catalog/coming-soon/samplestory2.webp",
-          "alt": "Modern Formal 2025 collection - Ferry Collection"
-        }
-      },
-      {
-        "name": "Urban Casual Line",
-        "url": "https://ferrycollection.id/pria/collection/urban-casual-line",
-        "image": {
-          "url": "asset/catalog/coming-soon/samplestory2.webp",
-          "alt": "Urban Casual Line collection - Ferry Collection"
-        }
-      },
-      {
-        "name": "Resort Linen Series",
-        "url": "https://ferrycollection.id/pria/collection/resort-linen-series",
-        "image": {
-          "url": "asset/catalog/coming-soon/samplestory2.webp",
-          "alt": "Resort Linen Series collection - Ferry Collection"
+          "url": "../asset/catalog/pria/wedding_suit/ws1/ws01250812_wedding_suit_depan_2025-06-12.webp",
+          "alt": "Wedding Suit Collection - Ferry Collection"
         }
       }
     ]
@@ -74,69 +42,70 @@
     "tipe": "wanita",
     "category": [
       {
-        "name": "Dress satin elegan",
-        "url": "https://ferrycollection.id/wanita/dress-satin-elegan",
+        "name": "Kebaya",
+        "url": "https://ferrycollection.id/wanita/kebaya",
         "image": {
-          "url": "asset/catalog/coming-soon/samplestory3.webp",
-          "alt": "Dress satin elegan - Ferry Collection"
+          "url": "../asset/catalog/wanita/kebaya/kebaya1/kby01250812_kebaya_depan_2025-06-12.webp",
+          "alt": "Kebaya Wanita - Ferry Collection"
         }
       },
       {
-        "name": "Blazer cropped modern",
-        "url": "https://ferrycollection.id/wanita/blazer-cropped-modern",
+        "name": "Gaun",
+        "url": "https://ferrycollection.id/wanita/gaun",
         "image": {
-          "url": "asset/catalog/coming-soon/samplestory3.webp",
-          "alt": "Blazer cropped modern - Ferry Collection"
+          "url": "../asset/catalog/wanita/foto_baru/fb1/fb01250612_gaun_depan_2025-06-12.webp",
+          "alt": "Gaun Wanita - Ferry Collection"
         }
       },
       {
-        "name": "Atasan basic premium",
-        "url": "https://ferrycollection.id/wanita/atasan-basic-premium",
+        "name": "Dress",
+        "url": "https://ferrycollection.id/wanita/dress",
         "image": {
-          "url": "asset/catalog/coming-soon/samplestory3.webp",
-          "alt": "Atasan basic premium - Ferry Collection"
+          "url": "../asset/catalog/wanita/bandung_dress/bd01/bd01250812_bandung_dress_belakang_2025-06-12.webp",
+          "alt": "Dress Wanita - Ferry Collection"
         }
       },
       {
-        "name": "Celana wide-leg formal",
-        "url": "https://ferrycollection.id/wanita/celana-wide-leg-formal",
+        "name": "Wedding Dress",
+        "url": "https://ferrycollection.id/wanita/wedding-dress",
         "image": {
-          "url": "asset/catalog/coming-soon/samplestory3.webp",
-          "alt": "Celana wide-leg formal - Ferry Collection"
+          "url": "../asset/catalog/wanita/wedding_dress/wd1/wd01250812_wedding_dress_depan_2025-06-12.webp",
+          "alt": "Wedding Dress Wanita - Ferry Collection"
         }
       }
     ],
     "collection": [
       {
-        "name": "Ferry Luxe Collection",
-        "url": "https://ferrycollection.id/wanita/collection/ferry-luxe-collection",
+        "name": "Kebaya Collection",
+        "url": "https://ferrycollection.id/wanita/collection/kebaya-collection",
         "image": {
-          "url": "asset/catalog/coming-soon/samplestory3.webp",
-          "alt": "Ferry Luxe Collection - Ferry Collection"
+          "url": "../asset/catalog/wanita/kebaya/kebaya1/kby01250812_kebaya_depan_2025-06-12.webp",
+          "alt": "Kebaya Collection - Ferry Collection"
         }
       },
       {
-        "name": "Essential Woman Series",
-        "url": "https://ferrycollection.id/wanita/collection/essential-woman-series",
+        "name": "Gaun Collection",
+        "url": "https://ferrycollection.id/wanita/collection/gaun-collection",
         "image": {
-          "url": "asset/catalog/coming-soon/samplestory3.webp",
-          "alt": "Essential Woman Series - Ferry Collection"
+          "url": "../asset/catalog/wanita/foto_baru/fb1/fb01250612_gaun_depan_2025-06-12.webp",
+          "alt": "Gaun Collection - Ferry Collection"
         }
       },
       {
-        "name": "Evening Glam Line",
-        "url": "https://ferrycollection.id/wanita/collection/evening-glam-line",
+        "name": "Bandung Dress",
+        "url": "https://ferrycollection.id/wanita/collection/bandung-dress",
         "image": {
-          "url": "asset/catalog/coming-soon/samplestory3.webp",
-          "alt": "Evening Glam Line - Ferry Collection"
+          "url": "../asset/catalog/wanita/bandung_dress/bd01/bd01250812_bandung_dress_belakang_2025-06-12.webp"
+          ,
+          "alt": "Bandung Dress Collection - Ferry Collection"
         }
       },
       {
-        "name": "Pastel Spring 2025",
-        "url": "https://ferrycollection.id/wanita/collection/pastel-spring-2025",
+        "name": "Wedding Dress Collection",
+        "url": "https://ferrycollection.id/wanita/collection/wedding-dress-collection",
         "image": {
-          "url":"asset/catalog/coming-soon/samplestory3.webp",
-          "alt": "Pastel Spring 2025 - Ferry Collection"
+          "url": "../asset/catalog/wanita/wedding_dress/wd1/wd01250812_wedding_dress_depan_2025-06-12.webp",
+          "alt": "Wedding Dress Collection - Ferry Collection"
         }
       }
     ]

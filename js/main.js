@@ -5,21 +5,21 @@ document.addEventListener("DOMContentLoaded", () => {
   // 1. Jalankan fitur umum (Navbar, Menu, Footer, Search)
   initializeCommonFeatures();
 
-  // 2. Cek apakah kita di Halaman Homepage
-  // (Ada hero-static, dan kita muat produk unggulan + artikel unggulan)
+  // 2. Cek apakah kita di Halaman Homepage (index.html)
   if (document.querySelector(".hero-static")) {
     loadFeaturedProducts();
     if (document.querySelector(".news-grid")) {
-      loadFeaturedArticles(); // [BARU] Muat artikel di homepage
+      loadFeaturedArticles();
     }
   }
 
-  // [BARU] 3. Cek apakah kita di Halaman Transisi
+  // 3. Cek apakah kita di Halaman Transisi (transition/transition.html)
   if (document.querySelector(".transition-grid")) {
     initializeTransitionPage();
   }
 
-  // 4. Cek apakah kita di Halaman Katalog (Pastikan bukan halaman transisi)
+  // 4. Cek apakah kita di Halaman Katalog (i-catalog/i-catalog.html)
+  // Pastikan bukan halaman transisi
   if (
     document.querySelector(".catalog-section") &&
     !document.querySelector(".transition-grid")
@@ -27,17 +27,17 @@ document.addEventListener("DOMContentLoaded", () => {
     initializeAppProductPages();
   }
 
-  // 5. Cek apakah kita di Halaman Detail Produk
+  // 5. Cek apakah kita di Halaman Detail Produk (i-catalog/detail-barang/detail-barang.html)
   if (document.querySelector(".product-main")) {
     initializeProductDetail();
   }
 
-  // [BARU] 6. Cek apakah kita di Halaman List Artikel
+  // 6. Cek apakah kita di Halaman List Artikel (artikel/list-artikel.html)
   if (document.querySelector(".list-article-page")) {
     loadAllArticles();
   }
 
-  // [BARU] 7. Cek apakah kita di Halaman Detail Artikel
+  // 7. Cek apakah kita di Halaman Detail Artikel (artikel/detail-artikel.html)
   if (document.querySelector(".article-page")) {
     loadArticleDetail();
   }
@@ -48,18 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
 // ==========================================================
 window.onload = function () {
   const preloader = document.getElementById("preloader");
-  if (!preloader) return; // Keluar jika preloader tidak ada
+  if (!preloader) return;
 
-  // Cek apakah sudah pernah berkunjung di sesi ini
   if (sessionStorage.getItem("hasVisited")) {
-    // --- SUDAH BERKUNJUNG ---
     preloader.style.transition = "none";
     preloader.classList.add("hidden");
   } else {
-    // --- KUNJUNGAN PERTAMA ---
     setTimeout(() => {
       preloader.classList.add("hidden");
-    } /* 1500 */, 1500); // Waktu loading 1.5 detik
+    }, 1500);
     sessionStorage.setItem("hasVisited", "true");
   }
 };
@@ -68,18 +65,11 @@ window.onload = function () {
 // FUNGSI UMUM (Gabungan & Helpers)
 // ==========================================================
 
-/**
- * Helper: Kapitalisasi huruf pertama (Modifikasi: memastikan sisa string lowercased)
- */
 function capitalizeFirstLetter(string) {
   if (!string) return "";
   return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
 
-/**
- * Mengambil koleksi unik dari data produk dan mengelompokkannya berdasarkan tipe (dari products.json).
- * Digunakan untuk mengisi menu utama.
- */
 function getUniqueCollectionsByTipe(products) {
   const collections = {
     pria: new Set(),
@@ -87,6 +77,9 @@ function getUniqueCollectionsByTipe(products) {
   };
 
   products.forEach((product) => {
+    // LOGIKA BARU: Hanya proses produk yang memiliki gambar
+    if (!product.images || product.images.length === 0) return;
+
     const tipe = product.tipe;
     const collection = product.collection;
     if (tipe && collection) {
@@ -98,9 +91,6 @@ function getUniqueCollectionsByTipe(products) {
   return collections;
 }
 
-/**
- * [MODIFIED] Menambahkan logika untuk membangun menu dinamis berdasarkan koleksi.
- */
 async function initializeMenuCollections() {
   const womenMenuItem = document.querySelector(
     '.main-menu li[data-tipe="wanita"]'
@@ -110,38 +100,44 @@ async function initializeMenuCollections() {
   if (!womenMenuItem || !menMenuItem) return;
 
   try {
-    const response = await fetch("products.json");
+    const response = await fetch("/products.json");
     if (!response.ok) throw new Error("Gagal memuat data produk untuk menu.");
     const allProductsData = await response.json();
 
     const collections = getUniqueCollectionsByTipe(allProductsData);
 
-    // Fungsi helper untuk membuat submenu
     function createSubmenu(tipe, collectionsSet, menuItem) {
       const ul = document.createElement("ul");
       ul.className = "footer-submenu submenu-dynamic";
 
-      // [MODIFIKASI PENTING]: Link 'All Collections' diarahkan ke halaman transisi
       ul.insertAdjacentHTML(
         "beforeend",
-        `<li><a href="transition.html?tipe=${tipe}">All Collections</a></li>`
+        `<li><a href="/transition/transition.html?tipe=${tipe}">All Collections</a></li>`
       );
 
-      // Tambahkan koleksi unik (ini tetap mengarah ke catalog dengan filter collection)
       [...collectionsSet].sort().forEach((collection) => {
         const capitalizedCollection = capitalizeFirstLetter(collection);
+
+        // LOGIKA CEK DUPLIKAT 'COLLECTION'
+        const collectionSuffix = collection.toLowerCase().includes("collection")
+          ? ""
+          : " Collection";
+        const displayText = capitalizedCollection + collectionSuffix;
+        // End LOGIKA CEK DUPLIKAT
+
+        // Gunakan encodeURIComponent untuk menangani spasi di URL
         ul.insertAdjacentHTML(
           "beforeend",
-          `<li><a href="i-catalog.html?tipe=${tipe}&collection=${collection}">${capitalizedCollection} Collection</a></li>`
+          `<li><a href="/i-catalog/i-catalog.html?tipe=${tipe}&collection=${encodeURIComponent(
+            collection
+          )}">${displayText}</a></li>`
         );
       });
       menuItem.appendChild(ul);
 
-      // Ubah perilaku klik pada menu utama (agar tidak langsung ke catalog)
       const mainLink = menuItem.querySelector("a");
-      mainLink.removeAttribute("href"); // Hapus href lama
+      mainLink.removeAttribute("href");
 
-      // Ganti ikon chevron-right menjadi panah bawah untuk menunjukkan itu adalah toggle
       const icon = mainLink.querySelector(".fa-chevron-right");
       if (icon) {
         icon.classList.remove("fa-chevron-right");
@@ -150,11 +146,9 @@ async function initializeMenuCollections() {
 
       mainLink.addEventListener("click", (e) => {
         e.preventDefault();
-        // Toggle submenu visibility
         ul.classList.toggle("open");
         mainLink.classList.toggle("active");
-        menuItem.classList.toggle("open"); // Tambahkan kelas open ke LI
-        // Toggle panah rotasi
+        menuItem.classList.toggle("open");
         if (icon) icon.classList.toggle("fa-rotate-180");
       });
     }
@@ -166,28 +160,20 @@ async function initializeMenuCollections() {
   }
 }
 
-/**
- * Menjalankan skrip umum seperti navbar, menu, footer, dan search.
- */
 function initializeCommonFeatures() {
-  // --- LOGIKA NAVBAR SCROLL ---
+  // --- NAVBAR SCROLL ---
   const navbar = document.getElementById("navbar");
   const logoImage = navbar ? navbar.querySelector(".nav-logo img") : null;
 
   if (navbar) {
-    // Persiapan Ganti Logo (jika atribut tersedia)
     const defaultLogo = logoImage ? logoImage.dataset.logoDefault : null;
     const scrolledLogo = logoImage ? logoImage.dataset.logoScrolled : null;
-
     let lastScrollY = window.scrollY;
 
-    // Fungsi untuk cek status scroll
     const updateNavbar = () => {
       const currentScrollY = window.scrollY;
       const isScrolled = currentScrollY > 50;
 
-      // Tentukan apakah navbar harus 'scrolled' (background putih)
-      // Di halaman katalog, detail, list artikel, detail artikel, atau transisi, navbar SELALU 'scrolled'
       if (
         document.querySelector(".catalog-section") ||
         document.querySelector(".product-main") ||
@@ -196,35 +182,45 @@ function initializeCommonFeatures() {
         document.querySelector(".article-page")
       ) {
         navbar.classList.add("scrolled");
-        if (logoImage && scrolledLogo) logoImage.src = scrolledLogo;
+        if (logoImage && scrolledLogo) {
+          logoImage.src =
+            scrolledLogo.startsWith("/") || scrolledLogo.startsWith("http")
+              ? scrolledLogo
+              : "/" + scrolledLogo;
+        }
       } else {
-        // Hanya di homepage, cek posisi scroll
         if (isScrolled) {
           navbar.classList.add("scrolled");
-          if (logoImage && scrolledLogo) logoImage.src = scrolledLogo;
+          if (logoImage && scrolledLogo) {
+            logoImage.src =
+              scrolledLogo.startsWith("/") || scrolledLogo.startsWith("http")
+                ? scrolledLogo
+                : "/" + scrolledLogo;
+          }
         } else {
           navbar.classList.remove("scrolled");
-          if (logoImage && defaultLogo) logoImage.src = defaultLogo;
+          if (logoImage && defaultLogo) {
+            logoImage.src =
+              defaultLogo.startsWith("/") || defaultLogo.startsWith("http")
+                ? defaultLogo
+                : "/" + defaultLogo;
+          }
         }
       }
 
-      // Logika Sembunyi/Tampil (Auto-hide)
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
         navbar.classList.add("hidden");
       } else {
         navbar.classList.remove("hidden");
       }
-
       lastScrollY = currentScrollY;
     };
 
-    // Panggil sekali saat load
     updateNavbar();
-    // Panggil setiap kali scroll
     window.addEventListener("scroll", updateNavbar);
   }
 
-  // --- LOGIKA MENU TOGGLE ---
+  // --- MENU TOGGLE ---
   const menuToggle = document.querySelector(".menu-toggle");
   const menuCloseBtn = document.querySelector(".menu-close-btn");
   const menuOverlay = document.getElementById("menu-overlay");
@@ -239,7 +235,7 @@ function initializeCommonFeatures() {
     menuCloseBtn.addEventListener("click", toggleMenu);
   }
 
-  // --- LOGIKA FOOTER ACCORDION ---
+  // --- FOOTER ACCORDION ---
   const footerToggles = document.querySelectorAll(".footer-toggle");
   footerToggles.forEach((toggle) => {
     toggle.addEventListener("click", (event) => {
@@ -250,7 +246,7 @@ function initializeCommonFeatures() {
     });
   });
 
-  // --- LOGIKA SEARCH OVERLAY ---
+  // --- SEARCH OVERLAY ---
   const searchIcons = document.querySelectorAll(
     ".search-icon-mobile, .search-icon-desktop"
   );
@@ -274,15 +270,12 @@ function initializeCommonFeatures() {
     });
   }
 
-  // --- Update Wishlist Counter di Header ---
   updateWishlistCounter();
-
-  // [MODIFIED] Panggil fungsi inisialisasi menu di sini
   initializeMenuCollections();
 }
 
 // ==========================================================
-// FUNGSI KHUSUS HALAMAN TRANSISI (transition.html)
+// FUNGSI KHUSUS HALAMAN TRANSISI (transition/transition.html)
 // ==========================================================
 
 async function initializeTransitionPage() {
@@ -291,7 +284,7 @@ async function initializeTransitionPage() {
 
   try {
     const params = new URLSearchParams(window.location.search);
-    const tipe = params.get("tipe"); // tipe: pria atau wanita
+    const tipe = params.get("tipe");
 
     if (!tipe) {
       transitionGrid.innerHTML =
@@ -299,59 +292,71 @@ async function initializeTransitionPage() {
       return;
     }
 
-    // 1. Ambil data dari transition.json
-    const response = await fetch("transition.json");
-    if (!response.ok) throw new Error("Gagal memuat data transisi.");
-    const transitionData = await response.json();
+    // --- MENGAMBIL DATA DARI products.json ---
+    const response = await fetch("/products.json");
+    if (!response.ok) throw new Error("Gagal memuat data produk.");
+    const allProductsData = await response.json();
 
-    const relevantData = transitionData.find((d) => d.tipe === tipe);
+    const productsByTipe = allProductsData.filter((p) => p.tipe === tipe);
 
-    if (!relevantData) {
-      transitionGrid.innerHTML = `<p style='grid-column: 1 / -1; text-align: center; color: red;'>Data untuk tipe "${tipe}" tidak ditemukan di transition.json.</p>`;
-      return;
-    }
+    // 1. Kumpulkan semua Collection dan Category unik beserta gambar pertama
+    const uniqueCollections = {};
+    const uniqueCategories = {};
 
-    // 2. Update Judul & Breadcrumbs
-    const typeLabel = tipe === "wanita" ? "WOMEN" : "MEN";
-    transitionTitle.textContent = typeLabel;
-    updateBreadcrumbs(tipe, "all", "transition");
+    productsByTipe.forEach((product) => {
+      // LOGIKA BARU: Hanya proses produk yang memiliki gambar
+      if (!product.images || product.images.length === 0) return;
 
-    // 3. Gabungkan Collections dan Categories, lalu render sebagai Tiles
+      if (product.collection && !uniqueCollections[product.collection]) {
+        uniqueCollections[product.collection] = product.images[0];
+      }
+      if (product.category && !uniqueCategories[product.category]) {
+        uniqueCategories[product.category] = product.images[0];
+      }
+    });
+
     const tilesToRender = [];
 
-    // Prioritaskan collections
-    if (relevantData.collection) {
-      relevantData.collection.forEach((item) => {
-        // Link diarahkan ke catalog dengan filter collection
-        const link = `i-catalog.html?tipe=${tipe}&collection=${item.name
-          .toLowerCase()
-          .replace(/[^a-z0-9]+/g, "-")}`;
+    // 2. Buat Collection Tiles
+    Object.keys(uniqueCollections)
+      .sort()
+      .forEach((collectionName) => {
+        const collectionValue = collectionName;
+        const link = `/i-catalog/i-catalog.html?tipe=${tipe}&collection=${encodeURIComponent(
+          collectionValue
+        )}`;
+
         tilesToRender.push({
-          name: item.name,
+          name: collectionName,
           subtitle: "EXPLORE COLLECTION",
-          image: item.image,
+          image: uniqueCollections[collectionName],
           link: link,
           type: "collection",
         });
       });
-    }
 
-    // Tambahkan categories
-    if (relevantData.category) {
-      relevantData.category.forEach((item) => {
-        // Link diarahkan ke catalog dengan filter kategori
-        const link = `i-catalog.html?tipe=${tipe}&kategori=${item.name
-          .toLowerCase()
-          .replace(/[^a-z0-9]+/g, "-")}`;
+    // 3. Buat Category Tiles
+    Object.keys(uniqueCategories)
+      .sort()
+      .forEach((categoryName) => {
+        const categoryValue = categoryName;
+        const link = `/i-catalog/i-catalog.html?tipe=${tipe}&kategori=${encodeURIComponent(
+          categoryValue
+        )}`;
+
         tilesToRender.push({
-          name: item.name,
+          name: categoryName,
           subtitle: "SHOP CATEGORY",
-          image: item.image,
+          image: uniqueCategories[categoryName],
           link: link,
           type: "category",
         });
       });
-    }
+    // --- END: MENGAMBIL DATA DARI products.json ---
+
+    const typeLabel = tipe === "wanita" ? "WOMEN" : "MEN";
+    transitionTitle.textContent = typeLabel;
+    updateBreadcrumbs(tipe, "all", "transition");
 
     renderImageTiles(transitionGrid, tilesToRender);
   } catch (error) {
@@ -360,11 +365,8 @@ async function initializeTransitionPage() {
   }
 }
 
-/**
- * [BARU] Helper untuk merender tile gambar di halaman transisi.
- */
 function renderImageTiles(container, tilesArray) {
-  container.innerHTML = ""; // Bersihkan
+  container.innerHTML = "";
 
   if (tilesArray.length === 0) {
     container.innerHTML =
@@ -373,13 +375,18 @@ function renderImageTiles(container, tilesArray) {
   }
 
   tilesArray.forEach((item, index) => {
-    // Gunakan wrapper untuk mengontrol Grid Area
     const wrapper = document.createElement("div");
     wrapper.className = "transition-tile-wrapper";
 
+    // Bersihkan path gambar
+    let cleanImagePath = item.image.replace(/^\.\.\//, "");
+    if (!cleanImagePath.startsWith("/")) {
+      cleanImagePath = "/" + cleanImagePath;
+    }
+
     const tileHTML = `
       <a href="${item.link}" class="transition-tile" data-index="${index}">
-        <img src="${item.image.url}" alt="${item.image.alt}" loading="lazy"/>
+        <img src="${cleanImagePath}" alt="${item.name}" loading="lazy"/>
         <div class="transition-tile-content">
           <h2>${item.name}</h2>
           <p>${item.subtitle}</p>
@@ -392,26 +399,18 @@ function renderImageTiles(container, tilesArray) {
 }
 
 // ==========================================================
-// FUNGSI KHUSUS HALAMAN PRODUK (KATALOG)
+// FUNGSI KHUSUS HALAMAN PRODUK (i-catalog/i-catalog.html)
 // ==========================================================
 
-/**
- * Memulai logika untuk halaman Katalog (Fetch, Populate, Render).
- */
 async function initializeAppProductPages() {
   const catalogGrid = document.querySelector(".product-grid-catalog");
-
-  // Jika tidak ada grid katalog, keluar
-  if (!catalogGrid) {
-    return;
-  }
+  if (!catalogGrid) return;
 
   try {
-    const response = await fetch("products.json"); // Memuat JSON Anda
+    const response = await fetch("/products.json");
     if (!response.ok) throw new Error("Gagal memuat data produk");
     const allProductsData = await response.json();
 
-    // Jalankan logika katalog
     populateFilters(allProductsData);
     renderProductCatalog(catalogGrid, allProductsData);
   } catch (error) {
@@ -422,19 +421,11 @@ async function initializeAppProductPages() {
   }
 }
 
-/**
- * [BARU] Helper: Mengubah format string 'dd-mm-YYYY HH-MM-SS+7' menjadi objek Date
- */
 function parseCustomDate(dateString) {
-  // dateString = "11-11-2025 20-25-56+7"
-  const datePart = dateString.split(" ")[0]; // "11-11-2025"
-  const timePart = dateString.split(" ")[1].split("+")[0]; // "20-25-56"
-
-  const dateParts = datePart.split("-"); // [dd, mm, YYYY]
-  const timeParts = timePart.split("-"); // [HH, MM, ss]
-
-  // Format: new Date(YYYY, MM-1, DD, HH, MM, SS)
-  // Perhatian: Bulan di JavaScript dimulai dari 0 (Jan=0, Des=11)
+  const datePart = dateString.split(" ")[0];
+  const timePart = dateString.split(" ")[1].split("+")[0];
+  const dateParts = datePart.split("-");
+  const timeParts = timePart.split("-");
   return new Date(
     dateParts[2],
     dateParts[1] - 1,
@@ -445,9 +436,6 @@ function parseCustomDate(dateString) {
   );
 }
 
-/**
- * Mengisi dropdown filter (Tipe, Kategori, Collection)
- */
 function populateFilters(products) {
   const tipeFilter = document.getElementById("filter-tipe");
   const categoryFilter = document.getElementById("filter-category");
@@ -457,7 +445,12 @@ function populateFilters(products) {
   const uniqueCategories = new Set();
   const uniqueCollections = new Set();
 
-  products.forEach((product) => {
+  // Hanya mempopulasi filter dengan koleksi dari produk yang memiliki gambar
+  const productsWithImages = products.filter(
+    (p) => p.images && p.images.length > 0
+  );
+
+  productsWithImages.forEach((product) => {
     if (product.tipe) uniqueTipes.add(product.tipe);
     if (product.category) uniqueCategories.add(product.category);
     if (product.collection) uniqueCollections.add(product.collection);
@@ -479,27 +472,28 @@ function populateFilters(products) {
   appendOptions(collectionFilter, uniqueCollections);
 }
 
-/**
- * [MODIFIED] Helper: Mengatur judul Katalog
- */
 function updateCatalogTitle(collectionValue) {
   const catalogTitle = document.querySelector(".catalog-title");
   if (catalogTitle) {
     if (collectionValue === "all") {
-      // Jika Collection 'All', tampilkan judul default
       catalogTitle.textContent = "Ready-to-Wear";
     } else {
-      // Jika ada Collection yang dipilih, gunakan nama Collection
-      catalogTitle.textContent = `${capitalizeFirstLetter(
-        collectionValue
-      )} Collection`;
+      // Decode untuk menampilkan judul yang rapi (menghilangkan %20)
+      const decodedCollection = decodeURIComponent(collectionValue);
+      const capitalizedCollection = capitalizeFirstLetter(decodedCollection);
+
+      // LOGIKA CEK DUPLIKAT 'COLLECTION'
+      const collectionSuffix = decodedCollection
+        .toLowerCase()
+        .includes("collection")
+        ? ""
+        : " Collection";
+
+      catalogTitle.textContent = `${capitalizedCollection}${collectionSuffix}`;
     }
   }
 }
 
-/**
- * [MODIFIED] Helper: Mengatur breadcrumbs
- */
 function updateBreadcrumbs(tipeValue, filterValue, currentPage = "catalog") {
   const breadcrumbs = document.querySelector(".breadcrumbs");
   if (!breadcrumbs) return;
@@ -511,39 +505,36 @@ function updateBreadcrumbs(tipeValue, filterValue, currentPage = "catalog") {
       ? "Men's Collection"
       : null;
 
-  let html = `<a href="index.html">Home</a>`;
+  let html = `<a href="/index.html">Home</a>`;
 
   if (tipeText) {
-    const tipeLink = `transition.html?tipe=${tipeValue}`;
+    const tipeLink = `/transition/transition.html?tipe=${tipeValue}`;
 
     if (currentPage === "transition") {
-      // Home / WOMEN (aktif)
       html += ` / <span>${tipeText.replace("'s Collection", "")}</span>`;
     } else {
-      // Home / Women's Collection / Summer Collection (aktif)
-
-      // 1. Link ke halaman transisi
       html += ` / <a href="${tipeLink}">${tipeText}</a>`;
-
       if (filterValue !== "all") {
-        // 2. Element aktif: Collection/Category
-        const filterText = `${capitalizeFirstLetter(filterValue)} Collection`;
+        const decodedFilter = decodeURIComponent(filterValue);
+
+        // LOGIKA CEK DUPLIKAT 'COLLECTION'
+        const filterSuffix = decodedFilter.toLowerCase().includes("collection")
+          ? ""
+          : " Collection";
+
+        const filterText = `${capitalizeFirstLetter(
+          decodedFilter
+        )}${filterSuffix}`;
         html += ` / <span>${filterText}</span>`;
       }
     }
   } else {
-    // Jika tidak ada tipe, asumsikan "All Products"
     html += ` / <span>All Products</span>`;
   }
 
   breadcrumbs.innerHTML = html;
 }
 
-/**
- * [MODIFIED]
- * Fungsi Utama Halaman Katalog (Filter, Paginasi, Render Grid)
- * Logika judul halaman dan breadcrumbs kini dinamis berdasarkan filter Collection/Kategori.
- */
 function renderProductCatalog(catalogGrid, allProductsData) {
   const availabilityFilter = document.getElementById("filter-availability");
   const tipeFilter = document.getElementById("filter-tipe");
@@ -558,7 +549,6 @@ function renderProductCatalog(catalogGrid, allProductsData) {
   let currentPage = 1;
   const productsPerPage = 8;
 
-  // Ambil parameter dari URL untuk inisialisasi filter
   const params = new URLSearchParams(window.location.search);
 
   const tipeFromURL = params.get("tipe");
@@ -567,12 +557,14 @@ function renderProductCatalog(catalogGrid, allProductsData) {
   }
   const categoryFromURL = params.get("kategori");
   if (categoryFromURL && categoryFilter) {
-    categoryFilter.value = categoryFromURL;
+    // Decode dulu agar sesuai dengan value di <option>
+    categoryFilter.value = decodeURIComponent(categoryFromURL);
   }
 
   const collectionFromURL = params.get("collection");
   if (collectionFromURL && collectionFilter) {
-    collectionFilter.value = collectionFromURL;
+    // Decode dulu agar sesuai dengan value di <option>
+    collectionFilter.value = decodeURIComponent(collectionFromURL);
   }
 
   function renderProducts() {
@@ -583,53 +575,63 @@ function renderProductCatalog(catalogGrid, allProductsData) {
     const searchValue = searchInput.value.toLowerCase().trim();
     const sortValue = sortBy.value;
 
-    // Tentukan filter aktif untuk Breadcrumbs & Judul
     const activeFilter =
       collectionValue !== "all" ? collectionValue : categoryValue;
 
-    // Panggil update judul dan breadcrumbs
-    updateCatalogTitle(collectionValue); // Judul hanya pakai Collection
+    // LOGIKA BARU: Filter produk yang tidak memiliki gambar dari data awal
+    let productsWithImages = allProductsData.filter(
+      (product) => product.images && product.images.length > 0
+    );
+
+    updateCatalogTitle(collectionValue);
     updateBreadcrumbs(tipeValue, activeFilter, "catalog");
 
-    let filteredProducts = allProductsData.filter((product) => {
-      // --- [LOGIKA SORT DAN AVAILABILITY] ---
+    let filteredProducts = productsWithImages.filter((product) => {
+      // 1. Filter Sort
       if (sortValue === "coming-soon") {
         if (product.available === true) return false;
       } else {
         if (availabilityValue === "in-stock" && !product.available)
           return false;
       }
-      // --- [AKHIR LOGIKA SORT DAN AVAILABILITY] ---
 
-      // Filter lainnya berjalan seperti biasa
+      // 2. Filter Search
       if (searchValue && !product.name.toLowerCase().includes(searchValue))
         return false;
+
+      // 3. Filter Tipe
       if (tipeValue !== "all" && product.tipe !== tipeValue) return false;
 
-      // Filter Kategori/Collection yang aktif
-      // Jika salah satu filter diisi dari URL (dari halaman Transisi),
-      // filter yang tidak diisi akan tetap 'all' secara default.
-      if (collectionValue !== "all" && product.collection !== collectionValue)
-        return false;
-      if (categoryValue !== "all" && product.category !== categoryValue)
-        return false;
+      // 4. Filter Collection (Case Insensitive & Decoded)
+      if (collectionValue !== "all") {
+        const targetCollection =
+          decodeURIComponent(collectionValue).toLowerCase();
+        const productCollection = product.collection.toLowerCase();
+
+        if (productCollection !== targetCollection) return false;
+      }
+
+      // 5. Filter Category (Case Insensitive & Decoded)
+      if (categoryValue !== "all") {
+        const targetCategory = decodeURIComponent(categoryValue).toLowerCase();
+        const productCategory = product.category.toLowerCase();
+
+        if (productCategory !== targetCategory) return false;
+      }
 
       return true;
     });
 
-    // Logika sort (sudah benar menggunakan parseCustomDate)
     filteredProducts.sort((a, b) => {
       const dateA = parseCustomDate(a.date);
       const dateB = parseCustomDate(b.date);
 
       switch (sortValue) {
-        case "date-asc": // Oldest
+        case "date-asc":
           return dateA - dateB;
-
         case "coming-soon":
           return dateB - dateA;
-
-        case "date-desc": // Newest
+        case "date-desc":
         default:
           return dateB - dateA;
       }
@@ -649,17 +651,21 @@ function renderProductCatalog(catalogGrid, allProductsData) {
         "<p style='text-align: center; width: 100%; grid-column: 1 / -1;'>Produk tidak ditemukan.</p>";
     } else {
       productsToRender.forEach((product) => {
+        // PATH FIX: Image src with /
         const productHTML = `
-          <a href="detail-barang.html?id=${product.id}" class="product-item-catalog" data-id="${product.id}">
+          <a href="/i-catalog/detail-barang/detail-barang.html?id=${
+            product.id
+          }" class="product-item-catalog" data-id="${product.id}">
             <span class="wishlist-icon"><i class="far fa-heart"></i><i class="fas fa-heart"></i></span>
-            <img src="${product.images[0]}" alt="${product.name}" loading="lazy"/>
+            <img src="/${product.images[0].replace(/^\.\.\//, "")}" alt="${
+          product.name
+        }" loading="lazy"/>
             <p class="product-code">${product.name}</p>
           </a>`;
         catalogGrid.insertAdjacentHTML("beforeend", productHTML);
       });
     }
 
-    // Ini akan menampilkan jumlah produk YANG DITEMUKAN (bukan yang di layar)
     productCount.textContent = `${totalProducts} products`;
 
     renderPagination(totalPages, currentPage, (page) => {
@@ -767,57 +773,73 @@ function renderProductCatalog(catalogGrid, allProductsData) {
     });
   }
 
-  // Panggil renderProducts untuk inisialisasi awal
   renderProducts();
 }
 
 // ==========================================================
-// FUNGSI UNTUK HOMEPAGE (INDEX.HTML)
+// FUNGSI UNTUK HOMEPAGE (index.html)
 // ==========================================================
 
-/**
- * Memuat produk unggulan di halaman utama (index.html)
- */
 async function loadFeaturedProducts() {
-  // --- Ganti ID ini dengan 4 produk favorit Anda ---
   const featuredProductIDs = [
-    "product-1", // -> Kebaya Pria Klasik Merah Maroon
-    "product-13", // -> Kebaya Wanita
-    "product-2", // -> Beskap Pria Modern Putih Gading
-    "product-14", // -> Kebaya Wanita (lainnya)
+    "product-17",
+    "product-1",
+    "product-56",
+    "product-14",
   ];
 
   const grid = document.getElementById("featured-products-grid");
   if (!grid) return;
 
   try {
-    const response = await fetch("products.json");
+    const response = await fetch("/products.json");
     const allProducts = await response.json();
 
-    const featuredProducts = featuredProductIDs.map((id) => {
-      return allProducts.find((product) => product.id === id);
-    });
+    const featuredProducts = featuredProductIDs
+      .map((id) => {
+        return allProducts.find((product) => product.id === id);
+      })
+      // LOGIKA BARU: Filter produk yang tidak memiliki gambar
+      .filter(
+        (product) => product && product.images && product.images.length > 0
+      );
 
-    grid.innerHTML = ""; // Kosongkan placeholder "Memuat..."
+    grid.innerHTML = "";
 
     featuredProducts.forEach((product) => {
-      if (!product) {
-        console.warn(`Produk unggulan dengan ID ${product} tidak ditemukan.`);
-        return;
-      }
-
-      // Link, Gambar, dan Nama dibuat otomatis dari data JSON
+      if (!product) return;
+      // PATH FIX: Image src with /
       const productHTML = `
-        <a href="detail-barang.html?id=${product.id}" class="product-item">
+        <a href="/i-catalog/detail-barang/detail-barang.html?id=${
+          product.id
+        }" class="product-item">
           <span class="wishlist-icon">
             <i class="far fa-heart"></i>
           </span>
-          <img src="${product.images[0]}" alt="${product.name}" loading="lazy" />
+          <img src="/${product.images[0].replace(/^\.\.\//, "")}" alt="${
+        product.name
+      }" loading="lazy" />
           <p class="product-name">${product.name}</p>
         </a>
       `;
 
       grid.insertAdjacentHTML("beforeend", productHTML);
+    });
+
+    enableDragScroll(grid);
+
+    const links = grid.querySelectorAll(".product-item");
+    links.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        if (grid.dataset.isDragging === "true") {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      });
+      const img = link.querySelector("img");
+      if (img) {
+        img.addEventListener("dragstart", (e) => e.preventDefault());
+      }
     });
   } catch (error) {
     console.error("Gagal memuat produk unggulan:", error);
@@ -826,33 +848,30 @@ async function loadFeaturedProducts() {
 }
 
 // ==========================================================
-// [BARU] FUNGSI ARTIKEL & BERITA (UPDATED)
+// FUNGSI ARTIKEL & BERITA (Untuk Homepage & List Artikel)
 // ==========================================================
 
-/**
- * Memuat 4 artikel terbaru untuk Homepage
- */
 async function loadFeaturedArticles() {
   const grid = document.querySelector(".news-grid");
   if (!grid) return;
 
   try {
-    const response = await fetch("articles.json");
+    const response = await fetch("/articles.json");
     const articles = await response.json();
 
     const featured = articles.slice(0, 4);
 
-    grid.innerHTML = ""; 
+    grid.innerHTML = "";
 
     featured.forEach((article) => {
       const html = `
         <div class="news-item">
           <div class="news-image-wrapper">
-            <img src="${article.image}" alt="${article.title}" loading="lazy">
+            <img src="/${article.image}" alt="${article.title}" loading="lazy">
           </div>
           <h3 class="news-title">${article.title}</h3>
           <p class="news-desc">${article.excerpt}</p>
-          <a href="detail-artikel.html?id=${article.id}" class="discover-link">Discover</a>
+          <a href="/artikel/detail-artikel.html?id=${article.id}" class="discover-link">Discover</a>
         </div>
       `;
       grid.insertAdjacentHTML("beforeend", html);
@@ -863,28 +882,25 @@ async function loadFeaturedArticles() {
   }
 }
 
-/**
- * Memuat SEMUA artikel untuk Halaman List Artikel
- */
 async function loadAllArticles() {
   const grid = document.querySelector(".news-grid");
   if (!grid) return;
 
   try {
-    const response = await fetch("articles.json");
+    const response = await fetch("/articles.json");
     const articles = await response.json();
 
-    grid.innerHTML = ""; 
+    grid.innerHTML = "";
 
     articles.forEach((article) => {
       const html = `
         <div class="news-item">
           <div class="news-image-wrapper">
-            <img src="${article.image}" alt="${article.title}" loading="lazy">
+            <img src="/${article.image}" alt="${article.title}" loading="lazy">
           </div>
           <h3 class="news-title">${article.title}</h3>
           <p class="news-desc">${article.excerpt}</p>
-          <a href="detail-artikel.html?id=${article.id}" class="discover-link">Discover</a>
+          <a href="/artikel/detail-artikel.html?id=${article.id}" class="discover-link">Discover</a>
         </div>
       `;
       grid.insertAdjacentHTML("beforeend", html);
@@ -895,9 +911,10 @@ async function loadAllArticles() {
   }
 }
 
-/**
- * Memuat Detail Artikel berdasarkan ID di URL
- */
+// ==========================================================
+// FUNGSI UNTUK HALAMAN DETAIL ARTIKEL (artikel/detail-artikel.html)
+// ==========================================================
+
 async function loadArticleDetail() {
   const container = document.querySelector(".article-page .container");
   if (!container) return;
@@ -907,12 +924,11 @@ async function loadArticleDetail() {
     const id = params.get("id");
 
     if (!id) {
-      // Redirect jika tidak ada ID
-      window.location.href = "list-artikel.html";
+      window.location.href = "/artikel/list-artikel.html";
       return;
     }
 
-    const response = await fetch("articles.json");
+    const response = await fetch("/articles.json");
     const articles = await response.json();
     const article = articles.find((a) => a.id === id);
 
@@ -924,7 +940,6 @@ async function loadArticleDetail() {
 
     document.title = `${article.title} | Ferry Sunarto`;
 
-    // Update Konten Halaman
     const titleEl = document.querySelector(".article-header h1");
     const introEl = document.querySelector(".article-intro");
     if (titleEl) titleEl.textContent = article.title;
@@ -932,7 +947,7 @@ async function loadArticleDetail() {
 
     const heroImg = document.querySelector(".hero-image");
     if (heroImg) {
-      heroImg.src = article.image;
+      heroImg.src = "/" + article.image;
       heroImg.alt = article.title;
     }
 
@@ -946,69 +961,14 @@ async function loadArticleDetail() {
 }
 
 // ==========================================================
-// FUNGSI BARU UNTUK HALAMAN DETAIL PRODUK (detail-barang.html)
+// FUNGSI UNTUK HALAMAN DETAIL PRODUK (i-catalog/detail-barang/detail-barang.html)
 // ==========================================================
 
-// Helper untuk menghasilkan opsi budget HTML
-function generateBudgetOptions(type) {
-  let options = "";
-  let data;
-  let legendText;
-
-  switch (type) {
-    case "custom":
-      legendText = "Budget Range for Custom (IDR)";
-      data = [
-        { id: "budget-1", value: "300m-700m", label: "300 - 700 mio" },
-        { id: "budget-2", value: "700m-1.5b", label: "700 mio - 1.5 bio" },
-        { id: "budget-3", value: "1.5b-3b", label: "1.5 - 3 bio" },
-        { id: "budget-4", value: ">3b", label: "> 3 bio" },
-      ];
-      break;
-    case "rent":
-      legendText = "Budget Range for Rent (IDR)";
-      data = [
-        { id: "budget-1", value: "<50m", label: "< 50 mio" },
-        { id: "budget-2", value: "50m-150m", label: "50 - 150 mio" },
-        { id: "budget-3", value: "150m-300m", label: "150 - 300 mio" },
-        { id: "budget-4", value: ">300m", label: "> 300 mio" },
-      ];
-      break;
-    case "order":
-    default:
-      legendText = "Budget Range for Purchase (IDR)";
-      data = [
-        { id: "budget-1", value: "<200m", label: "< 200 mio" },
-        { id: "budget-2", value: "200m-500m", label: "200 - 500 mio" },
-        { id: "budget-3", value: "500m-1b", label: "500 mio - 1 bio" },
-        { id: "budget-4", value: ">1b", label: "> 1 bio" },
-      ];
-      break;
-  }
-
-  // Set 'checked' pada opsi pertama (Default)
-  data.forEach((item, index) => {
-    options += `
-      <input type="radio" id="${item.id}" name="budget" value="${item.value}" ${
-      index === 0 ? "checked" : ""
-    } />
-      <label for="${item.id}">${item.label}</label>
-    `;
-  });
-
-  return { html: options, legend: legendText };
-}
-
-/**
- * Memulai logika untuk halaman Detail Produk (mengambil ID dari URL).
- */
 async function initializeProductDetail() {
-  // Ambil elemen utama sebagai penanda
   const productMain = document.querySelector(".product-main");
   if (!productMain) return;
 
   try {
-    // 1. Ambil 'id' dari parameter URL
     const params = new URLSearchParams(window.location.search);
     const productId = params.get("id");
 
@@ -1016,56 +976,47 @@ async function initializeProductDetail() {
       throw new Error("ID Produk tidak ditemukan di URL.");
     }
 
-    // 2. Ambil semua data produk dari JSON
-    const response = await fetch("products.json"); //
+    const response = await fetch("/products.json");
     if (!response.ok) throw new Error("Gagal memuat data produk.");
-    const allProductsData = await response.json(); //
+    const allProductsData = await response.json();
 
-    // 3. Cari produk yang sesuai dengan ID
     const product = allProductsData.find((p) => p.id === productId);
 
     if (!product) {
       throw new Error(`Produk dengan ID "${productId}" tidak ditemukan.`);
     }
 
-    // 4. Jika produk ditemukan, render datanya ke halaman
+    // LOGIKA FILTER GAMBAR: Pastikan produk memiliki gambar untuk ditampilkan
+    if (!product.images || product.images.length === 0) {
+      throw new Error(
+        `Produk "${product.name}" tidak memiliki gambar dan tidak dapat ditampilkan.`
+      );
+    }
+
     renderProductDetail(product);
 
-    // --- LOGIKA TAB BARU ---
+    // --- LOGIKA TAB ---
     const tabLinks = document.querySelectorAll(".tab-link");
     const tabContents = document.querySelectorAll(".tab-content");
 
     tabLinks.forEach((link) => {
       link.addEventListener("click", () => {
-        const tabId = link.getAttribute("data-tab"); // misal: "tab-deskripsi"
-
-        // 1. Nonaktifkan semua link
+        const tabId = link.getAttribute("data-tab");
         tabLinks.forEach((item) => item.classList.remove("active"));
-
-        // 2. Nonaktifkan semua konten
         tabContents.forEach((item) => item.classList.remove("active"));
-
-        // 3. Aktifkan link yang di-klik
         link.classList.add("active");
-
-        // 4. Aktifkan konten yang sesuai
         document.getElementById(tabId).classList.add("active");
       });
     });
-    // --- AKHIR LOGIKA TAB ---
 
     // --- LOGIKA TOMBOL WHATSAPP ---
     const waButton = document.querySelector(".btn-whatsapp");
     if (waButton) {
-      // --- (!! PENTING !!) GANTI NOMOR INI DENGAN NOMOR WA ANDA ---
-      const waPhoneNumber = "6281234567890"; // Format: 62xxxx (tanpa + atau 0)
-
-      // 1. Ambil detail produk dari variabel 'product' yang sudah ada
+      const waPhoneNumber = "6281234567890";
       const productName = product.name;
       const productCollection = capitalizeFirstLetter(product.collection);
-      const productURL = window.location.href; // URL halaman saat ini
+      const productURL = window.location.href;
 
-      // 2. Buat template pesan
       const messageTemplate = `Halo, saya tertarik dengan produk Anda:
 
 Koleksi: ${productCollection}
@@ -1074,119 +1025,109 @@ Link: ${productURL}
 
 Bisakah saya mendapatkan informasi lebih lanjut? Terima kasih.`;
 
-      // 3. Encode pesan untuk URL (agar spasi dan baris baru berfungsi)
       const encodedMessage = encodeURIComponent(messageTemplate);
-
-      // 4. Buat URL final
       const waURL = `https://wa.me/${waPhoneNumber}?text=${encodedMessage}`;
 
-      // 5. Tambahkan event listener ke tombol
       waButton.addEventListener("click", () => {
-        window.open(waURL, "_blank"); // Buka di tab baru
+        window.open(waURL, "_blank");
       });
     }
-    // --- AKHIR LOGIKA WHATSAPP ---
 
-    // --- LOGIKA MODAL APPOINTMENT (DIMODIFIKASI) ---
+    // --- LOGIKA MODAL APPOINTMENT ---
     const apptButton = document.querySelector(".btn-appointment");
     const modalOverlay = document.getElementById("appointment-modal");
     const closeButton = document.getElementById("appointment-close-btn");
     const apptForm = document.getElementById("appointment-form");
-
-    // [MODIFIKASI] Ambil elemen budget legend dan container options
     const typeRadios = document.querySelectorAll('input[name="type"]');
-    const budgetLegend = document.getElementById("budget-legend");
-    const budgetOptionsContainer = document.getElementById(
-      "budget-options-container"
-    );
+    const budgetSlider = document.getElementById("appt-budget-slider");
+    const budgetDisplay = document.getElementById("budget-value-display");
 
-    // [MODIFIKASI] Fungsi untuk mengupdate HANYA budget legend dan opsi radio
-    function updateBudgetDisplay() {
+    const newRanges = [
+      "0 - 50 mio",
+      "50 mio - 100 mio",
+      "100 mio - 150 mio",
+      "150 mio - 250 mio",
+      "250 mio - 350 mio",
+      "350 mio - 500 mio",
+      "500 mio - 1 bio",
+    ];
+
+    const budgetData = {
+      custom: newRanges,
+      rent: newRanges,
+      order: newRanges,
+    };
+
+    function updateSliderContext() {
       const selectedType = document.querySelector('input[name="type"]:checked');
-      const typeValue = selectedType ? selectedType.value : "order"; // Default ke 'order'
-
-      const newBudget = generateBudgetOptions(typeValue);
-
-      // 1. Update Legend Budget
-      budgetLegend.textContent = newBudget.legend;
-
-      // 2. Update Opsi Radio Budget
-      budgetOptionsContainer.innerHTML = newBudget.html;
+      const typeValue = selectedType ? selectedType.value : "order";
+      const currentRanges = budgetData[typeValue];
+      budgetSlider.max = currentRanges.length - 1;
+      budgetSlider.value = 0;
+      budgetDisplay.textContent = currentRanges[0];
     }
 
-    // [BARU] Pasang event listener ke radio buttons
+    function onSliderChange() {
+      const selectedType = document.querySelector('input[name="type"]:checked');
+      const typeValue = selectedType ? selectedType.value : "order";
+      const index = budgetSlider.value;
+      const text = budgetData[typeValue][index];
+      budgetDisplay.textContent = text;
+    }
+
     typeRadios.forEach((radio) => {
-      radio.addEventListener("change", updateBudgetDisplay);
+      radio.addEventListener("change", updateSliderContext);
     });
+
+    if (budgetSlider) {
+      budgetSlider.addEventListener("input", onSliderChange);
+    }
 
     if (apptButton && modalOverlay && closeButton && apptForm) {
       const openModal = (e) => {
-        e.preventDefault(); // Mencegah perilaku default
+        e.preventDefault();
         modalOverlay.classList.add("show");
-        document.body.style.overflow = "hidden"; // Mencegah body scroll
-        // Inisialisasi tampilan budget saat modal dibuka (diubah dari updatePriceDisplay)
-        updateBudgetDisplay();
+        document.body.style.overflow = "hidden";
+        updateSliderContext();
       };
 
       const closeModal = () => {
         modalOverlay.classList.remove("show");
-        document.body.style.overflow = "auto"; // Mengembalikan body scroll
+        document.body.style.overflow = "auto";
       };
 
-      // 1. Klik tombol "APPOINTMENT" untuk membuka modal
       apptButton.addEventListener("click", openModal);
-
-      // 2. Klik tombol close (X) untuk menutup modal
       closeButton.addEventListener("click", closeModal);
-
-      // 3. Klik di luar area modal (di background) untuk menutup
       modalOverlay.addEventListener("click", (e) => {
-        // Cek jika yang diklik adalah overlay-nya, bukan konten di dalamnya
         if (e.target === modalOverlay) {
           closeModal();
         }
       });
 
-      // 4. Handle saat form di-submit
       apptForm.addEventListener("submit", (e) => {
-        e.preventDefault(); // Mencegah form me-reload halaman
-
-        // Ambil data dari form
+        e.preventDefault();
         const name = document.getElementById("appt-name").value;
         const email = document.getElementById("appt-email").value;
-
-        // [BARU] Ambil data tambahan
         const selectedType = document.querySelector(
           'input[name="type"]:checked'
         ).value;
-        const selectedBudget = document.querySelector(
-          'input[name="budget"]:checked'
-        ).value;
-        const selectedDelivery = document.querySelector(
-          'input[name="delivery"]:checked'
-        ).value;
+        const selectedVolumeHarga = document.getElementById(
+          "budget-value-display"
+        ).textContent;
         const selectedBaju = document.getElementById("appt-baju").value;
 
-        // Tampilkan pesan sukses (Contoh)
         alert(
-          `Terima kasih, ${name}!\n\nPermintaan appointment Anda (${selectedType} untuk ${selectedBaju}) telah terkirim. Kami akan segera menghubungi Anda di ${email}.`
+          `Terima kasih, ${name}!\n\nPermintaan appointment Anda (${selectedType} untuk ${selectedBaju})\nVolume Budget: ${selectedVolumeHarga}\nTelah terkirim. Kami akan segera menghubungi Anda di ${email}.`
         );
 
-        // Reset form setelah submit
         apptForm.reset();
-
-        // Tutup modal
         closeModal();
       });
     }
-    // --- AKHIR LOGIKA MODAL ---
 
     // --- LOGIKA TOMBOL FAVORITE ---
     const favoriteButton = document.querySelector(".btn-favorite");
-    // 'productId' sudah kita dapatkan di bagian atas fungsi ini
-
     if (favoriteButton && productId) {
-      // Fungsi lokal untuk update tampilan tombol
       const updateButtonVisuals = () => {
         if (isItemInWishlist(productId)) {
           favoriteButton.textContent = "REMOVE FROM LOOKBAG";
@@ -1196,71 +1137,53 @@ Bisakah saya mendapatkan informasi lebih lanjut? Terima kasih.`;
           favoriteButton.classList.remove("active");
         }
       };
-
-      // 1. Atur tampilan tombol saat halaman dimuat
       updateButtonVisuals();
-
-      // 2. Tambahkan event klik pada tombol
       favoriteButton.addEventListener("click", () => {
-        // Cek status saat ini
         if (isItemInWishlist(productId)) {
-          // Jika sudah ada, hapus
           removeItemFromWishlist(productId);
         } else {
-          // Jika belum ada, tambahkan
           addItemToWishlist(productId);
         }
-
-        // 3. Update tampilan tombol lagi
         updateButtonVisuals();
-
-        // 4. Update counter di header
         updateWishlistCounter();
       });
     }
-    // --- AKHIR LOGIKA FAVORITE ---
   } catch (error) {
     console.error("Error memuat detail produk:", error);
-    // Tampilkan pesan error di halaman
     productMain.innerHTML = `<p style='text-align: center; width: 100%; padding: 5rem 0;'>Gagal memuat detail produk. ${error.message}</p>`;
   }
 }
 
-/**
- * [DIMODIFIKASI]
- * Mengisi halaman detail-barang.html dengan data.
- * Logika galeri utama kini untuk membuka modal.
- */
 function renderProductDetail(product) {
-  // 1. Update Judul Halaman dan Nama Produk (DARI ORIGINAL)
   document.title = product.name;
   const titleElement = document.querySelector(".product-title h1");
   const subtitleElement = document.querySelector(".product-title p");
 
-  // SESUAI PERMINTAAN:
+  // --- LOGIKA PERBAIKAN DUPLIKASI COLLECTION ---
+  const collectionName = capitalizeFirstLetter(product.collection);
+
+  const collectionSuffix = product.collection
+    .toLowerCase()
+    .includes("collection")
+    ? ""
+    : " Collection"; // Tambahkan hanya jika belum ada
+
   if (titleElement) {
-    // JUDUL (H1) diisi oleh Collection
-    // *** MODIFIKASI BARU: Tambahkan " Collection" di akhir ***
-    titleElement.textContent =
-      capitalizeFirstLetter(product.collection) + " Collection";
+    titleElement.textContent = `${collectionName}${collectionSuffix}`;
   }
+  // --- END LOGIKA PERBAIKAN ---
+
   if (subtitleElement) {
-    // SUBJUDUL (P) diisi oleh Nama Produk
     subtitleElement.textContent = product.name;
   }
 
-  // 2. Update Deskripsi Produk (DARI ORIGINAL)
-  // (Sekarang berada di dalam tab-deskripsi)
   const descriptionElement = document.querySelector(".product-description p");
-  if (descriptionElement) descriptionElement.textContent = product.description; //
+  if (descriptionElement) descriptionElement.textContent = product.description;
 
-  // 3. Update Spesifikasi (DARI ORIGINAL)
-  // (Sekarang berada di dalam tab-spesifikasi)
   const specsElement = document.querySelector(".product-sizes");
   if (specsElement) {
-    specsElement.innerHTML = ""; // Kosongkan placeholder statis
+    specsElement.innerHTML = "";
     if (product.specifications && product.specifications.length > 0) {
-      //
       product.specifications.forEach((spec) => {
         const p = document.createElement("p");
         p.textContent = spec;
@@ -1271,7 +1194,6 @@ function renderProductDetail(product) {
     }
   }
 
-  // 4. Update Galeri Gambar (DIMODIFIKASI UNTUK MODAL)
   const mainImageWrapper = document.querySelector(".main-image-wrapper");
   const thumbnailGallery = document.querySelector(".thumbnail-gallery");
 
@@ -1281,87 +1203,84 @@ function renderProductDetail(product) {
     product.images &&
     product.images.length > 0
   ) {
-    // Hapus placeholder statis
-    mainImageWrapper.innerHTML = ""; // Ini yang menghapus panah
+    mainImageWrapper.innerHTML = "";
     thumbnailGallery.innerHTML = "";
 
-    let currentImageIndex = 0; // Untuk melacak gambar yang sedang aktif
+    let currentImageIndex = 0;
 
-    // Buat gambar utama
     const mainImage = document.createElement("img");
-    mainImage.src = product.images[currentImageIndex]; // Set gambar pertama
+    // PATH FIX: Image src with /
+    mainImage.src =
+      "/" + product.images[currentImageIndex].replace(/^\.\.\//, "");
     mainImage.alt = product.name;
-    // [MODIFIKASI] Tambahkan cursor pointer untuk menandakan bisa diklik
     mainImage.style.cssText =
       "width: 100%; height: 100%; object-fit: cover; cursor: pointer;";
 
-    // --- [BARU] LOGIKA BUKA MODAL ---
     mainImage.addEventListener("click", () => {
-      // Panggil fungsi setup modal baru
       setupModalGallery(product.images, currentImageIndex);
     });
-    // --- [AKHIR BARU] ---
 
-    // -- BUAT ULANG PANAH KIRI --
     const arrowLeft = document.createElement("button");
-    arrowLeft.className = "nav-arrow arrow-left"; // Ambil style dari CSS
-    arrowLeft.innerHTML = "&lt;"; // Karakter '<'
+    arrowLeft.className = "nav-arrow arrow-left";
+    arrowLeft.innerHTML = "&lt;";
 
-    // -- BUAT ULANG PANAH KANAN --
     const arrowRight = document.createElement("button");
-    arrowRight.className = "nav-arrow arrow-right"; // Ambil style dari CSS
-    arrowRight.innerHTML = "&gt;"; // Karakter '>'
+    arrowRight.className = "nav-arrow arrow-right";
+    arrowRight.innerHTML = "&gt;";
 
-    // -- MASUKKAN SEMUA KE WRAPPER --
     mainImageWrapper.appendChild(mainImage);
     mainImageWrapper.appendChild(arrowLeft);
     mainImageWrapper.appendChild(arrowRight);
 
-    // -- Fungsi untuk update gambar (HANYA di halaman utama) --
     const updateMainImage = (index) => {
-      mainImage.src = product.images[index];
+      // PATH FIX: Image src with /
+      mainImage.src = "/" + product.images[index].replace(/^\.\.\//, "");
     };
 
-    // -- FUNGSI PANAH KIRI (Halaman Utama) --
     arrowLeft.addEventListener("click", () => {
       currentImageIndex--;
       if (currentImageIndex < 0) {
-        currentImageIndex = product.images.length - 1; // Kembali ke akhir
+        currentImageIndex = product.images.length - 1;
       }
       updateMainImage(currentImageIndex);
     });
 
-    // -- FUNGSI PANAH KANAN (Halaman Utama) --
     arrowRight.addEventListener("click", () => {
       currentImageIndex++;
       if (currentImageIndex >= product.images.length) {
-        currentImageIndex = 0; // Kembali ke awal
+        currentImageIndex = 0;
       }
       updateMainImage(currentImageIndex);
     });
 
-    // Buat gambar thumbnail (Halaman Utama)
+    enableDragScroll(thumbnailGallery);
+
     product.images.forEach((imgSrc, index) => {
       const thumbWrapper = document.createElement("div");
       thumbWrapper.className = "thumbnail";
 
       const thumbImage = document.createElement("img");
-      thumbImage.src = imgSrc;
+      // PATH FIX: Image src with /
+      thumbImage.src = "/" + imgSrc.replace(/^\.\.\//, "");
       thumbImage.alt = "Thumbnail";
       thumbImage.style.cssText =
         "width: 100%; height: 100%; object-fit: cover; cursor: pointer;";
 
-      // Tambahkan event 'click' pada thumbnail
-      thumbImage.addEventListener("click", () => {
-        currentImageIndex = index; // Update index saat thumbnail diklik
-        updateMainImage(currentImageIndex); // Ganti gambar utama
+      thumbImage.addEventListener("click", (e) => {
+        if (thumbnailGallery.dataset.isDragging === "true") {
+          e.preventDefault();
+          e.stopPropagation();
+          return;
+        }
+
+        currentImageIndex = index;
+        updateMainImage(currentImageIndex);
       });
 
       thumbWrapper.appendChild(thumbImage);
       thumbnailGallery.appendChild(thumbWrapper);
     });
 
-    // Sembunyikan panah jika hanya ada 1 gambar
     if (product.images.length <= 1) {
       arrowLeft.style.display = "none";
       arrowRight.style.display = "none";
@@ -1369,20 +1288,12 @@ function renderProductDetail(product) {
   }
 }
 
-/**
- * [FUNGSI BARU, DIMODIFIKASI UNTUK HILANGKAN THUMBNAIL]
- * Menginisialisasi dan menampilkan modal galeri gambar dengan fungsionalitas zoom & pan.
- * @param {string[]} imagesArray Array URL gambar produk.
- * @param {number} initialIndex Index gambar yang akan ditampilkan pertama kali di modal.
- */
 function setupModalGallery(imagesArray, initialIndex) {
-  // Ambil elemen-elemen modal dari HTML
   const modal = document.getElementById("imageModal");
   const modalImage = modal.querySelector(".modal-image");
   const closeButton = modal.querySelector(".close-button");
   const modalArrowLeft = modal.querySelector(".modal-arrow-left");
   const modalArrowRight = modal.querySelector(".modal-arrow-right");
-  // const modalThumbnailsContainer = modal.querySelector(".modal-thumbnails"); // <-- [DIHAPUS]
   const modalContentWrapper = modal.querySelector(".modal-content-wrapper");
 
   if (
@@ -1391,7 +1302,6 @@ function setupModalGallery(imagesArray, initialIndex) {
     !closeButton ||
     !modalArrowLeft ||
     !modalArrowRight ||
-    // !modalThumbnailsContainer || // <-- [DIHAPUS]
     !modalContentWrapper
   ) {
     console.error("Elemen modal tidak ditemukan!");
@@ -1400,7 +1310,6 @@ function setupModalGallery(imagesArray, initialIndex) {
 
   let currentModalImageIndex = initialIndex;
 
-  // --- LOGIKA ZOOM & PAN (DI DALAM MODAL) ---
   let isZoomed = false;
   let isDragging = false;
   let startX, startY;
@@ -1408,16 +1317,14 @@ function setupModalGallery(imagesArray, initialIndex) {
     translateY = 0;
   let lastTranslateX = 0,
     lastTranslateY = 0;
-  const zoomScale = 2; // Skala zoom
+  const zoomScale = 2;
 
   function applyModalTransform() {
-    // Dapatkan batas clamp (batas geser)
     const imgWidth = modalImage.offsetWidth;
     const imgHeight = modalImage.offsetHeight;
     const wrapperWidth = modalContentWrapper.offsetWidth;
     const wrapperHeight = modalContentWrapper.offsetHeight;
 
-    // Hitung seberapa banyak gambar 'lebih' dari wrapper saat di-zoom
     const maxTranslateX = Math.max(
       0,
       (imgWidth * zoomScale - wrapperWidth) / 2
@@ -1428,7 +1335,6 @@ function setupModalGallery(imagesArray, initialIndex) {
     );
 
     if (isZoomed) {
-      // Batasi (clamp) nilai translate agar tidak keluar batas
       translateX = Math.max(
         -maxTranslateX,
         Math.min(maxTranslateX, translateX)
@@ -1439,15 +1345,14 @@ function setupModalGallery(imagesArray, initialIndex) {
       );
 
       modalImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${zoomScale})`;
-      modalImage.style.objectFit = "contain"; // <-- [DIPASTIKAN ADA KEMBALI]
-      modalContentWrapper.classList.add("is-zoomed"); // Tambahkan class ke wrapper
+      modalImage.style.objectFit = "contain";
+      modalContentWrapper.classList.add("is-zoomed");
     } else {
-      // Reset jika tidak di-zoom
       translateX = 0;
       translateY = 0;
       modalImage.style.transform = "translate(0, 0) scale(1)";
-      modalImage.style.objectFit = "contain"; // Default 'contain'
-      modalContentWrapper.classList.remove("is-zoomed"); // Hapus class dari wrapper
+      modalImage.style.objectFit = "contain";
+      modalContentWrapper.classList.remove("is-zoomed");
     }
   }
 
@@ -1460,12 +1365,10 @@ function setupModalGallery(imagesArray, initialIndex) {
     lastTranslateY = 0;
     modalImage.classList.remove("zoomed", "grabbing");
     modalImage.style.cursor = "zoom-in";
-    applyModalTransform(); // Terapkan reset
+    applyModalTransform();
   }
 
-  // [RESTORED] Event Listener untuk Klik (Zoom Toggle)
   modalImage.addEventListener("click", (e) => {
-    // Jika sedang dragging, jangan lakukan zoom toggle
     if (modalImage.classList.contains("grabbing")) return;
 
     isZoomed = !isZoomed;
@@ -1478,22 +1381,14 @@ function setupModalGallery(imagesArray, initialIndex) {
     applyModalTransform();
   });
 
-  // ==============================================================
-  // === BLOK BARU UNTUK FUNGSI GESER (PAN) MOBILE & DESKTOP ===
-  // ==============================================================
-
   function dragStart(e) {
     if (!isZoomed) return;
-
-    // Mencegah 'ghost' klik di mobile setelah drag
-    // dan mencegah scrolling halaman
     if (e.type === "touchstart") e.preventDefault();
 
     isDragging = true;
     modalImage.classList.add("grabbing");
     modalImage.style.cursor = "grabbing";
 
-    // Cek apakah ini touch event or mouse event
     const clientX = e.clientX || e.touches[0].clientX;
     const clientY = e.clientY || e.touches[0].clientY;
 
@@ -1503,7 +1398,6 @@ function setupModalGallery(imagesArray, initialIndex) {
     lastTranslateX = translateX;
     lastTranslateY = translateY;
 
-    // [PERBAIKAN UTAMA] Pasang event listeners ke window/document setelah drag dimulai
     window.addEventListener("mousemove", dragMove);
     window.addEventListener("mouseup", dragEnd);
     window.addEventListener("touchmove", dragMove, { passive: false });
@@ -1512,8 +1406,6 @@ function setupModalGallery(imagesArray, initialIndex) {
 
   function dragMove(e) {
     if (!isDragging) return;
-
-    // Mencegah scrolling halaman di mobile saat menggeser gambar
     if (e.type === "touchmove") e.preventDefault();
 
     const clientX = e.clientX || e.touches[0].clientX;
@@ -1529,7 +1421,6 @@ function setupModalGallery(imagesArray, initialIndex) {
   }
 
   function dragEnd(e) {
-    // [PERBAIKAN UTAMA] Hapus event listeners dari window/document setelah drag selesai
     window.removeEventListener("mousemove", dragMove);
     window.removeEventListener("mouseup", dragEnd);
     window.removeEventListener("touchmove", dragMove);
@@ -1549,7 +1440,6 @@ function setupModalGallery(imagesArray, initialIndex) {
 
     if (!isDragging) return;
 
-    // Atasi bug 'ghost click'
     if (!moved && isZoomed) {
       isDragging = false;
     } else {
@@ -1567,22 +1457,16 @@ function setupModalGallery(imagesArray, initialIndex) {
     }
   }
 
-  // --- Tambahkan SEMUA Event Listener (Mouse & Touch) ---
   modalImage.addEventListener("mousedown", dragStart);
   modalImage.addEventListener("touchstart", dragStart, { passive: false });
 
-  // --- AKHIR LOGIKA ZOOM & PAN ---
-  // ==============================================================
-
-  // Fungsi untuk menampilkan gambar di modal
   const showModalImage = (index) => {
     currentModalImageIndex = index;
-    modalImage.src = imagesArray[currentModalImageIndex];
-    resetModalZoomAndPan(); // Reset zoom setiap ganti gambar di modal
+    // PATH FIX: Image src with /
+    modalImage.src =
+      "/" + imagesArray[currentModalImageIndex].replace(/^\.\.\//, "");
+    resetModalZoomAndPan();
 
-    // [DIHAPUS] Logika update thumbnail aktif
-
-    // Sembunyikan panah jika hanya ada 1 gambar di modal
     if (imagesArray.length <= 1) {
       modalArrowLeft.style.display = "none";
       modalArrowRight.style.display = "none";
@@ -1592,28 +1476,21 @@ function setupModalGallery(imagesArray, initialIndex) {
     }
   };
 
-  // Fungsi untuk menutup modal
   const closeModal = () => {
     modal.classList.remove("active");
-    document.body.style.overflow = "auto"; // Kembalikan scroll body
+    document.body.style.overflow = "auto";
     resetModalZoomAndPan();
-    // modalThumbnailsContainer.innerHTML = ""; // <-- [DIHAPUS]
-
-    // Hapus event listener global agar tidak menumpuk
     document.removeEventListener("keydown", handleKeydown);
   };
 
-  // Event listener untuk tombol close
   closeButton.onclick = closeModal;
 
-  // Event listener untuk klik di luar gambar modal (di background)
   modal.addEventListener("click", (event) => {
     if (event.target === modal) {
       closeModal();
     }
   });
 
-  // Event listener untuk panah navigasi modal
   modalArrowLeft.onclick = () => {
     currentModalImageIndex--;
     if (currentModalImageIndex < 0) {
@@ -1630,51 +1507,76 @@ function setupModalGallery(imagesArray, initialIndex) {
     showModalImage(currentModalImageIndex);
   };
 
-  // Navigasi dengan keyboard (Esc, Panah Kiri, Panah Kanan)
   const handleKeydown = (e) => {
     if (e.key === "Escape") {
       closeModal();
     } else if (e.key === "ArrowLeft") {
-      modalArrowLeft.onclick(); // Panggil fungsi klik panah
+      modalArrowLeft.onclick();
     } else if (e.key === "ArrowRight") {
-      modalArrowRight.onclick(); // Panggil fungsi klik panah
+      modalArrowRight.onclick();
     }
   };
   document.addEventListener("keydown", handleKeydown);
 
-  // [DIHAPUS] Logika pembuatan thumbnail
-
-  // Tampilkan modal dan gambar awal
   modal.classList.add("active");
-  document.body.style.overflow = "hidden"; // Hentikan scroll body
+  document.body.style.overflow = "hidden";
   showModalImage(currentModalImageIndex);
+}
+
+/**
+ * Fungsi untuk mengaktifkan scroll dengan cara drag (klik & geser) mouse
+ */
+function enableDragScroll(slider) {
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  slider.addEventListener("mousedown", (e) => {
+    isDown = true;
+    slider.classList.add("active");
+    slider.dataset.isDragging = "false";
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
+
+  slider.addEventListener("mouseleave", () => {
+    isDown = false;
+    slider.classList.remove("active");
+  });
+
+  slider.addEventListener("mouseup", () => {
+    isDown = false;
+    slider.classList.remove("active");
+    setTimeout(() => {
+      slider.dataset.isDragging = "false";
+    }, 50);
+  });
+
+  slider.addEventListener("mousemove", (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 2;
+    if (Math.abs(walk) > 5) {
+      slider.dataset.isDragging = "true";
+    }
+    slider.scrollLeft = scrollLeft - walk;
+  });
 }
 
 // ==========================================================
 // FUNGSI HELPER UNTUK WISHLIST (LOCALSTORAGE)
 // ==========================================================
 
-/**
- * Mengambil daftar wishlist dari localStorage
- * @returns {string[]} Array berisi ID produk
- */
 function getWishlist() {
   const list = localStorage.getItem("wishlist");
   return list ? JSON.parse(list) : [];
 }
 
-/**
- * Menyimpan daftar wishlist ke localStorage
- * @param {string[]} list Array berisi ID produk
- */
 function saveWishlist(list) {
   localStorage.setItem("wishlist", JSON.stringify(list));
 }
 
-/**
- * Menambahkan item ke wishlist
- * @param {string} productId ID produk yang akan ditambahkan
- */
 function addItemToWishlist(productId) {
   const list = getWishlist();
   if (!list.includes(productId)) {
@@ -1683,29 +1585,17 @@ function addItemToWishlist(productId) {
   }
 }
 
-/**
- * Menghapus item dari wishlist
- * @param {string} productId ID produk yang akan dihapus
- */
 function removeItemFromWishlist(productId) {
   let list = getWishlist();
   list = list.filter((id) => id !== productId);
   saveWishlist(list);
 }
 
-/**
- * Cek apakah item ada di wishlist
- * @param {string} productId ID produk yang akan dicek
- * @returns {boolean} True jika ada, false jika tidak
- */
 function isItemInWishlist(productId) {
   const list = getWishlist();
   return list.includes(productId);
 }
 
-/**
- * Memperbarui angka counter di ikon hati (header)
- */
 function updateWishlistCounter() {
   const list = getWishlist();
   const countElement = document.querySelector(".wishlist-count");
@@ -1721,75 +1611,80 @@ function updateWishlistCounter() {
 }
 
 // ==========================================================
-  // [BARU] INISIALISASI ANIMASI BUTIK
-  // ==========================================================
-  if (document.querySelector(".section-butik-animation")) {
-    // Pastikan jQuery sudah dimuat karena script animasi butuh jQuery
-    if (typeof jQuery !== 'undefined') {
-      (function($) {
-        $(document).ready(function() {
-          const $app = $('.app');
-          const totalSlides = 3;
-          let animation = true;
-          let curSlide = 1;
-          let scrolledUp, nextSlide;
+// INISIALISASI ANIMASI BUTIK
+// ==========================================================
+if (document.querySelector(".section-butik-animation")) {
+  if (typeof jQuery !== "undefined") {
+    (function ($) {
+      $(document).ready(function () {
+        const $app = $(".app");
+        const totalSlides = 3;
+        let animation = true;
+        let curSlide = 1;
+        let autoPlayInterval;
 
-          let pagination = function(slide, target) {
-            animation = true;
-            if (target === undefined) {
-              nextSlide = scrolledUp ? slide - 1 : slide + 1;
-            } else {
-              nextSlide = target;
-            }
+        let pagination = function (slide, target) {
+          animation = true;
+          let nextSlide;
 
-            // Update Dot
-            $('.pages__item').removeClass('page__item-active');
-            $('.pages__item--' + nextSlide).addClass('page__item-active');
+          if (target === undefined) {
+            nextSlide = slide < totalSlides ? slide + 1 : 1;
+          } else {
+            nextSlide = target;
+          }
 
-            // Reset Active Class
-            $app.removeClass('active active-3');
+          $(".pages__item").removeClass("page__item-active");
+          $(".pages__item--" + nextSlide).addClass("page__item-active");
 
-            // Logic Active Class
-            if (nextSlide === 2) {
-              $app.addClass('active');
-            } else if (nextSlide === 3) {
-              $app.addClass('active-3');
-            }
+          $app.removeClass("active active-3");
+          if (nextSlide === 2) {
+            $app.addClass("active");
+          } else if (nextSlide === 3) {
+            $app.addClass("active-3");
+          }
 
-            setTimeout(function() {
-              animation = false;
-            }, 3000);
-          };
+          curSlide = nextSlide;
 
-          // Mulai animasi awal
-          setTimeout(function() {
-            $app.addClass('initial');
-          }, 500); // Dipercepat sedikit agar langsung muncul
-
-          setTimeout(function() {
+          setTimeout(function () {
             animation = false;
-          }, 3500);
+          }, 3000);
+        };
 
-          // EVENT: KLIK PAGINATION (NAVIGASI UTAMA)
-          $(document).on("click", ".pages__item:not(.page__item-active)", function() {
+        setTimeout(function () {
+          $app.addClass("initial");
+        }, 500);
+
+        setTimeout(function () {
+          animation = false;
+        }, 3500);
+
+        function startAutoPlay() {
+          autoPlayInterval = setInterval(function () {
+            if (!animation) {
+              pagination(curSlide);
+            }
+          }, 6000);
+        }
+
+        startAutoPlay();
+
+        $(document).on(
+          "click",
+          ".pages__item:not(.page__item-active)",
+          function () {
             if (animation) return;
-            let target = +$(this).attr('data-target');
+
+            clearInterval(autoPlayInterval);
+
+            let target = +$(this).attr("data-target");
             pagination(curSlide, target);
-            curSlide = target;
-          });
 
-          // OPTIONAL: Auto-play setiap 7 detik jika user tidak interaksi
-          // setInterval(function(){
-          //    if(!animation) {
-          //       let next = curSlide >= totalSlides ? 1 : curSlide + 1;
-          //       pagination(curSlide, next);
-          //       curSlide = next;
-          //    }
-          // }, 7000);
-
-        });
-      })(jQuery);
-    } else {
-      console.warn("jQuery belum dimuat! Animasi Butik tidak akan berjalan.");
-    }
+            startAutoPlay();
+          }
+        );
+      });
+    })(jQuery);
+  } else {
+    console.warn("jQuery belum dimuat! Animasi Butik tidak akan berjalan.");
   }
+}
